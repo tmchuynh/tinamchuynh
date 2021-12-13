@@ -1,13 +1,117 @@
-{{ define "main" }}
+<!DOCTYPE html>
+<html>
 
-{{ partial "head" .}}
+<head>
+    <!--The title is what shows up on the bookmark tab-->
+    <title>tmch Website</title>
 
-{{ partial "navigators/navbar" . }}
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-<div>
-  <h1>"This is the resume page"</h1>
-</div>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet"> -->
 
-{{ partial "footer" .}}
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.ico">
 
-{{ end }}
+    <script src="static/js/cdn.js"></script>
+    <link rel="stylesheet" href="static/css/main.css" />
+</head>
+
+<body>
+
+    <nav class="overflow-x-scroll overflow-x-visible-ns flex justify-between items-center divider-grey center bg-white relative">
+        <!-- Logo -->
+        <a href="/tmch-website/" class="pa3 db mr4 h-75 w4 flex-none">
+            <img src="static/images/Logo.png" alt="TH logo" class="br0 db mb0 w-100" />
+        </a>
+
+        <!-- Primary Nav -->
+        <ul class="flex b list">
+            <li><a href="/tmch-website/about.html" class="pa3 no-underline db grey-3">About</a></li>
+
+            <li><a href="/tmch-website/portfolio.html" class="pa3 no-underline db grey-3">Portfolio</a></li>
+
+            <li><a href="/tmch-website/resume.html" class="pa3 no-underline db grey-3">Resume</a></li>
+
+            <li><a href="/tmch-website/services.html" class="pa3 no-underline db grey-3">Services</a></li>
+
+            <li><a href="/tmch-website/contact.html" class="pa3 no-underline db grey-3">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- heading title(s) and image section-->
+    <div class="pv5 pv6-l ph3 bg-center cover" style="background-image: url('static/images/temp-photo.jpg')">
+        <div class="mw7 center ph3">
+            <!--title section-->
+            <div class="db mb3">
+                <div class="mw7 relative bg-fix-primary mb3">
+                    <h1 class="f2 f1-l b di lh-title mb3 mw6 white bg-primary">
+                        This is the title.
+                    </h1>
+                </div>
+                <!--subtitle section-->
+                <div class="mw7 relative bg-fix-primary">
+                    <p class="b f4 di lh-title mb3 mw6 white bg-primary">
+                        This is the subtitle.
+                    </p>
+                </div>
+                <!--end of subtitle section-->
+            </div>
+        </div>
+    </div>
+    <!-- end of heading title(s) and image section -->
+
+    <h1>This is the resume page</h1>
+
+    <footer class="bg-black ph3 pv4 white">
+
+        <div class="mw7 center pt3">
+
+            <div class="measure-narrow center mb4">
+                <img src="static/images/Logo.png" alt="TH logo" class="db w4 center mb4 br0">
+            </div>
+
+            <div class="flex-ns justify-between">
+
+                <div>
+                    <h3 class="f3 b lh-title mb1 primary">Navigation</h3>
+                    <ul class="mb3 list">
+                        <li><a href="/tmch-website" class="link">Home</a></li>
+                        <li><a href="/tmch-website/about.html" class="link">About</a></li>
+                        <li><a href="/tmch-website/portfolio.html" class="link">Portfolio</a></li>
+                        <li><a href="/tmch-website/resume.html" class="link">Resume</a></li>
+                        <li><a href="/tmch-website/contact.html" class="link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="f4 b lh-title mb2 primary">Get in touch</h3>
+                    <ul class="db list">
+                        <li class="dib ph2 raise">
+                            <a href="/tmch-website/" class="bg-white black db relative br-100 pa2">
+                                <i width="16px" height="16px" class="bi-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="dib ph2 raise">
+                            <a href="/tmch-website/" class="bg-white black db relative br-100 pa2">
+                                <i width="16px" height="16px" class="bi-envelope-open"></i>
+                            </a>
+                        </li>
+                        <li class="dib ph2 raise">
+                            <a href="/tmch-website/" class="bg-white black db relative br-100 pa2">
+                                <i width="16px" height="16px" class="bi-chat-dots"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
