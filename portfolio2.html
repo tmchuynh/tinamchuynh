@@ -75,92 +75,95 @@
     </div>
     <!-- end of heading title(s) and image section -->
 
-    <section class="portfolio">
-        <div class="container aos-init aos-animate" data-aos="fade-up">
-            <div class="section-title">
-                <h2>
-                    Portfolio
-                </h2>
-                <p>
-                    <div class="tc">
-                        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
-                    </div>
-                </p>
+    <div class="container-fluid anchor pb-5 projects-section" id="P_TEST">
+        <h1 class="text-center">Portfolio</h1>
+        <div class="container ml-auto text-center">
+            <div class="btn-group flex-wrap" role="group" id="project-filter-buttons">
+                <button type="button" class="btn btn-dark" data-filter="all">All</button>
+                <button type="button" class="btn btn-dark" data-filter="web">Web</button>
+                <button type="button" class="btn btn-dark" data-filter="app">App</button>
             </div>
-            <div id="myBtnContainer" class="tc">
-                <button class="btn raise" onclick="filterSelection('all')">Show all</button>
-                <button class="btn raise" onclick="filterSelection('web')">Web</button>
-                <button class="btn raise" onclick="filterSelection('app')">App</button>
-                <button class="btn raise" onclick="filterSelection('card')">Card</button>
-            </div>
-
-
-            <div class="container-fluid anchor pb-5 projects-section" id="portfoliosection">
-                <h1 class="text-center">Portfolio</h1>
-                <div class="container ml-auto text-center">
-                    <div class="btn-group flex-wrap" role="group" id="project-filter-buttons">
-                        <button type="button" class="btn btn-dark" data-filter="all">Button</button>
-                        <button type="button" class="btn btn-dark" data-filter="Web">Button</button>
-                        <button type="button" class="btn btn-dark" data-filter="App">Button</button>
-                        <button type="button" class="btn btn-dark" data-filter="Card">Button</button>
-                    </div>
-                </div>
-                <div class="container filtr-projects">
-                    <div class="row" id="project-card-holder">
-                        <div class="col-sm-12 col-md-6 col-lg-4 p-2 filtr-item" data-category='all, Web'>
-                            <div class="card mt-1">
-                                <div class="card">
-                                    <a class="card-header" href="/tmch-website">
-                                        <div>
-                                            <div class="d-flex">
-                                                <img class="card-img-xs" src="static/images/favicon.ico" alt="Alt Image" />
-                                                <h5 class="card-title mb-0">Title</h5>
-                                            </div>
-                                            <div class="sub-title">
-                                                <span>Role</span>
-                                                <span>Month yr - Month yr</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <div class="card-body text-justify pt-1 pb-1">
-                                        <p>Summary of the project</p>
-                                        <!-- Display project card technology tags -->
-                                        <div class="project-card-footer">
-                                            <div class="project-tags-holder">
-                                                <span class="badge btn-info">Tag #1</span>
-                                                <span class="badge btn-info">Tag #2</span>
-                                                <span class="badge btn-info">Tag #3</span>
-                                            </div>
-                                            <div class="project-btn-holder">
-                                                <span>
-                                                    <div class="widget">
-                                                        <a class="btn" href="/tmch-website" target="_blank" rel="noopener" aria-label="Star Kubernetes">
-                                                            <svg viewBox="0 0 16 16" class="octicon octicon-mark-github" style="width: 14px; height: 14px;" aria-hidden="true">
-                                                                <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
-
-                                                                </path>
-                                                            </svg>
-                                                            <span>Star</span>
-                                                </a>
-                                            </div>
-                                            </span>
-                                        </div>
-
-                                        <!-- <a class="github-button-inactive project-btn" href="{{ .repo }}" data-icon="octicon-standard" data-show-count="true" aria-label="Star {{ .name }}">{{ i18n "project_star" }}</a>
-                                                <span>
-                                                    <a class="btn btn-outline-info btn-sm" href="{{ .url }}" target="#">{{ i18n "project_details" }}</a>
-                                                </span> -->
+        </div>
+        <div class="container filtr-projects">
+            <div class="row" id="project-card-holder">
+                <div class="col-sm-12 col-md-6 col-lg-4 p-2 filtr-item" data-category='all, web'>
+                    <div class="card mt-1">
+                        <div class="card">
+                            <a class="card-header" href="/tmch-website" target="_blank" rel="noopener">
+                                <div>
+                                    <div class="d-flex">
+                                        <img class="card-img-xs" src="{{ $logoImage.RelPermalink }}" alt="Card Name" />
+                                        <h5 class="card-title mb-0">Card Name</h5>
+                                    </div>
+                                    <div class="sub-title">
+                                        <span>Project Name</span>
+                                        <span>Month yr - Month yr</span>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
+                            <div class="card-body text-justify pt-1 pb-1">
+                                <p>Summary of the project goes here</p>
+                                <!-- Display project card technology tags -->
+                                <div class="project-card-footer">
+                                    <div class="project-tags-holder">
+                                        <span class="badge btn-info">HTML/CSS</span>
+                                        <span class="badge btn-info">JavaScript</span>
+                                    </div>
+                                    <div class="project-btn-holder">
+                                        <a class="github-button-inactive project-btn" href="/tmch-website" data-icon="octicon-standard" data-show-count="true" aria-label="Star CardName">ProjectName?</a
+                          >LINK
+                          <span>
+                            <a
+                              class="btn btn-outline-info btn-sm"
+                              href="/tmch-website"
+                              target="#"
+                              >Project Details goes here</a
+                            >
+                          </span>
                         </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
         </div>
-        </div>
-        </div>
-    </section>
+    </div>
+
+    <script>
+            // ================== Project cards =====================
+    // Add click action on project category selector buttons
+    var filterButtons = document.getElementById("project-filter-buttons");
+    if (filterButtons != null) {
+      var btns = filterButtons.children;
+
+      for (let i = 0; i < btns.length; i++) {
+        btns[i].onclick = function () {
+          showGithubStars(btns[i].id);
+        }
+      }
+    }
+
+    var projectCardHolder = document.getElementById("project-card-holder");
+    if (projectCardHolder != null && projectCardHolder.children.length != 0) {
+      projectCards = $(".filtr-projects").filterizr({ layout: 'sameWidth' });
+    }
+
+    function showGithubStars() {
+      // fix the github button class
+      // we had set it to github-button-inactive in projects holder cards so that respective javascript
+      // don't render it and replace respective span with shadow root
+      let githubButtons = document.getElementsByClassName("github-button-inactive");
+      while (githubButtons.length > 0) {
+        if (githubButtons[0].classList != undefined) {
+          githubButtons[0].classList.replace("github-button-inactive", "github-button");
+        }
+      }
+      // now render github button. it will call the github API and fill the respective fields
+      renderGithubButton();
+    }
+    showGithubStars();
+    </script>
 
     <footer class="bg-black ph3 pv4 white">
 
@@ -176,43 +179,43 @@
                     <h3 class="f3 b lh-title mb1 primary">Navigation</h3>
                     <ul class="mb3 list">
                         <li><a href="/tmch-website" class="link">Home</a></li>
-                        <li><a href="/tmch-website/about.html" class="link">About</a></li>
-                        <li><a href="/tmch-website/portfolio.html" class="link">Portfolio</a></li>
-                        <li><a href="/tmch-website/resume.html" class="link">Resume</a></li>
-                        <li><a href="/tmch-website/contact.html" class="link">Contact</a></li>
-                    </ul>
-                </div>
+                                        <li><a href="/tmch-website/about.html" class="link">About</a></li>
+                                        <li><a href="/tmch-website/portfolio.html" class="link">Portfolio</a></li>
+                                        <li><a href="/tmch-website/resume.html" class="link">Resume</a></li>
+                                        <li><a href="/tmch-website/contact.html" class="link">Contact</a></li>
+                                        </ul>
+                                    </div>
 
-                <div>
-                    <h3 class="f3 b lh-title mb2 primary">Get in touch</h3>
-                    <ul class="db list">
-                        <li class="dib ph2 raise">
-                            <a href="/tmch-website/" class="booticon bg-white black db relative br-100 pa2">
-                                <i class="bi bi-linkedin"></i>
-                            </a>
-                        </li>
-                        <li class="dib ph2 raise">
-                            <a href="/tmch-website/" class="booticon bg-white black db relative br-100 pa2">
-                                <i class="bi bi-envelope-open-fill"></i>
-                            </a>
-                        </li>
-                        <li class="dib ph2 raise">
-                            <a href="/tmch-website/" class="booticon bg-white black db relative br-100 pa2">
-                                <i class="bi bi-calendar-date-fill"></i>
-                            </a>
-                        </li>
-                        <li class="dib ph2 raise">
-                            <a href="/tmch-website/" class="booticon bg-white black db relative br-100 pa2">
-                                <i class="bi bi-chat-text-fill"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                                    <div>
+                                        <h3 class="f3 b lh-title mb2 primary">Get in touch</h3>
+                                        <ul class="db list">
+                                            <li class="dib ph2 raise">
+                                                <a href="/tmch-website/" class="booticon bg-white black db relative br-100 pa2">
+                                                    <i class="bi bi-linkedin"></i>
+                                                </a>
+                                            </li>
+                                            <li class="dib ph2 raise">
+                                                <a href="/tmch-website/" class="booticon bg-white black db relative br-100 pa2">
+                                                    <i class="bi bi-envelope-open-fill"></i>
+                                                </a>
+                                            </li>
+                                            <li class="dib ph2 raise">
+                                                <a href="/tmch-website/" class="booticon bg-white black db relative br-100 pa2">
+                                                    <i class="bi bi-calendar-date-fill"></i>
+                                                </a>
+                                            </li>
+                                            <li class="dib ph2 raise">
+                                                <a href="/tmch-website/" class="booticon bg-white black db relative br-100 pa2">
+                                                    <i class="bi bi-chat-text-fill"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
 
-            </div>
-        </div>
+                                </div>
+                            </div>
 
-    </footer>
+                            </footer>
 
 </body>
 
