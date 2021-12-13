@@ -67,6 +67,7 @@ html {
         font-size: var(--font-size-l);
     }
     background-color: var(--black);
+    box-sizing: content-box;
 }
 
 body {
