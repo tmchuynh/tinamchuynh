@@ -1,71 +1,1080 @@
-/*! TACHYONS v4.5.5 | http://tachyons.io */
-
-
-/*
- *    TABLE OF CONTENTS
- *
- *    1. External Library Includes
- *       - Reset.css | http://meyerweb.com/eric/tools/css/reset/
- *    2. Tachyons Modules
- *    3. Variables
- *       - Media Queries
- *       - Colors
- *    4. Debugging
- *       - Debug all
- *       - Debug children
- */
-
-
-/* External Library Includes */
-
-
-/*@import url("https://github.com/t-mc-huynh/tmch-website/blob/main/static/css/imports/_reset.css");*/
-
-
-/* CDN stylesheets */
-
 @import url("https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css");
 @import url("https://unpkg.com/swiper@7/swiper-bundle.min.css");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-grid-only@1.0.0/bootstrap.css");
-
-/* Tachyons Modules */
-
 @import url("https://unpkg.com/tachyons@4.12.0/css/tachyons.css");
-
-/*@import url("https://github.com/t-mc-huynh/tmch-website/blob/main/static/css/imports/_states.css");
-@import url("https://github.com/t-mc-huynh/tmch-website/blob/main/static/css/imports/_buttons.css");
-@import url("https://github.com/t-mc-huynh/tmch-website/blob/main/static/css/imports/_links.css");
-@import url("https://github.com/t-mc-huynh/tmch-website/blob/main/static/css/imports/_lists.css");*/
-
-
-/* Variables */
-
-
-/* Importing here will allow you to override any variables in the modules */
-
-
-/*@import url("https://github.com/t-mc-huynh/tmch-website/blob/main/static/css/imports/_colors.css");
-@import url("https://github.com/t-mc-huynh/tmch-website/blob/main/static/css/imports/_variables.css");*/
-
-@import "./imports/_variables.css";
-@import "./imports/_colors.css";
-
-/* Variables for pages */
-
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 
-/*@import url("https://github.com/t-mc-huynh/tmch-website/blob/main/static/css/imports/_details.css");*/
+/*--------------------------------------------------------------
+  # Variables
+--------------------------------------------------------------*/
+
+:root {
+    /* Colors */
+    --primary: #a1252b;
+    --secondary: #1c5ed9;
+    --highlight: #ff4751;
+    --white: #ffffff;
+    --off-white: #fffdfc;
+    --grey-1: #f5f3f2;
+    --grey-2: #ebe7e6;
+    --grey-3: #595756;
+    --grey-4: #424040;
+    --dark-green: #003e1f;
+    --dark-blue: #092048;
+    --mint: #AAFAC8;
+    --peach: #FFBFA0;
+    --teal: #037171;
+    --sky-blue: #84BCDA;
+    --lavendar: #a87df2;
+    --brown: #6B2B06;
+    --smoky-black: #1c110a;
+    --black: #000000;
+    /* Typography */
+    /* --font-family: Nunito Sans, -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; */
+    --font-family: Open Sans, -apple-system, BlinkMacSystemFont, system-ui, ubuntu, noto, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --line-height: 1.5;
+    --font-size: 18px;
+    --font-size-m: 20px;
+    --font-size-l: 22px;
+    --body-font-weight: 400;
+    --bold-font-weight: 700;
+    /* Sizing */
+    --spacing-none: 0;
+    --spacing-extra-small: .25rem;
+    --spacing-small: .5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 2rem;
+    --spacing-extra-large: 4rem;
+    --spacing-extra-extra-large: 8rem;
+    --spacing-extra-extra-extra-large: 16rem;
+    /* Miscelaneous */
+    --border-radius: .25rem;
+    --hover-transition: all 150ms ease;
+}
 
 
-/* Debugging */
+/*--------------------------------------------------------------
+  # Text Colors
+--------------------------------------------------------------*/
+
+.primary {
+    color: var(--primary);
+}
+
+.secondary {
+    color: var(--secondary);
+}
+
+.highlight {
+    color: var(--highlight);
+}
+
+.white {
+    color: var(--white);
+}
+
+.off-white {
+    color: var(--off-white);
+}
+
+.grey-1 {
+    color: var(--grey-1);
+}
+
+.grey-2 {
+    color: var(--grey-2);
+}
+
+.grey-3 {
+    color: var(--grey-3);
+}
+
+.grey-4 {
+    color: var(--grey-4);
+}
+
+.dark-green {
+    color: var(--dark-green);
+}
+
+.dark-blue {
+    color: var(--dark-blue);
+}
+
+.mint {
+    color: var(--mint);
+}
+
+.peach {
+    color: var(--peach);
+}
+
+.teal {
+    color: var(--teal);
+}
+
+.sky-blue {
+    color: var(--sky-blue);
+}
+
+.lavendar {
+    color: var(--lavendar);
+}
+
+.brown {
+    color: var(--brown);
+}
+
+.smoky-black {
+    color: var(--smoky-black);
+}
+
+.black {
+    color: var(--black);
+}
 
 
-/*@import url("https://github.com/t-mc-huynh/tmch-website/blob/main/static/css/imports/_debug-children.css");
-@import url("https://github.com/t-mc-huynh/tmch-website/blob/main/static/css/imports/_debug-grid.css");*/
+/*--------------------------------------------------------------
+  # Background Colors
+--------------------------------------------------------------*/
+
+.bg-primary {
+    background-color: var(--primary);
+}
+
+.bg-highlight {
+    background-color: var(--highlight);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-off-white {
+    background-color: var(--off-white);
+}
+
+.bg-grey-1 {
+    background-color: var(--grey-1);
+}
+
+.bg-grey-2 {
+    background-color: var(--grey-2);
+}
+
+.bg-grey-3 {
+    background-color: var(--grey-4);
+}
+
+.bg-grey-4 {
+    background-color: var(--grey-4);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.bg-fix-primary {
+    padding: 0 var(--spacing-small);
+}
+
+.bg-fix-primary:first-child {
+    box-shadow: var(--spacing-small) 0 0 var(--primary), -var(--spacing-small) 0 0 var(--primary);
+}
 
 
-/* Uncomment out the line below to help debug layout issues */
+/*--------------------------------------------------------------
+  # Buttons
+--------------------------------------------------------------*/
+
+.btn {
+    display: inline-block;
+    padding: 12px 16px 10px;
+    font-size: var(--spacing-medium);
+    line-height: 1.25;
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: var(--bold-font-weight);
+    color: var(--primary);
+    text-align: center;
+    box-shadow: inset 0 0 0 2px var(--primary);
+    transition: var(--hover-transition);
+}
 
 
-/* @import url("https://github.com/t-mc-huynh/tmch-website/blob/main/static/css/imports/_debug.css"); */
+/*--------------------------------------------------------------
+  # Images
+--------------------------------------------------------------*/
+
+img {
+    max-width: 100%;
+}
+
+
+/*--------------------------------------------------------------
+  # Links
+--------------------------------------------------------------*/
+
+.link {
+    text-decoration: none;
+    transition: var(--hover-transition);
+    color: inherit;
+}
+
+.link:link,
+.link:visited {
+    transition: var(--dark-green) .15s ease-in;
+}
+
+.link:hover {
+    transition: var(--white) .15s ease-in;
+    text-decoration: underline;
+}
+
+.link:active {
+    transition: var(--primary) .15s ease-in;
+}
+
+.link:focus {
+    transition: color .15s ease-in;
+    outline: 1px dotted currentColor;
+}
+
+
+/*--------------------------------------------------------------
+  # Lists
+--------------------------------------------------------------*/
+
+.list {
+    list-style-type: none;
+}
+
+
+/*--------------------------------------------------------------
+  # Focus States
+--------------------------------------------------------------*/
+
+input:focus,
+textarea:focus,
+a:focus,
+button:focus {
+    box-shadow: inset 0 0 0 2px var(--primary);
+    outline: 0!important;
+}
+
+.raise {
+    transition: var(--hover-transition);
+    transform: translateY(0) translateZ(0);
+}
+
+.raise:hover,
+.raise:focus {
+    transition: var(--hover-transition);
+    transform: translateY(-.12rem) translateZ(0);
+}
+
+.raise:active {
+    transition: var(--hover-transition);
+    opacity: .5;
+}
+
+.hide-child .child {
+    opacity: 0;
+    transition: opacity .15s ease-in;
+}
+
+.hide-child:hover .child,
+.hide-child:focus .child,
+.hide-child:active .child {
+    opacity: 1;
+    transition: opacity .15s ease-in;
+}
+
+.underline-hover:hover,
+.underline-hover:focus {
+    text-decoration: underline;
+}
+
+.pointer:hover {
+    cursor: pointer;
+}
+
+
+/*--------------------------------------------------------------
+  # Styles
+--------------------------------------------------------------*/
+
+::selection {
+    background-color: var(--highlight);
+}
+
+
+/* Used in the navbar */
+
+.divider-grey {
+    box-shadow: inset 0 -4px 0 var(--grey-1);
+    /* Link hover states */
+}
+
+.divider-grey a {
+    transition: var(--hover-transition);
+}
+
+.divider-grey ul a:hover,
+.divider-grey ul a:focus {
+    box-shadow: inset 0 -4px 0 var(--primary);
+}
+
+
+/*--------------------------------------------------------------
+  # Details
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+.column {
+    /* Create two equal columns that floats next to each other */
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*--------------------------------------------------------------
+  # Sections General
+  --------------------------------------------------------------*/
+
+section {
+    padding: 3rem 2rem;
+    overflow: hidden;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: var(--grey-3);
+}
+
+.section-title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: var(--grey-3);
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: var(--primary);
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+.section-title p {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+
+/*--------------------------------------------------------------
+  # Resume
+  --------------------------------------------------------------*/
+
+.resume .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--secondary);
+}
+
+.resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid var(--grey-2);
+    position: relative;
+}
+
+.resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    color: var(--smoky-black);
+    margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+    font-size: 16px;
+    background: var(--off-white);
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+    padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+    padding-bottom: 10px;
+    list-style: circle;
+}
+
+.resume .resume-item:last-child {
+    padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: var(--off-white);
+    border: 2px solid var(--primary);
+}
+
+
+/*--------------------------------------------------------------
+  # Portfolio
+  --------------------------------------------------------------*/
+
+.portfolio .portfolio-wrap {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background: rgba(69, 80, 91, 0.8);
+    margin: 5px 5px 5px 5px;
+}
+
+.portfolio .portfolio-wrap::before {
+    content: "";
+    background: var(--white);
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 30px;
+    bottom: 30px;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
+}
+
+.portfolio .portfolio-wrap .portfolio-info {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio .portfolio-wrap .portfolio-info::before {
+    display: block;
+    content: "";
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    border-top: 3px solid var(--grey-1);
+    border-left: 3px solid var(--grey-1);
+    transition: all 1s ease 1s;
+    z-index: 9994;
+}
+
+.portfolio .portfolio-wrap .portfolio-info::after {
+    display: block;
+    content: "";
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+    border-bottom: 3px solid var(--grey-1);
+    border-right: 3px solid var(--grey-1);
+    transition: all 1s ease 1s;
+    z-index: 9994;
+}
+
+.portfolio .portfolio-wrap .portfolio-info h4 {
+    font-size: 20px;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.portfolio .portfolio-wrap .portfolio-info p {
+    color: var(--black);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+.portfolio .portfolio-wrap .portfolio-links {
+    text-align: center;
+    z-index: 4;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a {
+    color: #45505b;
+    margin: 0 2px;
+    font-size: 28px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+    color: var(--secondary);
+}
+
+.portfolio .portfolio-wrap:hover::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info {
+    opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info::before {
+    top: 15px;
+    left: 15px;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info::after {
+    bottom: 15px;
+    right: 15px;
+}
+
+.portfolio .filterDiv {
+    float: left;
+    background-color: var(--off-white);
+    color: var(--off-white);
+    width: 200px;
+    height: 350px;
+    line-height: 100px;
+    text-align: center;
+    display: none;
+}
+
+.portfolio .show {
+    display: block;
+}
+
+.portfolio .port-container {
+    margin-top: 20px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.portfolio .btn.active {
+    background-color: var(--primary);
+    opacity: 0.25;
+}
+
+.portfolio .img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*--------------------------------------------------------------
+  # Portfolio Details
+  --------------------------------------------------------------*/
+
+.portfolio-details .portfolio-info h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--off-white);
+}
+
+.portfolio-details .portfolio-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li+li {
+    margin-top: 10px;
+}
+
+.portfolio-details .portfolio-description {
+    padding-top: 30px;
+}
+
+.portfolio-details .portfolio-description h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+    padding: 0;
+}
+
+
+/*--------------------------------------------------------------
+  # Services
+  --------------------------------------------------------------*/
+
+.services .icon-box {
+    text-align: center;
+    padding: 70px 20px 80px 20px;
+    transition: all ease-in-out 0.5s;
+    background: var(--white);
+    box-shadow: 0px 5px 15px 0px var(--grey-2);
+}
+
+.services .icon-box .icon {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+    position: relative;
+}
+
+.services .icon-box .icon i {
+    font-size: 36px;
+    transition: 0.5s;
+    position: relative;
+}
+
+.services .icon-box .icon svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.services .icon-box .icon svg path {
+    transition: 0.5s;
+    fill: var(--grey-1);
+}
+
+
+/* only for facts section */
+
+.services .icon-box h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.services .icon-box span {
+    font-size: 32px;
+    color: var(--secondary);
+}
+
+
+/* end for facts section ---------- */
+
+.services .icon-box h4 {
+    font-weight: 600;
+    margin: 10px 0 15px 0;
+    font-size: 22px;
+}
+
+.services .icon-box h4 a {
+    color: var(--grey-3);
+    transition: ease-in-out 0.3s;
+}
+
+.services .icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.services .icon-box:hover {
+    border-color: var(--white);
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.08);
+}
+
+.services .iconbox-blue i {
+    color: var(--sky-blue);
+}
+
+.services .iconbox-blue:hover .icon i {
+    color: var(--white);
+}
+
+.services .iconbox-blue:hover .icon path {
+    fill: var(--sky-blue);
+}
+
+.services .iconbox-orange i {
+    color: var(--peach);
+}
+
+.services .iconbox-orange:hover .icon i {
+    color: var(--white);
+}
+
+.services .iconbox-orange:hover .icon path {
+    fill: var(--peach);
+}
+
+.services .iconbox-pink i {
+    color: var(--lavendar);
+}
+
+.services .iconbox-pink:hover .icon i {
+    color: var(--white);
+}
+
+.services .iconbox-pink:hover .icon path {
+    fill: var(--lavendar);
+}
+
+.services .iconbox-yellow i {
+    color: var(--mint);
+}
+
+.services .iconbox-yellow:hover .icon i {
+    color: var(--white);
+}
+
+.services .iconbox-yellow:hover .icon path {
+    fill: var(--mint);
+}
+
+.services .iconbox-red i {
+    color: var(--primary);
+}
+
+.services .iconbox-red:hover .icon i {
+    color: var(--white);
+}
+
+.services .iconbox-red:hover .icon path {
+    fill: var(--primary);
+}
+
+.services .iconbox-teal i {
+    color: var(--teal);
+}
+
+.services .iconbox-teal:hover .icon i {
+    color: var(--white);
+}
+
+.services .iconbox-teal:hover .icon path {
+    fill: var(--teal);
+}
+
+
+/*--------------------------------------------------------------
+  # Testimonials
+  --------------------------------------------------------------*/
+
+.testimonials .section-header {
+    margin-bottom: 40px;
+}
+
+.testimonials .testimonial-item {
+    text-align: center;
+    justify-content: center;
+}
+
+.testimonials .testimonial-item h3 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: var(--black);
+}
+
+.testimonials .testimonial-item h4 {
+    font-size: 14px;
+    color: var(--grey-2);
+    text-align: center;
+    font-style: italic;
+    margin: 0 0 15px 0;
+}
+
+.testimonials .testimonial-item p {
+    font-style: italic;
+    text-align: center;
+    margin: 10px auto 15px auto;
+}
+
+.testimonials .testimonial-item .testimonial-img {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid var(--white);
+    justify-content: center;
+}
+
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
+    color: var(--secondary);
+    font-size: 36px;
+}
+
+.testimonials .testimonial-item .quote-icon-left {
+    display: inline-block;
+    left: -5px;
+    position: relative;
+}
+
+.testimonials .testimonial-item .quote-icon-right {
+    display: inline-block;
+    right: -5px;
+    position: relative;
+    top: 10px;
+}
+
+@media (min-width: 992px) {
+    .testimonials .testimonial-item p {
+        width: 80%;
+    }
+}
+
+.testimonials .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.testimonials .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: var(--white);
+    padding: 70px 20px 80px 20px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.testimonials .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*--------------------------------------------------------------
+  # Contact
+  --------------------------------------------------------------*/
+
+.contact .info {
+    width: 100%;
+    background: var(--off-white);
+}
+
+.contact .info i {
+    font-size: 20px;
+    color: var(--secondary);
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: var(--grey-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--black);
+}
+
+.contact .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: var(--black);
+}
+
+.contact .info .email,
+.contact .info .phone {
+    margin-top: 40px;
+}
+
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
+    background: var(--secondary);
+    color: var(--white);
+}
+
+.contact .php-email-form {
+    width: 100%;
+    background: var(--white);
+}
+
+.contact .php-email-form .form-group {
+    padding-bottom: 8px;
+}
+
+.contact .php-email-form .error-message {
+    display: none;
+    color: var(--primary);
+    background: var(--off-white);
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.contact .php-email-form .error-message br+br {
+    margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+    display: none;
+    color: #18d26e;
+    background: var(--off-white);
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+    display: none;
+    background: var(--grey-1);
+    text-align: center;
+    padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid var(--dark-green);
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+    border-radius: 4px;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+.contact .php-email-form input {
+    height: 44px;
+}
+
+.contact .php-email-form textarea {
+    padding: 10px 12px;
+}
+
+@-webkit-keyframes animate-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*--------------------------------------------------------------
+  # Typed Cursor
+  --------------------------------------------------------------*/
+
+.typed-cursor {
+    opacity: 1;
+}
+
+.typed-cursor .typed-cursor--blink {
+    animation: typedjsBlink 0.7s infinite;
+    -webkit-animation: typedjsBlink 0.7s infinite;
+    animation: typedjsBlink 0.7s infinite;
+}
+
+@keyframes typedjsBlink {
+    50% {
+        opacity: 0.0;
+    }
+}
+
+@-webkit-keyframes typedjsBlink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
