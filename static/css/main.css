@@ -1204,7 +1204,7 @@ section {
   # Footer
   --------------------------------------------------------------*/
 
-.booticon {
+.booticon .icons i {
     width: 30px;
     height: 30px;
     font-size: 15px;
