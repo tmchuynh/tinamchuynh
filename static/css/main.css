@@ -49,9 +49,9 @@
 
 /* Importing here will allow you to override any variables in the modules */
 
-@import 'static\css\layouts\_colors';
-@import 'static\css\layouts\_media-queries';
-@import 'static\css\layouts\_variables';
+@import 'static\css\layouts\_colors.css';
+@import 'static\css\layouts\_media-queries.css';
+@import 'static\css\layouts\_variables.css';
 
 /* Variables for pages */
 
@@ -60,8 +60,8 @@
 
 /* Debugging */
 
-@import 'static\css\layouts\_debug-children';
-@import 'static\css\layouts\_debug-grid';
+@import 'static\css\layouts\_debug-children.css';
+@import 'static\css\layouts\_debug-grid.css';
 
 /* Uncomment out the line below to help debug layout issues */
 
