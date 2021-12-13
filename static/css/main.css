@@ -1205,9 +1205,9 @@ section {
   --------------------------------------------------------------*/
 
 .booticon i {
-    width: 16px;
-    height: 16px;
-    font-size: 8px;
+    width: 24px;
+    height: 24px;
+    font-size: 10.8px;
     display: flex;
     justify-content: center;
     align-items: center;
