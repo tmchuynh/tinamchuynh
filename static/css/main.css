@@ -1206,11 +1206,9 @@ section {
 
 .icons i {
     font-size: 20px;
-    color: var(--black);
     float: left;
     width: 44px;
     height: 44px;
-    background: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
