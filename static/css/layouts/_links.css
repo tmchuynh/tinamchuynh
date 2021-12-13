@@ -1,21 +1,24 @@
-.link {
-  text-decoration: none;
-  transition: var(--hover-transition);
-  color: inherit;
+a {
+    text-decoration: none;
+    transition: var(--hover-transition);
+    color: inherit;
 }
 
-.link:link,
-.link:visited {
-  transition: color .15s ease-in;
+a:link,
+a:visited {
+    transition: color .15s ease-in;
 }
-.link:hover   {
-  transition: color .15s ease-in;
-  text-decoration: underline;
+
+a:hover {
+    transition: color .15s ease-in;
+    text-decoration: underline;
 }
-.link:active  {
-  transition: color .15s ease-in;
+
+a:active {
+    transition: color .15s ease-in;
 }
-.link:focus   {
-  transition: color .15s ease-in;
-  outline: 1px dotted currentColor;
+
+a:focus {
+    transition: color .15s ease-in;
+    outline: 1px dotted currentColor;
 }
