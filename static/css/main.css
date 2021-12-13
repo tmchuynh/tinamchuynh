@@ -18,7 +18,9 @@
 
 /* External Library Includes */
 
-@import url("https://github.com/t-mc-huynh/tmch-website/blob/main/static/css/imports/_reset.css");
+
+/*@import url("https://github.com/t-mc-huynh/tmch-website/blob/main/static/css/imports/_reset.css");*/
+
 
 /* CDN stylesheets */
 
@@ -30,28 +32,36 @@
 /* Tachyons Modules */
 
 @import url("https://unpkg.com/tachyons@4.12.0/css/tachyons.css");
-@import url("https://github.com/t-mc-huynh/tmch-website/blob/main/static/css/imports/_states.css");
+
+/*@import url("https://github.com/t-mc-huynh/tmch-website/blob/main/static/css/imports/_states.css");
 @import url("https://github.com/t-mc-huynh/tmch-website/blob/main/static/css/imports/_buttons.css");
 @import url("https://github.com/t-mc-huynh/tmch-website/blob/main/static/css/imports/_links.css");
-@import url("https://github.com/t-mc-huynh/tmch-website/blob/main/static/css/imports/_lists.css");
+@import url("https://github.com/t-mc-huynh/tmch-website/blob/main/static/css/imports/_lists.css");*/
+
 
 /* Variables */
 
 
 /* Importing here will allow you to override any variables in the modules */
 
-@import url("https://github.com/t-mc-huynh/tmch-website/blob/main/static/css/imports/_colors.css");
-@import url("https://github.com/t-mc-huynh/tmch-website/blob/main/static/css/imports/_variables.css");
+
+/*@import url("https://github.com/t-mc-huynh/tmch-website/blob/main/static/css/imports/_colors.css");
+@import url("https://github.com/t-mc-huynh/tmch-website/blob/main/static/css/imports/_variables.css");*/
+
 
 /* Variables for pages */
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
-@import url("https://github.com/t-mc-huynh/tmch-website/blob/main/static/css/imports/_details.css");
+
+/*@import url("https://github.com/t-mc-huynh/tmch-website/blob/main/static/css/imports/_details.css");*/
+
 
 /* Debugging */
 
-@import url("https://github.com/t-mc-huynh/tmch-website/blob/main/static/css/imports/_debug-children.css");
-@import url("https://github.com/t-mc-huynh/tmch-website/blob/main/static/css/imports/_debug-grid.css");
+
+/*@import url("https://github.com/t-mc-huynh/tmch-website/blob/main/static/css/imports/_debug-children.css");
+@import url("https://github.com/t-mc-huynh/tmch-website/blob/main/static/css/imports/_debug-grid.css");*/
+
 
 /* Uncomment out the line below to help debug layout issues */
 
