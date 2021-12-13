@@ -132,27 +132,7 @@
     </div>
     </div>
 
-    <script>
-        // ================== Project cards =====================
-        // Add click action on project category selector buttons
-        var filterButtons = document.getElementById("project-filter-buttons");
-        if (filterButtons != null) {
-            var btns = filterButtons.children;
-
-            for (let i = 0; i < btns.length; i++) {
-                btns[i].onclick = function() {
-                    showGithubStars(btns[i].id);
-                }
-            }
-        }
-
-        var projectCardHolder = document.getElementById("project-card-holder");
-        if (projectCardHolder != null && projectCardHolder.children.length != 0) {
-            projectCards = $(".filtr-projects").filterizr({
-                layout: 'sameWidth'
-            });
-        }
-    </script>
+    <script src="static/js/projectcards.js"></script>
 
     <footer class="bg-black ph3 pv4 white">
 
