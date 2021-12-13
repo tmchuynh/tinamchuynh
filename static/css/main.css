@@ -1204,16 +1204,14 @@ section {
   # Footer
   --------------------------------------------------------------*/
 
-.icons i {
-    font-size: 20px;
-    float: left;
-    width: 44px;
-    height: 44px;
+.booticon {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    transition: all 0.3s ease-in-out;
 }
 
 
