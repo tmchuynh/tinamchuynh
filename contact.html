@@ -63,7 +63,73 @@
     </div>
     <!-- end of heading title(s) and image section -->
 
-    <h1>This is the contact page</h1>
+    <!-- contact section-->
+    <section class="contact">
+        <div class="container aos-init aos-animate justify-center" data-aos="fade-up">
+            <div class="section-title">
+                <h2>
+                    Contact
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="info">
+
+                        <div class="address">
+                            <i class="bi bi-geo-alt"></i>
+                            <h4>Location</h4>
+                            <p>Insert address here</p>
+                        </div>
+
+
+                        <div class="email">
+                            <i class="bi bi-envelope"></i>
+                            <h4>Email</h4>
+                            <p>info@example.com</p>
+                        </div>
+
+                        <div class="phone">
+                            <i class="bi bi-phone"></i>
+                            <h4>Call</h4>
+                            <p>+1 000 000 0000</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+
+                    <form action="src/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your name" required>
+                            </div>
+                            <div class="col-md-6 form group">
+                                <input type="email" name="email" class="form-control" id="email" placeholder="Your email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject" requried>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="my-3">
+                            <!-- check for class -->
+                            <div class="loading">Loading</div>
+                            <div class="error-message">Please check your inputs again</div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn raise" type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="bg-black ph3 pv4 white">
 
