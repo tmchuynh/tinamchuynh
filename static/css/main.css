@@ -51,7 +51,7 @@
 
 @import 'static\css\layouts\_colors.css';
 @import 'static\css\layouts\_media-queries.css';
-@import 'static\css\layouts\_variables.css';
+@import 'static/css/layouts/_variables.css';
 
 /* Variables for pages */
 
