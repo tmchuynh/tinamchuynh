@@ -1,9 +1,0 @@
-<ul>
-    <!-- ranges through content in ascending order according to the "title" field set in front matter -->
-    {{ range .Pages.ByTitle }}
-        <li>
-            <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-            <time>{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
-        </li>
-    {{ end }}
-</ul>

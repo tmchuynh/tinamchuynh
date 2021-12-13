@@ -32,19 +32,6 @@
 @import url("https://unpkg.com/tachyons@4.12.0/css/tachyons.css");
 @import "../css/layouts/_states.css";
 
-/* Toha CSS */
-
-@import "../css/layouts/main.css";
-@import "../css/layouts/list.css";
-@import "../css/layouts/notes.css";
-@import "../css/layouts/single.css";
-@import "../css/layouts/navbar.css";
-@import "../css/layouts/navigators/navbar.css";
-@import "../css/layouts/navigators/sidebar.css";
-@import "../css/layouts/sections/accomplishments.css";
-@import "../css/layouts/sections/experiences.css";
-@import "../css/layouts/sections/skills.css";
-
 /* Variables */
 
 
