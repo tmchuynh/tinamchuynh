@@ -1201,6 +1201,24 @@ section {
 
 
 /*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+
+.icons i {
+    font-size: 20px;
+    color: var(--secondary);
+    float: left;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/*--------------------------------------------------------------
   # Typed Cursor
   --------------------------------------------------------------*/
 
