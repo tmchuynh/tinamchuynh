@@ -18,7 +18,7 @@
 
 /* External Library Includes */
 
-@import "_reset.css";
+@import '_reset.css';
 
 /* CDN stylesheets */
 
@@ -30,31 +30,31 @@
 /* Tachyons Modules */
 
 @import url("https://unpkg.com/tachyons@4.12.0/css/tachyons.css");
-@import "_states.css";
-@import "_buttons.css";
-@import "_links.css";
-@import "_lists.css";
+@import '_states.css';
+@import '_buttons.css';
+@import '_links.css';
+@import '_lists.css';
 
 /* Variables */
 
 
 /* Importing here will allow you to override any variables in the modules */
 
-@import 'colors.css';
-@import "_media-queries.css";
-@import "_variables.css";
+@import '_colors.css';
+@import '_media-queries.css';
+@import '_variables.css';
 
 /* Variables for pages */
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
-@import "_details.css";
+@import '_details.css';
 
 /* Debugging */
 
-@import "_debug-children.css";
-@import "_debug-grid.css";
+@import '_debug-children.css';
+@import '_debug-grid.css';
 
 /* Uncomment out the line below to help debug layout issues */
 
 
-/* @import "_debug.css"; */
+/* @import '_debug.css'; */
