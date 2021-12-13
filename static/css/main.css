@@ -1,0 +1,54 @@
+/*! TACHYONS v4.5.5 | http://tachyons.io */
+
+/*
+ *    TABLE OF CONTENTS
+ *
+ *    1. External Library Includes
+ *       - Reset.css | http://meyerweb.com/eric/tools/css/reset/
+ *    2. Tachyons Modules
+ *    3. Variables
+ *       - Media Queries
+ *       - Colors
+ *    4. Debugging
+ *       - Debug all
+ *       - Debug children
+ */
+
+/* External Library Includes */
+@import 'static\css\layouts\_reset.css';
+
+/* Tachyons Modules */
+@import url("https://unpkg.com/tachyons@4.12.0/css/tachyons.css");
+
+/* CDN stylesheets */
+@import url("https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css");
+@import url("https://unpkg.com/swiper@7/swiper-bundle.min.css");
+
+/* Toha CSS */
+@import 'static\css\layouts\main.css';
+@import 'static\css\layouts\list.css';
+@import 'static\css\layouts\notes.css';
+@import 'static\css\layouts\single.css';
+@import 'static\css\layouts\navbar.css';
+@import 'static\css\layouts\navigators\navbar.css';
+@import 'static\css\layouts\navigators\sidebar.css';
+@import 'static\css\layouts\sections\accomplishments.css';
+@import 'static\css\layouts\sections\experiences.css';
+@import 'static\css\layouts\sections\skills.css';
+
+/* Variables */
+/* Importing here will allow you to override any variables in the modules */
+@import 'static\css\layouts\_colors';
+@import 'static\css\layouts\_media-queries';
+@import 'static\css\layouts\_variables';
+
+/* Variables for pages */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+@import 'static\css\layouts\_details.css';
+
+/* Debugging */
+@import 'static\css\layouts\_debug-children';
+@import 'static\css\layouts\_debug-grid';
+
+/* Uncomment out the line below to help debug layout issues */
+/*@import './imports/_debug';*/
