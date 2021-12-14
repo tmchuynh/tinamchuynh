@@ -823,35 +823,6 @@ section {
     width: 100%;
 }
 
-.portfolio ul#filter button {
-    border-right: 1px solid #dedede;
-    float: left;
-    line-height: 16px;
-    margin-right: 10px;
-    padding-right: 10px;
-}
-
-.portfolio ul#filter button:last-child {
-    border-right: none;
-    margin-right: 0;
-    padding-right: 0;
-}
-
-.portfolio ul#filter a {
-    color: #999;
-    text-decoration: none;
-}
-
-.portfolio ul#filter button.current a,
-.portfolio ul#filter a:hover {
-    text-decoration: underline;
-}
-
-.portfolio ul#filter button.current a {
-    color: #333;
-    font-weight: bold;
-}
-
 .portfolio ul#portfolio {
     float: left;
     list-style: none;
