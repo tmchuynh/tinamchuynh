@@ -634,7 +634,7 @@ section {
 
 .portfolio .portfolio-wrap::before {
     content: "";
-    background: var(--white);
+    background: var(--grey-3);
     position: absolute;
     left: 30px;
     right: 30px;
@@ -669,8 +669,8 @@ section {
     position: absolute;
     top: 35px;
     left: 35px;
-    border-top: 3px solid var(--grey-1);
-    border-left: 3px solid var(--grey-1);
+    border-top: 3px solid var(--dark-green);
+    border-left: 3px solid var(--dark-blue);
     transition: all 1s ease 1s;
     z-index: 9994;
 }
@@ -683,14 +683,14 @@ section {
     position: absolute;
     bottom: 35px;
     right: 35px;
-    border-bottom: 3px solid var(--grey-1);
-    border-right: 3px solid var(--grey-1);
+    border-bottom: 3px solid var(--lavendar);
+    border-right: 3px solid var(--mint);
     transition: all 1s ease 1s;
     z-index: 9994;
 }
 
 .portfolio .portfolio-wrap .portfolio-info .header {
-    background-color: #f9fafc;
+    background-color: var(--primary);
     padding: 0.7rem;
     padding-bottom: 0rem;
     text-decoration: none;
@@ -796,8 +796,8 @@ section {
 
 .portfolio .filterDiv {
     float: left;
-    background-color: var(--off-white);
-    color: var(--off-white);
+    background-color: var(--secondary);
+    color: var(--primary);
     width: 200px;
     height: 350px;
     line-height: 100px;
