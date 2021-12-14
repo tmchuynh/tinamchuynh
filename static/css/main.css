@@ -652,6 +652,15 @@ section {
 
 /* project cards themselves */
 
+.portfolio ul#portfolio {
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px 15px;
+}
+
 .portfolio ul#portfolio .booking-card {
     position: relative;
     width: 300px;
