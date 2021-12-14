@@ -764,7 +764,7 @@ section {
     background: #0a4870;
 }
 
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .price {
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .description {
     display: flex;
     align-items: center;
     justify-content: center;
