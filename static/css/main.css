@@ -690,10 +690,6 @@ section {
     transition: 0.3s;
 }
 
-.portfolio .project-cards ul#portfolio .booking-card .book-container {
-    height: 200px;
-}
-
 .portfolio .project-cards ul#portfolio .booking-card .book-container .content {
     position: relative;
     opacity: 0;
