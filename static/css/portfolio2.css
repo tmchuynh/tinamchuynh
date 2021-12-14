@@ -1,3 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #f7f8fc;
+    font-family: "Roboto", sans-serif;
+    color: #10182f;
+}
+
+
 /*the buttons to filter */
 
 .portfolio ul#filter {
@@ -42,7 +57,6 @@
     width: 1040px;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    box-sizing: border-box;
 }
 
 .portfolio ul#portfolio li {
