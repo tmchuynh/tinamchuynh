@@ -815,7 +815,7 @@ section {
   # TESTER PAGE
   --------------------------------------------------------------*/
 
-ul#filter {
+.portfolio ul#filter {
     float: left;
     font-size: 16px;
     list-style: none;
@@ -823,7 +823,7 @@ ul#filter {
     width: 100%;
 }
 
-ul#filter li {
+.portfolio ul#filter li {
     border-right: 1px solid #dedede;
     float: left;
     line-height: 16px;
@@ -831,35 +831,35 @@ ul#filter li {
     padding-right: 10px;
 }
 
-ul#filter li:last-child {
+.portfolio ul#filter li:last-child {
     border-right: none;
     margin-right: 0;
     padding-right: 0;
 }
 
-ul#filter a {
+.portfolio ul#filter a {
     color: #999;
     text-decoration: none;
 }
 
-ul#filter li.current a,
-ul#filter a:hover {
+.portfolio ul#filter li.current a,
+.portfolio ul#filter a:hover {
     text-decoration: underline;
 }
 
-ul#filter li.current a {
+.portfolio ul#filter li.current a {
     color: #333;
     font-weight: bold;
 }
 
-ul#portfolio {
+.portfolio ul#portfolio {
     float: left;
     list-style: none;
     margin-left: 0;
     width: 672px;
 }
 
-ul#portfolio li {
+.portfolio ul#portfolio li {
     border: 1px solid #dedede;
     float: left;
     margin: 0 10px 10px 0;
@@ -867,22 +867,22 @@ ul#portfolio li {
     width: 202px;
 }
 
-ul#portfolio a {
+.portfolio ul#portfolio a {
     display: block;
     width: 100%;
 }
 
-ul#portfolio a:hover {
+.portfolio ul#portfolio a:hover {
     text-decoration: none;
 }
 
-ul#portfolio img {
+.portfolio ul#portfolio img {
     border: 1px solid #dedede;
     display: block;
     padding-bottom: 5px;
 }
 
-ul#portfolio li {
+.portfolio ul#portfolio li {
     margin-right: 5px;
 }
 
