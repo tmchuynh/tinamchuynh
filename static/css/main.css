@@ -14,7 +14,6 @@
     /* Colors */
     --primary: #a1252b;
     --secondary: #1c5ed9;
-    --highlight: #ff4751;
     --white: #ffffff;
     --off-white: #fffdfc;
     --grey-1: #f5f3f2;
@@ -23,6 +22,7 @@
     --grey-4: #424040;
     --dark-green: #003e1f;
     --dark-blue: #092048;
+    --midnight-blue: #00427e;
     --mint: #AAFAC8;
     --peach: #FFBFA0;
     --teal: #037171;
@@ -31,6 +31,11 @@
     --brown: #6B2B06;
     --smoky-black: #1c110a;
     --black: #000000;
+    /* programming lang colors */
+    --green: #1d9924;
+    --html-orange: #e96228;
+    --swift-orange: #fe4a2c;
+    --gold: #efd81d;
     /* Typography */
     /* --font-family: Nunito Sans, -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; */
     --font-family: Open Sans, -apple-system, BlinkMacSystemFont, system-ui, ubuntu, noto, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -220,10 +225,6 @@ sup {
     color: var(--secondary);
 }
 
-.highlight {
-    color: var(--highlight);
-}
-
 .white {
     color: var(--white);
 }
@@ -295,10 +296,6 @@ sup {
 
 .bg-primary {
     background-color: var(--primary);
-}
-
-.bg-highlight {
-    background-color: var(--highlight);
 }
 
 .bg-white {
@@ -459,10 +456,6 @@ button:focus {
 /*--------------------------------------------------------------
   # Styles
 --------------------------------------------------------------*/
-
-::selection {
-    background-color: var(--highlight);
-}
 
 
 /* Used in the navbar */
@@ -766,7 +759,6 @@ section {
 }
 
 .portfolio ul#portfolio .booking-card .informations-container .tag {
-    /* background: #cccccc; */
     border-radius: 50px;
     font-size: 12px;
     margin: 0;
@@ -776,16 +768,24 @@ section {
     cursor: pointer;
 }
 
-.portfolio ul#portfolio .booking-card .informations-container .tag-teal {
-    background-color: #47bcd4;
+.portfolio ul#portfolio .booking-card .informations-container .tag-html {
+    /* goes under Web filter */
+    background-color: var(--html-orange);
 }
 
-.portfolio ul#portfolio .booking-card .informations-container .tag-purple {
-    background-color: #5e76bf;
+.portfolio ul#portfolio .booking-card .informations-container .tag-js {
+    /* goes under Web filter */
+    background-color: var(--gold);
 }
 
-.portfolio ul#portfolio .booking-card .informations-container .tag-pink {
-    background-color: #cd5b9f;
+.portfolio ul#portfolio .booking-card .informations-container .tag-csharp {
+    /* goes under Misc filter */
+    background-color: var(--green);
+}
+
+.portfolio ul#portfolio .booking-card .informations-container .tag-swift {
+    /* goes under Misc filter */
+    background-color: var(--swift-orange);
 }
 
 .portfolio ul#portfolio .booking-card .informations-container .more-information {
