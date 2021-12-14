@@ -8,7 +8,6 @@
 
 .PTEST .portfolio-wrap .portfolio-info {
     display: block;
-    content: "";
     width: 48px;
     height: 48px;
     position: absolute;
