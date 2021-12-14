@@ -4,6 +4,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-grid-only@1.0.0/bootstrap.css");
 @import url("https://unpkg.com/tachyons@4.12.0/css/tachyons.css");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 /*--------------------------------------------------------------
   # Variables
@@ -852,7 +853,10 @@ section {
 
 .portfolio ul#portfolio {
     margin-top: 20px;
-    justify-content: center;
+    display: flex;
+    width: 1040px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .portfolio ul#portfolio li {
@@ -862,6 +866,80 @@ section {
     width: 202px;
 }
 
+.portfolio ul#portfolio li .card {
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+}
+
+.portfolio ul#portfolio li .card-harder img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.portfolio ul#portfolio li .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: 250px;
+}
+
+.portfolio ul#portfolio li .card-body p {
+    font-size: 13px;
+    margin: 0 0 40px;
+}
+
+.portfolio ul#portfolio li .tag {
+    background: #cccccc;
+    border-radius: 50px;
+    font-size: 12px;
+    margin: 0;
+    color: #fff;
+    padding: 2px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.portfolio ul#portfolio li .tag-teal {
+    background-color: #47bcd4;
+}
+
+.portfolio ul#portfolio li .tag-purple {
+    background-color: #5e76bf;
+}
+
+.portfolio ul#portfolio li .tag-pink {
+    background-color: #cd5b9f;
+}
+
+.portfolio ul#portfolio li .user {
+    display: flex;
+    margin-top: auto;
+}
+
+.portfolio ul#portfolio li .user img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.portfolio ul#portfolio li .user-info h5 {
+    margin: 0;
+}
+
+.portfolio ul#portfolio li .user-info small {
+    color: #545d7a;
+}
+
+
+/*
 .portfolio ul#portfolio a {
     color: #45505b;
     margin: 0 2px;
@@ -879,7 +957,7 @@ section {
     border: 1px solid #dedede;
     display: block;
     padding-bottom: 5px;
-}
+} */
 
 
 /*--------------------------------------------------------------
