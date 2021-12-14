@@ -819,6 +819,12 @@ section {
     text-align: center;
 }
 
+.portfolio ul#filter a {
+    text-decoration: none;
+    transition: var(--hover-transition);
+    color: inherit;
+}
+
 .portfolio ul#portfolio {
     margin-top: 20px;
     justify-content: center;
