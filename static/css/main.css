@@ -658,7 +658,7 @@ section {
     justify-content: flex-start;
     align-items: center;
     align-content: center;
-    gap: 10px 15px;
+    gap: 10px;
 }
 
 .portfolio .project-cards ul#portfolio .booking-card {
@@ -667,7 +667,7 @@ section {
     display: flex;
     flex: 0 0 300px;
     flex-direction: column;
-    margin: 20px;
+    margin: 20px 30px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
