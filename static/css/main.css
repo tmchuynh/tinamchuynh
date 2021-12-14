@@ -710,12 +710,6 @@ section {
     float: right;
 }
 
-.portfolio .portfolio-wrap .portfolio-info .sub-title {
-    color: #c0ccda;
-    font-size: 10pt;
-    margin-top: 0.4rem;
-}
-
 .portfolio .portfolio-wrap .portfolio-info .card-body {
     text-align: justify;
     padding: 0.7rem;
@@ -825,8 +819,6 @@ section {
     background-color: var(--primary);
     opacity: 0.25;
 }
-
-.portfolio .img-fluid {}
 
 
 /*--------------------------------------------------------------
