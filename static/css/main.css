@@ -627,13 +627,11 @@ section {
     transition: 0.3s;
     position: relative;
     overflow: hidden;
-    z-index: 1;
-    background: rgba(69, 80, 91, 0.8);
+    background: var(--grey-2);
     margin: 5px 5px 5px 5px;
 }
 
 .portfolio .portfolio-wrap::before {
-    content: "";
     background: var(--grey-3);
     position: absolute;
     left: 30px;
@@ -661,7 +659,6 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-info::before {
     display: block;
-    content: "";
     width: 48px;
     height: 48px;
     position: absolute;
@@ -674,7 +671,6 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-info::after {
     display: block;
-    content: "";
     width: 48px;
     height: 48px;
     position: absolute;
