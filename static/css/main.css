@@ -821,8 +821,7 @@ section {
 
 .portfolio ul#filter a {
     text-decoration: none;
-    transition: var(--hover-transition);
-    color: inherit;
+    color: var(--primary);
 }
 
 .portfolio ul#portfolio {
