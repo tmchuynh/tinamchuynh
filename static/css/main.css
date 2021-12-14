@@ -852,6 +852,7 @@ section {
         display: flex;
         align-items: center;
         align-content: center;
+        margin: 0;
     }
     .portfolio .project-cards ul#portfolio .booking-card::before {
         background: rgba(10, 72, 112, 0.6);
