@@ -99,6 +99,9 @@
 
 .portfolio ul#portfolio .booking-card .informations-container .price .icon {
     margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    color: currentColor;
 }
 
 .portfolio ul#portfolio .booking-card .informations-container .more-information {
