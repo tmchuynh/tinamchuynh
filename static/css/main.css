@@ -624,191 +624,214 @@ section {
 # Portfolio
 --------------------------------------------------------------*/
 
-.portfolio .portfolio-wrap {
-    transition: 0.3s;
+
+/*the buttons to filter */
+
+.portfolio ul#filter {
+    text-align: center;
+}
+
+.portfolio ul#filter a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.portfolio ul#filter a.current {
+    outline-style: none;
+}
+
+.portfolio ul#filter a:focus {
+    box-shadow: inset 0 0 0 2px var(--primary);
+    outline: 0!important;
+}
+
+.portfolio ul#filter a:hover,
+.portfolio ul#filter a:focus {
+    transition: var(--hover-transition);
+    transform: translateY(-.12rem) translateZ(0);
+}
+
+.portfolio ul#filter a:active {
+    transition: var(--hover-transition);
+    opacity: .5;
+}
+
+
+/* project cards themselves */
+
+.portfolio ul#portfolio .booking-card {
     position: relative;
-    overflow: hidden;
-    z-index: 1;
-    background: rgba(69, 80, 91, 0.8);
-    margin: 5px 5px 5px 5px;
-}
-
-.portfolio .portfolio-wrap::before {
-    content: "";
-    background: var(--white);
-    position: absolute;
-    left: 30px;
-    right: 30px;
-    top: 30px;
-    bottom: 30px;
-    transition: all ease-in-out 0.3s;
-    z-index: 2;
-    opacity: 0;
-}
-
-.portfolio .portfolio-wrap .portfolio-info {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    text-align: center;
-    z-index: 3;
-    transition: all ease-in-out 0.3s;
+    width: 300px;
     display: flex;
+    flex: 0 0 300px;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.portfolio .portfolio-wrap .portfolio-info::before {
-    display: block;
-    content: "";
-    width: 48px;
-    height: 48px;
-    position: absolute;
-    top: 35px;
-    left: 35px;
-    border-top: 3px solid var(--grey-1);
-    border-left: 3px solid var(--grey-1);
-    transition: all 1s ease 1s;
-    z-index: 9994;
-}
-
-.portfolio .portfolio-wrap .portfolio-info::after {
-    display: block;
-    content: "";
-    width: 48px;
-    height: 48px;
-    position: absolute;
-    bottom: 35px;
-    right: 35px;
-    border-bottom: 3px solid var(--grey-1);
-    border-right: 3px solid var(--grey-1);
-    transition: all 1s ease 1s;
-    z-index: 9994;
-}
-
-.portfolio .portfolio-wrap .portfolio-info h4 {
-    font-size: 20px;
-    color: var(--black);
-    font-weight: 600;
-}
-
-.portfolio .portfolio-wrap .portfolio-info p {
-    color: var(--black);
-    font-size: 14px;
-    text-transform: uppercase;
-    padding: 0;
-    margin: 0;
-}
-
-.portfolio .portfolio-wrap .portfolio-links {
+    margin: 20px;
+    margin-bottom: 30px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
     text-align: center;
-    z-index: 4;
-}
-
-.portfolio .portfolio-wrap .portfolio-links a {
-    color: #45505b;
-    margin: 0 2px;
-    font-size: 28px;
-    display: inline-block;
+    color: #0a4870;
     transition: 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a:hover {
-    color: var(--secondary);
-}
-
-.portfolio .portfolio-wrap:hover::before {
+.portfolio ul#portfolio .booking-card::before {
+    content: "";
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 1;
+    background: rgba(10, 72, 112, 0);
+    transition: 0.3s;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info {
-    opacity: 1;
+.portfolio ul#portfolio .booking-card .book-container {
+    height: 200px;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info::before {
-    top: 15px;
-    left: 15px;
-}
-
-.portfolio .portfolio-wrap:hover .portfolio-info::after {
-    bottom: 15px;
-    right: 15px;
-}
-
-.portfolio .filterDiv {
-    float: left;
-    background-color: var(--off-white);
-    color: var(--off-white);
-    width: 200px;
-    height: 350px;
-    line-height: 100px;
-    text-align: center;
-    display: none;
-}
-
-.portfolio .show {
-    display: block;
-}
-
-.portfolio .port-container {
-    margin-top: 20px;
-    overflow: hidden;
+.portfolio ul#portfolio .booking-card .book-container .content {
+    position: relative;
+    opacity: 0;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    height: 100%;
+    width: 100%;
+    transform: translateY(-200px);
+    transition: 0.3s;
 }
 
-.portfolio .img-fluid {
-    max-width: 100%;
-    height: auto;
+.portfolio ul#portfolio .booking-card .book-container .content .btn {
+    border: 3px solid white;
+    padding: 10px 15px;
+    background: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-
-/*--------------------------------------------------------------
-  # Portfolio Details
-  --------------------------------------------------------------*/
-
-.portfolio-details .portfolio-info {
-    padding: 30px;
-    box-shadow: 0px 0 30px var(--grey-3);
+.portfolio ul#portfolio .booking-card .book-container .content .btn:hover {
+    background: white;
+    border: 0px solid white;
+    color: #0a4870;
 }
 
-.portfolio-details .portfolio-info h3 {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid var(--off-white);
+.portfolio ul#portfolio .booking-card .informations-container {
+    flex: 1 0 auto;
+    padding: 20px;
+    background: #f0f0f0;
+    transform: translateY(206px);
+    transition: 0.3s;
 }
 
-.portfolio-details .portfolio-info ul {
-    list-style: none;
-    padding: 0;
-    font-size: 15px;
+.portfolio ul#portfolio .booking-card .informations-container .title {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio ul#portfolio .booking-card .informations-container .title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    width: 50px;
+    margin: auto;
+    background: #0a4870;
+}
+
+.portfolio ul#portfolio .booking-card .informations-container .price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 10px;
 }
 
-.portfolio-details .portfolio-description {
-    padding-top: 30px;
+.portfolio ul#portfolio .booking-card .informations-container .price .icon {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    color: currentColor;
 }
 
-.portfolio-details .portfolio-description h2 {
-    font-size: 26px;
-    font-weight: 700;
-    margin-bottom: 20px;
+.portfolio ul#portfolio .booking-card .informations-container .more-information {
+    opacity: 0;
+    transition: 0.3s;
 }
 
-.portfolio-details .portfolio-description p {
-    padding: 0;
+.portfolio ul#portfolio .booking-card .informations-container .more-information .info-and-date-container {
+    display: flex;
+}
+
+.portfolio ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box {
+    flex: 1 0;
+    padding: 15px;
+    margin-top: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: white;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.portfolio ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .icon {
+    margin-bottom: 5px;
+}
+
+.portfolio ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box.info {
+    color: #ec992c;
+    margin-right: 10px;
+}
+
+.portfolio ul#portfolio .booking-card .informations-container .more-information .disclaimer {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #7d7d7d;
+}
+
+.portfolio ul#portfolio .booking-card:hover::before {
+    background: rgba(10, 72, 112, 0.6);
+}
+
+.portfolio ul#portfolio .booking-card:hover .book-container .content {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.portfolio ul#portfolio .booking-card:hover .informations-container {
+    transform: translateY(0px);
+}
+
+.portfolio ul#portfolio .booking-card:hover .informations-container .more-information {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .portfolio ul#portfolio .booking-card::before {
+        background: rgba(10, 72, 112, 0.6);
+    }
+    .portfolio ul#portfolio .booking-card .book-container .content {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    .portfolio ul#portfolio .booking-card .informations-container {
+        transform: translateY(0px);
+    }
+    .portfolio ul#portfolio .booking-card .informations-container .more-information {
+        opacity: 1;
+    }
 }
 
 
