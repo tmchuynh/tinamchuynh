@@ -815,58 +815,75 @@ section {
   # TESTER PAGE
   --------------------------------------------------------------*/
 
-#filter {
-    background-color: var(--dark-green);
-    display: block;
-    height: 39px;
-    margin: 55px auto;
-    position: relative;
-    width: 600px;
-    text-align: center;
-    -moz-box-shadow: 0 4px 4px #000;
-    -webkit-box-shadow: 0 4px 4px #000;
-    box-shadow: 0 4px 4px #000;
+ul#filter {
+    float: left;
+    font-size: 16px;
+    list-style: none;
+    margin-left: 0;
+    width: 100%;
 }
 
-#filter:before,
-#filter:after {
-    background-color: var(--dark-green);
-    height: 43px;
-    position: absolute;
-    top: 0;
-    width: 78px;
-    content: '';
-    -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-    -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+ul#filter li {
+    border-right: 1px solid #dedede;
+    float: left;
+    line-height: 16px;
+    margin-right: 10px;
+    padding-right: 10px;
 }
 
-#filter:before {
-    background-position: 0 -47px;
-    left: -78px;
+ul#filter li:last-child {
+    border-right: none;
+    margin-right: 0;
+    padding-right: 0;
 }
 
-#filter:after {
-    background-position: 0 0;
-    right: -78px;
-}
-
-#filter a {
-    color: #FFFFFF;
-    display: inline-block;
-    height: 39px;
-    line-height: 37px;
-    padding: 0 15px;
-    text-shadow: 1px 1px 1px #315218;
-}
-
-#filter a:hover {
+ul#filter a {
+    color: #999;
     text-decoration: none;
 }
 
-#filter a.active {
-    background-color: var(--dark-green);
-    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2), -1px 0 0 rgba(255, 255, 255, 0.2), 1px 0 1px rgba(0, 0, 0, 0.2) inset, -1px 0 1px rgba(0, 0, 0, 0.2) inset;
+ul#filter li.current a,
+ul#filter a:hover {
+    text-decoration: underline;
+}
+
+ul#filter li.current a {
+    color: #333;
+    font-weight: bold;
+}
+
+ul#portfolio {
+    float: left;
+    list-style: none;
+    margin-left: 0;
+    width: 672px;
+}
+
+ul#portfolio li {
+    border: 1px solid #dedede;
+    float: left;
+    margin: 0 10px 10px 0;
+    padding: 5px;
+    width: 202px;
+}
+
+ul#portfolio a {
+    display: block;
+    width: 100%;
+}
+
+ul#portfolio a:hover {
+    text-decoration: none;
+}
+
+ul#portfolio img {
+    border: 1px solid #dedede;
+    display: block;
+    padding-bottom: 5px;
+}
+
+ul#portfolio li {
+    margin-right: 5px;
 }
 
 
