@@ -815,6 +815,9 @@ section {
   # TESTER PAGE
   --------------------------------------------------------------*/
 
+
+/*the buttons to filter */
+
 .portfolio ul#filter {
     text-align: center;
 }
@@ -823,6 +826,14 @@ section {
     text-decoration: none;
     color: var(--primary);
 }
+
+.portfolio ul#filter button.current {
+    transition: var(--hover-transition);
+    opacity: .5;
+}
+
+
+/* project cards themselves */
 
 .portfolio ul#portfolio {
     margin-top: 20px;
