@@ -851,6 +851,7 @@ section {
     .portfolio .project-cards ul#portfolio .booking-card .book-container .content {
         opacity: 1;
         transform: translateY(0px);
+        padding: 20px;
     }
     .portfolio .project-cards ul#portfolio .booking-card .informations-container {
         transform: translateY(0px);
