@@ -703,6 +703,55 @@ section {
     margin: 0;
 }
 
+.portfolio .portfolio-wrap .portfolio-info .sub-title {
+    color: #c0ccda;
+    font-size: 10pt;
+    margin-top: 0.4rem;
+}
+
+.portfolio .portfolio-wrap .portfolio-info .card-body {
+    text-align: justify;
+    padding: 0.7rem;
+}
+
+.portfolio .portfolio-wrap .portfolio-info span:nth-child(1) {
+    float: left;
+}
+
+.portfolio .portfolio-wrap .portfolio-info span:nth-child(2) {
+    float: right;
+}
+
+.portfolio .portfolio-wrap .portfolio-info .project-card-footer {
+    display: flex;
+}
+
+.portfolio .portfolio-wrap .portfolio-info .project-tags-holder {
+    width: 70%;
+}
+
+.portfolio .portfolio-wrap .portfolio-info .project-btn-holder {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.portfolio .portfolio-wrap .portfolio-info .project-btn-holder span {
+    justify-content: flex-end;
+    display: flex;
+}
+
+.portfolio .portfolio-wrap .portfolio-info .btn-info {
+    background-color: #248aaa !important;
+    color: #e5e9f2 !important;
+}
+
+.portfolio .portfolio-wrap .portfolio-info .btn-info:hover {
+    background-color: #248aaa !important;
+    color: #e5e9f2 !important;
+}
+
 .portfolio .portfolio-wrap .portfolio-links {
     text-align: center;
     z-index: 4;
