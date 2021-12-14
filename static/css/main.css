@@ -714,27 +714,27 @@ section {
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .book-container .content .btn {
-    border: 3px solid white;
+    border: 3px solid var(--white);
     padding: 10px 15px;
     background: none;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.3em;
-    color: white;
+    color: var(--white);
     cursor: pointer;
     transition: 0.3s;
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .book-container .content .btn:hover {
-    background: white;
-    border: 0px solid white;
-    color: #0a4870;
+    background: var(--white);
+    border: 0px solid var(--white);
+    color: var(--primary);
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container {
     flex: 1 0 auto;
     padding: 20px;
-    background: #f0f0f0;
+    background: var(--off-white);
     transform: translateY(206px);
     transition: 0.3s;
 }
