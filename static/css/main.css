@@ -827,7 +827,7 @@ section {
     color: var(--primary);
 }
 
-.portfolio ul#filter button.current {
+.portfolio ul#filter button .current {
     transition: var(--hover-transition);
     opacity: .5;
 }
