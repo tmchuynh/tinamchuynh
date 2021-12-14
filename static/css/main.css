@@ -652,7 +652,7 @@ section {
 
 /* project cards themselves */
 
-.portfolio ul#portfolio {
+.portfolio .project-cards ul#portfolio {
     justify-content: space-evenly;
     display: flex;
     flex-wrap: wrap;
@@ -661,7 +661,7 @@ section {
     gap: 10px 15px;
 }
 
-.portfolio ul#portfolio .booking-card {
+.portfolio .project-cards ul#portfolio .booking-card {
     position: relative;
     width: 300px;
     display: flex;
@@ -680,7 +680,7 @@ section {
     transition: 0.3s;
 }
 
-.portfolio ul#portfolio .booking-card::before {
+.portfolio .project-cards ul#portfolio .booking-card::before {
     content: "";
     position: absolute;
     top: 0;
@@ -691,11 +691,11 @@ section {
     transition: 0.3s;
 }
 
-.portfolio ul#portfolio .booking-card .book-container {
+.portfolio .project-cards ul#portfolio .booking-card .book-container {
     height: 200px;
 }
 
-.portfolio ul#portfolio .booking-card .book-container .content {
+.portfolio .project-cards ul#portfolio .booking-card .book-container .content {
     position: relative;
     opacity: 0;
     display: flex;
@@ -707,7 +707,7 @@ section {
     transition: 0.3s;
 }
 
-.portfolio ul#portfolio .booking-card .book-container .content .btn {
+.portfolio .project-cards ul#portfolio .booking-card .book-container .content .btn {
     border: 3px solid white;
     padding: 10px 15px;
     background: none;
@@ -719,13 +719,13 @@ section {
     transition: 0.3s;
 }
 
-.portfolio ul#portfolio .booking-card .book-container .content .btn:hover {
+.portfolio .project-cards ul#portfolio .booking-card .book-container .content .btn:hover {
     background: white;
     border: 0px solid white;
     color: #0a4870;
 }
 
-.portfolio ul#portfolio .booking-card .informations-container {
+.portfolio .project-cards ul#portfolio .booking-card .informations-container {
     flex: 1 0 auto;
     padding: 20px;
     background: #f0f0f0;
@@ -733,7 +733,7 @@ section {
     transition: 0.3s;
 }
 
-.portfolio ul#portfolio .booking-card .informations-container .title {
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .title {
     position: relative;
     padding-bottom: 10px;
     margin-bottom: 10px;
@@ -741,7 +741,7 @@ section {
     font-size: 1.2em;
 }
 
-.portfolio ul#portfolio .booking-card .informations-container .title::after {
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .title::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -753,20 +753,20 @@ section {
     background: #0a4870;
 }
 
-.portfolio ul#portfolio .booking-card .informations-container .price {
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .price {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 10px;
 }
 
-.portfolio ul#portfolio .booking-card .informations-container .price .icon {
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .price .icon {
     margin: 10px;
     width: 24px;
     height: 24px;
 }
 
-.portfolio ul#portfolio .booking-card .informations-container .tag {
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .tag {
     border-radius: 50px;
     font-size: 12px;
     margin: 0;
@@ -775,36 +775,36 @@ section {
     text-transform: uppercase;
 }
 
-.portfolio ul#portfolio .booking-card .informations-container .tag-html {
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-html {
     /* goes under Web filter */
     background-color: var(--html-orange);
 }
 
-.portfolio ul#portfolio .booking-card .informations-container .tag-js {
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-js {
     /* goes under Web filter */
     background-color: var(--gold);
 }
 
-.portfolio ul#portfolio .booking-card .informations-container .tag-csharp {
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-csharp {
     /* goes under Misc filter */
     background-color: var(--green);
 }
 
-.portfolio ul#portfolio .booking-card .informations-container .tag-swift {
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-swift {
     /* goes under Misc filter */
     background-color: var(--swift-orange);
 }
 
-.portfolio ul#portfolio .booking-card .informations-container .more-information {
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information {
     opacity: 0;
     transition: 0.3s;
 }
 
-.portfolio ul#portfolio .booking-card .informations-container .more-information .info-and-date-container {
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container {
     display: flex;
 }
 
-.portfolio ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box {
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box {
     flex: 1 0;
     padding: 15px;
     margin-top: 20px;
@@ -816,50 +816,50 @@ section {
     font-size: 0.9em;
 }
 
-.portfolio ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .icon {
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .icon {
     margin-bottom: 5px;
 }
 
-.portfolio ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box.info {
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .info {
     color: #ec992c;
     margin-right: 10px;
 }
 
-.portfolio ul#portfolio .booking-card .informations-container .more-information .disclaimer {
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .disclaimer {
     margin-top: 20px;
     font-size: 0.8em;
     color: #7d7d7d;
 }
 
-.portfolio ul#portfolio .booking-card:hover::before {
+.portfolio .project-cards ul#portfolio .booking-card:hover::before {
     background: rgba(10, 72, 112, 0.6);
 }
 
-.portfolio ul#portfolio .booking-card:hover .book-container .content {
+.portfolio .project-cards ul#portfolio .booking-card:hover .book-container .content {
     opacity: 1;
     transform: translateY(0px);
 }
 
-.portfolio ul#portfolio .booking-card:hover .informations-container {
+.portfolio .project-cards ul#portfolio .booking-card:hover .informations-container {
     transform: translateY(0px);
 }
 
-.portfolio ul#portfolio .booking-card:hover .informations-container .more-information {
+.portfolio .project-cards ul#portfolio .booking-card:hover .informations-container .more-information {
     opacity: 1;
 }
 
 @media (max-width: 768px) {
-    .portfolio ul#portfolio .booking-card::before {
+    .portfolio .project-cards ul#portfolio .booking-card::before {
         background: rgba(10, 72, 112, 0.6);
     }
-    .portfolio ul#portfolio .booking-card .book-container .content {
+    .portfolio .project-cards ul#portfolio .booking-card .book-container .content {
         opacity: 1;
         transform: translateY(0px);
     }
-    .portfolio ul#portfolio .booking-card .informations-container {
+    .portfolio .project-cards ul#portfolio .booking-card .informations-container {
         transform: translateY(0px);
     }
-    .portfolio ul#portfolio .booking-card .informations-container .more-information {
+    .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information {
         opacity: 1;
     }
 }
