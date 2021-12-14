@@ -620,19 +620,21 @@ section {
 
 
 /*--------------------------------------------------------------
-  # Portfolio
-  --------------------------------------------------------------*/
+# Portfolio
+--------------------------------------------------------------*/
 
 .portfolio .portfolio-wrap {
     transition: 0.3s;
     position: relative;
     overflow: hidden;
-    background: var(--grey-2);
+    z-index: 1;
+    background: rgba(69, 80, 91, 0.8);
     margin: 5px 5px 5px 5px;
 }
 
 .portfolio .portfolio-wrap::before {
-    background: var(--grey-3);
+    content: "";
+    background: var(--white);
     position: absolute;
     left: 30px;
     right: 30px;
@@ -661,52 +663,36 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-info::before {
     display: block;
+    content: "";
     width: 48px;
     height: 48px;
     position: absolute;
     top: 35px;
     left: 35px;
-    border-top: 3px solid var(--dark-green);
-    border-left: 3px solid var(--dark-blue);
+    border-top: 3px solid var(--grey-1);
+    border-left: 3px solid var(--grey-1);
     transition: all 1s ease 1s;
     z-index: 9994;
 }
 
 .portfolio .portfolio-wrap .portfolio-info::after {
     display: block;
+    content: "";
     width: 48px;
     height: 48px;
     position: absolute;
     bottom: 35px;
     right: 35px;
-    border-bottom: 3px solid var(--lavendar);
-    border-right: 3px solid var(--mint);
+    border-bottom: 3px solid var(--grey-1);
+    border-right: 3px solid var(--grey-1);
     transition: all 1s ease 1s;
     z-index: 9994;
 }
 
-<<<<<<< HEAD
-.portfolio .portfolio-wrap .portfolio-info .header {
-    background-color: var(--primary);
-    padding: 0.7rem;
-    padding-bottom: 0rem;
-    text-decoration: none;
-}
-
-.portfolio .portfolio-wrap .portfolio-info .header img {
-    margin-right: 0.5rem;
-    width: 24px;
-    height: 24px;
-}
-
-.portfolio .portfolio-wrap .portfolio-info span:nth-child(1) {
-    float: left;
-=======
 .portfolio .portfolio-wrap .portfolio-info h4 {
     font-size: 20px;
     color: var(--black);
     font-weight: 600;
->>>>>>> parent of 007951e (Update main.css)
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
@@ -715,55 +701,6 @@ section {
     text-transform: uppercase;
     padding: 0;
     margin: 0;
-}
-
-.portfolio .portfolio-wrap .portfolio-info .sub-title {
-    color: #c0ccda;
-    font-size: 10pt;
-    margin-top: 0.4rem;
-}
-
-.portfolio .portfolio-wrap .portfolio-info .card-body {
-    text-align: justify;
-    padding: 0.7rem;
-}
-
-.portfolio .portfolio-wrap .portfolio-info span:nth-child(1) {
-    float: left;
-}
-
-.portfolio .portfolio-wrap .portfolio-info span:nth-child(2) {
-    float: right;
-}
-
-.portfolio .portfolio-wrap .portfolio-info .project-card-footer {
-    display: flex;
-}
-
-.portfolio .portfolio-wrap .portfolio-info .project-tags-holder {
-    width: 70%;
-}
-
-.portfolio .portfolio-wrap .portfolio-info .project-btn-holder {
-    width: 30%;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-}
-
-.portfolio .portfolio-wrap .portfolio-info .project-btn-holder span {
-    justify-content: flex-end;
-    display: flex;
-}
-
-.portfolio .portfolio-wrap .portfolio-info .btn-info {
-    background-color: #248aaa !important;
-    color: #e5e9f2 !important;
-}
-
-.portfolio .portfolio-wrap .portfolio-info .btn-info:hover {
-    background-color: #248aaa !important;
-    color: #e5e9f2 !important;
 }
 
 .portfolio .portfolio-wrap .portfolio-links {
@@ -807,8 +744,8 @@ section {
 
 .portfolio .filterDiv {
     float: left;
-    background-color: var(--secondary);
-    color: var(--primary);
+    background-color: var(--off-white);
+    color: var(--off-white);
     width: 200px;
     height: 350px;
     line-height: 100px;
@@ -840,6 +777,11 @@ section {
 /*--------------------------------------------------------------
   # Portfolio Details
   --------------------------------------------------------------*/
+
+.portfolio-details .portfolio-info {
+    padding: 30px;
+    box-shadow: 0px 0 30px var(--grey-3);
+}
 
 .portfolio-details .portfolio-info h3 {
     font-size: 22px;
