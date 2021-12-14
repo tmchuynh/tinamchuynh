@@ -639,6 +639,7 @@ section {
     top: 30px;
     bottom: 30px;
     transition: all ease-in-out 0.3s;
+    z-index: 2;
     opacity: 0;
 }
 
@@ -650,6 +651,7 @@ section {
     right: 0;
     bottom: 0;
     text-align: center;
+    z-index: 3;
     transition: all ease-in-out 0.3s;
     display: flex;
     flex-direction: column;
@@ -667,6 +669,7 @@ section {
     border-top: 3px solid var(--dark-green);
     border-left: 3px solid var(--dark-blue);
     transition: all 1s ease 1s;
+    z-index: 9994;
 }
 
 .portfolio .portfolio-wrap .portfolio-info::after {
@@ -679,6 +682,7 @@ section {
     border-bottom: 3px solid var(--lavendar);
     border-right: 3px solid var(--mint);
     transition: all 1s ease 1s;
+    z-index: 9994;
 }
 
 .portfolio .portfolio-wrap .portfolio-info .header {
@@ -749,6 +753,7 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-links {
     text-align: center;
+    z-index: 4;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
