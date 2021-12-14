@@ -192,7 +192,7 @@
     justify-content: center;
 }
 
-.PTEST .btn.active {
+.PTEST .btn .active {
     background-color: var(--primary);
     opacity: 0.25;
 }
