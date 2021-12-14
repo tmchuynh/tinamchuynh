@@ -1,8 +1,5 @@
 $(document).ready(function() {
     $("ul#filter button").click(function() {
-
-
-
         $("ul#filter .current").removeClass("current");
         $(this).parent().addClass("current");
 
