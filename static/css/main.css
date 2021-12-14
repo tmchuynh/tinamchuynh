@@ -852,6 +852,10 @@ section {
 /* project cards themselves */
 
 .portfolio ul#portfolio {
+    align-items: center;
+    background-color: #f7f8fc;
+    font-family: var(--font-family);
+    color: #10182f;
     margin-top: 20px;
     display: flex;
     width: 1040px;
