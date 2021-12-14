@@ -831,6 +831,22 @@ section {
     outline-style: none;
 }
 
+.portfolio ul#filter a:focus {
+    box-shadow: inset 0 0 0 2px var(--white);
+    outline: 0!important;
+}
+
+.portfolio ul#filter a:hover,
+.portfolio ul#filter a:focus {
+    transition: var(--hover-transition);
+    transform: translateY(-.12rem) translateZ(0);
+}
+
+.portfolio ul#filter a:active {
+    transition: var(--hover-transition);
+    opacity: .5;
+}
+
 
 /* project cards themselves */
 
