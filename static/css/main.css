@@ -741,7 +741,7 @@ section {
 
 .portfolio .project-cards ul#portfolio .booking-card:hover .informations-container {
     transform: translateY(0px);
-    height: 100%;
+    height: fit-content;
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .title {
@@ -817,7 +817,7 @@ section {
     flex: 1 0;
     padding: 15px;
     margin-top: 20px;
-    -webkit-border-radius: 10px;
+    height: -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     background: white;
