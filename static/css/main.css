@@ -827,6 +827,10 @@ section {
     color: var(--primary);
 }
 
+.portfolio ul#filter a.current {
+    outline-style: none;
+}
+
 .portfolio ul#filter button .current {
     transition: var(--hover-transition);
     opacity: .5;
