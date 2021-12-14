@@ -655,7 +655,7 @@ section {
 .portfolio .project-cards ul#portfolio {
     display: flex;
     flex-flow: row wrap;
-    justify-content: stretch;
+    justify-content: flex-start;
     align-items: flex-start;
     align-content: center;
     gap: 10px 15px;
@@ -665,6 +665,7 @@ section {
     position: relative;
     width: 300px;
     display: flex;
+    justify-content: stretch;
     flex: 0 0 300px;
     flex-direction: column;
     margin: 20px;
