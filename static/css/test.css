@@ -1,0 +1,144 @@
+.PTEST .portfolio-wrap {
+    position: relative;
+    overflow: hidden;
+    background: var(--grey-3);
+    margin: 5px 5px 5px 5px;
+    left: 30px;
+    right: 30px;
+    top: 30px;
+    bottom: 30px;
+    box-shadow: none;
+}
+
+.PTEST .portfolio-wrap .portfolio-info {
+    display: block;
+    content: "";
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    border: 3px solid var(--grey-1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.PTEST .portfolio-wrap .portfolio-info .sub-title {
+    color: #c0ccda;
+    font-size: 10pt;
+    margin-top: 0.4rem;
+}
+
+.PTEST .portfolio-wrap .portfolio-info .sub-title span:nth-child(1) {
+    float: left;
+}
+
+.PTEST .portfolio-wrap .portfolio-info .sub-title span:nth-child(2) {
+    float: right;
+}
+
+.PTEST .portfolio-wrap .portfolio-info img {
+    margin-right: 0.5rem;
+    width: 10px;
+    height: 10px;
+}
+
+.PTEST .portfolio-wrap .portfolio-info h4 {
+    font-size: 20px;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.PTEST .portfolio-wrap .portfolio-info p {
+    color: var(--black);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+.PTEST .portfolio-wrap .portfolio-info .card-body {
+    text-align: justify;
+    padding: 0.7rem;
+}
+
+.project-card-footer {
+    display: flex;
+}
+
+.project-tags-holder {
+    width: 70%;
+}
+
+.btn-info {
+    background-color: #248aaa !important;
+    color: #e5e9f2 !important;
+}
+
+.btn-info:hover {
+    background-color: #2098d1 !important;
+    color: #e5e9f2 !important;
+}
+
+.project-btn-holder {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.project-btn-holder span {
+    justify-content: flex-end;
+    display: flex;
+}
+
+.btn-outline-info {
+    color: #2098d1 !important;
+    border-color: #2098d1 !important;
+}
+
+.btn-outline-info:hover {
+    background-color: #2098d1 !important;
+    color: #e5e9f2 !important;
+}
+
+.PTEST .portfolio-wrap .portfolio-links {
+    text-align: center;
+}
+
+.PTEST .portfolio-wrap .portfolio-links a {
+    color: var(--grey-3);
+    margin: 0 2px;
+    font-size: 28px;
+    display: inline-block;
+}
+
+.PTEST .portfolio-wrap .portfolio-links a:hover {
+    color: var(--secondary);
+}
+
+.PTEST .filterDiv {
+    float: left;
+    background-color: var(--off-white);
+    color: var(--off-white);
+    text-align: center;
+    display: none;
+}
+
+.PTEST .show {
+    display: block;
+}
+
+.PTEST .port-container {
+    margin-top: 20px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.PTEST .btn.active {
+    background-color: var(--primary);
+    opacity: 0.25;
+}
