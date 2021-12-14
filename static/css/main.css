@@ -763,11 +763,6 @@ section {
     justify-content: center;
 }
 
-.portfolio .btn.active {
-    background-color: var(--primary);
-    opacity: 0.25;
-}
-
 .portfolio .img-fluid {
     max-width: 100%;
     height: auto;
