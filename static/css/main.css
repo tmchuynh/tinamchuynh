@@ -653,10 +653,9 @@ section {
 /* project cards themselves */
 
 .portfolio .project-cards ul#portfolio {
-    justify-content: space-evenly;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start;
     gap: 10px 15px;
