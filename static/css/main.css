@@ -689,18 +689,25 @@ section {
     z-index: 9994;
 }
 
-.portfolio .portfolio-wrap .portfolio-info h4 {
-    font-size: 20px;
-    color: var(--black);
-    font-weight: 600;
+.portfolio .portfolio-wrap .portfolio-info .header {
+    background-color: #f9fafc;
+    padding: 0.7rem;
+    padding-bottom: 0rem;
+    text-decoration: none;
 }
 
-.portfolio .portfolio-wrap .portfolio-info p {
-    color: var(--black);
-    font-size: 14px;
-    text-transform: uppercase;
-    padding: 0;
-    margin: 0;
+.portfolio .portfolio-wrap .portfolio-info .header img {
+    margin-right: 0.5rem;
+    width: 24px;
+    height: 24px;
+}
+
+.portfolio .portfolio-wrap .portfolio-info span:nth-child(1) {
+    float: left;
+}
+
+.portfolio .portfolio-wrap .portfolio-info span:nth-child(2) {
+    float: right;
 }
 
 .portfolio .portfolio-wrap .portfolio-info .sub-title {
@@ -714,12 +721,18 @@ section {
     padding: 0.7rem;
 }
 
-.portfolio .portfolio-wrap .portfolio-info span:nth-child(1) {
-    float: left;
+.portfolio .portfolio-wrap .portfolio-info h4 {
+    font-size: 20px;
+    color: var(--black);
+    font-weight: 600;
 }
 
-.portfolio .portfolio-wrap .portfolio-info span:nth-child(2) {
-    float: right;
+.portfolio .portfolio-wrap .portfolio-info p {
+    color: var(--black);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
 }
 
 .portfolio .portfolio-wrap .portfolio-info .project-card-footer {
@@ -737,16 +750,12 @@ section {
     flex-direction: column;
 }
 
-.portfolio .portfolio-wrap .portfolio-info .project-btn-holder span {
+.portfolio .portfolio-wrap .portfolio-info .project-btn-holder a {
     justify-content: flex-end;
     display: flex;
 }
 
-.portfolio .portfolio-wrap .portfolio-info .btn-info {
-    background-color: #248aaa !important;
-    color: #e5e9f2 !important;
-}
-
+.portfolio .portfolio-wrap .portfolio-info .btn-info,
 .portfolio .portfolio-wrap .portfolio-info .btn-info:hover {
     background-color: #248aaa !important;
     color: #e5e9f2 !important;
@@ -817,10 +826,7 @@ section {
     opacity: 0.25;
 }
 
-.portfolio .img-fluid {
-    max-width: 100%;
-    height: auto;
-}
+.portfolio .img-fluid {}
 
 
 /*--------------------------------------------------------------
