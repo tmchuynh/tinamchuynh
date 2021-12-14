@@ -658,7 +658,7 @@ section {
     justify-content: flex-start;
     align-items: center;
     align-content: center;
-    gap: 10px;
+    gap: 10px 15px;
 }
 
 .portfolio .project-cards ul#portfolio .booking-card {
@@ -728,6 +728,7 @@ section {
     flex: 1 0 auto;
     padding: 20px;
     background: #f0f0f0;
+    height: 325px;
     transform: translateY(206px);
     transition: 0.3s;
 }
