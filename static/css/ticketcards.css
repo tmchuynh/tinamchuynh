@@ -169,24 +169,3 @@ ul .booking-card:hover .informations-container .more-information {
         opacity: 1;
     }
 }
-
-.credits {
-    display: table;
-    background: #0a4870;
-    color: white;
-    line-height: 25px;
-    margin: 10px auto;
-    padding: 20px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.credits a {
-    color: #e3ebf1;
-}
-
-h1 {
-    margin: 10px 20px;
-}
