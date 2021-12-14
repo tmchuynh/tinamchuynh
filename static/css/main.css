@@ -676,8 +676,8 @@ section {
     background-position: center center;
     background-size: cover;
     text-align: center;
-    color: #0a4870;
     transition: 0.3s;
+    height: 100%;
 }
 
 .portfolio .project-cards ul#portfolio .booking-card::before {
