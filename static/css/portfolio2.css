@@ -42,6 +42,7 @@
     width: 1040px;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .portfolio ul#portfolio li {
