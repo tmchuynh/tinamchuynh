@@ -759,6 +759,7 @@ section {
 }
 
 .portfolio ul#portfolio .booking-card .informations-container .tag {
+    background: #cccccc;
     border-radius: 50px;
     font-size: 12px;
     margin: 0;
