@@ -817,7 +817,8 @@ section {
     flex: 1 0;
     padding: 15px;
     margin-top: 20px;
-    height: -webkit-border-radius: 10px;
+    height: 200px;
+    -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     background: white;
@@ -827,8 +828,8 @@ section {
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .icon {
     margin: 10px;
-    width: 24px;
-    height: 24px;
+    width: 48px;
+    height: 48px;
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .info {
