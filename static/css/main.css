@@ -816,34 +816,31 @@ section {
   --------------------------------------------------------------*/
 
 .portfolio ul#filter {
-    float: left;
-    font-size: 16px;
-    list-style: none;
-    margin-left: 0;
-    width: 100%;
+    text-align: center;
 }
 
 .portfolio ul#portfolio {
-    float: left;
-    list-style: none;
-    margin-left: 0;
-    width: 672px;
+    margin-top: 20px;
+    justify-content: center;
 }
 
 .portfolio ul#portfolio li {
     border: 1px solid #dedede;
-    float: left;
     margin: 0 10px 10px 0;
     padding: 5px;
     width: 202px;
 }
 
 .portfolio ul#portfolio a {
-    display: block;
-    width: 100%;
+    color: #45505b;
+    margin: 0 2px;
+    font-size: 28px;
+    display: inline-block;
+    transition: 0.3s;
 }
 
 .portfolio ul#portfolio a:hover {
+    color: var(--secondary);
     text-decoration: none;
 }
 
@@ -851,10 +848,6 @@ section {
     border: 1px solid #dedede;
     display: block;
     padding-bottom: 5px;
-}
-
-.portfolio ul#portfolio li {
-    margin-right: 5px;
 }
 
 
