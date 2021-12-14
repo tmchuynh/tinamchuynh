@@ -828,10 +828,24 @@ section {
     align-content: center;
 }
 
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .icon {
-    margin: 10px;
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box a {
+    display: block;
+    position: relative;
+    border-radius: 100%;
+    padding: .5rem;
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box i {
     width: 48px;
     height: 48px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    text-decoration: none;
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .disclaimer {
