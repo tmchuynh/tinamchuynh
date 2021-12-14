@@ -3,10 +3,6 @@
     overflow: hidden;
     background: var(--grey-3);
     margin: 5px 5px 5px 5px;
-    left: 30px;
-    right: 30px;
-    top: 30px;
-    bottom: 30px;
     box-shadow: none;
 }
 
@@ -16,8 +12,6 @@
     width: 48px;
     height: 48px;
     position: absolute;
-    top: 35px;
-    left: 35px;
     border: 3px solid var(--grey-1);
     text-align: center;
     display: flex;
