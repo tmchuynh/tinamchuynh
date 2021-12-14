@@ -697,10 +697,12 @@ section {
 .portfolio .project-cards ul#portfolio .booking-card:hover .book-container .content {
     opacity: 1;
     transform: translateY(0px);
+    padding: 20px;
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .book-container .content {
     position: relative;
+    padding: 20px;
     opacity: 0;
     display: flex;
     align-items: center;
