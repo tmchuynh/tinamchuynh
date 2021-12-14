@@ -34,7 +34,7 @@
 
 .portfolio ul#portfolio {
     align-items: center;
-    background-color: #f7f8fc;
+    background-color: var(--white);
     font-family: var(--font-family);
     color: #10182f;
     margin-top: 20px;
@@ -42,7 +42,6 @@
     width: 1040px;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    box-sizing: border-box;
 }
 
 .portfolio ul#portfolio li {
