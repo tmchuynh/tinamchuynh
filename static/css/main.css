@@ -622,6 +622,7 @@ section {
 
 .portfolio ul#filter {
     text-align: center;
+    margin: 0 10px;
 }
 
 .portfolio ul#filter a {
@@ -655,7 +656,7 @@ section {
 .portfolio .project-cards ul#portfolio {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     align-content: center;
     gap: 10px 15px;
