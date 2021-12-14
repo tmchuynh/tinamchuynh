@@ -769,12 +769,6 @@ section {
     margin-top: 10px;
 }
 
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .price .icon {
-    margin: 10px;
-    width: 24px;
-    height: 24px;
-}
-
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .tag {
     border-radius: 50px;
     font-size: 12px;
@@ -830,7 +824,9 @@ section {
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .icon {
-    margin-bottom: 5px;
+    margin: 10px;
+    width: 24px;
+    height: 24px;
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .info {
