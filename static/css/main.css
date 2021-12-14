@@ -739,6 +739,7 @@ section {
 
 .portfolio .project-cards ul#portfolio .booking-card:hover .informations-container {
     transform: translateY(0px);
+    height: 100%;
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .title {
