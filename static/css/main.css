@@ -725,7 +725,7 @@ section {
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container {
-    flex: 1 0 325px;
+    flex: 1 0 auto;
     padding: 20px;
     background: #f0f0f0;
     transform: translateY(206px);
@@ -848,6 +848,14 @@ section {
 }
 
 @media (max-width: 768px) {
+    .portfolio .project-cards ul#portfolio {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        gap: 10px 15px;
+    }
     .portfolio .project-cards ul#portfolio .booking-card::before {
         background: rgba(10, 72, 112, 0.6);
     }
