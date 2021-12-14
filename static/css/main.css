@@ -831,9 +831,9 @@ section {
     outline-style: none;
 }
 
-.portfolio ul#filter button .current {
+.portfolio ul#filter button:focus {
     transition: var(--hover-transition);
-    opacity: .5;
+    transform: translateY(-.12rem) translateZ(0);
 }
 
 
