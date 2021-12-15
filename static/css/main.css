@@ -648,7 +648,7 @@ section {
     /*will need to edit when added */
 }
 
-.services .icon-box:hover {
+.facts .icon-box:hover {
     border-color: var(--white);
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.08);
 }
@@ -1165,6 +1165,8 @@ sup = superscripts */
   # Services
   --------------------------------------------------------------*/
 
+
+/*
 .services .row {
     display: flex;
     flex-flow: row wrap;
@@ -1172,147 +1174,7 @@ sup = superscripts */
     align-items: center;
     align-content: center;
     gap: 15px 20px;
-}
-
-.services .icon-box {
-    /*each box itself */
-    text-align: center;
-    padding: 70px 20px 80px 20px;
-    transition: all ease-in-out 0.5s;
-    background: var(--white);
-    box-shadow: 0px 5px 15px 0px var(--grey-2);
-    /*ADDS*/
-    margin: 10px 5px;
-    width: 400px;
-    height: 400px;
-}
-
-.services .icon-box .icon {
-    margin: 0 auto;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: ease-in-out 0.3s;
-    position: relative;
-}
-
-.services .icon-box .icon i {
-    font-size: 36px;
-    transition: 0.5s;
-    position: relative;
-}
-
-.services .icon-box .icon svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.services .icon-box .icon svg path {
-    transition: 0.5s;
-    fill: var(--grey-1);
-}
-
-.services .icon-box h4 {
-    /*the title of the serive */
-    font-weight: 600;
-    margin: 10px 0 15px 0;
-    font-size: 22px;
-}
-
-.services .icon-box h4 a {
-    /*hyperlink of service details */
-    color: var(--grey-3);
-    transition: ease-in-out 0.3s;
-}
-
-.services .icon-box p {
-    /*description of service */
-    line-height: 24px;
-    font-size: 14px;
-    margin-bottom: 0;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.services .icon-box:hover {
-    border-color: var(--white);
-    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.08);
-}
-
-.services .iconbox-blue i {
-    color: var(--sky-blue);
-}
-
-.services .iconbox-blue:hover .icon i {
-    color: var(--white);
-}
-
-.services .iconbox-blue:hover .icon path {
-    fill: var(--sky-blue);
-}
-
-.services .iconbox-orange i {
-    color: var(--peach);
-}
-
-.services .iconbox-orange:hover .icon i {
-    color: var(--white);
-}
-
-.services .iconbox-orange:hover .icon path {
-    fill: var(--peach);
-}
-
-.services .iconbox-pink i {
-    color: var(--light-purple);
-}
-
-.services .iconbox-pink:hover .icon i {
-    color: var(--white);
-}
-
-.services .iconbox-pink:hover .icon path {
-    fill: var(--light-purple);
-}
-
-.services .iconbox-yellow i {
-    color: var(--mint);
-}
-
-.services .iconbox-yellow:hover .icon i {
-    color: var(--white);
-}
-
-.services .iconbox-yellow:hover .icon path {
-    fill: var(--mint);
-}
-
-.services .iconbox-red i {
-    color: var(--primary);
-}
-
-.services .iconbox-red:hover .icon i {
-    color: var(--white);
-}
-
-.services .iconbox-red:hover .icon path {
-    fill: var(--primary);
-}
-
-.services .iconbox-teal i {
-    color: var(--teal);
-}
-
-.services .iconbox-teal:hover .icon i {
-    color: var(--white);
-}
-
-.services .iconbox-teal:hover .icon path {
-    fill: var(--teal);
-}
+} */
 
 
 /*--------------------------------------------------------------
