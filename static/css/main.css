@@ -842,16 +842,15 @@ section {
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn {
     border: 3px solid var(--primary);
-    padding: 10px 15px;
+    padding: 10px;
     font-size: 1.3em;
     color: var(--white);
     transition: 0.3s;
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn:hover {
-    background: var(--primary);
-    color: var(--white);
-    border: 0px solid var(--primary);
+    background: var(--white);
+    border: 0px solid var(--white);
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn i {
@@ -861,7 +860,7 @@ section {
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn i:hover {
-    color: var(--white);
+    color: var(--primary);
 }
 
 @media (max-width: 768px) {
