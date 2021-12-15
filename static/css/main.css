@@ -984,6 +984,15 @@ section {
   # Services
   --------------------------------------------------------------*/
 
+.services .row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 15px 20px;
+}
+
 .services .icon-box {
     /*each box itself */
     text-align: center;
