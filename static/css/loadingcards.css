@@ -30,6 +30,7 @@ div.cards {
     max-width: 960px;
     text-align: center;
     display: flex;
+    flex-wrap: row wrap;
     justify-content: center;
     align-items: center;
     align-items: center;
