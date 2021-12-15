@@ -570,6 +570,7 @@ section {
 .section-title .description {
     margin-bottom: 0;
     text-align: center;
+    justify-content: center;
 }
 
 
