@@ -1065,6 +1065,11 @@ section {
     background-color: var(--star-command-blue);
 }
 
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-other {
+    /* goes under Misc filter */
+    background-color: var(--grey-3);
+}
+
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information {
     opacity: 0;
     transition: 0.3s;
