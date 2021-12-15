@@ -847,8 +847,12 @@ section {
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn i {
     font-size: 24px;
-    color: var(--white);
+    color: var(--primary);
     text-decoration: none;
+}
+
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn i:hover {
+    color: var(--white);
 }
 
 @media (max-width: 768px) {
