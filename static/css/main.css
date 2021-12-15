@@ -810,7 +810,9 @@ section {
     font-size: 1.3em;
     color: var(--white);
     cursor: pointer;
+    transform: perspective(1px) translateZ(0);
     transition: 0.3s;
+    transition-property: transform;
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .book-container .content .btn:hover {
@@ -937,6 +939,7 @@ section {
     font-size: 1.3em;
     color: var(--white);
     transition: 0.3s;
+    transform: perspective(1px) translateZ(0);
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn:hover {
@@ -944,8 +947,8 @@ section {
     /*removes the border */
     border: 0px;
     /* bounce on hover */
-    transform: scale(0.5);
-    transition-timing-function: cubic-bezier(0.25, 1.00, 0.30, -0.25);
+    transform: scale(1.2);
+    transition-timing-function: cubic-bezier(0.50, 2.00, 0.30, -0.35);
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn i {
