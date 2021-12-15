@@ -810,6 +810,16 @@ section {
     color: var(--primary);
 }
 
+
+/*.portfolio .project-cards ul#portfolio .booking-card .book-container .content .btn a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.portfolio .project-cards ul#portfolio .booking-card .book-container .content .btn a:hover {
+    color: var(--primary);
+} */
+
 .portfolio .project-cards ul#portfolio .booking-card .informations-container {
     flex: 1 0 auto;
     padding: 20px;
@@ -893,8 +903,9 @@ section {
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box {
-    flex: 1 0 auto;
-    padding: 30px;
+    flex: 1 0;
+    padding: 15px;
+    margin-top: 20px;
     height: max-content;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
