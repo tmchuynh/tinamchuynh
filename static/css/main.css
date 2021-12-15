@@ -86,10 +86,10 @@
 
 html {
     font-size: var(--font-size);
-    @media (--breakpoint-medium) {
+    @media only screen and (--breakpoint-medium) {
         font-size: var(--font-size-m);
     }
-    @media (--breakpoint-large) {
+    @media only screen and (--breakpoint-large) {
         font-size: var(--font-size-l);
     }
     background-color: var(--black);
@@ -157,7 +157,7 @@ sup {
     text-overflow: ellipsis;
 }
 
-@media (--breakpoint-not-small) {
+@media only screen and (--breakpoint-not-small) {
     .measure-ns {
         max-width: 30em;
     }
@@ -182,7 +182,7 @@ sup {
     }
 }
 
-@media (--breakpoint-medium) {
+@media only screen and (--breakpoint-medium) {
     .measure-m {
         max-width: 30em;
     }
@@ -207,7 +207,7 @@ sup {
     }
 }
 
-@media (--breakpoint-large) {
+@media only screen and (--breakpoint-large) {
     .measure-l {
         max-width: 30em;
     }
@@ -1148,7 +1148,8 @@ sup = superscripts */
     color: var(--white);
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+    /* default iPad screens */
     .portfolio .project-cards ul#portfolio .booking-card::before {
         background: rgba(10, 72, 112, 0.6);
     }
@@ -1624,13 +1625,13 @@ sup = superscripts */
     margin: 0;
 }
 
-@media (max-width: 991px) {
+@media only screen and (max-width: 991px) {
     .site-footer [class^="col-"] {
         margin-bottom: 30px;
     }
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     .site-footer {
         padding-bottom: 0;
     }
@@ -1705,7 +1706,7 @@ sup = superscripts */
     background-color: #ea4c89;
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     .social-icons li.title {
         display: block;
         margin-right: 0;
