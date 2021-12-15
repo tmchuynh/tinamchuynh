@@ -70,19 +70,19 @@
 }
 
 .skills .skill[aria-label=novice]:after {
-    right: 75%;
+    left: 75%;
 }
 
 .skills .skill[aria-label=average]:after {
-    right: 50%;
+    left: 50%;
 }
 
 .skills .skill[aria-label=adept]:after {
-    right: 35%;
+    left: 35%;
 }
 
 .skills .skill[aria-label=advanced]:after {
-    right: 20%;
+    left: 20%;
 }
 
 .skills .skill[aria-label=elite]:after {
@@ -94,7 +94,7 @@
 }
 
 .skills .skill[aria-label=l33tasuar]:after {
-    right: -10%;
+    right: 40%;
 }
 
 @-webkit-keyframes fill {
