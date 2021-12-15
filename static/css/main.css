@@ -808,7 +808,7 @@ section {
 
 .portfolio .project-cards ul#portfolio .booking-card .book-container .content .btn:hover {
     background: var(--primary);
-    border: 0px solid var(--primary);
+    border: 3px solid var(--white);
     color: var(--white);
 }
 
@@ -931,7 +931,7 @@ section {
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn:hover {
     background: var(--primary);
-    border: 0px solid var(--white);
+    border: 3px solid var(--white);
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn i {
