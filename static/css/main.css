@@ -7,23 +7,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 /*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
-
-.column {
-    /* Create two equal columns that floats next to each other */
-    float: left;
-    width: 50%;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-/*--------------------------------------------------------------
   # Variables
 --------------------------------------------------------------*/
 
@@ -500,6 +483,23 @@ button:focus {
 
 
 /*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+.column {
+    /* Create two equal columns that floats next to each other */
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*--------------------------------------------------------------
   # Sections General
   --------------------------------------------------------------*/
 
@@ -554,6 +554,10 @@ section {
 /*--------------------------------------------------------------
   # Resume
   --------------------------------------------------------------*/
+
+.resume .resume-form {
+    justify-content: center;
+}
 
 .resume .resume-title {
     font-size: 26px;
