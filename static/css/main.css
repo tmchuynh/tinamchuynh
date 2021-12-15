@@ -566,7 +566,7 @@ section {
     left: calc(50% - 20px);
 }
 
-.section-title p {
+.section-title div p {
     margin-bottom: 0;
     text-align: center;
 }
