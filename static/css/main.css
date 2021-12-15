@@ -1299,11 +1299,11 @@ section {
     margin-top: var(--bs-gutter-y)
 }
 
-.text-center {
+.contact .text-center {
     text-align: center!important
 }
 
-.form-control {
+.contact .form-control {
     display: block;
     width: 100%;
     padding: .375rem .75rem;
@@ -1321,7 +1321,7 @@ section {
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
 
-.form-control:focus {
+.contact .form-control:focus {
     color: #212529;
     background-color: #fff;
     border-color: #86b7fe;
@@ -1329,27 +1329,27 @@ section {
     box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25)
 }
 
-.form-control::placeholder {
+.contact .form-control::placeholder {
     color: #6c757d;
     opacity: 1
 }
 
-.my-3 {
+.contact .my-3 {
     margin-top: 1rem!important;
     margin-bottom: 1rem!important
 }
 
-.col-lg-4 {
+.contact .col-lg-4 {
     flex: 0 0 auto;
     width: 33.33333333%
 }
 
-.col-md-6 {
+.contact .col-md-6 {
     flex: 0 0 auto;
     width: 50%
 }
 
-.col-lg-8 {
+.contact .col-lg-8 {
     flex: 0 0 auto;
     width: 66.66666667%
 }
