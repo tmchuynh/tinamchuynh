@@ -1280,7 +1280,7 @@ section {
   # Contact
   --------------------------------------------------------------*/
 
-.row {
+.contact .row {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     display: flex;
@@ -1290,7 +1290,7 @@ section {
     margin-left: calc(-.5 * var(--bs-gutter-x))
 }
 
-.row>* {
+.contact .row>* {
     flex-shrink: 0;
     width: 100%;
     max-width: 100%;
