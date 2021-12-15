@@ -822,7 +822,7 @@ section {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    background: var(--white);
+    background: var(--grey-2);
     border: 3px solid var(--primary);
     font-weight: bold;
     justify-content: center;
@@ -832,11 +832,10 @@ section {
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn {
-    border: 3px solid var(--primary);
+    border: 3px dotted var(--primary);
     padding: 10px 15px;
-    background: none;
     font-size: 1.3em;
-    color: var(--primary);
+    color: var(--white);
     transition: 0.3s;
 }
 
@@ -848,6 +847,7 @@ section {
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn i {
     font-size: 24px;
+    color: var(--white);
     text-decoration: none;
 }
 
