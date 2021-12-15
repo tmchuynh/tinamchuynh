@@ -512,6 +512,9 @@ button:focus {
 section {
     padding: 3rem 2rem;
     overflow: hidden;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 .section-title {
