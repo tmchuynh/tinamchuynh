@@ -1,23 +1,9 @@
-@import "https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700";
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-}
-
-body,
-html {
-    height: 100%;
-}
-
-body {
-    background: #f9f9f9;
+section {
+    background: var(--white);
     background-size: cover;
     margin: 0;
     padding: 0;
-    font-family: helvetica, arial, tahoma, verdana;
+    font-family: var(--font-family);
     line-height: 20px;
     font-size: 14px;
     color: #726f77;
@@ -35,7 +21,6 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: "Dosis", arial, tahoma, verdana;
     font-weight: 500;
 }
 
