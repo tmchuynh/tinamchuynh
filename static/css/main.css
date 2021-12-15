@@ -567,6 +567,134 @@ section {
 
 
 /*--------------------------------------------------------------
+  # Facts
+  --------------------------------------------------------------*/
+
+.facts .row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 15px 20px;
+}
+
+.facts .icon-box {
+    /*each box itself */
+    text-align: center;
+    padding: 70px 20px 80px 20px;
+    transition: all ease-in-out 0.5s;
+    background: var(--white);
+    box-shadow: 0px 5px 15px 0px var(--grey-2);
+    /*ADDS*/
+    margin: 10px 5px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid var(--primary);
+}
+
+.facts .icon-box .icon {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+    position: relative;
+}
+
+.facts .icon-box .icon i {
+    font-size: 36px;
+    transition: 0.5s;
+    position: relative;
+}
+
+.facts .icon-box .icon svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.facts .icon-box .icon svg path {
+    transition: 0.5s;
+    fill: var(--grey-1);
+}
+
+.facts .icon-box h3 {
+    /* title */
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.facts .icon-box span {
+    /* counter # */
+    font-size: 32px;
+    color: var(--midnight-blue);
+}
+
+.facts .icon-box .icon a {
+    /* link to more info */
+    color: var(--grey-3);
+    transition: ease-in-out 0.3s;
+    /*will need to edit when added */
+}
+
+.services .icon-box:hover {
+    border-color: var(--white);
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.08);
+}
+
+.facts .iconbox-peach i {
+    color: var(--peach);
+}
+
+.facts .iconbox-peach:hover .icon i {
+    color: var(--white);
+}
+
+.facts .iconbox-peach:hover .icon path {
+    fill: var(--peach);
+}
+
+.facts .iconbox-light-purple i {
+    color: var(--light-purple);
+}
+
+.facts .iconbox-light-purple:hover .icon i {
+    color: var(--white);
+}
+
+.facts .iconbox-light-purple:hover .icon path {
+    fill: var(--light-blue);
+}
+
+.facts .iconbox-mint i {
+    color: var(--mint);
+}
+
+.facts .iconbox-mint:hover .icon i {
+    color: var(--white);
+}
+
+.facts .iconbox-mint:hover .icon path {
+    fill: var(--mint);
+}
+
+.facts .iconbox-yellow i {
+    color: var(--yellow);
+}
+
+.facts .iconbox-yellow:hover .icon i {
+    color: var(--white);
+}
+
+.facts .iconbox-yellow:hover .icon path {
+    fill: var(--yellow);
+}
+
+
+/*--------------------------------------------------------------
   # Resume
   --------------------------------------------------------------*/
 
@@ -1042,22 +1170,6 @@ section {
     transition: 0.5s;
     fill: var(--grey-1);
 }
-
-
-/* ONLY USED IN FACTS SECTION */
-
-.services .icon-box h3 {
-    font-size: 22px;
-    font-weight: bold;
-}
-
-.services .icon-box span {
-    font-size: 32px;
-    color: var(--secondary);
-}
-
-
-/* END OF FACTS SECTION ---------- */
 
 .services .icon-box h4 {
     /*the title of the serive */
