@@ -1,13 +1,14 @@
 .site-footer {
-    background-color: #26272b;
+    background-color: var(--black);
     padding: 45px 0 20px;
     font-size: 15px;
     line-height: 24px;
-    color: #737373;
+    color: var(--white);
 }
 
 .site-footer hr {
-    border-top-color: #bbb;
+    /*line across*/
+    border-top-color: var(--primary);
     opacity: 0.5;
 }
 
@@ -16,6 +17,7 @@
 }
 
 .site-footer h6 {
+    /*category names*/
     color: #fff;
     font-size: 16px;
     text-transform: uppercase;
@@ -24,6 +26,7 @@
 }
 
 .site-footer a {
+    /*the hyperlinks*/
     color: #737373;
 }
 
@@ -33,11 +36,13 @@
 }
 
 .footer-links {
+    /* ul element itself */
     padding-left: 0;
     list-style: none;
 }
 
 .footer-links li {
+    /* list elements */
     display: block;
 }
 
@@ -57,10 +62,12 @@
 }
 
 .site-footer .social-icons {
+    /*icons at the end */
     text-align: right;
 }
 
 .site-footer .social-icons a {
+    /*links within the icons */
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -71,6 +78,7 @@
 }
 
 .copyright-text {
+    /* small text to left of icons */
     margin: 0;
 }
 
