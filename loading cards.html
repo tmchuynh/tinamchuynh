@@ -9,7 +9,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <!-- <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.ico">
@@ -25,10 +25,10 @@
     <script async src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
     <script type="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="static/css/loadingcards.css" />
 </head>
 
 <body>
-
     <nav class="overflow-x-scroll overflow-x-visible-ns flex justify-between items-center divider-grey center bg-white relative">
         <!-- Logo -->
         <a href="/tmch-website/" class="pa3 db mr4 h-75 w4 flex-none">
@@ -46,8 +46,6 @@
             <li><a href="/tmch-website/services.html" class="pa3 no-underline db grey-3">Services</a></li>
 
             <li><a href="/tmch-website/contact.html" class="pa3 no-underline db grey-3">Contact</a></li>
-
-            <li><a href="/tmch-website/loading cards.html" class="pa3 no-underline db grey-3">Test</a></li>
         </ul>
 
     </nav>
@@ -74,73 +72,58 @@
     </div>
     <!-- end of heading title(s) and image section -->
 
-    <!-- contact section-->
-    <section class="contact">
-        <div class="container aos-init aos-animate justify-center" data-aos="fade-up">
-            <div class="section-title">
-                <h2>
-                    Contact
-                </h2>
+    <!-- START OF LOADING CARDS-->
+    <div class="container">
+        <div class="card">
+            <h3 class="title">Card 1</h3>
+            <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
             </div>
-
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="info">
-
-                        <div class="address">
-                            <i class="bi bi-geo-alt"></i>
-                            <h4>Location</h4>
-                            <p>Insert address here</p>
-                        </div>
-
-
-                        <div class="email">
-                            <i class="bi bi-envelope"></i>
-                            <h4>Email</h4>
-                            <p>info@example.com</p>
-                        </div>
-
-                        <div class="phone">
-                            <i class="bi bi-phone"></i>
-                            <h4>Call</h4>
-                            <p>+1 000 000 0000</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-lg-8">
-
-                    <form action="src/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                            <div class="col-md-6 form-group">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Your name" required>
-                            </div>
-                            <div class="col-md-6 form group">
-                                <input type="email" name="email" class="form-control" id="email" placeholder="Your email" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject" requried>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                        </div>
-                        <div class="my-3">
-                            <!-- check for class -->
-                            <div class="loading">Loading</div>
-                            <div class="error-message">Please check your inputs again</div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                        </div>
-                        <div class="text-center">
-                            <button class="btn raise" type="submit">Send Message</button>
-                        </div>
-                    </form>
-                </div>
+            <div class="circle">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <circle class="stroke" cx="60" cy="60" r="50" />
+          </svg>
             </div>
         </div>
-    </section>
+        <div class="card">
+            <h3 class="title">Card 2</h3>
+            <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+            </div>
+            <div class="circle">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <circle class="stroke" cx="60" cy="60" r="50" />
+          </svg>
+            </div>
+        </div>
+        <div class="card">
+            <h3 class="title">Card 3</h3>
+            <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+            </div>
+            <div class="circle">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <circle class="stroke" cx="60" cy="60" r="50" />
+          </svg>
+            </div>
+        </div>
+        <div class="card">
+            <h3 class="title">Card 4</h3>
+            <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+            </div>
+            <div class="circle">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <circle class="stroke" cx="60" cy="60" r="50" />
+          </svg>
+            </div>
+        </div>
+    </div>
+    <!-- END OF LOADING CARDS-->
 
     <footer class="bg-black ph3 pv4 white">
 
@@ -193,7 +176,6 @@
         </div>
 
     </footer>
-
 </body>
 
 </html>
