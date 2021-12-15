@@ -906,6 +906,7 @@ section {
     align-content: center;
     align-items: center;
     position: relative;
+    opacity: 0.5;
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn {
