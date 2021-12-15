@@ -822,12 +822,11 @@ section {
     flex: 1 0;
     padding: 15px;
     margin-top: 20px;
-    height: 100px;
+    height: fit-content;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     background: var(--grey-2);
-    border: 3px solid var(--primary);
     font-weight: bold;
     justify-content: center;
     align-content: center;
