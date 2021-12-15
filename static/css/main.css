@@ -893,10 +893,9 @@ section {
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box {
-    flex: 1 0;
-    padding: 15px;
-    margin-top: 20px;
-    height: fit-content;
+    flex: 1 0 auto;
+    padding: 30px;
+    height: max-content;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -906,12 +905,12 @@ section {
     align-content: center;
     align-items: center;
     position: relative;
-    opacity: 0.5;
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn {
     border: 3px solid var(--white);
     padding: 10px;
+    margin: 0 10px;
     background: none;
     font-size: 1.3em;
     color: var(--white);
