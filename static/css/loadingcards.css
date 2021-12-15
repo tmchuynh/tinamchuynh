@@ -21,9 +21,10 @@
     left: 0px;
 }
 
-.loading-cards .card:not(:first-child) {
+
+/*.loading-cards .card:not(:first-child) {
     margin-left: -50px;
-}
+} */
 
 .loading-cards .card:hover {
     transform: translateY(-20px);
