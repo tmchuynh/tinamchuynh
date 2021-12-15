@@ -822,7 +822,8 @@ section {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    background: white;
+    background: var(--white);
+    border: 3px solid var(--primary);
     font-weight: bold;
     font-size: 0.9em;
     justify-content: center;
@@ -832,37 +833,26 @@ section {
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn {
-    border: 3px solid var(--white);
+    border: 3px solid var(--primary);
     padding: 10px 15px;
     background: none;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.3em;
-    color: var(--html-orange);
+    color: var(--primary);
     cursor: pointer;
     transition: 0.3s;
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn:hover {
-    background: var(--white);
-    color: var(--primary);
-    border: 0px solid var(--white);
+    background: var(--primary);
+    color: var(--white);
+    border: 0px solid var(--primary);
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn i {
     font-size: 24px;
     text-decoration: none;
-}
-
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn i:hover {
-    color: var(--primary);
-    font-style: var(--bold-font-weight);
-}
-
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .disclaimer {
-    margin-top: 20px;
-    font-size: 0.8em;
-    color: #7d7d7d;
 }
 
 @media (max-width: 768px) {
