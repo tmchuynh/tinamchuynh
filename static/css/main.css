@@ -819,7 +819,7 @@ section {
     border: 0px;
     color: var(--white);
     /* shrink button */
-    transform: scale(0.8);
+    transform: scale(0.25);
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .book-container .content .btn a {
@@ -943,6 +943,9 @@ section {
     background: var(--primary);
     /*removes the border */
     border: 0px;
+    /* bounce on hover */
+    transform: scale(0.5);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn i {
