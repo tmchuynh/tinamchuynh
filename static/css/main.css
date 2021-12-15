@@ -28,27 +28,32 @@
     --grey-2: #ebe7e6;
     --grey-3: #595756;
     --grey-4: #424040;
+    --ocean-green: #52B788;
+    --green: #1d9924;
     --dark-green: #003e1f;
-    --dark-blue: #092048;
-    --midnight-blue: #00427e;
-    --yellow: #ffc107;
+    --light-orange: #e96228;
+    --orange: #fe4a2c;
+    --yellow: #efd81d;
+    --dark-yellow: #ffc107;
     --pink: #d63384;
+    --light-purple: #a87df2;
     --purple: #6f42c1;
     --darker-purple: #6610f2;
     --mint: #AAFAC8;
     --peach: #FFBFA0;
     --teal: #20c997;
-    --light-blue: #0dcaf0;
     --sky-blue: #84BCDA;
-    --light-purple: #a87df2;
+    --light-sky-blue: #5ed3f3;
+    --light-blue: #0dcaf0;
+    --steal-blue: #2f74c0;
+    --royal-blue: #3d5afe;
+    --star-command-blue: #66b1f1;
+    --cornflower-blue: #4586f7;
+    --midnight-blue: #00427e;
+    --dark-blue: #092048;
     --brown: #6B2B06;
     --smoky-black: #1c110a;
     --black: #000000;
-    /* programming lang colors */
-    --green: #1d9924;
-    --html-orange: #e96228;
-    --swift-orange: #fe4a2c;
-    --gold: #efd81d;
     /* Typography */
     /* --font-family: Nunito Sans, -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; */
     --font-family: Open Sans, -apple-system, BlinkMacSystemFont, system-ui, ubuntu, noto, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -1024,24 +1029,39 @@ section {
     text-transform: uppercase;
 }
 
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-html {
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-reactJS {
     /* goes under Web filter */
-    background-color: var(--html-orange);
+    background-color: var(--light-sky-blue);
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-js {
     /* goes under Web filter */
-    background-color: var(--gold);
+    background-color: var(--yellow);
 }
 
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-csharp {
-    /* goes under Misc filter */
-    background-color: var(--green);
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-typescript {
+    /* goes under Web filter */
+    background-color: var(--steal-blue);
 }
 
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-swift {
-    /* goes under Misc filter */
-    background-color: var(--swift-orange);
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-ionic {
+    /* goes under App filter */
+    background-color: var(--cornflower-blue);
+}
+
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-reactNav {
+    /* goes under App filter */
+    background-color: var(--light-sky-blue);
+}
+
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-nativescript {
+    /* goes under App filter */
+    background-color: var(--royal-blue);
+}
+
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-flutter {
+    /* goes under App filter */
+    background-color: var(--star-command-blue);
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information {
