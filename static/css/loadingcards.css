@@ -1,141 +1,79 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-.container {
-    margin-top: 2em;
+.u-center {
+    background: #222;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
-.title-skills {
-    font-size: 2em;
-    margin-top: 4em;
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    transition: all 400ms ease-in-out;
-    margin: 4rem auto;
-    text-align: center;
-}
-
-.bar {
-    width: 80%;
-    margin: 2em auto;
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }
 
 .skill {
-    font-size: 0.8em;
-    text-transform: uppercase;
-    margin-bottom: 0.25em;
-}
-
-.speech-bubble {
-    font-size: 0.75em;
-    line-height: 2em;
-    position: absolute;
-    top: -2.7em;
-    text-align: center;
-    min-width: 3em;
-    border-radius: 0.3em;
-    display: none;
-}
-
-.html,
-.photo,
-.fluent {
-    left: calc(75% - 1.5em);
-}
-
-.jquery {
-    left: calc(25% - 1.5em);
-}
-
-.sketch,
-.illustrator {
-    left: calc(90% - 1.5em);
-}
-
-.indesign {
-    left: calc(85% - 1.5em);
-}
-
-.speech-bubble:after {
-    border: 0.5em solid transparent;
-    content: "";
-    margin-left: -0.5em;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-}
-
-.bar-outer {
-    height: 1.25em;
-    background: #eeeeee;
+    margin: 1em 0;
     position: relative;
-    border-radius: 0.3em;
+    width: 22.5em;
 }
 
-.bar-inner {
-    width: 0;
-    height: 1.25em;
-    border-radius: 0.3em;
+.skill__type {
+    color: #fff;
+    font-weight: 300;
+    font-size: 0.8em;
+    letter-spacing: 0.145em;
+    text-transform: uppercase;
+    width: 5em;
 }
 
-.ht,
-.html {
-    background: #fdeeed;
+.skill__outer-bar,
+.skill__inner-bar {
+    height: 0.75em;
 }
 
-.html:after {
-    border-top-color: #fdeeed;
+.skill__outer-bar {
+    margin-top: 1em;
+    background: #333;
 }
 
-.jq,
-.jquery {
-    background: #fde4e1;
+.skill__inner-bar {
+    animation: fillBar 1s forwards;
+    transform: scaleX(0);
+    transform-origin: 0 0;
 }
 
-.jquery:after {
-    border-top-color: #fde4e1;
+.skill__inner-bar--100 {
+    width: 100%;
+    background: #F8A518;
 }
 
-.sk,
-.sketch {
-    background: #fcd9d5;
+.skill__inner-bar--90 {
+    width: 90%;
+    background: #18A6F8;
 }
 
-.sketch:after {
-    border-top-color: #fcd9d5;
+.skill__inner-bar--80 {
+    width: 80%;
+    background: #F8DD18;
 }
 
-.ph,
-.photo {
-    background: #fbc9c4;
+.skill__inner-bar--70 {
+    width: 80%;
+    background: #8718F8;
 }
 
-.photo:after {
-    border-top-color: #fbc9c4;
+.skill__inner-bar--60 {
+    width: 90%;
+    background: #F818B5;
 }
 
-.il,
-.illustrator {
-    background: #f9b3ac;
-}
-
-.illustrator:after {
-    border-top-color: #f9b3ac;
-}
-
-.in,
-.indesign {
-    background: #f89d94;
-}
-
-.indesign:after {
-    border-top-color: #f89d94;
-}
-
-.fl,
-.fluent {
-    background: #f6877c;
-}
-
-.fluent:after {
-    border-top-color: #f6877c;
+@keyframes fillBar {
+    to {
+        transform: scaleX(1);
+    }
 }
