@@ -599,7 +599,8 @@ section {
 }
 
 .facts .icon-box .icon {
-    margin: 0 auto;
+    /* holds the svg (blob) and icon */
+    margin: 10px auto;
     width: 80px;
     height: 80px;
     display: flex;
@@ -610,20 +611,23 @@ section {
 }
 
 .facts .icon-box .icon i {
+    /* is the icon */
     font-size: 30px;
     transition: 0.5s;
     position: relative;
 }
 
 .facts .icon-box .icon svg {
+    /* is the blob behind the icon */
     position: absolute;
     top: 0;
     left: 0;
-    width: 90;
-    height: 90;
+    width: 90px;
+    height: 90px;
 }
 
 .facts .icon-box .icon svg path {
+    /*defines the actual outline/shape of the blob */
     transition: 0.5s;
     fill: var(--grey-1);
 }
@@ -632,8 +636,7 @@ section {
     /* title */
     font-size: 18px;
     font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 5px auto;
 }
 
 .facts .icon-box span {
