@@ -562,11 +562,13 @@ section {
   --------------------------------------------------------------*/
 
 .resume .resume-form {
+    /*the actual resume paper */
     padding: 2rem 2rem;
     justify-content: center;
 }
 
 .resume .resume-title {
+    /* resume section titles (diff color) */
     font-size: 26px;
     font-weight: 700;
     margin-top: 10px;
@@ -575,6 +577,7 @@ section {
 }
 
 .resume .resume-item {
+    /*resume sections */
     /* padding: top right bottom left */
     padding: 0 0 20px 20px;
     margin-top: -2px;
@@ -619,15 +622,16 @@ section {
 }
 
 .resume .resume-item::before {
+    /* circle decoration */
     content: "";
     position: absolute;
     width: 16px;
     height: 16px;
     border-radius: 50px;
-    left: -9px;
+    left: -10px;
     top: 0;
     background: var(--off-white);
-    border: 2px solid var(--primary);
+    border: 3px solid var(--primary);
 }
 
 
@@ -652,6 +656,7 @@ section {
 }
 
 .resume .slider {
+    /* carousel itself */
     align-items: center;
     background: #E3E3E3;
     display: flex;
@@ -668,6 +673,7 @@ section {
 
 .resume .slider::before,
 .resume .slider::after {
+    /*gradient effect on both sides */
     background: linear-gradient(to right, white 10%, rgba(255, 255, 255, 0) 100%);
     content: "";
     height: 100px;
@@ -688,7 +694,7 @@ section {
 }
 
 .resume .slider .slide-track {
-    -webkit-animation: scroll 40s linear infinite;
+    /*-webkit-animation: scroll 40s linear infinite;*/
     animation: scroll 40s linear infinite;
     display: flex;
     width: calc(250px * 14);
@@ -820,8 +826,6 @@ section {
     /*removes the border */
     border: 0px;
     color: var(--white);
-    /* shrink button */
-    transform: scale(0.25);
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .book-container .content .btn a {
@@ -945,9 +949,6 @@ section {
     background: var(--primary);
     /*removes the border */
     border: 0px;
-    /* bounce on hover */
-    transform: scale(1.2);
-    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn i {
