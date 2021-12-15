@@ -598,7 +598,8 @@ section {
     font-size: 16px;
     background: var(--off-white);
     /* padding: top/bottom right/left */
-    padding: 5px 10px;
+    padding: 5px 15px;
+    margin: 0;
     display: inline-block;
     font-weight: 600;
 }
