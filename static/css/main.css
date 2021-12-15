@@ -827,21 +827,26 @@ section {
     font-size: 0.9em;
     justify-content: center;
     align-content: center;
-}
-
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box a {
-    display: block;
+    align-items: center;
     position: relative;
-    border-radius: 100%;
-    padding: .5rem;
-    background-color: var(--primary);
-    color: var(--white);
 }
 
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box i {
-    width: 48px;
-    height: 48px;
-    font-size: 15px;
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn {
+    border: 3px solid var(--primary);
+    padding: 10px 15px;
+    background: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: var(--html-orange);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn i {
+    width: 24px;
+    height: 24px;
+    font-size: 10.8px;
     display: flex;
     justify-content: center;
     align-items: center;
