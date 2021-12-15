@@ -31,11 +31,16 @@
     --dark-green: #003e1f;
     --dark-blue: #092048;
     --midnight-blue: #00427e;
+    --yellow: #ffc107;
+    --pink: #d63384;
+    --purple: #6f42c1;
+    --darker-purple: #6610f2;
     --mint: #AAFAC8;
     --peach: #FFBFA0;
-    --teal: #037171;
+    --teal: #20c997;
+    --light-blue: #0dcaf0;
     --sky-blue: #84BCDA;
-    --lavendar: #a87df2;
+    --light-purple: #a87df2;
     --brown: #6B2B06;
     --smoky-black: #1c110a;
     --black: #000000;
@@ -65,6 +70,7 @@
     /* Miscelaneous */
     --border-radius: .25rem;
     --hover-transition: all 150ms ease;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
 
 
@@ -281,8 +287,8 @@ sup {
     color: var(--sky-blue);
 }
 
-.lavendar {
-    color: var(--lavendar);
+.light-purple {
+    color: var(--light-purple);
 }
 
 .brown {
@@ -1105,7 +1111,7 @@ section {
 }
 
 .services .iconbox-pink i {
-    color: var(--lavendar);
+    color: var(--light-purple);
 }
 
 .services .iconbox-pink:hover .icon i {
@@ -1113,7 +1119,7 @@ section {
 }
 
 .services .iconbox-pink:hover .icon path {
-    fill: var(--lavendar);
+    fill: var(--light-purple);
 }
 
 .services .iconbox-yellow i {
@@ -1161,6 +1167,80 @@ section {
 /*--------------------------------------------------------------
   # Contact
   --------------------------------------------------------------*/
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x))
+}
+
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y)
+}
+
+.text-center {
+    text-align: center!important
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25)
+}
+
+.form-control::placeholder {
+    color: #6c757d;
+    opacity: 1
+}
+
+.my-3 {
+    margin-top: 1rem!important;
+    margin-bottom: 1rem!important
+}
+
+.col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%
+}
+
+.col-md-6 {
+    flex: 0 0 auto;
+    width: 50%
+}
+
+.col-lg-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%
+}
 
 .contact .info {
     width: 100%;
