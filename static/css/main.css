@@ -786,6 +786,8 @@ section {
 }
 
 .resume .resume-item sub {
+    /*sub = subscripts
+sup = superscripts */
     font-size: 10px;
     font-style: italic;
     color: var(--grey-3);
