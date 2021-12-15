@@ -810,15 +810,14 @@ section {
     color: var(--primary);
 }
 
-
-/*.portfolio .project-cards ul#portfolio .booking-card .book-container .content .btn a {
+.portfolio .project-cards ul#portfolio .booking-card .book-container .content .btn a {
     color: var(--white);
     text-decoration: none;
 }
 
-.portfolio .project-cards ul#portfolio .booking-card .book-container .content .btn a:hover {
+.portfolio .project-cards ul#portfolio .booking-card .book-container .content .btn:hover a {
     color: var(--primary);
-} */
+}
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container {
     flex: 1 0 auto;
@@ -940,7 +939,7 @@ section {
     text-decoration: none;
 }
 
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn i:hover {
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn:hover i {
     color: var(--primary);
 }
 
