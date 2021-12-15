@@ -73,59 +73,84 @@
     <!-- end of heading title(s) and image section -->
 
     <!-- START OF TESTING SECTION-->
-    <div class="loading-cards">
-        <div class="container">
-            <div class="card">
-                <h3 class="title">Card 1</h3>
-                <div class="bar">
-                    <div class="emptybar"></div>
-                    <div class="filledbar"></div>
-                </div>
-                <div class="circle">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <circle class="stroke" cx="60" cy="60" r="50" />
-          </svg>
-                </div>
+    <div class="container">
+        <h1 class="title-skills">Skills</h1>
+        <div class="bar">
+            <div class="skill">HTML & CSS</div>
+            <div class="bar-outer">
+                <div class="speech-bubble html">75%</div>
+                <div class="bar-inner ht"></div>
             </div>
-            <div class="card">
-                <h3 class="title">Card 2</h3>
-                <div class="bar">
-                    <div class="emptybar"></div>
-                    <div class="filledbar"></div>
-                </div>
-                <div class="circle">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <circle class="stroke" cx="60" cy="60" r="50" />
-          </svg>
-                </div>
+        </div>
+        <div class="bar">
+            <div class="skill">jQuery</div>
+            <div class="bar-outer">
+                <div class="speech-bubble jquery">25%</div>
+                <div class="bar-inner jq"></div>
             </div>
-            <div class="card">
-                <h3 class="title">Card 3</h3>
-                <div class="bar">
-                    <div class="emptybar"></div>
-                    <div class="filledbar"></div>
-                </div>
-                <div class="circle">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <circle class="stroke" cx="60" cy="60" r="50" />
-          </svg>
-                </div>
+        </div>
+        <div class="bar">
+            <div class="skill">Sketch</div>
+            <div class="bar-outer">
+                <div class="speech-bubble sketch">90%</div>
+                <div class="bar-inner sk"></div>
             </div>
-            <div class="card">
-                <h3 class="title">Card 4</h3>
-                <div class="bar">
-                    <div class="emptybar"></div>
-                    <div class="filledbar"></div>
-                </div>
-                <div class="circle">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <circle class="stroke" cx="60" cy="60" r="50" />
-          </svg>
-                </div>
+        </div>
+        <div class="bar">
+            <div class="skill">Photoshop</div>
+            <div class="bar-outer">
+                <div class="speech-bubble photo">75%</div>
+                <div class="bar-inner ph"></div>
+            </div>
+        </div>
+        <div class="bar">
+            <div class="skill">Illustrator</div>
+            <div class="bar-outer">
+                <div class="speech-bubble illustrator">90%</div>
+                <div class="bar-inner il"></div>
+            </div>
+        </div>
+        <div class="bar">
+            <div class="skill">InDesign</div>
+            <div class="bar-outer">
+                <div class="speech-bubble indesign">85%</div>
+                <div class="bar-inner in"></div>
+            </div>
+        </div>
+        <div class="bar">
+            <div class="skill">Fluent in Korean</div>
+            <div class="bar-outer">
+                <div class="speech-bubble fluent">75%</div>
+                <div class="bar-inner fl"></div>
             </div>
         </div>
     </div>
     <!-- END OF TESTING SECTION-->
+
+    <script>
+        var skills = {
+            ht: 75,
+            jq: 25,
+            sk: 90,
+            ph: 75,
+            il: 90,
+            in: 85,
+            fl: 75
+        };
+
+        $.each(skills, function(key, value) {
+            var skillbar = $("." + key);
+
+            skillbar.animate({
+                    width: value + "%"
+                },
+                3000,
+                function() {
+                    $(".speech-bubble").fadeIn();
+                }
+            );
+        });
+    </script>
 
     <footer class="bg-black ph3 pv4 white">
 

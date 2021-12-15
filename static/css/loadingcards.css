@@ -1,99 +1,146 @@
-.loading-cards .container {
-    position: absolute;
-    height: 300px;
-    width: 600px;
-    top: 60px;
-    /*left: calc(50% - 300px);*/
-    display: flex;
-    font-family: var(--font-family);
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
 }
 
-.loading-cards .card {
-    display: flex;
-    height: 280px;
-    width: 200px;
-    background-color: #17141d;
-    border-radius: 10px;
-    box-shadow: -1rem 0 3rem #000;
-    /*   margin-left: -50px; */
-    transition: 0.4s ease-out;
+.container {
+    margin-top: 2em;
+}
+
+.title-skills {
+    font-size: 2em;
+    margin-top: 4em;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    transition: all 400ms ease-in-out;
+    margin: 4rem auto;
+    text-align: center;
+}
+
+.bar {
+    width: 80%;
+    margin: 2em auto;
+}
+
+.skill {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    margin-bottom: 0.25em;
+}
+
+.speech-bubble {
+    font-size: 0.75em;
+    line-height: 2em;
+    position: absolute;
+    top: -2.7em;
+    text-align: center;
+    min-width: 3em;
+    border-radius: 0.3em;
+    display: none;
+}
+
+.html,
+.photo,
+.fluent {
+    left: calc(75% - 1.5em);
+}
+
+.jquery {
+    left: calc(25% - 1.5em);
+}
+
+.sketch,
+.illustrator {
+    left: calc(90% - 1.5em);
+}
+
+.indesign {
+    left: calc(85% - 1.5em);
+}
+
+.speech-bubble:after {
+    border: 0.5em solid transparent;
+    content: "";
+    margin-left: -0.5em;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+}
+
+.bar-outer {
+    height: 1.25em;
+    background: #eeeeee;
     position: relative;
-    /*left: 0px;*/
+    border-radius: 0.3em;
 }
 
-
-/*.loading-cards .card:not(:first-child) {
-    margin-left: -50px;
-}*/
-
-.loading-cards .card:hover {
-    transform: translateY(-20px);
-    transition: 0.4s ease-out;
+.bar-inner {
+    width: 0;
+    height: 1.25em;
+    border-radius: 0.3em;
 }
 
-.loading-cards .card:hover~.card {
-    position: relative;
-    left: 50px;
-    transition: 0.4s ease-out;
+.ht,
+.html {
+    background: #fdeeed;
 }
 
-.loading-cards .title {
-    color: white;
-    font-weight: 300;
-    position: absolute;
-    left: 20px;
-    top: 15px;
+.html:after {
+    border-top-color: #fdeeed;
 }
 
-.loading-cards .bar {
-    position: absolute;
-    top: 100px;
-    left: 20px;
-    height: 5px;
-    width: 150px;
+.jq,
+.jquery {
+    background: #fde4e1;
 }
 
-.loading-cards .emptybar {
-    background-color: #2e3033;
-    width: 100%;
-    height: 100%;
+.jquery:after {
+    border-top-color: #fde4e1;
 }
 
-.loading-cards .filledbar {
-    position: absolute;
-    top: 0px;
-    z-index: 3;
-    width: 0px;
-    height: 100%;
-    background: rgb(0, 154, 217);
-    background: linear-gradient( 90deg, rgba(0, 154, 217, 1) 0%, rgba(217, 147, 0, 1) 65%, rgba(255, 186, 0, 1) 100%);
-    transition: 0.6s ease-out;
+.sk,
+.sketch {
+    background: #fcd9d5;
 }
 
-.loading-cards .card:hover .filledbar {
-    width: 120px;
-    transition: 0.4s ease-out;
+.sketch:after {
+    border-top-color: #fcd9d5;
 }
 
-.loading-cards .circle {
-    position: absolute;
-    top: 150px;
-    /*left: calc(50% - 60px);*/
+.ph,
+.photo {
+    background: #fbc9c4;
 }
 
-.loading-cards .stroke {
-    stroke: white;
-    stroke-dasharray: 360;
-    stroke-dashoffset: 360;
-    transition: 0.6s ease-out;
+.photo:after {
+    border-top-color: #fbc9c4;
 }
 
-.loading-cards svg {
-    fill: #17141d;
-    stroke-width: 2px;
+.il,
+.illustrator {
+    background: #f9b3ac;
 }
 
-.loading-cards .card:hover .stroke {
-    stroke-dashoffset: 100;
-    transition: 0.6s ease-out;
+.illustrator:after {
+    border-top-color: #f9b3ac;
+}
+
+.in,
+.indesign {
+    background: #f89d94;
+}
+
+.indesign:after {
+    border-top-color: #f89d94;
+}
+
+.fl,
+.fluent {
+    background: #f6877c;
+}
+
+.fluent:after {
+    border-top-color: #f6877c;
 }
