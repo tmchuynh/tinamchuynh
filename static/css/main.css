@@ -996,7 +996,7 @@ section {
 .services .row {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     align-content: center;
     gap: 15px 20px;
