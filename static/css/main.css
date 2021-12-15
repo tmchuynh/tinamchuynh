@@ -490,7 +490,7 @@ button:focus {
     width: 50%;
 }
 
-.row:after {
+.resume .row:after {
     content: "";
     display: table;
     clear: both;
