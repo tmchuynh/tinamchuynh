@@ -832,7 +832,7 @@ section {
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn {
-    border: 3px dotted var(--primary);
+    border: 3px solid var(--primary);
     padding: 10px 15px;
     font-size: 1.3em;
     color: var(--white);
