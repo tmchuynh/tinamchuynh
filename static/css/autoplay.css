@@ -70,15 +70,15 @@
 }
 
 .skills .skill[aria-label=novice]:after {
-    left: 75%;
+    right: 75%;
 }
 
 .skills .skill[aria-label=average]:after {
-    left: 50%;
+    right: 50%;
 }
 
 .skills .skill[aria-label=adept]:after {
-    left: 35%;
+    right: 35%;
 }
 
 .skills .skill[aria-label=advanced]:after {
