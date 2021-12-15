@@ -562,12 +562,13 @@ section {
 .resume .resume-title {
     font-size: 26px;
     font-weight: 700;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
     color: var(--secondary);
 }
 
 .resume .resume-item {
+    /* padding: top right bottom left */
     padding: 0 0 20px 20px;
     margin-top: -2px;
     border-left: 2px solid var(--grey-2);
@@ -589,6 +590,7 @@ section {
     /* yr - yr */
     font-size: 16px;
     background: var(--off-white);
+    /* padding: top/bottom right/left */
     padding: 5px 15px;
     display: inline-block;
     font-weight: 600;
