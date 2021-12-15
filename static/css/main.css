@@ -813,7 +813,6 @@ section {
     cursor: pointer;
     transform: perspective(1px) translateZ(0);
     transition: 0.3s;
-    transition-property: transform;
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .book-container .content .btn:hover {
@@ -940,7 +939,6 @@ section {
     font-size: 1.3em;
     color: var(--white);
     transition: 0.3s;
-    transform: perspective(1px) translateZ(0);
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn:hover {
