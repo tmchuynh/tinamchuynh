@@ -755,6 +755,7 @@ section {
     background-size: cover;
     text-align: center;
     transition: 0.3s;
+    border: 3px solid var(--smoky-black);
 }
 
 .portfolio .project-cards ul#portfolio .booking-card::before {
