@@ -262,7 +262,18 @@
     </section>
     <!--END OF TESTIMONIAL SECTION-->
 
-    <script src="static/js/swiper.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 
     <footer class="bg-black ph3 pv4 white">
 
