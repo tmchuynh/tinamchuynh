@@ -23,7 +23,7 @@
 }
 
 .skill__type {
-    color: #fff;
+    color: var(--primary);
     font-weight: 300;
     font-size: 0.8em;
     letter-spacing: 0.145em;
