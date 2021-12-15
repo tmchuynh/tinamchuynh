@@ -3,6 +3,10 @@
 @import url("https://unpkg.com/swiper@7/swiper-bundle.min.css");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-grid-only@1.0.0/bootstrap.css");
 @import url("https://unpkg.com/tachyons@4.12.0/css/tachyons.css");
+
+/*icons and fonts */
+
+@import url(“https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css”);
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
