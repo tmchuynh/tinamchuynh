@@ -797,7 +797,7 @@ section {
 .portfolio .project-cards ul#portfolio .booking-card .book-container .content .btn {
     border: 3px solid var(--white);
     padding: 10px 15px;
-    background: none;
+    background: var(--white);
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.3em;
@@ -807,13 +807,12 @@ section {
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .book-container .content .btn:hover {
-    background: var(--white);
-    border: 0px solid var(--white);
-    color: var(--primary);
+    background: var(--primary);
+    border: 0px solid var(--primary);
+    color: var(--white);
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .book-container .content .btn a {
-    color: var(--white);
     text-decoration: none;
 }
 
