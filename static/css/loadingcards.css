@@ -5,6 +5,7 @@
     top: 60px;
     left: calc(50% - 300px);
     display: flex;
+    font-family: var(--font-family);
 }
 
 .loading-cards .card {
