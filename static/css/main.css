@@ -1035,7 +1035,7 @@ section {
 }
 
 
-/* only for facts section */
+/* ONLY USED IN FACTS SECTION */
 
 .services .icon-box h3 {
     font-size: 22px;
@@ -1048,7 +1048,7 @@ section {
 }
 
 
-/* end for facts section ---------- */
+/* END OF FACTS SECTION ---------- */
 
 .services .icon-box h4 {
     /*the title of the serive */
