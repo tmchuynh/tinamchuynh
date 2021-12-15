@@ -17,6 +17,7 @@
 }
 
 .slider {
+    margin: 0;
     align-items: center;
     background: #E3E3E3;
     display: flex;
