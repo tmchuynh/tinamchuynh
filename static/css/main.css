@@ -86,10 +86,10 @@
 
 html {
     font-size: var(--font-size);
-    @media only screen and (--breakpoint-medium) {
+    @media (--breakpoint-medium) {
         font-size: var(--font-size-m);
     }
-    @media only screen and (--breakpoint-large) {
+    @media (--breakpoint-large) {
         font-size: var(--font-size-l);
     }
     background-color: var(--black);
