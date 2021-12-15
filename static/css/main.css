@@ -779,7 +779,8 @@ section {
     border: 3px solid var(--primary);
 }
 
-.resume .resume-item sub {
+.resume sub,
+.resume sup {
     /*sub = subscripts
 sup = superscripts */
     font-size: 10px;
