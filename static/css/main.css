@@ -993,6 +993,8 @@ section {
     box-shadow: 0px 5px 15px 0px var(--grey-2);
     /*ADDS*/
     margin: 10px 5px;
+    width: 400px;
+    height: 400px;
 }
 
 .services .icon-box .icon {
