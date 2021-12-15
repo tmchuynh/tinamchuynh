@@ -948,7 +948,7 @@ section {
     border: 0px;
     /* bounce on hover */
     transform: scale(1.2);
-    transition-timing-function: cubic-bezier(0.50, 2.00, 0.30, -0.35);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn i {
