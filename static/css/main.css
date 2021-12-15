@@ -845,6 +845,7 @@ section {
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn {
     border: 3px solid var(--white);
     padding: 10px;
+    background: none;
     font-size: 1.3em;
     color: var(--white);
     transition: 0.3s;
@@ -857,7 +858,8 @@ section {
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn i {
     font-size: 24px;
-    color: var(--primary);
+    color: var(--white);
+    font-style: var(--bold-font-weight);
     text-decoration: none;
 }
 
