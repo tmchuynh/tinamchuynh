@@ -535,6 +535,7 @@ section {
 }
 
 .section-title h2 {
+    /*name of section */
     font-size: 32px;
     font-weight: bold;
     text-transform: uppercase;
@@ -566,7 +567,7 @@ section {
     left: calc(50% - 20px);
 }
 
-.section-title div p {
+.section-title .description {
     margin-bottom: 0;
     text-align: center;
 }
