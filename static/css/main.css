@@ -785,6 +785,12 @@ section {
     border: 3px solid var(--primary);
 }
 
+.resume .resume-item sub {
+    font-size: 10px;
+    font-style: italic;
+    color: var(--grey-3);
+}
+
 
 /* carousel elements*/
 
@@ -852,6 +858,11 @@ section {
 }
 
 .resume .slider .slide {
+    height: 100px;
+    width: 250px;
+}
+
+.resume .slider .slide img {
     height: 100px;
     width: 250px;
 }
