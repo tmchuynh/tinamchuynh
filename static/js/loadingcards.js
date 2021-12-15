@@ -1,34 +1,38 @@
-$(document).ready(function() {
-    var zindex = 10;
+$(function() {
+    var timelineBlocks = $(".timeline-item"),
+        offset = 0.8;
 
-    $("div.card").click(function(e) {
-        e.preventDefault();
+    //hide timeline blocks which are outside the viewport
+    hideBlocks(timelineBlocks, offset);
 
-        var isShowing = false;
-
-        if ($(this).hasClass("show")) {
-            isShowing = true;
-        }
-
-        if ($("div.cards").hasClass("showing")) {
-            // a card is already in view
-            $("div.card.show").removeClass("show");
-
-            if (isShowing) {
-                // this card was showing - reset the grid
-                $("div.cards").removeClass("showing");
-            } else {
-                // this card isn't showing - get in with it
-                $(this).css({ zIndex: zindex }).addClass("show");
-            }
-
-            zindex++;
-        } else {
-            // no cards in view
-            $("div.cards").addClass("showing");
-            $(this).css({ zIndex: zindex }).addClass("show");
-
-            zindex++;
-        }
+    //on scolling, show/animate timeline blocks when entering the viewport
+    $(window).on("scroll", function() {
+        !window.requestAnimationFrame ?
+            setTimeout(function() {
+                showBlocks(timelineBlocks, offset);
+            }, 100) :
+            window.requestAnimationFrame(function() {
+                showBlocks(timelineBlocks, offset);
+            });
     });
+
+    function hideBlocks(blocks, offset) {
+        blocks.each(function() {
+            $(this).offset().top >
+                $(window).scrollTop() + $(window).height() * offset &&
+                $(this).find(".timeline-icon, .timeline-content").addClass("is-hidden");
+        });
+    }
+
+    function showBlocks(blocks, offset) {
+        blocks.each(function() {
+            $(this).offset().top <=
+                $(window).scrollTop() + $(window).height() * offset &&
+                $(this).find(".timeline-icon").hasClass("is-hidden") &&
+                $(this)
+                .find(".timeline-icon, .timeline-content")
+                .removeClass("is-hidden")
+                .addClass("animate-it");
+        });
+    }
 });
