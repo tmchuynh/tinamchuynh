@@ -847,8 +847,8 @@ section {
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn i {
-    font-size: 24px;
-    color: var(--white);
+    font-size: 32px;
+    color: var(--primary);
     font-style: var(--bold-font-weight);
     text-decoration: none;
 }
