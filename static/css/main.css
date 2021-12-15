@@ -817,6 +817,7 @@ sup = superscripts */
 .resume .slider {
     /* carousel itself */
     align-items: center;
+    align-content: center;
     background: #E3E3E3;
     display: flex;
     height: 100vh;
