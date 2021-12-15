@@ -14,7 +14,7 @@
 :root {
     /* Colors */
     --primary: #a1252b;
-    --secondary: #1c5ed9;
+    --secondary: #1cd925;
     --white: #ffffff;
     --off-white: #fffdfc;
     --grey-1: #f5f3f2;
@@ -594,6 +594,7 @@ section {
 }
 
 .resume .resume-item ul li {
+    /* mainly for job bullet pts */
     padding-bottom: 10px;
     list-style: circle;
 }
