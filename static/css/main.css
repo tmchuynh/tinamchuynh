@@ -557,6 +557,12 @@ section {
     margin: 0;
 }
 
+.resume .row {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
 .resume .resume-title {
     font-size: 26px;
     font-weight: 700;
