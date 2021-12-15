@@ -1587,6 +1587,8 @@ section {
 .site-footer .social-icons {
     /*icons at the end */
     text-align: right;
+    justify-content: center;
+    align-items: center;
 }
 
 .site-footer .social-icons a {
