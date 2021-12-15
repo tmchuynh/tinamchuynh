@@ -17,7 +17,6 @@
 }
 
 .slider {
-    margin: 0;
     align-items: center;
     background: #E3E3E3;
     display: flex;
@@ -29,7 +28,7 @@
     margin: auto;
     overflow: hidden;
     position: relative;
-    width: 960px;
+    width: 100%;
 }
 
 .slider::before,
