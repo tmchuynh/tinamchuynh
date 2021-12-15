@@ -570,6 +570,7 @@ section {
 }
 
 .resume .resume-item h4 {
+    /* bullet pts (name, degree, job title, etc.) */
     line-height: 18px;
     font-size: 18px;
     font-weight: 600;
@@ -580,12 +581,12 @@ section {
 }
 
 .resume .resume-item h5 {
+    /* yr - yr */
     font-size: 16px;
     background: var(--off-white);
     padding: 5px 15px;
     display: inline-block;
     font-weight: 600;
-    margin-bottom: 10px;
 }
 
 .resume .resume-item ul {
