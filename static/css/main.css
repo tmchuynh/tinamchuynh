@@ -617,8 +617,15 @@ section {
 
 .facts .row {
     display: grid;
-    /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /*rows = height */
+    /* repeat (# of rows/columns (or autofill), size of each row/column);
+    autofill fills the space if the item fits in the container
+    autofit evenly distributes available space for rows/columns + grid gap
+    minmax(min size, max size of grid track) */
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    /*columns = width*/
+    grid-auto-columns: min-content;
+    /*gap between cols+rows*/
     grid-gap: 30px;
     align-content: center;
     padding-left: 15px;
