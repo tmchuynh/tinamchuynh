@@ -622,9 +622,9 @@ section {
     autofill fills the space if the item fits in the container
     autofit evenly distributes available space for rows/columns + grid gap
     minmax(min size, max size of grid track) */
-    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     /*columns = width*/
-    grid-auto-columns: min-content;
+    grid-auto-rows: min-content;
     /*gap between cols+rows*/
     grid-gap: 30px;
     align-content: center;
@@ -657,8 +657,8 @@ section {
 .facts .icon-box .icon svg {
     /* is the blob behind the icon */
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     width: 90px;
     height: 90px;
 }
