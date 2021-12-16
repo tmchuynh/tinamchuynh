@@ -647,20 +647,22 @@ section {
     position: relative;
 }
 
-.facts .icon-box .icon i {
-    /* is the icon */
-    font-size: 30px;
-    transition: 0.5s;
-    position: relative;
-}
-
 .facts .icon-box .icon svg {
     /* is the blob behind the icon */
     position: absolute;
     top: 0;
     left: 0;
+    text-align: center;
+    align-content: center;
     width: 90px;
     height: 90px;
+}
+
+.facts .icon-box .icon i {
+    /* is the icon */
+    font-size: 30px;
+    transition: 0.5s;
+    position: relative;
 }
 
 .facts .icon-box .icon svg path {
