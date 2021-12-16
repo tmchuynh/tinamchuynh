@@ -893,7 +893,7 @@ sup = superscripts */
     visibility: hidden;
 }
 
-#slick-arrow {
+.slick-arrow {
     position: absolute;
     top: 50%;
     background: url(https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/arrow.svg?sanitize=true) center no-repeat;
