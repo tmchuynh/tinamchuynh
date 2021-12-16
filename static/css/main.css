@@ -846,7 +846,8 @@ sup = superscripts */
 
 /* carousel elements*/
 
-@-webkit-keyframes scroll {
+
+/*@-webkit-keyframes scroll {
     0% {
         transform: translateX(0);
     }
@@ -860,10 +861,10 @@ sup = superscripts */
         transform: translateX(0);
     }
     100% {
-        /*transform: translateX(calc(-250px * 7)); */
+        transform: translateX(calc(-250px * 7)); 
         transform: translateX(80%);
     }
-}
+}*/
 
 .resume .slider {
     /* carousel itself */
