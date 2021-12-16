@@ -681,6 +681,8 @@ section {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .facts .icon-box span {
