@@ -1214,6 +1214,7 @@ sup = superscripts */
   --------------------------------------------------------------*/
 
 .timeline-container {
+    padding: 3rem 2rem;
     background: var(--white);
     background-size: cover;
     margin: 0;
