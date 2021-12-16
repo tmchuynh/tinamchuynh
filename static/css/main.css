@@ -622,7 +622,7 @@ section {
     autofill fills the space if the item fits in the container
     autofit evenly distributes available space for rows/columns + grid gap
     minmax(min size, max size of grid track) */
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     /*columns = width*/
     grid-auto-rows: min-content;
     /*gap between cols+rows*/
