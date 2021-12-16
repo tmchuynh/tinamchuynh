@@ -1274,7 +1274,7 @@ sup = superscripts */
     color: var(--smoky-black);
     transition: background-color 0.8s;
     padding: 12px 20px;
-    margin-top: 10px;
+    margin: 10px auto;
     letter-spacing: 1.5px;
     z-index: 50px;
     text-decoration: none;
