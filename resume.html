@@ -217,9 +217,8 @@
         </div>
         <div class="carousel">
             <div class="container">
-                <section class="carousel-container slider" data-arrows="true">
-                    <div class="slick-arrow slick-next"></div>
-                    <div class="slide"><img src="https://brainstormedu.com/wp-content/uploads/2021/02/Web-Nav-Header.png"></div>
+                <section class="carousel-logos slider" data-arrows="true">
+                    <div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image1.png"></div>
                     <div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image2.png"></div>
                     <div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image3.png"></div>
                     <div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image4.png"></div>
@@ -227,7 +226,6 @@
                     <div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image6.png"></div>
                     <div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image7.png"></div>
                     <div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image8.png"></div>
-                    <div class="slick-arrow slick-prev"></div>
                 </section>
             </div>
         </div>
@@ -285,7 +283,7 @@
     <!--SCRIPT FOR CAROUSEL-->
     <script type="text/javascript">
         $(document).ready(function() {
-            $('.logo-carousel').slick({
+            $('.carousel-logos').slick({
                 slidesToShow: 6,
                 slidesToScroll: 1,
                 autoplay: true,
@@ -301,7 +299,7 @@
                 }, {
                     breakpoint: 520,
                     settings: {
-                        slidesToShow: 2
+                        slidesToShow: 3
                     }
                 }]
             });
