@@ -1239,7 +1239,8 @@ sup = superscripts */
 .skills .card h4 {
     /* title */
     padding-top: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
     font-size: 25px;
     font-weight: 500;
 }
