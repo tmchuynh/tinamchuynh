@@ -862,7 +862,6 @@ sup = superscripts */
     overflow: hidden;
     position: relative;
     width: 100%;
-    --track-width: 100%;
     height: 150px;
     /*add?*/
     justify-content: center;
