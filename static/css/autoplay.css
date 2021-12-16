@@ -5,19 +5,19 @@
 }
 
 @media (min-width: 768px) {
-    .container {
+    .skills {
         width: 750px;
     }
 }
 
 @media (min-width: 992px) {
-    .container {
+    .skills {
         width: 970px;
     }
 }
 
 @media (min-width: 1200px) {
-    .container {
+    .skills {
         width: 1170px;
     }
 }
@@ -99,49 +99,21 @@
     transition: 1s;
 }
 
-
-/* button? */
-
-.skills a {
+.skills .card a {
+    /* button */
     border: 1px solid var(--ocean-green);
     background-color: var(--ocean-green);
     border-radius: 2px;
     color: var(--smoky-black);
     transition: background-color 0.8s;
     padding: 12px 20px;
+    margin-top: 10px;
     letter-spacing: 1.5px;
     z-index: 50px;
     text-decoration: none;
 }
 
-.skills a:hover {
+.skills .card a:hover {
     background-color: var(--smoky-black);
     color: var(--ocean-green);
-}
-
-.support {
-    position: relative;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    display: flex;
-    background-color: var(--white);
-}
-
-.support i {
-    color: var(--ocean-green);
-    font-size: 20px;
-    margin-left: 8px;
-}
-
-.hide1 {
-    display: none;
-    margin-left: 5px;
-    margin-right: 10px;
-    color: var(--ocean-green);
-    font-size: 15px;
-}
-
-.support a:hover+.hide1 {
-    display: block;
-    transition: all 1s;
 }
