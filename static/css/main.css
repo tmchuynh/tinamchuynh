@@ -848,9 +848,6 @@ sup = superscripts */
 # Carousel
 --------------------------------------------------------------*/
 
-
-/* Slider */
-
 .slick-slide {
     margin: 0px 20px;
 }
@@ -896,15 +893,15 @@ sup = superscripts */
     visibility: hidden;
 }
 
-.slick-arrow {
+#slick-arrow {
     position: absolute;
     top: 50%;
     background: url(https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/arrow.svg?sanitize=true) center no-repeat;
     color: rgb(0, 0, 0);
     filter: invert(77%) sepia(32%) saturate(1%) hue-rotate(344deg) brightness(105%) contrast(103%);
     border: none;
-    width: 4rem;
-    height: 3rem;
+    width: 2rem;
+    height: 1.5rem;
     text-indent: -10000px;
     margin-top: -16px;
     z-index: 99;
