@@ -4,13 +4,6 @@
     padding: 0;
 }
 
-.container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 @media (min-width: 768px) {
     .container {
         width: 750px;
@@ -34,29 +27,14 @@
     padding-bottom: 40px;
     background-color: var(--white);
     text-align: center;
-}
-
-.skills .text {
-    padding-bottom: 20px;
-}
-
-.skills h2 {
-    font-size: 35px;
-    color: var(--smoky-black);
-    padding-bottom: 20px;
-}
-
-.skills h2 span {
-    color: var(--ocean-green);
-}
-
-.skills p {
-    font-size: 18px;
-    color: var(--smoky-black);
-    font-weight: 400;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .skills .skill-card {
+    /* container holding the cards */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 60px;
@@ -65,6 +43,7 @@
 }
 
 .skills .skill-card .card {
+    /* each card individually */
     padding: 25px;
     text-align: center;
     background-color: var(--smoky-black);
@@ -75,6 +54,7 @@
 }
 
 .skills .card h4 {
+    /* title */
     padding-top: 30px;
     padding-bottom: 10px;
     font-size: 25px;
@@ -82,12 +62,14 @@
 }
 
 .skills .card p {
+    /* card description */
     line-height: 1.7;
     font-size: 16px;
     color: var(--grey-2);
 }
 
 .skills .card i {
+    /* icon */
     font-size: 42px;
     padding: 15px;
     width: 75px;
@@ -116,6 +98,9 @@
     color: var(--smoky-black);
     transition: 1s;
 }
+
+
+/* button? */
 
 .skills a {
     border: 1px solid var(--ocean-green);
