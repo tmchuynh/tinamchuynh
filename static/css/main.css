@@ -846,26 +846,12 @@ sup = superscripts */
 
 /* carousel elements*/
 
-@-webkit-keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(-250px * 7));
-    }
-}
-
 @keyframes scroll {
     0% {
         transform: translateX(0);
     }
     100% {
-<<<<<<< HEAD
-        transform: translateX(calc(--track-width *1));
-=======
-        /*transform: translateX(calc(-250px * 7)); */
-        transform: translateX(80%);
->>>>>>> parent of 55b7fde (Update main.css)
+        transform: translateX(calc(-250px * 7));
     }
 }
 
