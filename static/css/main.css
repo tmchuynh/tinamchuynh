@@ -929,7 +929,8 @@ sup = superscripts */
 
 .portfolio ul#filter {
     text-align: center;
-    margin: 0 10px;
+    margin: 0px 10px;
+    padding: 0px;
 }
 
 .portfolio ul#filter a {
@@ -967,6 +968,7 @@ sup = superscripts */
     align-items: center;
     align-content: center;
     gap: 10px 15px;
+    padding: 0px;
 }
 
 .portfolio .project-cards ul#portfolio .booking-card {
