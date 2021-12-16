@@ -854,8 +854,8 @@ sup = superscripts */
 
 .carousel-container {
     overflow: inherit;
-    border-top: 1px solid #353535;
-    border-bottom: 1px solid #353535;
+    border-top: 1px solid var(--primary);
+    border-bottom: 1px solid var(--primary);
     margin-top: 32px;
 }
 
