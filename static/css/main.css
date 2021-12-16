@@ -1183,7 +1183,7 @@ sup = superscripts */
 
 
 /*--------------------------------------------------------------
-  # Services
+  # Services / Skills
   --------------------------------------------------------------*/
 
 @media (min-width: 768px) {
@@ -1249,7 +1249,8 @@ sup = superscripts */
     line-height: 1.7;
     font-size: 16px;
     color: var(--grey-2);
-    margin-bottom: 10px;
+    padding-top: 0px;
+    padding-bottom: 20px;
 }
 
 .skills .card i {
