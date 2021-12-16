@@ -846,6 +846,15 @@ sup = superscripts */
 
 /* carousel elements*/
 
+@-webkit-keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
 @keyframes scroll {
     0% {
         transform: translateX(0);
