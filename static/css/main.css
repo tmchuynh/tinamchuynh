@@ -774,13 +774,11 @@ section {
 }
 
 .resume .resume-item ul {
-    padding-left: 20px;
-}
-
-.resume .resume-item ul li {
     /* mainly for job bullet pts */
+    padding-left: 20px;
     padding-bottom: 10px;
-    list-style: circle;
+    list-style: squre;
+    list-style-position: outside;
 }
 
 .resume .resume-item:last-child {
@@ -1252,6 +1250,12 @@ sup = superscripts */
     color: var(--grey-2);
     padding-top: 0px;
     padding-bottom: 20px;
+    list-style: circle;
+    list-style-position: outside;
+}
+
+.skills .card ul li {
+    list-style-position: outside;
 }
 
 .skills .card i {
