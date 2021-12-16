@@ -1214,7 +1214,6 @@ sup = superscripts */
   --------------------------------------------------------------*/
 
 .timeline-container {
-    padding: 3rem 2rem;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -1222,7 +1221,13 @@ sup = superscripts */
     padding: 0;
 }
 
+.timeline-container .section-title {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
 .success {
+    /* !important tag will override properties from other classes */
     background: #78AD42 !important;
 }
 
