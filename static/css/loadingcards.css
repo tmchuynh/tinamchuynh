@@ -49,6 +49,7 @@
     top: 50%;
     background: url(https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/arrow.svg?sanitize=true) center no-repeat;
     color: rgb(0, 0, 0);
+    font-weight: 900;
     filter: invert(77%) sepia(32%) saturate(1%) hue-rotate(344deg) brightness(105%) contrast(103%);
     border: none;
     width: 2rem;
