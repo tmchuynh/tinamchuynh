@@ -1215,14 +1215,11 @@ sup = superscripts */
 
 .timeline-container {
     padding: 3rem 2rem;
-    background: var(--white);
-    background-size: cover;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
-    font-family: var(--font-family);
-    line-height: 20px;
-    font-size: 14px;
-    color: #726f77;
 }
 
 .success {
@@ -1242,6 +1239,11 @@ sup = superscripts */
     margin: 30px auto;
     position: relative;
     padding: 0 20px;
+    background: var(--white);
+    background-size: cover;
+    line-height: 20px;
+    font-size: 14px;
+    color: #726f77;
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     -ms-transition: all 0.4s ease;
