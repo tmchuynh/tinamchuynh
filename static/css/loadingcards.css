@@ -4,7 +4,7 @@
     margin: 0px 20px;
 }
 
-.logo-carousel {
+.customer-logos {
     overflow: inherit;
     border-top: 1px solid #353535;
     border-bottom: 1px solid #353535;
@@ -30,6 +30,10 @@
 
 .slick-loading .slick-track {
     visibility: hidden;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
 }
 
 .slick-slide.dragging img {
@@ -84,6 +88,6 @@ body {
 
 /* JsFiddle Example only/don't use */
 
-.logo-carousel {
+.customer-logos {
     margin-top: 32px;
 }
