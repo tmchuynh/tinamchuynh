@@ -1,19 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Lato);
-body {
-    font-family: "Lato", Arial, sans-serif;
-    background: #13171b;
-    color: white;
-    text-align: center;
-}
-
-.h1 {
-    font-size: 30px;
-}
-
 .complete-bar {
+    text-align: center;
     list-style: none;
     font-size: 20px;
     padding: 0;
+    background: #13171b;
+    color: white;
 }
 
 .complete-bar .task {
@@ -22,6 +13,8 @@ body {
     height: 60px;
     margin: 10px auto;
     width: 90%;
+    background: #13171b;
+    color: white;
 }
 
 @media only screen and (min-width: 900px) {
