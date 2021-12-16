@@ -569,6 +569,11 @@ section {
     left: calc(50% - 20px);
 }
 
+.section-title .description {
+    text-align: center;
+    max-width: 70%;
+}
+
 
 /*--------------------------------------------------------------
   # Facts
