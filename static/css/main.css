@@ -1229,15 +1229,15 @@ sup = superscripts */
     background: #78AD42 !important;
 }
 
-.timeline-container .timeline .timeline-item:after,
-.timeline-container .timeline .timeline-item:before {
+#timeline .timeline-item:after,
+#timeline .timeline-item:before {
     content: '';
     display: block;
     width: 100%;
     clear: both;
 }
 
-.timeline-container .timeline {
+#timeline {
     width: 100%;
     margin: 30px auto;
     position: relative;
@@ -1248,7 +1248,7 @@ sup = superscripts */
     transition: all 0.4s ease;
 }
 
-.timeline-container .timeline:before {
+#timeline:before {
     content: "";
     width: 3px;
     height: 100%;
@@ -1258,19 +1258,19 @@ sup = superscripts */
     position: absolute;
 }
 
-.timeline-container .timeline:after {
+#timeline:after {
     content: "";
     clear: both;
     display: table;
     width: 100%;
 }
 
-.timeline-container .timeline .timeline-item {
+#timeline .timeline-item {
     margin-bottom: 25px;
     position: relative;
 }
 
-.timeline-container .timeline .timeline-item .timeline-icon {
+#timeline .timeline-item .timeline-icon {
     background: #1C71A4;
     width: 50px;
     height: 50px;
@@ -1285,7 +1285,7 @@ sup = superscripts */
     border-radius: 50%;
 }
 
-.timeline-container .timeline .timeline-item .timeline-icon i {
+#timeline .timeline-item .timeline-icon i {
     position: relative;
     top: 13px;
     left: 14px;
@@ -1293,7 +1293,7 @@ sup = superscripts */
     color: #fff;
 }
 
-.timeline-container .timeline .timeline-item .timeline-content {
+#timeline .timeline-item .timeline-content {
     width: 45%;
     background: #fff;
     padding: 20px;
@@ -1311,7 +1311,7 @@ sup = superscripts */
     transition: all 0.3s ease;
 }
 
-.timeline-container .timeline .timeline-item .timeline-content h2 {
+#timeline .timeline-item .timeline-content h2 {
     padding: 15px;
     background: #1C71A4;
     color: #fff;
@@ -1324,12 +1324,12 @@ sup = superscripts */
     font-size: 22px;
 }
 
-.timeline-container .timeline .timeline-item .timeline-content p {
+#timeline .timeline-item .timeline-content p {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.timeline-container .timeline .timeline-item .timeline-content:before {
+#timeline .timeline-item .timeline-content:before {
     content: '';
     position: absolute;
     left: 45%;
@@ -1341,11 +1341,11 @@ sup = superscripts */
     border-left: 7px solid #1C71A4;
 }
 
-.timeline-container .timeline .timeline-item .timeline-content.right {
+#timeline .timeline-item .timeline-content.right {
     float: right;
 }
 
-.timeline-container .timeline .timeline-item .timeline-content.right:before {
+#timeline .timeline-item .timeline-content.right:before {
     content: '';
     right: 45%;
     left: inherit;
@@ -1355,26 +1355,26 @@ sup = superscripts */
 
 @media only screen and (max-width: 768px) {
     /* styles for devices smaller than 768px */
-    .timeline-container .timeline {
+    #timeline {
         margin: 30px;
         padding: 0px;
         width: 90%;
     }
-    .timeline-container .timeline:before {
+    #timeline:before {
         left: 0;
     }
-    .timeline-container .timeline .timeline-item .timeline-content {
+    #timeline .timeline-item .timeline-content {
         width: 90%;
         float: right;
     }
-    .timeline-container .timeline .timeline-item .timeline-content:before,
-    .timeline-container .timeline .timeline-item .timeline-content.right:before {
+    #timeline .timeline-item .timeline-content:before,
+    #timeline .timeline-item .timeline-content.right:before {
         left: 10%;
         margin-left: -6px;
         border-left: 0;
         border-right: 7px solid #1C71A4;
     }
-    .timeline-container .timeline .timeline-item .timeline-icon {
+    #timeline .timeline-item .timeline-icon {
         left: 0;
     }
 }
