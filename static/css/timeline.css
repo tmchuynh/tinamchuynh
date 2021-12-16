@@ -1,4 +1,4 @@
-section {
+.timeline-container {
     background: var(--white);
     background-size: cover;
     margin: 0;
@@ -9,28 +9,8 @@ section {
     color: #726f77;
 }
 
-img {
-    max-width: 100%;
-}
-
-a {
-    text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4 {
-    font-weight: 500;
-}
-
 .success {
     background: #78AD42 !important;
-}
-
-.timeline-container {
-    max-width: 1000px;
-    margin: 0 auto;
 }
 
 #timeline .timeline-item:after,
@@ -89,8 +69,7 @@ h4 {
     border-radius: 50%;
 }
 
-#timeline .timeline-item .timeline-icon svg,
-#timeline .timeline-item .timeline-icon .fa {
+#timeline .timeline-item .timeline-icon i {
     position: relative;
     top: 13px;
     left: 14px;
@@ -181,55 +160,5 @@ h4 {
     }
     #timeline .timeline-item .timeline-icon {
         left: 0;
-    }
-}
-
-
-/* Animation CSS */
-
-
-/* icon animation */
-
-.timeline-icon.is-hidden {
-    visibility: hidden;
-}
-
-.timeline-icon.animate-it {
-    visibility: visible;
-    -webkit-animation: bounce-1 0.6s;
-    -moz-animation: bounce-1 0.6s;
-    animation: bounce-1 0.6s;
-}
-
-
-/* content block animation */
-
-.timeline-content.is-hidden {
-    visibility: hidden;
-}
-
-.timeline-content.animate-it {
-    visibility: visible;
-    -webkit-animation: bounce-2 0.6s;
-    -moz-animation: bounce-2 0.6s;
-    animation: bounce-2 0.6s;
-}
-
-@media only screen and (min-width: 769px) {
-    /* Inverse bounce effect on even content blocks */
-    .timeline-content.right.animate-it {
-        -webkit-animation: bounce-2-inverse 0.6s;
-        -moz-animation: bounce-2-inverse 0.6s;
-        animation: bounce-2-inverse 0.6s;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    /* Inverse bounce effect on all content blocks */
-    .timeline-content.animate-it,
-    .timeline-content.right.animate-it {
-        -webkit-animation: bounce-2-inverse 0.6s;
-        -moz-animation: bounce-2-inverse 0.6s;
-        animation: bounce-2-inverse 0.6s;
     }
 }
