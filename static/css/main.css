@@ -1186,12 +1186,6 @@ sup = superscripts */
   # Services
   --------------------------------------------------------------*/
 
-.skills * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 @media (min-width: 768px) {
     .skills {
         width: 750px;
