@@ -34,6 +34,17 @@
     position: relative;
 }
 
+@media only screen and (max-device-width: 960px) {
+    .card {
+        height: 30rem;
+        width: 20rem;
+    }
+    .card_side {
+        height: 15rem;
+        width: 20rem;
+    }
+}
+
 .card__side {
     height: 15rem;
     transition: all 0.8s ease;
