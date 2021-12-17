@@ -572,6 +572,7 @@ section {
 
 .section-title .description {
     text-align: center;
+    padding: 0px;
     max-width: 70%;
 }
 
