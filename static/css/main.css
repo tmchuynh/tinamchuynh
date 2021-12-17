@@ -22,8 +22,9 @@
     scroll-behavior: smooth;
     /*variables*/
     /* Colors */
-    --primary: #a1252b;
-    --secondary: #1c5ed9;
+    --primary: #C82D35;
+    --secondary: #1c71a4;
+    --third: #70ABAF;
     --white: #ffffff;
     --off-white: #fffdfc;
     --grey-1: #f5f3f2;
