@@ -98,6 +98,7 @@ html {
 }
 
 body {
+    background-color: var(--white);
     font-family: var(--font-family);
     font-size: var(--spacing-medium);
     line-height: var(--line-height);
