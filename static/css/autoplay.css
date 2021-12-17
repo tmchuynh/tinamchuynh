@@ -3,7 +3,7 @@
     list-style: none;
     font-size: 20px;
     padding: 0;
-    background: inherit;
+    background: var(--white);
     color: var(--grey-3);
 }
 
@@ -13,7 +13,7 @@
     height: 60px;
     margin: 10px auto;
     width: 90%;
-    background: inherit;
+    background: var(--white);
     color: var(--grey-3);
 }
 
