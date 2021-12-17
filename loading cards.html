@@ -76,7 +76,69 @@
 
     <!-- START OF TESTING SECTION-->
 
+    <div class="fx-wrap">
+        <div class="card" data-href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZIbTuWRSqUVqo_Qdo4O9PKBwhRuwHBcmDdJlDez5oSwdXel-7pw">
+            <div class="front">
+                <div class="image">
+                    <p class="heading">aqua</p>
+                </div>
+                <div class="text">
+                    <header class="clearfix">
+                        <button class="flip"><span class="zmdi zmdi-replay"></span></button>
+                    </header>
+                    <p>Hello, Click the turn button to watch me shine!</p><a href="#">Action</a>
+                </div>
+            </div>
+            <div class="back">
+                <div class="text">
+                    <header class="clearfix">
+                        <button class="flip"><span class="zmdi zmdi-replay"></span></button>
+                    </header><b>"You can flip me all day."</b>
+                    <p>I have flexbox with fallbacks, I'm not browser prefixed (so watch out, this is a prototype) but my animations are pure css if your into that sort of thing.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fx-wrap">
+        <div class="card" data-href="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJW58uxpzvVMvRwWjeU840KqAKGhLNyMT0F5Qh4cgD9rUCihYh">
+            <div class="front">
+                <div class="image">
+                    <p class="heading">Shine</p>
+                </div>
+                <div class="text">
+                    <header class="clearfix">
+                        <button class="flip"><span class="zmdi zmdi-replay"></span></button>
+                    </header>
+                    <p>Hello, I am another card just proving I work.</p><a href="#">Action</a>
+                </div>
+            </div>
+            <div class="back">
+                <div class="text">
+                    <header class="clearfix">
+                        <button class="flip"><span class="zmdi zmdi-replay"></span></button>
+                    </header><b>"Demo it or it didn't happen."</b>
+                    <p>I am considering making this into a Javascript component so you can all show off your business cards.<br/><i>Thank you for your support! ❤</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- END OF TESTING SECTION-->
+
+    <script type="text/javascript">
+        $(document).on('click', '.flip', function() {
+            let card = $(this).closest('.card')
+            if (card.hasClass('flip-it')) card.removeClass('flip-it')
+            else card.addClass('flip-it')
+        })
+
+
+        $('.card').each(function() {
+            let href = $(this).data('href')
+            $(this).find('.image').css({
+                backgroundImage: ['url(', href, ')'].join('')
+            })
+        })
+    </script>
 
 
     <!--FOOTER-->
