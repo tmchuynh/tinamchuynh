@@ -1244,24 +1244,6 @@ sup = superscripts */
     text-align: center;
 }
 
-.timeline-container .legend {
-    display: inline-block;
-    padding: 10px;
-    text-align: center;
-}
-
-.timeline-container .legend p::before {
-    /* circle decoration */
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 50px;
-    left: -10px;
-    top: 0;
-    background: var(--third);
-}
-
 .timeline-icon.up-next {
     /* !important tag will override properties from other classes */
     background: #78AD42 !important;
@@ -1610,7 +1592,7 @@ sup = superscripts */
     padding: 25px;
     text-align: center;
     background-color: var(--smoky-black);
-    border: 2px solid var(--ocean-green);
+    border: 4px solid var(--ocean-green);
     color: var(--grey-2);
     transition: 1s;
     position: relative;
@@ -1618,8 +1600,7 @@ sup = superscripts */
 
 .skills .card h4 {
     /* title */
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 45px;
     margin-bottom: 0px;
     font-size: 25px;
     font-weight: 500;
@@ -1653,7 +1634,7 @@ sup = superscripts */
     transform: rotate(45deg);
     left: 39%;
     transition: 1s;
-    border: 1px solid var(--ocean-green);
+    border: 2px solid var(--ocean-green);
 }
 
 .skills .card:hover {
