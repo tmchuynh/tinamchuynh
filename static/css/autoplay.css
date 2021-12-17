@@ -1,4 +1,4 @@
-#timeline .timeline-item .timeline-content timeline-bar {
+#timeline .timeline-item .timeline-content .timeline-bar {
     text-align: center;
     display: inline-block;
     list-style: none;
@@ -8,7 +8,7 @@
     color: var(--grey-3);
 }
 
-#timeline .timeline-item .timeline-content timeline-bar .task {
+#timeline .timeline-item .timeline-content .timeline-bar .task {
     display: block;
     position: relative;
     height: 60px;
@@ -19,22 +19,22 @@
 }
 
 @media only screen and (min-width: 900px) {
-    #timeline .timeline-item .timeline-content timeline-bar .task {
+    #timeline .timeline-item .timeline-content .timeline-bar .task {
         display: inline-block;
         width: 25%;
         margin: 10px;
     }
 }
 
-#timeline .timeline-item .timeline-content timeline-bar .task:before,
-#timeline .timeline-item .timeline-content timeline-bar .task:after {
+#timeline .timeline-item .timeline-content .timeline-bar .task:before,
+#timeline .timeline-item .timeline-content .timeline-bar .task:after {
     content: "";
     position: absolute;
     border-radius: 20px;
     margin-top: 40px;
 }
 
-#timeline .timeline-item .timeline-content timeline-bar .task:before {
+#timeline .timeline-item .timeline-content .timeline-bar .task:before {
     top: 0;
     right: 0;
     bottom: 0;
@@ -43,7 +43,7 @@
     background: #eeeeee;
 }
 
-#timeline .timeline-item .timeline-content timeline-bar .task:after {
+#timeline .timeline-item .timeline-content .timeline-bar .task:after {
     background-color: #2ea994;
     background: repeating-linear-gradient(-45deg, #2ea994, #2ea994 10px, #31b59f 10px, #31b59f 20px);
     height: 16px;
@@ -56,67 +56,67 @@
     animation: fill 2s both;
 }
 
-#timeline .timeline-item .timeline-content timeline-bar .task:nth-child(1):after {
+#timeline .timeline-item .timeline-content .timeline-bar .task:nth-child(1):after {
     -webkit-animation-delay: 0.5s;
     -moz-animation-delay: 0.5s;
     animation-delay: 0.5s;
 }
 
-#timeline .timeline-item .timeline-content timeline-bar .task:nth-child(2):after {
+#timeline .timeline-item .timeline-content .timeline-bar .task:nth-child(2):after {
     -webkit-animation-delay: 1s;
     -moz-animation-delay: 1s;
     animation-delay: 1s;
 }
 
-#timeline .timeline-item .timeline-content timeline-bar .task:nth-child(3):after {
+#timeline .timeline-item .timeline-content .timeline-bar .task:nth-child(3):after {
     -webkit-animation-delay: 1.5s;
     -moz-animation-delay: 1.5s;
     animation-delay: 1.5s;
 }
 
-#timeline .timeline-item .timeline-content timeline-bar .task:nth-child(4):after {
+#timeline .timeline-item .timeline-content .timeline-bar .task:nth-child(4):after {
     -webkit-animation-delay: 2s;
     -moz-animation-delay: 2s;
     animation-delay: 2s;
 }
 
-#timeline .timeline-item .timeline-content timeline-bar .task:nth-child(5):after {
+#timeline .timeline-item .timeline-content .timeline-bar .task:nth-child(5):after {
     -webkit-animation-delay: 2.5s;
     -moz-animation-delay: 2.5s;
     animation-delay: 2.5s;
 }
 
-#timeline .timeline-item .timeline-content timeline-bar .task[aria-label=idea]:after {
+#timeline .timeline-item .timeline-content .timeline-bar .task[aria-label=idea]:after {
     /* 10 done */
     right: 90%;
 }
 
-#timeline .timeline-item .timeline-content timeline-bar .task[aria-label=skeleton]:after {
+#timeline .timeline-item .timeline-content .timeline-bar .task[aria-label=skeleton]:after {
     /* 20 done */
     right: 80%;
 }
 
-#timeline .timeline-item .timeline-content timeline-bar .task[aria-label=research]:after {
+#timeline .timeline-item .timeline-content .timeline-bar .task[aria-label=research]:after {
     /* 40 done */
     right: 60%;
 }
 
-#timeline .timeline-item .timeline-content timeline-bar .task[aria-label=layout]:after {
+#timeline .timeline-item .timeline-content .timeline-bar .task[aria-label=layout]:after {
     /* 60 done */
     right: 40%;
 }
 
-#timeline .timeline-item .timeline-content timeline-bar .task[aria-label=styling]:after {
+#timeline .timeline-item .timeline-content .timeline-bar .task[aria-label=styling]:after {
     /* 75 done */
     right: 25%;
 }
 
-#timeline .timeline-item .timeline-content timeline-bar .task[aria-label=expand]:after {
+#timeline .timeline-item .timeline-content .timeline-bar .task[aria-label=expand]:after {
     /* 85 done */
     right: 15%;
 }
 
-#timeline .timeline-item .timeline-content timeline-bar .task[aria-label=complete]:after {
+#timeline .timeline-item .timeline-content .timeline-bar .task[aria-label=complete]:after {
     /* 100 done */
     right: 0%;
 }
