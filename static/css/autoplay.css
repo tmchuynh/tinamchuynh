@@ -1,126 +1,170 @@
-.card {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    display: grid;
-    font-family: 'Trebuchet MS', sans-serif;
-    height: 200px;
-    margin: 20px auto;
-    width: 350px;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+div.business-card {
+    background-image: url(https://subtlepatterns.com/patterns/gplaypattern.png);
+    background-position: center center;
+    font-family: 'Open Sans', sans-serif;
+    height: 427px;
+    width: 320px;
+    margin-left: -160px;
+    margin-top: -213.5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    perspective: 1000;
 }
 
-.front {
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+div.business-card:hover .flipper,
+div.business-card.hover .flipper {
+    transform: rotateY(180deg) rotateZ(90deg);
 }
 
-.front .blue {
-    background-color: #4cc9c8;
-    grid-column: 8 / span 5;
-    grid-row: 1 / span 4;
-}
-
-.front .yellow {
-    background-color: #f1ef1c;
-    grid-column: 1 / span 7;
-    grid-row: 1 / span 4;
-}
-
-.front .pink {
-    background-color: #fa001a;
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
-    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
-    grid-row: 1 / span 3;
-    grid-column: 1 / span 11;
+div.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
     position: relative;
+    transform-origin: center 160px;
+}
+
+div.front,
+div.back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 427px;
+    width: 320px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.75);
+}
+
+div.front {
+    background-color: white;
+    z-index: 0;
+}
+
+div.front:before,
+div.front:after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 160px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+div.front:before {
+    border-top-color: #288FBD;
+    border-left-color: #288FBD;
     z-index: 2;
 }
 
-.front .dots {
-    background: radial-gradient(#fa001a 20%, transparent 19%), radial-gradient(#fa001a 20%, transparent 19%), transparent;
-    background-size: 6px 6px;
-    background-position: 0 0, 3px 3px;
-    grid-column: 1 / span 12;
-    grid-row: 3 / span 2;
-    margin: 0 0 15px 20px;
-    z-index: 1;
+div.front:after {
+    border-top-color: #005D8C;
+    border-right-color: #005D8C;
 }
 
-.front .personal-intro {
-    background: black;
+div.front div.name {
+    position: absolute;
+    bottom: 8.5px;
+    left: 85px;
+}
+
+div.front div.name span {
+    display: block;
+    font-size: 40px;
+    line-height: 45px;
+}
+
+div.front div.name span.first {
+    color: #005D8C;
+}
+
+div.front div.name span.last {
+    color: #288FBD;
+}
+
+div.front div.name span.title {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+div.back {
+    background-color: #005D8C;
     color: white;
-    display: flex;
-    flex-direction: column;
-    grid-column: 4 / span 6;
-    grid-row: 2 / span 2;
-    justify-content: center;
-    text-align: center;
-    z-index: 3;
+    width: 427px;
+    height: 320px;
+    box-sizing: border-box;
+    transform: rotateY(180deg) rotateZ(90deg);
 }
 
-.front .personal-intro p {
-    letter-spacing: 1px;
-    text-transform: uppercase;
+div.back div.container-sm {
+    float: left;
+    width: 40%;
+    height: 100%;
+    position: relative;
 }
 
-.front .personal-intro p:first-of-type {
-    font-size: 18px;
+div.back div.container-lg {
+    float: left;
+    width: 60%;
+    margin-top: 2rem;
 }
 
-.front .personal-intro p:last-of-type {
-    font-size: 8px;
-    margin-top: 5px;
+div.back figure.logo-white {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: -60px -60px;
 }
 
-.back {
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+div.back figure.logo-white:before,
+div.back figure.logo-white:after {
+    display: block;
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-color: transparent;
 }
 
-.back .yellow {
-    background-color: #f1ef1c;
-    grid-column: 1 / span 9;
-    grid-row: 1 / span 3;
-}
-
-.back .top.dots {
-    background: radial-gradient(#4cc9c8 20%, transparent 19%), radial-gradient(#4cc9c8 20%, transparent 19%), transparent;
-    background-size: 6px 6px;
-    background-position: 0 0, 3px 3px;
-    grid-column: 8 / span 6;
-    grid-row: 2 / span 3;
-}
-
-.back .personal-info {
-    grid-column: 2 / span 6;
-    grid-row: 5 / span 6;
-}
-
-.back .personal-info p {
-    font-size: 10px;
-}
-
-.back .personal-info p:first-of-type {
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.back .personal-info p:nth-of-type(2) {
-    font-size: 12px;
-    margin-bottom: 15px;
-}
-
-.back .bottom.dots {
-    background: radial-gradient(#4cc9c8 20%, transparent 19%), radial-gradient(#4cc9c8 20%, transparent 19%), transparent;
-    background-size: 6px 6px;
-    background-position: 0 0, 3px 3px;
-    grid-column: 1 / span 8;
-    grid-row: 11 / span 2;
+div.back figure.logo-white:before {
+    top: 0;
+    left: 0;
+    border-width: 60px;
+    border-top-color: white;
+    border-left-color: white;
     z-index: 2;
 }
 
-.back .pink {
-    background-color: #fa001a;
-    grid-column: 8 / span 5;
-    grid-row: 10 / span 3;
+div.back figure.logo-white:after {
+    bottom: 0;
+    right: 0;
+    border-width: 56px;
+    border-right-color: white;
+}
+
+div.back a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+div.back a:hover {
+    text-decoration: underline;
+}
+
+div.back ul.social {
+    font-size: 1.25rem;
+}
+
+div.back ul.social li {
+    margin-top: 1rem;
+}
+
+div.back ul.social li:first-child {
+    margin-top: 2rem;
 }
