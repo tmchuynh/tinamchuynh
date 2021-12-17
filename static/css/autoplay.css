@@ -79,7 +79,6 @@ div.back {
     width: 427px;
     height: 320px;
     box-sizing: border-box;
-    transform: rotateY(180deg) rotateZ(90deg);
 }
 
 div.back div.container-sm {
