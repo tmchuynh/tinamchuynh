@@ -38,7 +38,7 @@
     --orange: #fe4a2c;
     --yellow: #efd81d;
     --dark-yellow: #ffc107;
-    --pink: #d63384;
+    --pink: #c76494;
     --light-purple: #a87df2;
     --purple: #6f42c1;
     --darker-purple: #6610f2;
@@ -1124,6 +1124,11 @@ sup = superscripts */
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-typescript {
     /* goes under Web filter */
     background-color: var(--steal-blue);
+}
+
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-sass {
+    /* goes under Web filter */
+    background-color: var(--pink);
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-ionic {
