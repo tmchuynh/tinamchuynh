@@ -1,4 +1,4 @@
-.complete-bar {
+#timeline .timeline-item .timeline-bar {
     text-align: center;
     list-style: none;
     font-size: 20px;
@@ -7,7 +7,7 @@
     color: white;
 }
 
-.complete-bar .task {
+#timeline .timeline-item .timeline-bar .task {
     display: block;
     position: relative;
     height: 60px;
@@ -18,22 +18,22 @@
 }
 
 @media only screen and (min-width: 900px) {
-    .complete-bar .task {
+    #timeline .timeline-item .timeline-bar .task {
         display: inline-block;
         width: 25%;
         margin: 10px;
     }
 }
 
-.complete-bar .task:before,
-.complete-bar .task:after {
+#timeline .timeline-item .timeline-bar .task:before,
+#timeline .timeline-item .timeline-bar .task:after {
     content: "";
     position: absolute;
     border-radius: 20px;
     margin-top: 40px;
 }
 
-.complete-bar .task:before {
+#timeline .timeline-item .timeline-bar .task:before {
     top: 0;
     right: 0;
     bottom: 0;
@@ -42,7 +42,7 @@
     background: #eeeeee;
 }
 
-.complete-bar .task:after {
+#timeline .timeline-item .timeline-bar .task:after {
     background-color: #2ea994;
     background: repeating-linear-gradient(-45deg, #2ea994, #2ea994 10px, #31b59f 10px, #31b59f 20px);
     height: 16px;
@@ -55,67 +55,67 @@
     animation: fill 2s both;
 }
 
-.complete-bar .task:nth-child(1):after {
+#timeline .timeline-item .timeline-bar .task:nth-child(1):after {
     -webkit-animation-delay: 0.5s;
     -moz-animation-delay: 0.5s;
     animation-delay: 0.5s;
 }
 
-.complete-bar .task:nth-child(2):after {
+#timeline .timeline-item .timeline-bar .task:nth-child(2):after {
     -webkit-animation-delay: 1s;
     -moz-animation-delay: 1s;
     animation-delay: 1s;
 }
 
-.complete-bar .task:nth-child(3):after {
+#timeline .timeline-item .timeline-bar .task:nth-child(3):after {
     -webkit-animation-delay: 1.5s;
     -moz-animation-delay: 1.5s;
     animation-delay: 1.5s;
 }
 
-.complete-bar .task:nth-child(4):after {
+#timeline .timeline-item .timeline-bar .task:nth-child(4):after {
     -webkit-animation-delay: 2s;
     -moz-animation-delay: 2s;
     animation-delay: 2s;
 }
 
-.complete-bar .task:nth-child(5):after {
+#timeline .timeline-item .timeline-bar .task:nth-child(5):after {
     -webkit-animation-delay: 2.5s;
     -moz-animation-delay: 2.5s;
     animation-delay: 2.5s;
 }
 
-.complete-bar .task[aria-label=idea]:after {
+#timeline .timeline-item .timeline-bar .task[aria-label=idea]:after {
     /* 10 done */
     right: 90%;
 }
 
-.complete-bar .task[aria-label=skeleton]:after {
+#timeline .timeline-item .timeline-bar .task[aria-label=skeleton]:after {
     /* 20 done */
     right: 80%;
 }
 
-.complete-bar .task[aria-label=research]:after {
+#timeline .timeline-item .timeline-bar .task[aria-label=research]:after {
     /* 40 done */
     right: 60%;
 }
 
-.complete-bar .task[aria-label=layout]:after {
+#timeline .timeline-item .timeline-bar .task[aria-label=layout]:after {
     /* 60 done */
     right: 40%;
 }
 
-.complete-bar .task[aria-label=styling]:after {
+#timeline .timeline-item .timeline-bar .task[aria-label=styling]:after {
     /* 75 done */
     right: 25%;
 }
 
-.complete-bar .task[aria-label=expand]:after {
+#timeline .timeline-item .timeline-bar .task[aria-label=expand]:after {
     /* 85 done */
     right: 15%;
 }
 
-.complete-bar .task[aria-label=complete]:after {
+#timeline .timeline-item .timeline-bar .task[aria-label=complete]:after {
     /* 100 done */
     right: 0%;
 }
