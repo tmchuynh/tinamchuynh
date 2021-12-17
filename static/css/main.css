@@ -419,15 +419,6 @@ img {
 
 
 /*--------------------------------------------------------------
-  # Lists
---------------------------------------------------------------*/
-
-.list {
-    list-style-type: none;
-}
-
-
-/*--------------------------------------------------------------
   # Focus States
 --------------------------------------------------------------*/
 
@@ -455,34 +446,53 @@ button:focus {
     opacity: .5;
 }
 
-.hide-child .child {
-    opacity: 0;
-    transition: opacity .15s ease-in;
-}
-
-.hide-child:hover .child,
-.hide-child:focus .child,
-.hide-child:active .child {
-    opacity: 1;
-    transition: opacity .15s ease-in;
-}
-
-.underline-hover:hover,
-.underline-hover:focus {
-    text-decoration: underline;
-}
-
-.pointer:hover {
-    cursor: pointer;
-}
-
 
 /*--------------------------------------------------------------
-  # Styles
+  # Navigation Bar
 --------------------------------------------------------------*/
 
+.navigation-bar {
+    overflow-x: scroll;
+    overflow-x: visible;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+    margin-right: auto;
+    margin-left: auto;
+}
 
-/* Used in the navbar */
+.navigation-bar .logo {
+    padding: 1rem;
+    display: block;
+    margin-right: 2rem;
+    height: 75%;
+    width: 8rem;
+    flex: none;
+}
+
+.navigation-bar .logo img {
+    display: block;
+    border-radius: 0;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.navigation-bar .menu-item {
+    display: flex;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-bar .items {
+    padding: 1rem;
+    display: block;
+    text-decoration: none;
+    color: var(--grey-3)
+}
 
 .divider-grey {
     box-shadow: inset 0 -4px 0 var(--grey-1);
