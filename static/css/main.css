@@ -1247,9 +1247,10 @@ sup = superscripts */
 .timeline-container .legend {
     display: inline-block;
     padding: 10px;
+    text-align: center;
 }
 
-.timeline-container .legend h4::before {
+.timeline-container .legend p::before {
     /* circle decoration */
     content: "";
     position: absolute;
