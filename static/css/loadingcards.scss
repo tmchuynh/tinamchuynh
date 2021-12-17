@@ -1,157 +1,92 @@
-@import "compass/css3";
-$height: 427px;
-$width: 320px;
-$light-blue: #288FBD;
-$dark-blue: #005D8C;
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
-body {
-    background-image: url(https://subtlepatterns.com/patterns/gplaypattern.png);
-    background-position: center center;
-    font-family: 'Open Sans', sans-serif;
+.blue {
+    color: #29b6f6;
 }
 
-div.business-card {
-    height: $height;
-    width: $width;
-    margin-left: $width/-2;
-    margin-top: $height/-2;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    perspective: 1000;
-    &:hover .flipper,
-    &.hover .flipper {
-        transform: rotateY(180deg) rotateZ(90deg);
-    }
+.green {
+    color: #9ccc65;
 }
 
-div.flipper {
-    transition: 0.6s;
-    transform-style: preserve-3d;
+.purple {
+    color: #ba68c8;
+}
+
+.cyan {
+    color: #4dd0e1;
+}
+
+.red {
+    color: #ef5350;
+}
+
+.content {
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    perspective: 150rem;
+    height: 20rem;
+    width: 30rem;
     position: relative;
-    transform-origin: center $width/2;
 }
 
-div.front,
-div.back {
-    backface-visibility: hidden;
+.card__side {
+    height: 15rem;
+    transition: all 0.8s ease;
     position: absolute;
     top: 0;
     left: 0;
-    height: $height;
-    width: $width;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.75);
+    margin: auto;
+    width: 30rem;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
 }
 
-div.front {
-    background-color: white;
-    z-index: 0;
-    &:before,
-    &:after {
-        display: block;
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-width: $width/2;
-        border-style: solid;
-        border-color: transparent;
-    }
-    &:before {
-        border-top-color: $light-blue;
-        border-left-color: $light-blue;
-        z-index: 2;
-    }
-    &:after {
-        border-top-color: $dark-blue;
-        border-right-color: $dark-blue;
-    }
-    div.name {
-        position: absolute;
-        bottom: ($height - $width - 90)/2;
-        left: ($width - 150px) / 2;
-        span {
-            display: block;
-            font-size: 40px;
-            line-height: 45px;
-        }
-        span.first {
-            color: $dark-blue;
-        }
-        span.last {
-            color: $light-blue;
-        }
-        span.title {
-            font-size: 20px;
-            line-height: 20px;
-        }
-    }
+.card__side--front {
+    background-color: #1c1c1c;
 }
 
-div.back {
-    background-color: $dark-blue;
+.card__side--back {
+    transform: rotateY(180deg);
+    background-color: #1c1c1c;
+}
+
+.card:hover .card__side--front {
+    transform: rotateY(-180deg);
+}
+
+.card:hover .card__side--back {
+    transform: rotateY(0deg);
+}
+
+.card__cont {
+    height: 15rem;
+    background-color: #1c1c1c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
     color: white;
-    width: $height;
-    height: $width;
-    box-sizing: border-box;
-    transform: rotateY(180deg) rotateZ(90deg);
-    div.container-sm {
-        float: left;
-        width: 40%;
-        height: 100%;
-        position: relative;
-    }
-    div.container-lg {
-        float: left;
-        width: 60%;
-        margin-top: 2rem;
-    }
-    figure.logo-white {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 120px;
-        height: 120px;
-        display: block;
-        margin: -60px -60px;
-        &:before,
-        &:after {
-            display: block;
-            content: '';
-            position: absolute;
-            border-style: solid;
-            border-color: transparent;
-        }
-        &:before {
-            top: 0;
-            left: 0;
-            border-width: 60px;
-            border-top-color: white;
-            border-left-color: white;
-            z-index: 2;
-        }
-        &:after {
-            bottom: 0;
-            right: 0;
-            border-width: 56px;
-            border-right-color: white;
-        }
-    }
-    a {
-        color: white;
-        text-decoration: none;
-        display: block;
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-    ul.social {
-        font-size: 1.25rem;
-        li {
-            margin-top: 1rem;
-            &:first-child {
-                margin-top: 2rem;
-            }
-        }
-    }
+}
+
+.card__cta p {
+    margin-left: 1rem;
+}
+
+.card__cta p>.space {
+    margin-left: 2rem;
 }
