@@ -1378,7 +1378,7 @@ sup = superscripts */
     background-color: var(--black);
     border: 4px solid var(--sky-blue);
     color: var(--white);
-    transition: 1s;
+    transition: 2s;
     position: relative;
 }
 
