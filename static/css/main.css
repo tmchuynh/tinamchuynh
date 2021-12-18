@@ -1940,19 +1940,14 @@ sup = superscripts */
     text-decoration: none;
 }
 
-.footer-links .hide {
+.footer-links .vanish {
     display: none;
 }
 
-.footer-links .hide+a:active,
-.footer-links .hide+a:focus,
-.footer-links .hide+a:hover {
+.footer-links .vanish+a:active,
+.footer-links .vanish+a:focus,
+.footer-links .vanish+a:hover {
     display: inline;
-}
-
-.footer-links a:active,
-.footer-links a:focus,
-.footer-links a:hover {
     color: var(--third);
 }
 
