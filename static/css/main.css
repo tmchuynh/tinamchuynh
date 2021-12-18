@@ -1910,7 +1910,7 @@ sup = superscripts */
     background-color: var(--black);
     padding: 45px 0 20px;
     font-size: 15px;
-    line-height: 24px;
+    line-height: 32px;
     color: var(--white);
 }
 
@@ -1954,7 +1954,7 @@ sup = superscripts */
     color: var(--white);
     margin-left: 10px;
     display: none;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .footer-links a:active+.vanish,
