@@ -1948,20 +1948,21 @@ sup = superscripts */
     /*the hyperlinks*/
     color: var(--white);
     text-decoration: none;
+    margin-right: 10px;
 }
 
 .footer-links .vanish {
     color: var(--white);
-    margin-left: 10px;
     display: none;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .footer-links a:active+.vanish,
 .footer-links a:focus+.vanish,
 .footer-links a:hover+.vanish {
     color: var(--secondary);
-    display: inline;
+    display: contents;
+    align-items: center;
 }
 
 .footer-links.inline li {
@@ -1994,6 +1995,11 @@ sup = superscripts */
 @media only screen and (max-width: 991px) {
     .site-footer [class^="col-"] {
         margin-bottom: 30px;
+    }
+    .footer-links .vanish {
+        color: var(--secondary);
+        display: contents;
+        align-items: center;
     }
 }
 
@@ -2056,20 +2062,16 @@ sup = superscripts */
     font-size: 14px;
 }
 
-.social-icons a.facebook:hover {
-    background-color: #3b5998;
-}
-
-.social-icons a.twitter:hover {
-    background-color: #00aced;
-}
-
 .social-icons a.linkedin:hover {
-    background-color: #007bb6;
+    background-color: #0a66c2;
 }
 
-.social-icons a.dribbble:hover {
-    background-color: #ea4c89;
+.social-icons a.dribble:hover {
+    background-color: #e14a84;
+}
+
+.social-icons a.gmail:hover {
+    background-color: #d04137;
 }
 
 @media only screen and (max-width: 767px) {
@@ -2077,6 +2079,15 @@ sup = superscripts */
         display: block;
         margin-right: 0;
         font-weight: 600;
+    }
+    .social-icons a.linkedin {
+        background-color: #0a66c2;
+    }
+    .social-icons a.dribble {
+        background-color: #e14a84;
+    }
+    .social-icons a.gmail {
+        background-color: #d04137;
     }
 }
 
