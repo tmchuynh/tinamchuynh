@@ -20,18 +20,15 @@
     scroll-behavior: smooth;
     /*variables*/
     /* Colors */
-    --red: #C82D35;
+    --logo-red: #C82D35;
     --honolulu-blue: #1c71a4;
     --sky-blue: #7FAFE1;
     --light-blue: #D6F4FF;
     --metal-blue: #5D7A98;
-    --grey: #798897;
+    --grey-00: #798897;
     --black: #1B1C1E;
     --white: #ffffff;
     --off-white: #fffdfc;
-    --grey-1: #f5f3f2;
-    --grey-2: #ebe7e6;
-    --grey-3: #595756;
     /* Typography */
     --font-family: Open Sans, -apple-system, BlinkMacSystemFont, system-ui, ubuntu, noto, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     --line-height: 1.5;
@@ -214,11 +211,13 @@ sup {
   # Text Colors
 --------------------------------------------------------------*/
 
-.primary {
-    color: var(--red);
+.logo-red,
+logo-red {
+    color: var(--logo-red);
 }
 
-.honolulu-blue {
+.honolulu-blue,
+honolulu-blue {
     color: var(--honolulu-blue);
 }
 
@@ -230,20 +229,9 @@ sup {
     color: var(--off-white);
 }
 
-.grey-1 {
-    color: var(--grey-1);
-}
-
-.grey-2 {
-    color: var(--grey-2);
-}
-
-.grey-3 {
-    color: var(--grey);
-}
-
-.grey-4 {
-    color: var(--grey-4);
+.grey-00,
+grey-00 {
+    color: var(--grey-00);
 }
 
 .black {
@@ -256,7 +244,7 @@ sup {
 --------------------------------------------------------------*/
 
 .bg-primary {
-    background-color: var(--red);
+    background-color: var(--logo-red);
 }
 
 .bg-white {
@@ -265,18 +253,6 @@ sup {
 
 .bg-off-white {
     background-color: var(--off-white);
-}
-
-.bg-grey-1 {
-    background-color: var(--grey-1);
-}
-
-.bg-grey-2 {
-    background-color: var(--grey-2);
-}
-
-.bg-grey-3 {
-    background-color: var(--grey-3);
 }
 
 .bg-black {
@@ -288,7 +264,7 @@ sup {
 }
 
 .bg-fix-primary:first-child {
-    box-shadow: var(--spacing-small) 0 0 var(--red), -var(--spacing-small) 0 0 var(--red);
+    box-shadow: var(--spacing-small) 0 0 var(--logo-red), -var(--spacing-small) 0 0 var(--logo-red);
 }
 
 
@@ -305,9 +281,9 @@ sup {
     border-radius: var(--border-radius);
     text-decoration: none;
     font-weight: var(--bold-font-weight);
-    color: var(--red);
+    color: var(--logo-red);
     text-align: center;
-    box-shadow: inset 0 0 0 2px var(--red);
+    box-shadow: inset 0 0 0 2px var(--logo-red);
     transition: var(--hover-transition);
 }
 
@@ -342,7 +318,7 @@ img {
 }
 
 .link:active {
-    transition: var(--red) .15s ease-in;
+    transition: var(--logo-red) .15s ease-in;
 }
 
 .link:focus {
@@ -368,7 +344,7 @@ input:focus,
 textarea:focus,
 a:focus,
 button:focus {
-    box-shadow: inset 0 0 0 2px var(--red);
+    box-shadow: inset 0 0 0 2px var(--logo-red);
     outline: 0!important;
 }
 
@@ -415,8 +391,7 @@ button:focus {
 --------------------------------------------------------------*/
 
 .divider-grey {
-    box-shadow: inset 0 -4px 0 var(--grey-1);
-    /* Link hover states */
+    box-shadow: inset 0 -4px 0 #f5f3f2;
 }
 
 .divider-grey a {
@@ -492,7 +467,7 @@ section {
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
-    color: var(--grey);
+    color: var(--grey-00);
 }
 
 .section-title h2::before {
@@ -501,7 +476,7 @@ section {
     display: block;
     width: 120px;
     height: 1px;
-    background: var(--grey);
+    background: var(--grey-00);
     bottom: 1px;
     left: calc(50% - 60px);
 }
@@ -512,7 +487,7 @@ section {
     display: block;
     width: 40px;
     height: 3px;
-    background: var(--red);
+    background: var(--logo-red);
     bottom: 0;
     left: calc(50% - 20px);
 }
@@ -543,7 +518,7 @@ section {
 
 .facts .icon-box {
     margin: 10px 5px;
-    border: 2px solid var(--red);
+    border: 2px solid var(--logo-red);
     transition: all ease-in-out 0.5s;
     background: var(--white);
     text-align: center;
@@ -580,7 +555,7 @@ section {
 .facts .icon-box .icon svg path {
     /*defines the actual outline/shape of the blob */
     transition: 0.5s;
-    fill: var(--grey-1);
+    fill: #f5f3f2;
 }
 
 .facts .icon-box h3 {
@@ -731,7 +706,7 @@ section {
     left: -10px;
     top: 0;
     background: var(--off-white);
-    border: 3px solid var(--red);
+    border: 3px solid var(--logo-red);
 }
 
 .resume sub,
@@ -740,7 +715,7 @@ section {
 sup = superscripts */
     font-size: 10px;
     font-style: italic;
-    color: var(--grey);
+    color: var(--grey-00);
 }
 
 
@@ -848,7 +823,7 @@ sup = superscripts */
 
 .portfolio ul#filter a {
     text-decoration: none;
-    color: var(--red);
+    color: var(--logo-red);
 }
 
 .portfolio ul#filter a.current {
@@ -856,7 +831,7 @@ sup = superscripts */
 }
 
 .portfolio ul#filter a:focus {
-    box-shadow: inset 0 0 0 2px var(--red);
+    box-shadow: inset 0 0 0 2px var(--logo-red);
     outline: 0!important;
 }
 
@@ -951,14 +926,14 @@ sup = superscripts */
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .book-container .content .btn:hover {
-    background: var(--red);
+    background: var(--logo-red);
     /*removes the border */
     border: 0px;
     color: var(--white);
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .book-container .content .btn a {
-    color: var(--red);
+    color: var(--logo-red);
     text-decoration: none;
 }
 
@@ -1058,7 +1033,7 @@ sup = superscripts */
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-other {
     /* goes under Misc filter */
-    background-color: var(--grey);
+    background-color: var(--grey-00);
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information {
@@ -1102,14 +1077,14 @@ sup = superscripts */
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn:hover {
-    background: var(--red);
+    background: var(--logo-red);
     /*removes the border */
     border: 0px;
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn i {
     font-size: 32px;
-    color: var(--red);
+    color: var(--logo-red);
     font-style: var(--bold-font-weight);
     text-decoration: none;
 }
@@ -1295,7 +1270,7 @@ sup = superscripts */
     padding: 0;
     margin: 0;
     background: var(--white);
-    color: var(--grey);
+    color: var(--grey-00);
 }
 
 #timeline .timeline-item .timeline-content .timeline-bar .task {
@@ -1305,7 +1280,7 @@ sup = superscripts */
     margin: 10px auto;
     width: 90%;
     background: var(--white);
-    color: var(--grey);
+    color: var(--grey-00);
 }
 
 @media only screen and (min-width: 900px) {
@@ -1520,7 +1495,7 @@ sup = superscripts */
     /* card description */
     line-height: 1.7;
     font-size: 16px;
-    color: var(--grey);
+    color: var(--grey-00);
     padding-top: 0px;
     padding-bottom: 20px;
     list-style: circle;
@@ -1548,13 +1523,13 @@ sup = superscripts */
 }
 
 .skills .card:hover {
-    background-color: var(--metal-blue);
+    background-color: var(--sky-blue);
     border: 4px solid var(--black);
 }
 
 .skills .card:hover i {
     transform: rotate(0deg);
-    background-color: var(--metal-blue);
+    background-color: var(--sky-blue);
     border: 4px solid var(--black);
 }
 
@@ -1566,7 +1541,7 @@ sup = superscripts */
 
 .skills .card a {
     /* button */
-    border: 1px solid var(--sky-blue);
+    border: 2px solid var(--black);
     background-color: var(--sky-blue);
     border-radius: 2px;
     color: var(--black);
@@ -1580,6 +1555,7 @@ sup = superscripts */
 .skills .card a:hover {
     background-color: var(--black);
     color: var(--sky-blue);
+    border: 2px solid var(--sky-blue);
 }
 
 
@@ -1677,7 +1653,7 @@ sup = superscripts */
     float: left;
     width: 44px;
     height: 44px;
-    background: var(--metal-blue);
+    background: var(--sky-blue);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1723,7 +1699,7 @@ sup = superscripts */
 
 .contact .php-email-form .error-message {
     display: none;
-    color: var(--red);
+    color: var(--logo-red);
     background: var(--off-white);
     text-align: left;
     padding: 15px;
@@ -1745,7 +1721,7 @@ sup = superscripts */
 
 .contact .php-email-form .loading {
     display: none;
-    background: var(--grey-1);
+    background: #f5f3f2;
     text-align: center;
     padding: 15px;
 }
@@ -1805,13 +1781,13 @@ sup = superscripts */
     background-color: var(--black);
     padding: 45px 0 20px;
     font-size: 15px;
-    line-height: 32px;
+    line-height: 24px;
     color: var(--white);
 }
 
 .site-footer hr {
     /*line across*/
-    border-top-color: var(--red);
+    border-top-color: var(--logo-red);
     opacity: 0.5;
 }
 
@@ -1847,7 +1823,7 @@ sup = superscripts */
 }
 
 .footer-links .vanish {
-    color: var(--honolulu-blue);
+    color: var(--light-blue);
     display: none;
     font-size: 24px;
 }
@@ -1888,18 +1864,12 @@ sup = superscripts */
 
 @media only screen and (max-width: 991px) {
     .site-footer [class^="col-"] {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
     .footer-links .vanish {
-        color: var(--honolulu-blue);
+        color: var(--light-blue);
         display: contents;
         align-items: center;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .site-footer {
-        padding-bottom: 0;
     }
     .site-footer .copyright-text,
     .site-footer .social-icons {
@@ -1934,12 +1904,13 @@ sup = superscripts */
     transition: all 0.2s linear;
 }
 
-.social-icons a:active,
+
+/*.social-icons a:active,
 .social-icons a:focus,
 .social-icons a:hover {
     color: #fff;
     background-color: #29aafe;
-}
+}*/
 
 .social-icons.size-sm a {
     line-height: 34px;
@@ -1949,14 +1920,22 @@ sup = superscripts */
 }
 
 .social-icons a.linkedin:hover {
+    color: #fff;
     background-color: #0a66c2;
 }
 
 .social-icons a.dribble:hover {
+    color: #fff;
     background-color: #e14a84;
 }
 
+.social-icons a.github:hover {
+    background-color: #fff;
+    color: var(--black);
+}
+
 .social-icons a.gmail:hover {
+    color: #fff;
     background-color: #d04137;
 }
 
@@ -1973,6 +1952,10 @@ sup = superscripts */
     .social-icons a.dribble {
         color: #fff;
         background-color: #e14a84;
+    }
+    .social-icons a.github {
+        background-color: #fff;
+        color: var(--black);
     }
     .social-icons a.gmail {
         color: #fff;
