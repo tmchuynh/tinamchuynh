@@ -1560,15 +1560,15 @@ sup = superscripts */
     margin-right: 10px;
 }
 
-.footer-links .vanish {
+.site-footer .vanish {
     color: var(--honolulu-blue);
     display: none;
     font-size: 24px;
 }
 
-.footer-links a:active+.vanish,
-.footer-links a:focus+.vanish,
-.footer-links a:hover+.vanish {
+.site-footer a:active+.vanish,
+.site-footer a:focus+.vanish,
+.site-footer a:hover+.vanish {
     display: contents;
     align-items: center;
 }
@@ -1595,6 +1595,11 @@ sup = superscripts */
 .copyright-text {
     /* small text to left of icons */
     margin: 0;
+}
+
+.copyright-text a {
+    text-decoration: underline;
+    color: var(--white);
 }
 
 @media only screen and (max-width: 991px) {
