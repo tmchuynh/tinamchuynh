@@ -1781,7 +1781,7 @@ sup = superscripts */
     background-color: var(--black);
     padding: 45px 0 20px;
     font-size: 15px;
-    line-height: 24px;
+    line-height: 32px;
     color: var(--white);
 }
 
@@ -1801,7 +1801,8 @@ sup = superscripts */
     font-size: 16px;
     text-transform: uppercase;
     margin-top: 5px;
-    letter-spacing: 2px;
+    margin-bottom: 15px;
+    letter-spacing: 10px;
 }
 
 .footer-links {
@@ -1823,7 +1824,7 @@ sup = superscripts */
 }
 
 .footer-links .vanish {
-    color: var(--light-blue);
+    color: var(--honolulu-blue);
     display: none;
     font-size: 24px;
 }
@@ -1867,9 +1868,15 @@ sup = superscripts */
         margin-bottom: 10px;
     }
     .footer-links .vanish {
-        color: var(--light-blue);
+        color: var(--honolulu-blue);
         display: contents;
         align-items: center;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .site-footer {
+        padding-bottom: 0;
     }
     .site-footer .copyright-text,
     .site-footer .social-icons {
