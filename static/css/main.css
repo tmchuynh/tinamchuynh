@@ -1941,16 +1941,16 @@ sup = superscripts */
     text-decoration: none;
 }
 
-.footer-links li .vanish {
+.footer-links .vanish {
     display: none;
 }
 
-.footer-links li .vanish+a:active,
-.footer-links li .vanish+a:focus,
-.footer-links li .vanish+a:hover {
+.footer-links .vanish+a:active,
+.footer-links .vanish+a:focus,
+.footer-links .vanish+a:hover {
     display: inline;
     padding-right: 10px;
-    color: var(--third);
+    color: var(--secondary);
 }
 
 .footer-links.inline li {
