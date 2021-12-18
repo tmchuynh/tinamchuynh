@@ -22,27 +22,28 @@
     /* Colors */
     --primary: #C82D35;
     --secondary: #1c71a4;
-    --third: #70ABAF;
     --white: #ffffff;
     --off-white: #fffdfc;
     --grey-1: #f5f3f2;
     --grey-2: #ebe7e6;
     --grey-3: #595756;
     --grey-4: #424040;
+    --rosewood: #6A040F;
+    --dark-red: #9d0208;
+    --mint: #AAFAC8;
+    --teal: #20c997;
     --ocean-green: #52B788;
     --green: #1d9924;
     --dark-green: #003e1f;
-    --light-orange: #e96228;
-    --orange: #fe4a2c;
     --yellow: #efd81d;
     --dark-yellow: #ffc107;
+    --peach: #FFBFA0;
+    --light-orange: #e96228;
+    --orange: #fe4a2c;
     --pink: #c76494;
     --light-purple: #a87df2;
     --purple: #6f42c1;
     --darker-purple: #6610f2;
-    --mint: #AAFAC8;
-    --peach: #FFBFA0;
-    --teal: #20c997;
     --sky-blue: #84BCDA;
     --light-sky-blue: #5ed3f3;
     --light-blue: #0dcaf0;
@@ -1948,7 +1949,7 @@ sup = superscripts */
 .footer-links li .vanish+a:focus,
 .footer-links li .vanish+a:hover {
     display: inline;
-    padding-right: 5px;
+    padding-right: 10px;
     color: var(--third);
 }
 
