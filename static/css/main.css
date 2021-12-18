@@ -20,43 +20,18 @@
     scroll-behavior: smooth;
     /*variables*/
     /* Colors */
-    --primary: #C82D35;
-    --secondary: #1c71a4;
+    --red: #C82D35;
+    --honolulu-blue: #1c71a4;
+    --sky-blue: #7FAFE1;
+    --light-blue: #D6F4FF;
+    --metal-blue: #5D7A98;
+    --grey: #798897;
+    --black: #1B1C1E;
     --white: #ffffff;
     --off-white: #fffdfc;
     --grey-1: #f5f3f2;
     --grey-2: #ebe7e6;
     --grey-3: #595756;
-    --grey-4: #424040;
-    --rosewood: #6A040F;
-    --dark-red: #9d0208;
-    --mint: #AAFAC8;
-    --teal: #20c997;
-    --ocean-green: #52B788;
-    --green: #1d9924;
-    --dark-green: #003e1f;
-    --yellow: #efd81d;
-    --dark-yellow: #ffc107;
-    --peach: #FFBFA0;
-    --light-orange: #e96228;
-    --orange: #fe4a2c;
-    --pink: #c76494;
-    --light-purple: #a87df2;
-    --purple: #6f42c1;
-    --darker-purple: #6610f2;
-    --sky-blue: #84BCDA;
-    --light-sky-blue: #5ed3f3;
-    --light-blue: #0dcaf0;
-    --metal-blue: #366c9c;
-    --steal-blue: #2f74c0;
-    --royal-blue: #3d5afe;
-    --star-command-blue: #66b1f1;
-    --cornflower-blue: #4586f7;
-    --midnight-blue: #00427e;
-    --dark-blue: #092048;
-    --brown: #6B2B06;
-    --smoky-black: #1c110a;
-    --black: #000000;
     /* Typography */
     --font-family: Open Sans, -apple-system, BlinkMacSystemFont, system-ui, ubuntu, noto, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     --line-height: 1.5;
@@ -240,11 +215,11 @@ sup {
 --------------------------------------------------------------*/
 
 .primary {
-    color: var(--primary);
+    color: var(--red);
 }
 
-.secondary {
-    color: var(--secondary);
+.honolulu-blue {
+    color: var(--honolulu-blue);
 }
 
 .white {
@@ -264,47 +239,11 @@ sup {
 }
 
 .grey-3 {
-    color: var(--grey-3);
+    color: var(--grey);
 }
 
 .grey-4 {
     color: var(--grey-4);
-}
-
-.dark-green {
-    color: var(--dark-green);
-}
-
-.dark-blue {
-    color: var(--dark-blue);
-}
-
-.mint {
-    color: var(--mint);
-}
-
-.peach {
-    color: var(--peach);
-}
-
-.teal {
-    color: var(--teal);
-}
-
-.sky-blue {
-    color: var(--sky-blue);
-}
-
-.light-purple {
-    color: var(--light-purple);
-}
-
-.brown {
-    color: var(--brown);
-}
-
-.smoky-black {
-    color: var(--smoky-black);
 }
 
 .black {
@@ -317,7 +256,7 @@ sup {
 --------------------------------------------------------------*/
 
 .bg-primary {
-    background-color: var(--primary);
+    background-color: var(--red);
 }
 
 .bg-white {
@@ -337,11 +276,7 @@ sup {
 }
 
 .bg-grey-3 {
-    background-color: var(--grey-4);
-}
-
-.bg-grey-4 {
-    background-color: var(--grey-4);
+    background-color: var(--grey-3);
 }
 
 .bg-black {
@@ -353,7 +288,7 @@ sup {
 }
 
 .bg-fix-primary:first-child {
-    box-shadow: var(--spacing-small) 0 0 var(--primary), -var(--spacing-small) 0 0 var(--primary);
+    box-shadow: var(--spacing-small) 0 0 var(--red), -var(--spacing-small) 0 0 var(--red);
 }
 
 
@@ -370,9 +305,9 @@ sup {
     border-radius: var(--border-radius);
     text-decoration: none;
     font-weight: var(--bold-font-weight);
-    color: var(--primary);
+    color: var(--red);
     text-align: center;
-    box-shadow: inset 0 0 0 2px var(--primary);
+    box-shadow: inset 0 0 0 2px var(--red);
     transition: var(--hover-transition);
 }
 
@@ -398,7 +333,7 @@ img {
 
 .link:link,
 .link:visited {
-    transition: var(--dark-green) .15s ease-in;
+    transition: var(--sky-blue) .15s ease-in;
 }
 
 .link:hover {
@@ -407,7 +342,7 @@ img {
 }
 
 .link:active {
-    transition: var(--primary) .15s ease-in;
+    transition: var(--red) .15s ease-in;
 }
 
 .link:focus {
@@ -433,7 +368,7 @@ input:focus,
 textarea:focus,
 a:focus,
 button:focus {
-    box-shadow: inset 0 0 0 2px var(--primary);
+    box-shadow: inset 0 0 0 2px var(--red);
     outline: 0!important;
 }
 
@@ -490,7 +425,7 @@ button:focus {
 
 .divider-grey ul a:hover,
 .divider-grey ul a:focus {
-    box-shadow: inset 0 -4px 0 var(--primary);
+    box-shadow: inset 0 -4px 0 var(--red);
 }
 
 @media screen and (max-width: 500px) {
@@ -557,7 +492,7 @@ section {
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
-    color: var(--grey-3);
+    color: var(--grey);
 }
 
 .section-title h2::before {
@@ -566,7 +501,7 @@ section {
     display: block;
     width: 120px;
     height: 1px;
-    background: var(--grey-3);
+    background: var(--grey);
     bottom: 1px;
     left: calc(50% - 60px);
 }
@@ -577,7 +512,7 @@ section {
     display: block;
     width: 40px;
     height: 3px;
-    background: var(--primary);
+    background: var(--red);
     bottom: 0;
     left: calc(50% - 20px);
 }
@@ -586,49 +521,6 @@ section {
 /*--------------------------------------------------------------
   # Facts
   --------------------------------------------------------------*/
-
-
-/*.facts .row {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    gap: 15px 20px;
-} 
-
-.facts .icon-box {
- //each box itself 
-    text-align: center;
-    transition: all ease-in-out 0.5s;
-    background: var(--white);
-    box-shadow: 0px 5px 15px 0px var(--grey-2); 
-    //ADDS
-   margin: 10px 5px;
-    width: 200px;
-    height: 200px;
-    border: 2px solid var(--primary);
-}
-
-.facts .row {
-    //container of the boxes
-    text-align: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.facts .icon-box {
-    // each box itself
-    display: grid;
-    grid-template-rows: repeat(auto-fill, minmix(200px, 1fr));
-    grid-gap: 30px;
-    margin: 10px 5px;
-    border: 2px solid var(--primary);
-    transition: all ease-in-out 0.5s;
-    background: var(--white);
-} */
 
 .facts .row {
     display: grid;
@@ -651,7 +543,7 @@ section {
 
 .facts .icon-box {
     margin: 10px 5px;
-    border: 2px solid var(--primary);
+    border: 2px solid var(--red);
     transition: all ease-in-out 0.5s;
     background: var(--white);
     text-align: center;
@@ -703,12 +595,12 @@ section {
 .facts .icon-box span {
     /* counter # */
     font-size: 32px;
-    color: var(--midnight-blue);
+    color: var(--metal-blue);
 }
 
 .facts .icon-box .icon a {
     /* link to more info */
-    color: var(--grey-3);
+    color: var(--sky-blue);
     transition: ease-in-out 0.3s;
     /*will need to edit when added */
 }
@@ -719,7 +611,7 @@ section {
 }
 
 .facts .iconbox-peach i {
-    color: var(--peach);
+    color: #FFBFA0;
 }
 
 .facts .iconbox-peach:hover .icon i {
@@ -727,11 +619,11 @@ section {
 }
 
 .facts .iconbox-peach:hover .icon path {
-    fill: var(--peach);
+    fill: #FFBFA0;
 }
 
 .facts .iconbox-light-purple i {
-    color: var(--light-purple);
+    color: #a87df2;
 }
 
 .facts .iconbox-light-purple:hover .icon i {
@@ -739,11 +631,11 @@ section {
 }
 
 .facts .iconbox-light-purple:hover .icon path {
-    fill: var(--light-blue);
+    fill: #a87df2;
 }
 
 .facts .iconbox-mint i {
-    color: var(--mint);
+    color: #AAFAC8;
 }
 
 .facts .iconbox-mint:hover .icon i {
@@ -751,11 +643,11 @@ section {
 }
 
 .facts .iconbox-mint:hover .icon path {
-    fill: var(--mint);
+    fill: #AAFAC8;
 }
 
 .facts .iconbox-yellow i {
-    color: var(--yellow);
+    color: #efd81d;
 }
 
 .facts .iconbox-yellow:hover .icon i {
@@ -763,7 +655,7 @@ section {
 }
 
 .facts .iconbox-yellow:hover .icon path {
-    fill: var(--yellow);
+    fill: #efd81d;
 }
 
 
@@ -783,7 +675,7 @@ section {
     font-weight: 700;
     margin-top: 10px;
     margin-bottom: 20px;
-    color: var(--secondary);
+    color: var(--honolulu-blue);
 }
 
 .resume .resume-item {
@@ -791,7 +683,7 @@ section {
     /* padding: top right bottom left */
     padding: 0 0 20px 20px;
     margin-top: -2px;
-    border-left: 2px solid var(--grey-2);
+    border-left: 2px solid var(--metal-blue);
     position: relative;
 }
 
@@ -802,7 +694,7 @@ section {
     font-weight: 600;
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
-    color: var(--smoky-black);
+    color: var(--black);
     margin-bottom: 10px;
 }
 
@@ -839,7 +731,7 @@ section {
     left: -10px;
     top: 0;
     background: var(--off-white);
-    border: 3px solid var(--primary);
+    border: 3px solid var(--red);
 }
 
 .resume sub,
@@ -848,7 +740,7 @@ section {
 sup = superscripts */
     font-size: 10px;
     font-style: italic;
-    color: var(--grey-3);
+    color: var(--grey);
 }
 
 
@@ -907,7 +799,7 @@ sup = superscripts */
     position: absolute;
     top: 50%;
     background: url(https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/arrow.svg?sanitize=true) center no-repeat;
-    color: var(--smoky-black);
+    color: var(--black);
     filter: invert(77%) sepia(32%) saturate(1%) hue-rotate(344deg) brightness(105%) contrast(103%);
     border: none;
     width: 2rem;
@@ -956,7 +848,7 @@ sup = superscripts */
 
 .portfolio ul#filter a {
     text-decoration: none;
-    color: var(--primary);
+    color: var(--red);
 }
 
 .portfolio ul#filter a.current {
@@ -964,7 +856,7 @@ sup = superscripts */
 }
 
 .portfolio ul#filter a:focus {
-    box-shadow: inset 0 0 0 2px var(--primary);
+    box-shadow: inset 0 0 0 2px var(--red);
     outline: 0!important;
 }
 
@@ -1008,7 +900,7 @@ sup = superscripts */
     background-size: cover;
     text-align: center;
     transition: 0.3s;
-    border: 3px solid var(--smoky-black);
+    border: 3px solid var(--black);
 }
 
 .portfolio .project-cards ul#portfolio .booking-card::before {
@@ -1059,14 +951,14 @@ sup = superscripts */
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .book-container .content .btn:hover {
-    background: var(--primary);
+    background: var(--red);
     /*removes the border */
     border: 0px;
     color: var(--white);
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .book-container .content .btn a {
-    color: var(--primary);
+    color: var(--red);
     text-decoration: none;
 }
 
@@ -1125,47 +1017,48 @@ sup = superscripts */
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-reactJS {
     /* goes under Web filter */
-    background-color: var(--light-sky-blue);
+    background-color: var(--sky-blue);
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-js {
     /* goes under Web filter */
-    background-color: var(--yellow);
+    background-color: #efd81d;
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-typescript {
     /* goes under Web filter */
-    background-color: var(--steal-blue);
+    background-color: var(--metal-blue);
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-sass {
     /* goes under Web filter */
-    background-color: var(--pink);
+    background-color: #c76494;
+    ;
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-ionic {
     /* goes under App filter */
-    background-color: var(--cornflower-blue);
+    background-color: var(--light-blue);
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-reactNav {
     /* goes under App filter */
-    background-color: var(--light-sky-blue);
+    background-color: var(--honolulu-blue);
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-nativescript {
     /* goes under App filter */
-    background-color: var(--royal-blue);
+    background-color: var(--light-blue);
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-flutter {
     /* goes under App filter */
-    background-color: var(--star-command-blue);
+    background-color: var(--light-blue);
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-other {
     /* goes under Misc filter */
-    background-color: var(--grey-3);
+    background-color: var(--grey);
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information {
@@ -1190,7 +1083,7 @@ sup = superscripts */
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    background: var(--grey-2);
+    background: var(--light-blue);
     font-weight: bold;
     justify-content: center;
     align-content: center;
@@ -1209,14 +1102,14 @@ sup = superscripts */
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn:hover {
-    background: var(--primary);
+    background: var(--red);
     /*removes the border */
     border: 0px;
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn i {
     font-size: 32px;
-    color: var(--primary);
+    color: var(--red);
     font-style: var(--bold-font-weight);
     text-decoration: none;
 }
@@ -1402,7 +1295,7 @@ sup = superscripts */
     padding: 0;
     margin: 0;
     background: var(--white);
-    color: var(--grey-3);
+    color: var(--grey);
 }
 
 #timeline .timeline-item .timeline-content .timeline-bar .task {
@@ -1412,7 +1305,7 @@ sup = superscripts */
     margin: 10px auto;
     width: 90%;
     background: var(--white);
-    color: var(--grey-3);
+    color: var(--grey);
 }
 
 @media only screen and (min-width: 900px) {
@@ -1608,9 +1501,9 @@ sup = superscripts */
     /* each card individually */
     padding: 25px;
     text-align: center;
-    background-color: var(--smoky-black);
-    border: 4px solid var(--ocean-green);
-    color: var(--grey-2);
+    background-color: var(--black);
+    border: 4px solid var(--sky-blue);
+    color: var(--light-blue);
     transition: 1s;
     position: relative;
 }
@@ -1627,7 +1520,7 @@ sup = superscripts */
     /* card description */
     line-height: 1.7;
     font-size: 16px;
-    color: var(--grey-2);
+    color: var(--grey);
     padding-top: 0px;
     padding-bottom: 20px;
     list-style: circle;
@@ -1644,14 +1537,14 @@ sup = superscripts */
     padding: 15px;
     width: 75px;
     height: 75px;
-    color: var(--smoky-black);
-    background-color: var(--ocean-green);
+    color: var(--black);
+    background-color: var(--sky-blue);
     position: absolute;
     top: calc(-75px / 2);
     transform: rotate(45deg);
     left: 39%;
     transition: 1s;
-    border: 2px solid var(--ocean-green);
+    border: 2px solid var(--sky-blue);
 }
 
 .skills .card:hover {
@@ -1665,16 +1558,16 @@ sup = superscripts */
 
 .skills .card:hover h4,
 .skills .card:hover ul {
-    color: var(--smoky-black);
+    color: var(--black);
     transition: 1s;
 }
 
 .skills .card a {
     /* button */
-    border: 1px solid var(--ocean-green);
-    background-color: var(--ocean-green);
+    border: 1px solid var(--sky-blue);
+    background-color: var(--sky-blue);
     border-radius: 2px;
-    color: var(--smoky-black);
+    color: var(--black);
     transition: background-color 0.8s;
     padding: 12px 20px;
     letter-spacing: 1.5px;
@@ -1683,8 +1576,8 @@ sup = superscripts */
 }
 
 .skills .card a:hover {
-    background-color: var(--smoky-black);
-    color: var(--ocean-green);
+    background-color: var(--black);
+    color: var(--sky-blue);
 }
 
 
@@ -1778,11 +1671,11 @@ sup = superscripts */
 
 .contact .info i {
     font-size: 20px;
-    color: var(--secondary);
+    color: var(--honolulu-blue);
     float: left;
     width: 44px;
     height: 44px;
-    background: var(--grey-2);
+    background: var(--grey);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1813,7 +1706,7 @@ sup = superscripts */
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-    background: var(--secondary);
+    background: var(--honolulu-blue);
     color: var(--white);
 }
 
@@ -1828,7 +1721,7 @@ sup = superscripts */
 
 .contact .php-email-form .error-message {
     display: none;
-    color: var(--primary);
+    color: var(--red);
     background: var(--off-white);
     text-align: left;
     padding: 15px;
@@ -1862,7 +1755,7 @@ sup = superscripts */
     width: 24px;
     height: 24px;
     margin: 0 10px -6px 0;
-    border: 3px solid var(--dark-green);
+    border: 3px solid var(--metal-blue);
     border-top-color: #eee;
     -webkit-animation: animate-loading 1s linear infinite;
     animation: animate-loading 1s linear infinite;
@@ -1916,7 +1809,7 @@ sup = superscripts */
 
 .site-footer hr {
     /*line across*/
-    border-top-color: var(--primary);
+    border-top-color: var(--red);
     opacity: 0.5;
 }
 
@@ -1952,7 +1845,7 @@ sup = superscripts */
 }
 
 .footer-links .vanish {
-    color: var(--white);
+    color: var(--honolulu-blue);
     display: none;
     font-size: 24px;
 }
@@ -1960,7 +1853,6 @@ sup = superscripts */
 .footer-links a:active+.vanish,
 .footer-links a:focus+.vanish,
 .footer-links a:hover+.vanish {
-    color: var(--secondary);
     display: contents;
     align-items: center;
 }
@@ -1997,7 +1889,7 @@ sup = superscripts */
         margin-bottom: 30px;
     }
     .footer-links .vanish {
-        color: var(--secondary);
+        color: var(--honolulu-blue);
         display: contents;
         align-items: center;
     }
@@ -2022,14 +1914,6 @@ sup = superscripts */
 .social-icons li {
     display: inline-block;
     margin-bottom: 4px;
-}
-
-.social-icons li.title {
-    margin-right: 15px;
-    text-transform: uppercase;
-    color: #96a2b2;
-    font-weight: 700;
-    font-size: 13px;
 }
 
 .social-icons a {
@@ -2081,12 +1965,15 @@ sup = superscripts */
         font-weight: 600;
     }
     .social-icons a.linkedin {
+        color: #fff;
         background-color: #0a66c2;
     }
     .social-icons a.dribble {
+        color: #fff;
         background-color: #e14a84;
     }
     .social-icons a.gmail {
+        color: #fff;
         background-color: #d04137;
     }
 }
