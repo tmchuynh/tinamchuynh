@@ -1952,6 +1952,7 @@ sup = superscripts */
 .footer-links a:hover+.vanish {
     color: var(--secondary);
     display: inline;
+    box-shadow: 2px 2px 10px var(--secondary);
 }
 
 .footer-links.inline li {
