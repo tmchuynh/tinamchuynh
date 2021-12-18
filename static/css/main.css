@@ -1947,8 +1947,13 @@ sup = superscripts */
 .footer-links .hide+a:active,
 .footer-links .hide+a:focus,
 .footer-links .hide+a:hover {
-    color: var(--third);
     display: inline;
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+    color: var(--third);
 }
 
 .footer-links.inline li {
