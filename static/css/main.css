@@ -1923,21 +1923,6 @@ sup = superscripts */
     letter-spacing: 2px;
 }
 
-.site-footer a {
-    /*the hyperlinks*/
-    color: var(--white);
-    text-decoration: none;
-}
-
-.site-footer .hide {
-    display: none;
-}
-
-.site-footer a:hover+.hide {
-    color: var(--third);
-    display: inline;
-}
-
 .footer-links {
     /* ul element itself */
     padding-left: 0;
@@ -1950,14 +1935,20 @@ sup = superscripts */
 }
 
 .footer-links a {
-    color: #737373;
+    /*the hyperlinks*/
+    color: var(--white);
+    text-decoration: none;
 }
 
-.footer-links a:active,
-.footer-links a:focus,
-.footer-links a:hover {
-    color: #3366cc;
-    text-decoration: none;
+.footer-links .hide {
+    display: none;
+}
+
+.footer-links a:active+.hide,
+.footer-links a:focus+.hide,
+.footer-links a:hover+.hide {
+    color: var(--third);
+    display: inline;
 }
 
 .footer-links.inline li {
