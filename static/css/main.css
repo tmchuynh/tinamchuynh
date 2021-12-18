@@ -1563,7 +1563,7 @@ sup = superscripts */
 .site-footer .vanish {
     color: var(--honolulu-blue);
     display: none;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .site-footer a:active+.vanish,
