@@ -306,6 +306,15 @@ button:focus {
     box-shadow: inset 0 -4px 0 var(--sky-blue);
 }
 
+nav ul ul {
+    position: absolute;
+    display: none;
+}
+
+nav li:hover ul {
+    display: block;
+}
+
 @media screen and (max-width: 768px) {
     nav.navbar {
         float: none;
@@ -314,19 +323,12 @@ button:focus {
     nav.navbar ul {
         display: block;
     }
-    nav.navbar ul li:hover ul {
+    nav.navbar ul li:nth-child(2):focus ul {
         display: block;
-        border: 2px solid var(--sky-blue);
     }
-}
-
-nav ul ul {
-    position: absolute;
-    display: none;
-}
-
-nav li:hover ul {
-    display: block;
+    nav.navbar ul li:nth-child(2):focus li:nth-child(n+2) {
+        display: none;
+    }
 }
 
 
