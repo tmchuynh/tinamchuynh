@@ -1529,13 +1529,13 @@ sup = superscripts */
 
 .site-footer hr {
     /*line across*/
-    border-top-color: var(--logo-red);
+    border-top-color: var(--sky-blue);
     opacity: 0.5;
 }
 
 .site-footer h6 {
     /*category names*/
-    color: var(--white);
+    color: var(--logo-red);
     text-transform: uppercase;
     font-size: 16px;
     margin-top: 5px;
@@ -1562,7 +1562,7 @@ sup = superscripts */
 }
 
 .site-footer .vanish {
-    color: var(--honolulu-blue);
+    color: var(--sky-blue);
     display: none;
     font-size: 22px;
 }
@@ -1574,7 +1574,7 @@ sup = superscripts */
     align-items: center;
 }
 
-.copyright-text {
+.site-footer .copyright-text {
     /* small text to left of icons */
     margin: 0;
 }
@@ -1583,8 +1583,8 @@ sup = superscripts */
     .site-footer [class^="col-"] {
         margin-bottom: 10px;
     }
-    .footer-links .vanish {
-        color: var(--honolulu-blue);
+    .site-footer .vanish {
+        color: var(--sky-blue);
         display: contents;
         align-items: center;
     }
@@ -1600,7 +1600,7 @@ sup = superscripts */
     }
 }
 
-.social-icons li {
+.site-footer .social-icons li {
     display: inline-block;
     margin-bottom: 4px;
 }
@@ -1633,14 +1633,6 @@ sup = superscripts */
     transition: all 0.2s linear;
     font-size: 20px;
 }
-
-
-/*.social-icons a:active,
-.social-icons a:focus,
-.social-icons a:hover {
-    color: #fff;
-    background-color: #29aafe;
-}*/
 
 .social-icons a.linkedin:hover {
     color: #fff;
