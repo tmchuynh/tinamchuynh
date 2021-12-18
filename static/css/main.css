@@ -1944,9 +1944,9 @@ sup = superscripts */
     display: none;
 }
 
-.footer-links a:active+.hide,
-.footer-links a:focus+.hide,
-.footer-links a:hover+.hide {
+.footer-links .hide+a:active,
+.footer-links .hide+a:focus,
+.footer-links .hide+a:hover {
     color: var(--third);
     display: inline;
 }
