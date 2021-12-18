@@ -187,17 +187,9 @@ honolulu-blue {
     color: var(--white);
 }
 
-.off-white {
-    color: var(--off-white);
-}
-
 .grey-00,
 grey-00 {
     color: var(--grey-00);
-}
-
-.black {
-    color: var(--black);
 }
 
 
@@ -302,7 +294,7 @@ button:focus {
 --------------------------------------------------------------*/
 
 .divider-grey {
-    box-shadow: inset 0 -4px 0 #f5f3f2;
+    box-shadow: inset 0 -4px 0 var(--grey-00);
 }
 
 .divider-grey a {
@@ -311,7 +303,7 @@ button:focus {
 
 .divider-grey ul a:hover,
 .divider-grey ul a:focus {
-    box-shadow: inset 0 -4px 0 var(--honolulu-blue);
+    box-shadow: inset 0 -4px 0 var(--sky-blue);
 }
 
 @media screen and (max-width: 500px) {
