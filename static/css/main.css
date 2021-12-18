@@ -425,7 +425,7 @@ button:focus {
 
 .divider-grey ul a:hover,
 .divider-grey ul a:focus {
-    box-shadow: inset 0 -4px 0 var(--red);
+    box-shadow: inset 0 -4px 0 var(--honolulu-blue);
 }
 
 @media screen and (max-width: 500px) {
@@ -1548,12 +1548,14 @@ sup = superscripts */
 }
 
 .skills .card:hover {
-    background-color: transparent;
+    background-color: var(--metal-blue);
+    border: 4px solid var(--black);
 }
 
 .skills .card:hover i {
     transform: rotate(0deg);
-    background-color: var(--white);
+    background-color: var(--metal-blue);
+    border: 4px solid var(--black);
 }
 
 .skills .card:hover h4,
@@ -1671,11 +1673,11 @@ sup = superscripts */
 
 .contact .info i {
     font-size: 20px;
-    color: var(--honolulu-blue);
+    color: var(--black);
     float: left;
     width: 44px;
     height: 44px;
-    background: var(--grey);
+    background: var(--metal-blue);
     display: flex;
     justify-content: center;
     align-items: center;
