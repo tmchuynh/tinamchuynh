@@ -1941,15 +1941,17 @@ sup = superscripts */
     text-decoration: none;
 }
 
-.footer-links i {
+.footer-links .vanish {
     color: var(--white);
-    margin-right: 10px;
+    margin-left: 10px;
+    display: none;
 }
 
-.footer-links a:active,
-.footer-links a:focus,
-.footer-links a:hover {
+.footer-links a:active+.vanish,
+.footer-links a:focus+.vanish,
+.footer-links a:hover+.vanish {
     color: var(--secondary);
+    display: inline;
 }
 
 .footer-links.inline li {
