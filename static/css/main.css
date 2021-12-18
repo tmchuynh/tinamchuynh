@@ -99,7 +99,7 @@ html {
 body {
     background-color: var(--white);
     font-family: var(--font-family);
-    font-size: var(--spacing-medium);
+    font-size: var(--font-size);
     line-height: var(--line-height);
     font-weight: var(--body-font-weight);
     -webkit-font-smoothing: antialiased;
@@ -1954,6 +1954,7 @@ sup = superscripts */
     color: var(--white);
     margin-left: 10px;
     display: none;
+    font-size: 24px;
 }
 
 .footer-links a:active+.vanish,
