@@ -56,17 +56,6 @@
   # Typography
 --------------------------------------------------------------*/
 
-html {
-    font-size: var(--font-size);
-    @media (--breakpoint-medium) {
-        font-size: var(--font-size-m);
-    }
-    @media (--breakpoint-large) {
-        font-size: var(--font-size-l);
-    }
-    background-color: var(--black);
-}
-
 body {
     background-color: var(--white);
     font-family: var(--font-family);
@@ -75,7 +64,6 @@ body {
     font-weight: var(--body-font-weight);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: var(--off-white);
 }
 
 p {
@@ -91,81 +79,6 @@ sup {
     font-size: .6rem;
     font-weight: 700;
     vertical-align: super;
-}
-
-@media only screen and (--breakpoint-not-small) {
-    .measure-ns {
-        max-width: 30em;
-    }
-    .measure-wide-ns {
-        max-width: 34em;
-    }
-    .measure-narrow-ns {
-        max-width: 20em;
-    }
-    .indent-ns {
-        text-indent: 1em;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    .small-caps-ns {
-        font-variant: small-caps;
-    }
-    .truncate-ns {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-}
-
-@media only screen and (--breakpoint-medium) {
-    .measure-m {
-        max-width: 30em;
-    }
-    .measure-wide-m {
-        max-width: 34em;
-    }
-    .measure-narrow-m {
-        max-width: 20em;
-    }
-    .indent-m {
-        text-indent: 1em;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    .small-caps-m {
-        font-variant: small-caps;
-    }
-    .truncate-m {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-}
-
-@media only screen and (--breakpoint-large) {
-    .measure-l {
-        max-width: 30em;
-    }
-    .measure-wide-l {
-        max-width: 34em;
-    }
-    .measure-narrow-l {
-        max-width: 20em;
-    }
-    .indent-l {
-        text-indent: 1em;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    .small-caps-l {
-        font-variant: small-caps;
-    }
-    .truncate-l {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
 }
 
 
