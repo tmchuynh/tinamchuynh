@@ -325,7 +325,17 @@ button:focus {
 @media screen and (max-width: 768px) {
     .navbar {
         width: 100%;
+        height: 100px;
+        overflow: hidden;
     }
+    .navbar a {
+        margin-bottom: 15px;
+    }
+    /*.navbar>.mobile_nav:focus {
+        height: fit-content;
+        overflow: visible;
+        background-color: var(--black);
+    }*/
     .navbar .mobile_nav {
         float: right;
         display: inline;
@@ -334,7 +344,7 @@ button:focus {
     .navbar ul ul {
         display: none;
     }
-    .navbar .mobile_nav:focus ul {
+    .navbar .mobile_nav:focus~ul {
         display: block;
     }
     .navbar ul li:focus ul {
