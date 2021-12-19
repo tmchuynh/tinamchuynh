@@ -319,17 +319,16 @@ button:focus {
     display: none;
     position: relative;
     font-size: 32px;
-    margin-right: 15px;
-    margin-top: 15px;
+    padding-right: 50px;
 }
 
 @media screen and (max-width: 768px) {
     .navbar {
-        display: block;
+        width: 100%;
     }
     .navbar .mobile_nav {
         float: right;
-        display: contents;
+        display: inline;
     }
     .navbar ul,
     .navbar ul ul {
