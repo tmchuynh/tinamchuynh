@@ -39,12 +39,8 @@
                         <li class="nav-item col-lg-2">
                             <a class="nav-link white" href="/tmch-website/about.html">About</a>
                         </li>
-                        <li class="nav-item dropdown col-lg-2">
-                            <a class="nav-link white" href="#" role="button" data-bs-toggle="dropdown">Portfolio<i class="bi bi-caret-down-fill"></i></a>
-                            <ul class="dropdown-menu bg-eerie-black">
-                                <li><a class="dropdown-item white" href="/tmch-website/portfolio.html">Projects</a></li>
-                                <li><a class="dropdown-item white" href="/tmch-website/timeline.html">Future Projects</a></li>
-                            </ul>
+                        <li class="nav-item col-lg-2">
+                            <a class="nav-link white" href="/tmch-website/portfolio.html">Projects</a>
                         </li>
                         <li class="nav-item col-lg-2">
                             <a class="nav-link white" href="/tmch-website/resume.html">Resume</a>
@@ -76,19 +72,13 @@
     <!-- END OF HEADING SECTION -->
 
     <!-- PORTFOLIO SECTION-->
-    <!--NEEDS TO BE CENTERED ON MOBILE (MAYBE SHRINK TO MIN-CONTENT TO SAVE SPACE)-->
-    <!--MAYBE EVEN CONSIDER A FOLDABLE FORMAT TO SHOW INSTEAD WHEN ON MOBILE-->
-
-    <!--ADD SECTION TO ASK TO ADD A PROJECT / GET HELP W A PROJ / HIRE ETC -->
-    <!-- IF ADDED, INCLUDE A BUTTON TO LIST/UNHIDE ALL KNOWN LANGS, LANGS LEARNING, AND LANGS WANTING TO LEARN AKA WISHLIST LANGS-->
-
-    <!--CHANGE THE SHAPE OF TAGS TO BE PTED TIPS (SHARP)-->
     <section class="portfolio">
         <div class="section-title">
             <h2>
-                Portfolio
+                Projects
             </h2>
-            <div class="tc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div class="tc">Below are some of my past and current projects. Each are labeled with any areas the projects challenged me to further develop my skills in and linked with any website(s) respectively.<br><br><b>Note:</b> If you would like to view a full list
+                of my past and present projects, visit my <a href="https://github.com/t-mc-huynh">GitHub</a>.</div>
         </div>
 
         <!--FILTER BUTTONS-->
@@ -106,217 +96,47 @@
                 <li class="booking-card web" style="background-image: url(https://images.unsplash.com/photo-1580137197581-df2bb346a786?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);">
                     <div class="book-container">
                         <div class="content">
-                            <!--GLIGHTBOX FOR MORE INFO-->
-                            <button class="btn">
+                            <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub">
                                 <a href="/tmch-website">
-                                    MORE <i class="bi-info-circle-fill"></i>
+                                    <i class="bi bi-github"></i>
                                 </a>
                             </button>
                         </div>
                     </div>
                     <div class="informations-container">
-                        <h2 class="title">Project Name</h2>
+                        <h2 class="title">Portfolio Website</h2>
                         <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            This project opened the doors of my imagination to the world of web and mobile development. During it's development stages, I learned a lot about HTML/CSS, JS, and their frameworks and libraries. It added multitudes of tasks to my to-do list I was eager
+                            to tackle head-on.
                         </p>
-                        <span class="tag tag-typescript">Typescript</span>
-                        <span class="tag tag-reactJS">REACT JS</span>
-                        <span class="tag tag-sass">Sass</span>
-                        <div class="more-information">
-                            <div class="info-and-date-container">
-                                <div class="box" style="background-image: url(https://images.unsplash.com/photo-1580137197581-df2bb346a786?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);">
-                                    <button class="btn">
-                                        <a href="/tmch-website">
-                                            <i class="bi bi-github"></i>
-                                        </a>
-                                    </button>
-                                    <!--GLIGHTBOX OR DIFFERENT PAGE-->
-                                    <button class="btn">
-                                        <a href="/tmch-website">
-                                            <!--the ppl are for when the proj was a group proj
-                                            this btn would lead to a pg/pop up with their info (links, photos, etc.)-->
-                                            <i class="bi bi-people-fill"></i>
-                                        </a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+                        <span class="badge rounded-pill" style="background-color: #7910f2;">Bootstrap</span>
                     </div>
                 </li>
                 <!--SECTION-->
-                <li class="booking-card web" style="background-image: url(https://images.immediate.co.uk/production/volatile/sites/4/2021/08/mountains-7ddde89.jpg?quality=90&resize=768,574);">
+                <li class="booking-card web" style="background-image: url(https://assets.entrepreneur.com/content/3x2/2000/20150622231001-for-sale-real-estate-home-house.jpeg);">
                     <div class="book-container">
                         <div class="content">
-                            <button class="btn">
+                            <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub">
                                 <a href="/tmch-website">
-                                    MORE <i class="bi-info-circle-fill"></i>
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </button>
+                            <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="Visit Website" disabled>
+                                <a href="/tmch-website">
+                                    <i class="bi bi-link-45deg"></i>
                                 </a>
                             </button>
                         </div>
                     </div>
                     <div class="informations-container">
-                        <h2 class="title">Project Name</h2>
+                        <h2 class="title">Real Estate Website</h2>
                         <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            FirstGalaxy Incorporated's website challenged me to learn MySQL, how to use APIs, and much more.<br><br><b>Note:</b> This project is currently in the works.
                         </p>
-                        <span class="tag tag-reactJS">REACT JS</span>
-                        <span class="tag tag-js">JS</span>
-                        <div class="more-information">
-                            <div class="info-and-date-container">
-                                <div class="box" style="background-image: url(https://images.immediate.co.uk/production/volatile/sites/4/2021/08/mountains-7ddde89.jpg?quality=90&resize=768,574);">
-                                    <button class="btn">
-                                        <a href="/tmch-website">
-                                            <i class="bi bi-github"></i>
-                                        </a>
-                                    </button>
-                                    <button class="btn">
-                                        <a href="/tmch-website/proj1.html">
-                                            <!--CHECKLIST / TIMELINE FOR PLANNED FEATURES-->
-                                            <i class="bi bi-list-check"></i>
-                                        </a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+                        <span class="badge rounded-pill" style="background-color: #008080;">APIs</span>
+                        <span class="badge rounded-pill" style="background-color: #4479a1;">MySQL</span>
                     </div>
                 </li>
-                <!--SECTION-->
-                <li class="booking-card app" style="background-image: url(https://hips.hearstapps.com/hbu.h-cdn.co/assets/15/30/1437681387-daisy-fun-facts.jpg)">
-                    <div class="book-container">
-                        <div class="content">
-                            <button class="btn">
-                                <a href="/tmch-website">
-                                    MORE <i class="bi-info-circle-fill"></i>
-                                </a>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="informations-container">
-                        <h2 class="title">Project Name</h2>
-                        <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                        <span class="tag tag-ionic">Ionic</span>
-                        <div class="more-information">
-                            <div class="info-and-date-container">
-                                <div class="box" style="background-image: url(https://hips.hearstapps.com/hbu.h-cdn.co/assets/15/30/1437681387-daisy-fun-facts.jpg);">
-                                    <button class="btn">
-                                        <a href="/tmch-website">
-                                            <i class="bi bi-github"></i>
-                                        </a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <!--SECTION-->
-                <li class="booking-card app" style="background-image: url(https://images.unsplash.com/photo-1578944032637-f09897c5233d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ)">
-                    <div class="book-container">
-                        <div class="content">
-                            <button class="btn">
-                                <a href="/tmch-website">
-                                    MORE <i class="bi-info-circle-fill"></i>
-                                </a>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="informations-container">
-                        <h2 class="title">Project Name</h2>
-                        <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                        <span class="tag tag-flutter">Flutter</span>
-                        <div class="more-information">
-                            <div class="info-and-date-container">
-                                <div class="box" style="background-image: url(https://images.unsplash.com/photo-1579489225078-27977a77bf72?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);">
-                                    <button class="btn">
-                                        <a href="/tmch-website">
-                                            <i class="bi bi-github"></i>
-                                        </a>
-                                    </button>
-                                    <button class="btn">
-                                        <a href="/tmch-website">
-                                            <i class="bi bi-people-fill"></i>
-                                        </a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <!--SECTION-->
-                <li class="booking-card app" style="background-image: url(https://www.huntington.org/sites/default/files/styles/photo_gallery/public/photo-gallery/ebbtide_rose.jpg?itok=Odgl0TBL);">
-                    <div class="book-container">
-                        <div class="content">
-                            <button class="btn">
-                                <a href="/tmch-website">
-                                    MORE <i class="bi-info-circle-fill"></i>
-                                </a>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="informations-container">
-                        <h2 class="title">Project Name</h2>
-                        <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                        <span class="tag tag-reactNav">React Navtive</span>
-                        <span class="tag tag-nativescript">NativeScript</span>
-                        <div class="more-information">
-                            <div class="info-and-date-container">
-                                <div class="box" style="background-image: url(https://www.huntington.org/sites/default/files/styles/photo_gallery/public/photo-gallery/ebbtide_rose.jpg?itok=Odgl0TBL);">
-                                    <button class="btn">
-                                        <a href="/tmch-website">
-                                            <i class="bi bi-github"></i>
-                                        </a>
-                                    </button>
-                                    <button class="btn">
-                                        <a href="/tmch-website/proj1.html">
-                                            <i class="bi bi-list-check"></i>
-                                        </a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <!--SECTION-->
-                <li class="booking-card misc" style="background-image: url(https://images.unsplash.com/photo-1532509854226-a2d9d8e66f8e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);">
-                    <div class="book-container">
-                        <div class="content">
-                            <button class="btn">
-                                <a href="/tmch-website">
-                                    MORE <i class="bi-info-circle-fill"></i>
-                                </a>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="informations-container">
-                        <h2 class="title">Project Name</h2>
-                        <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                        <span class="tag tag-other">Misc</span>
-                        <div class="more-information">
-                            <div class="info-and-date-container">
-                                <div class="box" style="background-image: url(https://images.unsplash.com/photo-1532509854226-a2d9d8e66f8e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);">
-                                    <button class="btn">
-                                        <a href="/tmch-website">
-                                            <i class="bi bi-github"></i>
-                                        </a>
-                                    </button>
-                                    <button class="btn">
-                                        <a href="/tmch-website/proj1.html">
-                                            <i class="bi bi-list-check"></i>
-                                        </a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <!--SECTION-->
             </ul>
         </div>
     </section>
