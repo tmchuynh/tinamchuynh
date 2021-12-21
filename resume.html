@@ -38,29 +38,45 @@
 </head>
 
 <body>
-    <nav class="overflow-x-scroll overflow-x-visible-ns flex justify-between items-center divider-grey center bg-black relative">
-        <!-- LOGO LEFT OF NAV -->
-        <a href="/tmch-website/" class="pa3 db mr4 h-75 w4 flex-none">
-            <img src="static/images/Logo.png" alt="TH logo" class="br0 db mb0 w-100" />
-        </a>
+    <nav class="navbar navbar-expand-lg bg-eerie-black fixed-md-top pb-0 white">
+        <div class="container-fluid center-md">
 
-        <!-- PRIMARY NAV -->
-        <ul class="flex b list f3 ma0 pa0">
-            <li><a href="/tmch-website/about.html" class="pa3 no-underline db white">About</a></li>
+            <div class="container-fluid mt-3 mb-4 col-lg-3 col-sm-12">
+                <a href="/tmch-website" class="navbar-brand">
+                    <img src="static/images/Logo.png" alt="TH logo" style="width: 125px;" />
+                </a>
 
-            <li><a href="/tmch-website/portfolio.html" class="pa3 no-underline db white bg-black">Portfolio</a>
-                <ul>
-                    <a href="/tmch-website/portfolio.html" class="pa3 no-underline db white bg-black">Projects</a>
-                    <a href="/tmch-website/timeline.html" class="pa3 no-underline db white bg-black">Future Projects</a>
-                </ul>
-            </li>
+                <button class="navbar-toggler float-end" style="padding-top: 12px;" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <i class="bi bi-list navbar-toggler-icon white pt-2"></i>
+                </button>
+            </div>
 
-            <li><a href="/tmch-website/resume.html" class="pa3 no-underline db white">Resume</a></li>
-
-            <li><a href="/tmch-website/services.html" class="pa3 no-underline db white">Services</a></li>
-
-            <li><a href="/tmch-website/contact.html" class="pa3 no-underline db white">Contact</a></li>
-        </ul>
+            <div class="container-fluid col-lg-12">
+                <div class="collapse navbar-collapse row ps-4 pb-2" id="collapsibleNavbar">
+                    <ul class="navbar-nav justify-between float-end">
+                        <li class="nav-item col-lg-1">
+                            <a class="nav-link white" href="/tmch-website/about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown col-lg-2">
+                            <a class="nav-link white" href="#" role="button" data-bs-toggle="dropdown">Portfolio<i class="bi bi-caret-down-fill"></i></a>
+                            <ul class="dropdown-menu bg-eerie-black">
+                                <li><a class="dropdown-item white" href="/tmch-website/portfolio.html">Projects</a></li>
+                                <li><a class="dropdown-item white" href="/tmch-website/timeline.html">Future Projects</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item col-lg-1">
+                            <a class="nav-link white" href="/tmch-website/resume.html">Resume</a>
+                        </li>
+                        <li class="nav-item col-lg-1">
+                            <a class="nav-link white" href="/tmch-website/services.html">Services</a>
+                        </li>
+                        <li class="nav-item col-lg-2">
+                            <a class="nav-link white" href="/tmch-website/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </nav>
 
     <!-- HEADING (TITLE AND IMG) SECTION-->
