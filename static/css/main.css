@@ -199,7 +199,7 @@ img {
   --------------------------------------------------------------*/
 
 section {
-    padding: 3rem 2rem;
+    padding: 0 3rem;
     overflow: hidden;
     justify-content: center;
     align-content: center;
@@ -251,7 +251,6 @@ section {
 
 .facts .icon-box {
     margin: 10px 5px;
-    border: 2px solid var(--logo-red);
     transition: all ease-in-out 0.5s;
     background: var(--white);
     text-align: center;
