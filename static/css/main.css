@@ -488,7 +488,7 @@ section {
 .portfolio .project-cards ul#portfolio .booking-card {
     position: relative;
     width: 300px;
-    height: 700px;
+    height: 450px;
     display: flex;
     flex: 0 0 300px;
     flex-direction: column;
@@ -516,7 +516,7 @@ section {
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .book-container {
-    height: 150px;
+    height: 125px;
 }
 
 .portfolio .project-cards ul#portfolio .booking-card:hover .book-container .content {
@@ -527,7 +527,6 @@ section {
 
 .portfolio .project-cards ul#portfolio .booking-card .book-container .content {
     position: relative;
-    padding: 20px;
     opacity: 0;
     display: flex;
     align-items: center;
@@ -541,6 +540,7 @@ section {
 .portfolio .project-cards ul#portfolio .booking-card .book-container .content .btn {
     border: 3px solid var(--white);
     padding: 10px 15px;
+    margin: 10px;
     background: var(--white);
     text-transform: uppercase;
     font-weight: bold;
@@ -560,7 +560,6 @@ section {
 
 .portfolio .project-cards ul#portfolio .booking-card .book-container .content .btn a {
     color: var(--logo-red);
-    text-decoration: none;
 }
 
 .portfolio .project-cards ul#portfolio .booking-card .book-container .content .btn:hover a {
@@ -571,7 +570,7 @@ section {
     flex: 1 0 auto;
     padding: 20px;
     background: var(--off-white);
-    transform: translateY(206px);
+    transform: translateY(50px);
     transition: 0.3s;
 }
 
@@ -591,146 +590,17 @@ section {
 .portfolio .project-cards ul#portfolio .booking-card .informations-container .title::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     left: 0;
     right: 0;
-    height: 3px;
-    width: 50px;
+    height: 1px;
+    width: 75px;
     margin: auto;
     background: #0a4870;
 }
 
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .description {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .tag {
-    border-radius: 50px;
-    font-size: 12px;
-    margin: 0;
-    color: #fff;
-    padding: 2px 10px;
+.portfolio .project-cards ul#portfolio .booking-card .informations-container .badge {
     text-transform: uppercase;
-}
-
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-reactJS {
-    /* goes under Web filter */
-    background-color: var(--sky-blue);
-}
-
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-js {
-    /* goes under Web filter */
-    background-color: #efd81d;
-}
-
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-typescript {
-    /* goes under Web filter */
-    background-color: #2f74c0;
-}
-
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-sass {
-    /* goes under Web filter */
-    background-color: #c76494;
-}
-
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-bootstrap {
-    /* goes under Web and App filter */
-    background-color: #7910f2;
-}
-
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-tailwind {
-    /* goes under Web and App filter */
-    background-color: #0ba0af;
-}
-
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-bulma {
-    /* goes under Web and App filter */
-    background-color: #00c6a9;
-}
-
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-ionic {
-    /* goes under App filter */
-    background-color: #1b69f7;
-}
-
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-reactNav {
-    /* goes under App filter */
-    background-color: var(--honolulu-blue);
-}
-
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-nativescript {
-    /* goes under App filter */
-    background-color: #3d5afe;
-}
-
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-flutter {
-    /* goes under App filter */
-    background-color: #40a0ee;
-}
-
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .tag-other {
-    /* goes under Misc filter */
-    background-color: var(--grey-00);
-}
-
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information {
-    opacity: 0;
-    transition: 0.3s;
-}
-
-.portfolio .project-cards ul#portfolio .booking-card:hover .informations-container .more-information {
-    opacity: 1;
-}
-
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container {
-    display: flex;
-}
-
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box {
-    flex: 1 0;
-    padding: 15px;
-    margin-top: 20px;
-    /*height: max-content;
-    height: fixed;*/
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    background: var(--sky-blue);
-    font-weight: bold;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn {
-    border: 3px solid var(--white);
-    padding: 10px;
-    margin: 0 10px;
-    background: var(--white);
-    font-size: 1.3em;
-    color: var(--white);
-    transition: 0.3s;
-}
-
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn:hover {
-    background: var(--logo-red);
-    /*removes the border */
-    border: 0px;
-}
-
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn i {
-    font-size: 32px;
-    color: var(--logo-red);
-    font-style: var(--bold-font-weight);
-    text-decoration: none;
-}
-
-.portfolio .project-cards ul#portfolio .booking-card .informations-container .more-information .info-and-date-container .box .btn:hover i {
-    color: var(--white);
 }
 
 @media only screen and (max-width: 768px) {
