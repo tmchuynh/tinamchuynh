@@ -61,11 +61,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-p {
-    margin-bottom: var(--spacing-medium);
-    max-width: 32rem;
-}
-
 em {
     font-style: italic;
 }
