@@ -48,31 +48,6 @@
 
 
 /*--------------------------------------------------------------
-  # Typography
---------------------------------------------------------------*/
-
-body {
-    background-color: var(--white);
-    font-family: var(--font-family);
-    font-size: var(--font-size);
-    line-height: var(--line-height);
-    font-weight: var(--body-font-weight);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-em {
-    font-style: italic;
-}
-
-sup {
-    font-size: .6rem;
-    font-weight: 700;
-    vertical-align: super;
-}
-
-
-/*--------------------------------------------------------------
   # Text Colors
 --------------------------------------------------------------*/
 
@@ -116,14 +91,6 @@ grey-00 {
     background-color: var(--eerie-black);
 }
 
-.bg-fix-primary {
-    padding: 0 var(--spacing-small);
-}
-
-.bg-fix-primary:first-child {
-    box-shadow: var(--spacing-small) 0 0 var(--logo-red), -var(--spacing-small) 0 0 var(--logo-red);
-}
-
 
 /*--------------------------------------------------------------
   # Buttons
@@ -151,15 +118,6 @@ grey-00 {
 
 img {
     max-width: 100%;
-}
-
-
-/*--------------------------------------------------------------
-  # Lists
---------------------------------------------------------------*/
-
-.list {
-    list-style-type: none;
 }
 
 
@@ -237,17 +195,6 @@ img {
 
 
 /*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-/*--------------------------------------------------------------
   # Sections General
   --------------------------------------------------------------*/
 
@@ -279,7 +226,7 @@ section {
     content: "";
     position: absolute;
     display: block;
-    width: 120px;
+    width: 125px;
     height: 1px;
     background: var(--grey-00);
     bottom: 1px;
@@ -325,8 +272,8 @@ section {
 .facts .icon-box .icon svg {
     /* is the blob behind the icon */
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: -5px;
+    left: -5px;
     width: 90px;
     height: 90px;
 }
@@ -349,8 +296,6 @@ section {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .facts .icon-box span {
@@ -448,24 +393,18 @@ section {
     position: relative;
 }
 
-.resume .resume-item h4 {
+.resume .resume-item h6 {
     /* bullet pts (name, degree, job title, etc.) */
-    line-height: 18px;
-    font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
     color: var(--eerie-black);
-    margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
     /* yr - yr */
     font-size: 16px;
-    background: var(--off-white);
-    /* padding: top/bottom right/left */
     padding: 5px 15px;
-    margin: 0;
     display: inline-block;
     font-weight: 600;
 }
@@ -473,8 +412,7 @@ section {
 .resume .resume-item ul {
     /* mainly for job bullet pts */
     padding-left: 20px;
-    padding-bottom: 10px;
-    list-style: squre;
+    list-style: square;
     list-style-position: outside;
 }
 
@@ -489,102 +427,10 @@ section {
     width: 16px;
     height: 16px;
     border-radius: 50px;
-    left: -10px;
+    left: -9px;
     top: 0;
     background: var(--off-white);
     border: 3px solid var(--logo-red);
-}
-
-.resume sub,
-.resume sup {
-    /*sub = subscripts
-sup = superscripts */
-    font-size: 10px;
-    font-style: italic;
-    color: var(--grey-00);
-}
-
-
-/*--------------------------------------------------------------
-# Carousel
---------------------------------------------------------------*/
-
-.slick-slide {
-    margin: 0px 20px;
-}
-
-.carousel {
-    overflow: hidden;
-}
-
-.carousel-logos {
-    overflow: inherit;
-    border-top: 1px solid #353535;
-    border-bottom: 1px solid #353535;
-}
-
-.slick-slide img {
-    width: 100%;
-}
-
-.slick-track::before,
-.slick-track::after {
-    display: table;
-    content: '';
-}
-
-.slick-track::after {
-    clear: both;
-}
-
-.slick-track {
-    padding: 1rem 0;
-}
-
-.slick-loading .slick-track {
-    visibility: hidden;
-}
-
-.slick-slide.slick-loading img {
-    display: none;
-}
-
-.slick-slide.dragging img {
-    pointer-events: none;
-}
-
-.slick-loading .slick-slide {
-    visibility: hidden;
-}
-
-.slick-arrow {
-    position: absolute;
-    top: 50%;
-    background: url(https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/arrow.svg?sanitize=true) center no-repeat;
-    color: var(--eerie-black);
-    filter: invert(77%) sepia(32%) saturate(1%) hue-rotate(344deg) brightness(105%) contrast(103%);
-    border: none;
-    width: 2rem;
-    height: 1.5rem;
-    text-indent: -10000px;
-    margin-top: -16px;
-    z-index: 99;
-}
-
-.slick-arrow.slick-next {
-    right: -40px;
-    transform: rotate(180deg);
-}
-
-.slick-arrow.slick-prev {
-    left: -40px;
-}
-
-@media (max-width: 768px) {
-    .slick-arrow {
-        width: 1rem;
-        height: 1rem;
-    }
 }
 
 
