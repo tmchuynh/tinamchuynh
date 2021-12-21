@@ -57,20 +57,6 @@
         </div>
     </nav>
 
-    <!-- HEADING (TITLE AND IMG) SECTION-->
-    <div class="container-fluid p-5" style="background-image: url('static/images/temp-photo.jpg')">
-        <!--TITLE-->
-        <h1 class="white bg-logo-red" style="width: fit-content;">
-            This is the title.
-        </h1>
-        <!--SUBTITLE-->
-        <h6 class="white bg-logo-red" style="width: fit-content;">
-            This is the subtitle.
-        </h6>
-        <!--END OF SUBTITLE SECTION-->
-    </div>
-    <!-- END OF HEADING SECTION -->
-
     <!-- PORTFOLIO SECTION-->
     <section class="portfolio">
         <div class="section-title">
@@ -200,35 +186,47 @@
     <script src="static/js/portfolio.js"></script>
     <!--END OF SCRIPT FOR PROJECT SECTION-->
 
-    <!--SCRIPT FOR MORE INFO SECTION (THIS STILL NEEDS TO BE ADDED IN)-->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
-    <script src="static/js/glightbox.js"></script>
+    <script src="static/js/finisher-header.es5.min.js" type="text/javascript"></script>
+
     <script type="text/javascript">
-        const glightbox = GLightbox({
-            openEffect: 'zoom',
-            closeEffect: 'fade',
-            cssEfects: {
-                // This are some of the animations included, no need to overwrite
-                fade: { in: 'fadeIn',
-                    out: 'fadeOut'
+        new FinisherHeader({
+            "count": 100,
+            "size": {
+                "min": 1,
+                "max": 28,
+                "pulse": 0.1
+            },
+            "speed": {
+                "x": {
+                    "min": 0,
+                    "max": 0.7
                 },
-                zoom: { in: 'zoomIn',
-                    out: 'zoomOut'
+                "y": {
+                    "min": 0,
+                    "max": 0.2
                 }
-            }
+            },
+            "colors": {
+                "background": "#1c71a4",
+                "particles": [
+                    "#ffffff",
+                    "#7fafe1",
+                    "#5d7a98",
+                    "#798897"
+                ]
+            },
+            "blending": "screen",
+            "opacity": {
+                "center": 0,
+                "edge": 0.4
+            },
+            "skew": -2,
+            "shapes": [
+                "s",
+                "c"
+            ]
         });
-        glightbox.on('close', () => {
-            // Do something
-        });
-        glightbox.once('slide_changed', () => {
-            // Do something just one time
-        });
-        glightbox.nextSlide(); // Go to next slide
-        glightbox.prevSlide(); // Go to prev slide
-        glightbox.close(); // Close the lightbox
-    </script> -->
-    <!--END OF SCRIPT FOR MORE INFO SECTION-->
+    </script>
 </body>
 
 </html>
