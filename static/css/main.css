@@ -1178,6 +1178,7 @@ section {
 .site-footer .copyright-text {
     /* small text to left of icons */
     margin: 0;
+    text-align: right;
 }
 
 @media only screen and (max-width: 991px) {
@@ -1193,12 +1194,12 @@ section {
 
 .site-footer .social-icons li {
     display: inline-block;
-    margin-bottom: 4px;
+    margin: 10px 5px;
 }
 
 .site-footer .social-icons {
     /*icons at the end */
-    text-align: right;
+    text-align: left;
     justify-content: center;
     align-items: center;
     padding-left: 0;
@@ -1214,6 +1215,9 @@ section {
     .site-footer .social-icons {
         text-align: center;
     }
+    .site-footer .copyright-text a {
+        margin-right: 0;
+    }
 }
 
 .site-footer .social-icons a {
@@ -1221,7 +1225,7 @@ section {
     width: 40px;
     height: 40px;
     line-height: 40px;
-    margin-left: 6px;
+    margin-left: 5px;
     margin-right: 0;
     border-radius: 100%;
     background-color: #33353d;
@@ -1256,11 +1260,6 @@ section {
 }
 
 @media only screen and (max-width: 767px) {
-    .social-icons li.title {
-        display: block;
-        margin-right: 0;
-        font-weight: 600;
-    }
     .social-icons a.linkedin {
         color: #fff;
         background-color: #0a66c2;
