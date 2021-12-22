@@ -122,6 +122,20 @@ img {
 
 
 /*--------------------------------------------------------------
+  # Links
+--------------------------------------------------------------*/
+
+a {
+    color: var(--logo-red);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--sky-blue);
+}
+
+
+/*--------------------------------------------------------------
   # Focus States
 --------------------------------------------------------------*/
 
@@ -626,8 +640,9 @@ section {
   --------------------------------------------------------------*/
 
 .contact .info {
-    width: 100%;
-    background: var(--off-white);
+    width: max-content;
+    margin: 10px 0px;
+    display: inline-block;
 }
 
 .contact .info i {
@@ -646,22 +661,34 @@ section {
 
 .contact .info h4 {
     padding: 0 0 0 60px;
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 5px;
     color: var(--eerie-black);
 }
 
 .contact .info p {
     padding: 0 0 0 60px;
     margin-bottom: 0;
-    font-size: 14px;
     color: var(--eerie-black);
 }
 
 .contact .info .email,
-.contact .info .phone {
-    margin-top: 40px;
+.contact .info .phone,
+.contact .info .address {
+    display: inline-block;
+    text-align: left;
+    width: max-content;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 742px) {
+    .contact .info .email,
+    .contact .info .phone,
+    .contact .info .address {
+        display: block;
+        width: max-content;
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
 }
 
 .contact .info .email:hover i,
