@@ -305,11 +305,14 @@ section {
     /* ul element itself */
     padding-left: 0;
     list-style: none;
+    display: flex;
 }
 
 .footer-links li {
     /* list elements */
     display: block;
+    margin-left: 50px;
+    position: relative;
 }
 
 .site-footer a {
@@ -328,8 +331,11 @@ section {
 .site-footer a:active+.vanish,
 .site-footer a:focus+.vanish,
 .site-footer a:hover+.vanish {
-    display: contents;
     align-items: center;
+    position: absolute;
+    visibility: visible;
+    display: inline-block;
+    left: -33px;
 }
 
 .site-footer .copyright-text {
@@ -379,21 +385,20 @@ section {
 
 .site-footer .social-icons a {
     /*links within the icons */
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3.25rem;
     margin-left: 5px;
-    margin-right: 0;
+    margin-right: 5px;
     border-radius: 100%;
     background-color: #33353d;
     color: #818a91;
-    font-size: 16px;
     display: inline-block;
     text-align: center;
     -webkit-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .social-icons a.linkedin:hover {
@@ -401,9 +406,14 @@ section {
     background-color: #0a66c2;
 }
 
-.social-icons a.dribble:hover {
+.social-icons a.devto:hover {
     color: #fff;
-    background-color: #e14a84;
+    background-color: #171717;
+}
+
+.social-icons a.twitter:hover {
+    color: #fff;
+    background-color: #56b9ff;
 }
 
 .social-icons a.github:hover {
@@ -413,7 +423,7 @@ section {
 
 .social-icons a.gmail:hover {
     color: #fff;
-    background-color: #d04137;
+    background-color: #d93025;
 }
 
 @media screen and (max-width: 767px) {
@@ -433,12 +443,4 @@ section {
         color: #fff;
         background-color: #d04137;
     }
-}
-
-
-
-
-#skyline canvas {
-    width: 1920px;
-    height: 931px;
 }
