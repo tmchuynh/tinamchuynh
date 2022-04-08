@@ -208,6 +208,20 @@ a:hover {
 }
 
 
+.nav-letters {
+    top: 37px;
+    position: absolute;
+    display: inline;
+    visibility: hidden;
+}
+
+@media (min-width: 1400px) {
+    .nav-letters {
+        visibility: visible;
+    }
+}
+
+
 /*--------------------------------------------------------------
   # Sections General
   --------------------------------------------------------------*/
@@ -419,4 +433,12 @@ section {
         color: #fff;
         background-color: #d04137;
     }
+}
+
+
+
+
+#skyline canvas {
+    width: 1920px;
+    height: 931px;
 }
