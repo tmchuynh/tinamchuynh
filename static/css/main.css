@@ -271,6 +271,22 @@ section {
     left: calc(50% - 20px);
 }
 
+/*--------------------------------------------------------------
+  # DevCard
+  --------------------------------------------------------------*/
+
+.devcard {
+    justify-content: left;
+    padding: 5rem;
+    min-width:35rem;
+}
+
+.about-me {
+    padding: 4rem;
+    margin: 7rem 2rem;
+    text-align: center;
+    width: 100%;
+}
 
 /*--------------------------------------------------------------
   # Footer
