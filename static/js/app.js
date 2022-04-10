@@ -1,5 +1,5 @@
 const username = 'tmchuynh'
-const perPage = 100; //If you have more articles, increase this or add pagination
+const perPage = 15; //If you have more articles, increase this or add pagination
 
 const getArticles = async () => {
     const response = await fetch(`https://dev.to/api/articles?username=${username}&per_page=${perPage}`);
@@ -21,7 +21,7 @@ const addArticle = article => {
     if(article.cover_image){
         clone.querySelector('.cover').src = article.cover_image;
     }else{
-        clone.querySelector('.cover').src = './assets/placeholder.jpg';
+        clone.querySelector('.cover').src = "../assets/placeholder.jpg";
     }
 
     document.querySelector('#blog-list').appendChild(clone);
