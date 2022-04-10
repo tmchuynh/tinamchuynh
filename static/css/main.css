@@ -15,11 +15,9 @@
     scroll-behavior: smooth;
     /*variables*/
     /* Colors */
-    --logo-red: #C82D35;
-    --honolulu-blue: #1c71a4;
+    --logo-red: #a1242c;
     --sky-blue: #7FAFE1;
     --metal-blue: #5D7A98;
-    --grey-00: #798897;
     --eerie-black: #1B1C1E;
     --white: #ffffff;
     --off-white: #fffdfc;
@@ -183,6 +181,7 @@ a:hover {
 }
 
 @media (min-width: 1024px) {
+
     .nav-item,
     .dropdown-item {
         text-align: center;
@@ -348,6 +347,7 @@ section {
     .site-footer [class^="col-"] {
         margin-bottom: 10px;
     }
+
     .site-footer .vanish {
         color: var(--sky-blue);
         display: contents;
@@ -374,10 +374,12 @@ section {
     .site-footer {
         padding-bottom: 0;
     }
+
     .site-footer .copyright-text,
     .site-footer .social-icons {
         text-align: center;
     }
+
     .site-footer .copyright-text a {
         margin-right: 0;
     }
@@ -431,14 +433,17 @@ section {
         color: #fff;
         background-color: #0a66c2;
     }
+
     .social-icons a.dribble {
         color: #fff;
         background-color: #e14a84;
     }
+
     .social-icons a.github {
         background-color: #fff;
         color: var(--eerie-black);
     }
+
     .social-icons a.gmail {
         color: #fff;
         background-color: #d04137;
