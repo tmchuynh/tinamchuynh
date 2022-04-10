@@ -1,7 +1,7 @@
 :root{
     --paper-margin: 60px;
-    --main-color: #4481eb;
-    --my-gradient: linear-gradient(to right, var(--main-color) 0%, #04befe 100%);
+    --main-color: #a1242c;
+    --my-gradient: linear-gradient(to bottom left, var(--main-color) 0%, #f50e1e 90%);
 }
 
 body{
