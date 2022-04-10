@@ -1,14 +1,19 @@
 const username = 'tmchuynh'
 const perPage = 15; //If you have more articles, increase this or add pagination
+var count = 0;
+var left = 0;
+
 
 const getArticles = async () => {
-    const response = await fetch(`https://dev.to/api/articles?username=${username}&per_page=${perPage}`);
+    const response = await fetch(`https://dev.to/api/articles?username=${username}`);
     const data = await response.json();
     const name = data[0].user.name;
     document.querySelectorAll('.name').forEach(el => el.textContent = name);
-    document.title = `Blog - ${name}`;
-    for(article of data){
-        addArticle(article);
+    document.title = `TMCHUYNH`;
+
+
+    for (article of data) {
+        count = addArticle(article);
     }
 }
 
@@ -17,14 +22,15 @@ const addArticle = article => {
     const clone = template.content.cloneNode(true);
     clone.querySelector('.title').textContent = article.title;
     clone.querySelector('.url').href = `article.html?id=${article.id}`;
-    
-    if(article.cover_image){
+
+    // Only display blog posts that have a cover image
+    if (article.cover_image) {
         clone.querySelector('.cover').src = article.cover_image;
-    }else{
-        clone.querySelector('.cover').src = "../assets/placeholder.jpg";
+        document.querySelector('#blog-list').appendChild(clone);
+        count += 1;
     }
 
-    document.querySelector('#blog-list').appendChild(clone);
+    return count;
 }
 
 getArticles();
