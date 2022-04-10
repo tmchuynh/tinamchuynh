@@ -74,7 +74,7 @@ table{
 
 #author-img{
     border-radius: 50%;
-    box-shadow: 0px 0px 7px 3px var(--main-color);
+    /* box-shadow: 0px 0px 7px 3px var(--main-color); */
     grid-row: span 3;
 }
 
@@ -138,13 +138,13 @@ address a::before{
     background-image: url('../icons/globe.svg');
 }
 
-address a:hover::before{
+/* address a:hover::before{
     animation: spin 5s linear infinite;
-}
+} */
 
-#author-img:hover{
+/* #author-img:hover{
     animation: spin var(--user-img-speed) linear infinite;
-}
+} */
 
 #tags{
     list-style: none;
