@@ -1,11 +1,13 @@
-# A Personal and Professional Website
+# Welcome to tmchuynh
 
-## My Inspiration
+My journey started with the medical field, ventured off into engineering, business, and landed me back into the tech industry where my youngest creative curiosities first flowed. Back when iPhones still had these icons ( ), I had been sitting in my parents' room curious who developed the software updates for the iOS, how I could become one, and what great of a job that would be to be able to be so creative and impact. I was probably in elementary school, waiting for my phone to update as I laid on the carpet floor. I wrote an article about these memories once - [read it here.](https://www.bridge-to-connect.org/blog-articles/discovering-my-field)
 
-Experienced developers from multiple platforms and from all parts of the globe have come together to inspire, to motivate, and to plant seeds of curiousity as I began my journey into front-end development. It was reading articles on Medium and DEV Community that nudged me into the correct directions in terms of languages and projects. Platforms such as Dribble, Behance, and Instagram are my new uses of inspiration for creativity and to learn how to design and utilize the components I am not too familiar with yet.
+<a href="https://www.linkedin.com/in/tinamchuynh/"><img src="https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=linkedin"/></a>
+<a href="https://dev.to/tmchuynh"><img src="https://img.shields.io/badge/-DEV.to-blue?style=flat&logo=dev.to"/></a>
+<a href="https://twitter.com/tinamchuynh"><img src="https://img.shields.io/badge/-Twitter-white?style=flat&logo=twitter"/></a>
+<a href="mailto:tinamchuynh@gmail.com"><img src="https://img.shields.io/badge/-Gmail-white?style=flat&logo=gmail"/></a>
 
-## My Goals
-
-Today is a starting point and tomorrow is a new adventure. There is always something new to learn. My portfolio is my way to present my most recent projects along with the projects I am most proud of to present to you. Hi, nice to meet you.
-
-When starting my personal website, I did not expect to end up compiling a list of upcoming project I would want to create with my new skills. Each skill I learned, I found five more skills I wanted to learn. So then, the wheels continued to turn.
+In this particular project, I used DEV.to's API to transfer my daily articles from my <a href="https://dev.to/tmchuynh">DEV.to profile</a> onto my personal website. I also have displayed my DevCard from daily.dev that can also be seen from my GitHub profile <a href="https://github.com/tmchuynh">README.md</a> page. In the near future, I have plans to:
+[ ] Implement an automation for my DevCard to update, similar to my profile README.md via GitHub actions
+[ ] Import my past projects into a section
+[ ] Add my contact information below the introduction section
