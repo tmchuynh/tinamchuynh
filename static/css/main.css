@@ -310,8 +310,10 @@ section {
     }
 
     .devcard {
-        padding: 10px;
-        width: 18rem;
+        padding: 3rem 15px;
+        min-width: 50px;
+        width: 85%;
+        margin: auto;
         justify-content: center;
     }
 }
