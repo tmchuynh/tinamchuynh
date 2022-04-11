@@ -309,13 +309,19 @@ section {
         padding: 0rem 3rem 1rem 3rem;
     }
 
+    .devcard,
+    #blog-list {
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+    }
+
     .devcard {
         padding: 3rem 15px;
         min-width: 50px;
         width: 85%;
-        margin: auto;
-        justify-content: center;
     }
+
 }
 
 /*--------------------------------------------------------------
