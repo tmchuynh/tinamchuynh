@@ -44,6 +44,9 @@
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
 
+body {
+    overflow-x: hidden;
+}
 
 /*--------------------------------------------------------------
   # Text Colors
@@ -129,7 +132,7 @@ a {
 }
 
 a:hover {
-    color: var(--sky-blue);
+    color: var(--eerie-black);
 }
 
 
@@ -276,14 +279,14 @@ section {
   --------------------------------------------------------------*/
 
 .devcard {
-    justify-content: left;
-    padding: 5rem;
-    min-width:35rem;
+    justify-content: right;
+    padding: 3rem;
+    min-width: 35rem;
 }
 
 .about-me {
-    padding: 4rem;
-    margin: 7rem 2rem;
+    padding: 4rem 3rem;
+    margin: 4rem 0rem 7rem 0rem;
     text-align: center;
     width: 100%;
 }
@@ -378,6 +381,7 @@ section {
 
 .site-footer .social-icons {
     /*icons at the end */
+    display: contents;
     text-align: left;
     justify-content: center;
     align-items: center;
