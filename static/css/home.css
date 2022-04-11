@@ -29,10 +29,9 @@ ul {
 }
 
 .cover {
-    height: 200px;
+    height: 100%;
     width: 100%;
-    object-fit: cover;
-    border-radius: 5px 5px 0 0;
+    border-radius: 15px 15px 0 0;
 }
 
 .title {
@@ -43,7 +42,7 @@ ul {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 15px 15px;
 }
 
 @media only screen and (max-width: 600px) {
