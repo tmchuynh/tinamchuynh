@@ -9,6 +9,6 @@ My journey started with the medical field, ventured off into engineering, busine
 <a href="paypal.me/tmchuynh"><img src="https://img.shields.io/badge/-Donate-white?style=flat&logo=paypal"/></a>
 
 In this particular project, I used DEV.to's API to transfer my daily articles from my <a href="https://dev.to/tmchuynh">DEV.to profile</a> onto my personal website. I also have displayed my DevCard from daily.dev that can also be seen from my GitHub profile <a href="https://github.com/tmchuynh">README.md</a> page. In the near future, I have plans to:
-[ ] Implement an automation for my DevCard to update, similar to my profile README.md via GitHub actions
+[\] Implement an automation for my DevCard to update, similar to my profile README.md via GitHub actions
 [ ] Import my past projects into a section
 [ ] Add my contact information below the introduction section
