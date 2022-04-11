@@ -278,7 +278,7 @@ section {
   # DevCard
   --------------------------------------------------------------*/
 
-  .introduction {
+.introduction {
     padding: 7rem 0rem 2rem 0rem;
 }
 
@@ -301,6 +301,16 @@ section {
 
 .contact-info {
     text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .about-me {
+        margin: 0rem;
+        padding: 0rem 3rem 1rem 3rem;
+    }
+    .devcard {
+        justify-content: center;
+    }
 }
 
 /*--------------------------------------------------------------
