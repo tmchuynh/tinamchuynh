@@ -278,17 +278,29 @@ section {
   # DevCard
   --------------------------------------------------------------*/
 
+  .introduction {
+    padding: 7rem 0rem 2rem 0rem;
+}
+
 .devcard {
     justify-content: right;
     padding: 3rem;
     min-width: 35rem;
 }
 
+.info-summary {
+    flex-direction: column;
+}
+
 .about-me {
-    padding: 4rem 3rem;
-    margin: 4rem 0rem 7rem 0rem;
+    padding: 4rem 3rem 1rem 3rem;
+    margin: 4rem 0rem 0rem 0rem;
     text-align: center;
     width: 100%;
+}
+
+.contact-info {
+    text-align: center;
 }
 
 /*--------------------------------------------------------------
@@ -324,6 +336,7 @@ section {
     padding-left: 0;
     list-style: none;
     display: flex;
+    justify-content: center;
 }
 
 .footer-links li {
