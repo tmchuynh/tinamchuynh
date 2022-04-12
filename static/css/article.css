@@ -168,3 +168,34 @@ address a::before {
         transform: rotate(360deg);
     }
 }
+
+.ltag__link {
+    border-color: #333333;
+    border-radius: 25px;
+    display: flex;
+    padding: 1rem 3rem !important;
+}
+
+.ltag__link .ltag__link__link .ltag__link__content h3 {
+    color: black;
+    font-size: 1rem;
+}
+
+.ltag__link .ltag__link__link .ltag__link__taglist {
+    font-size: 0.8rem;
+}
+
+.ltag__link .ltag__link__link .ltag__link__taglist .ltag__link__tag {
+    color: red;
+    background-color: #c2c2c2;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.ltag__link .ltag__link__pic {
+    width: 5rem;
+}
+
+.ltag__link .ltag__link__link {
+    margin-left: 1rem;
+}
