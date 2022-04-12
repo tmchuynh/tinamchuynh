@@ -275,6 +275,23 @@ section {
 }
 
 /*--------------------------------------------------------------
+  # BackToTop Button
+  --------------------------------------------------------------*/
+
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 2.5rem;
+    z-index: 99;
+    outline: none;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+
+/*--------------------------------------------------------------
   # DevCard
   --------------------------------------------------------------*/
 
