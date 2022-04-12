@@ -22,7 +22,7 @@
     --white: #ffffff;
     --off-white: #fffdfc;
     /* Typography */
-    --font-family: Open Sans, -apple-system, BlinkMacSystemFont, system-ui, ubuntu, noto, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-family: 'Rufina', serif;
     --line-height: 1.5;
     --font-size: 18px;
     --font-size-m: 20px;
@@ -46,6 +46,21 @@
 
 body {
     overflow-x: hidden;
+    font-family: var(--font-family);
+}
+
+p {
+    font-family: var(--font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li {
+    font-family: 'PT Serif', serif;
 }
 
 /*--------------------------------------------------------------
