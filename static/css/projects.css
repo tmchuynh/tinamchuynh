@@ -1,0 +1,12 @@
+#project-list .cards {
+    color: var(--eerie-black);
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid var(--eerie-black);
+}
+

@@ -11,7 +11,7 @@ const getArticles = async () => {
     document.querySelectorAll('.blog-list .name').forEach(el => el.textContent = name);
     document.title = `TMCHUYNH`;
 
-    console.log(data);
+    // console.log(data);
 
     for (article of data) {
         count = addArticle(article);

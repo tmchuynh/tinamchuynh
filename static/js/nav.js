@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 var toggler = document.getElementsByClassName("navbar-toggler");
-console.log(toggler);
+// console.log(toggler);
 toggler.onclick = function() {
     let mobile = document.getElementsByClassName("navbar-collapse collapse");
     console.log(mobile);

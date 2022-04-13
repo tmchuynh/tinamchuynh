@@ -14,8 +14,7 @@
     height: fit-content;
 }
 
-#blog-list .url,
-#project-list .url {
+#blog-list .url {
     color: var(--logo-red);
     text-decoration: inherit;
     display: flex;
@@ -23,8 +22,7 @@
     filter: drop-shadow(0px 4px 6px rgba(51, 51, 51, 0.2));
 }
 
-#blog-list .url:hover,
-#project-list .url:hover {
+#blog-list .url:hover {
     filter: drop-shadow(0px 4px 6px rgba(51, 51, 51, 0.4));
 }
 
@@ -34,8 +32,7 @@
     border-radius: 15px 15px 0 0;
 }
 
-#blog-list .title,
-#project-list .title {
+#blog-list .title {
     background: rgb(241, 243, 245);
     margin: 0;
     height: 150px;
