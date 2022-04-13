@@ -114,6 +114,11 @@
 
         </div>
 
+        <!--Projects-->
+        <div class="section-title">
+            <h2 id="project-tiles">Projects</h2>
+            <ul id="project-list"></ul>
+        </div>
 
 
         <!--DEV.to Blog Posts-->
@@ -224,8 +229,6 @@
 
 
     <script src="static/js/nav.js"></script>
-
-
     <script src="static/js/repo.js"></script>
 </body>
 
@@ -236,6 +239,14 @@
     <li>
         <a class="url">
             <img class="cover" alt="cover image">
+            <h3 class="title"></h3>
+        </a>
+    </li>
+</template>
+
+<template id="project-item">
+    <li>
+        <a class="url">
             <h3 class="title"></h3>
         </a>
     </li>
