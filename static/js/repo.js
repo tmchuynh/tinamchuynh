@@ -4,13 +4,15 @@ var obj = new Array();
 $.getJSON('https://api.github.com/users/tmchuynh/repos', (data) => {
     console.log(data);
 
-    data.forEach((element) => {
-        populate(element.name, element.html_url, element.pushed_at);
+    data.sort((a,b) => (b.pushed_at > a.pushed_at) ? 1 : ((a.pushed_at > b.pushed_at) ? -1 : 0))
+
+    data.forEach((element, index) => {
+        populate(element.name, element.html_url, element.pushed_at, index);
     })
 })
 
 
-function populate(name, url, updated) {
+function populate(name, url, updated, index) {
 
     var card = document.createElement("div");
     card.classList.add("cards");
