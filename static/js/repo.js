@@ -19,7 +19,8 @@ function populate(name, url, updated, index) {
 
     var title = document.createElement("a");
     title.classList.add("title");
-    title.innerHTML = name;
+    name_parts = name.replaceAll("-", " ");
+    title.innerHTML = name_parts
     var hyperlink = document.createAttribute("href");
     hyperlink.value = url;
     title.setAttributeNode(hyperlink);
