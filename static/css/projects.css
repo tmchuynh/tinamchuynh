@@ -2,6 +2,8 @@
     color: var(--eerie-black);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 150px;
     position: relative;
     justify-content: center;
