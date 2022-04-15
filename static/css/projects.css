@@ -30,3 +30,25 @@
     color: var(--logo-red);
     margin-top: 1rem;
 }
+
+#project-list i {
+    font-size: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+
+#project-list .python {
+    color: #5ea9eb;
+}
+
+#project-list .javascript {
+    color: #f0d44c;
+}
+
+#project-list .html { 
+    color: #e34c27;
+}
+
+#project-list .css {
+    color: #4266f5;
+}
