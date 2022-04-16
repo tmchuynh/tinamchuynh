@@ -25,7 +25,12 @@ const getArticle = async () => {
         document.querySelector('#homepage').textContent = data.user.website_url.replace(/http[s]?:\/\//, '');
     }
 
-    document.querySelector('#date').textContent = data.readable_publish_date;
+    const date = data.published_timestamp;
+    parts = date.split("T")[0].split("-");
+    year = parts[0];
+    month = parts[1];
+    day = parts[2];
+    document.querySelector('#date').textContent = "Published on " + month + "/" + day + "/" + year;
 
     const tagList = document.querySelector('#tags');
     for (const tag of data.tags) {
