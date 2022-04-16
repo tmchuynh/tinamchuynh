@@ -81,7 +81,8 @@ table {
 
 #title {
     margin: 10px var(--paper-margin);
-    font-size: 4rem;
+    font-size: 2rem;
+    font-weight: 600;
     display: inline-block;
     padding: 1rem 0.5rem;
     background: var(--my-gradient);
@@ -91,8 +92,10 @@ table {
 }
 
 #author-img {
+    width: 10rem;
+    height: 10rem;
     border-radius: 25px;
-    width: 8rem;
+    object-fit: cover;
     grid-row: span 3;
 }
 
@@ -107,23 +110,27 @@ address {
 }
 
 #date {
-    margin: 0;
+    margin: 0 -10rem;
     font-style: normal;
     font-size: 0.9em;
 }
 
-address>ul {
+address .social-links {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(4, auto);
     padding: 0;
     margin: 0;
-    width: 75%;
+    width: 25%;
+}
+
+address .social-links li {
+    margin: 0.5rem 0;
 }
 
 #author-name {
     font-size: 1.4em;
     font-weight: bold;
+    margin: 0 -10rem;
 }
 
 address a {
