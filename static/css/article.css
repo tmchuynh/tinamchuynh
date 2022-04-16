@@ -3,13 +3,15 @@
     --user-img-speed: 10s;
 }
 
-
-
 article {
     max-width: 100%;
     background: #fff;
     border-radius: 15px;
     padding-bottom: 50px;
+}
+
+article img {
+    object-fit: contain;
 }
 
 ol {
@@ -81,7 +83,7 @@ table {
     margin: 10px var(--paper-margin);
     font-size: 4rem;
     display: inline-block;
-    padding-bottom: 5px;
+    padding: 1rem 0.5rem;
     background: var(--my-gradient);
     background-size: 100% 5px;
     background-position: bottom 0 left 0, bottom 5px left 0;
@@ -89,7 +91,7 @@ table {
 }
 
 #author-img {
-    border-radius: 50%;
+    border-radius: 25px;
     width: 8rem;
     grid-row: span 3;
 }
@@ -116,6 +118,7 @@ address>ul {
     grid-template-columns: repeat(4, auto);
     padding: 0;
     margin: 0;
+    width: 75%;
 }
 
 #author-name {
@@ -135,7 +138,7 @@ address a::before {
     width: 25px;
     background-size: 25px 25px;
     background-repeat: no-repeat;
-    margin-right: 3px;
+    margin-right: 10px;
 }
 
 #twitter::before {
@@ -147,7 +150,7 @@ address a::before {
 }
 
 #devto::before {
-    background-image: url('../icons/devto.svg');
+    background-image: url('../icons/dev-black.png');
 }
 
 #homepage::before {
@@ -161,7 +164,7 @@ address a::before {
     display: grid;
     gap: 5px;
     grid-auto-flow: column;
-    width: fit-content;
+    width: max-content;
 }
 
 #tags>li {
@@ -171,6 +174,7 @@ address a::before {
     padding: 5px;
     min-width: 50px;
     text-align: center;
+    padding: 10px;
 }
 
 @keyframes spin {
@@ -181,10 +185,12 @@ address a::before {
 }
 
 .ltag__link {
-    border-color: #333333;
+    border: 0.5px solid gray;
     border-radius: 25px;
     display: flex;
-    padding: 1rem 3rem !important;
+    padding: 1rem 0rem !important;
+    margin: 1rem;
+    filter: drop-shadow(0px 4px 6px rgba(51, 51, 51, 0.3))
 }
 
 .ltag__link .ltag__link__link .ltag__link__content h3 {
@@ -201,12 +207,13 @@ address a::before {
     background-color: #c2c2c2;
     border-radius: 5px;
     padding: 5px;
-}
-
-.ltag__link .ltag__link__pic {
-    width: 5rem;
+    margin: 0.5rem;
 }
 
 .ltag__link .ltag__link__link {
     margin-left: 1rem;
+}
+
+.ltag__link .ltag__link__link .ltag__link__pic {
+    width: 5rem;
 }
