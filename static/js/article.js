@@ -13,7 +13,7 @@ const getArticle = async () => {
         document.querySelector('#cover').style.display = 'none';
     }
 
-    document.querySelector('#author-img').src = data.user.profile_image_90;
+    document.querySelector('#author-img').src = "static/images/_DSC8822.jpg";
     document.querySelector('#author-img').addEventListener('click', speedup);
     document.querySelectorAll('.name').forEach(el => el.textContent = data.user.name);
 
