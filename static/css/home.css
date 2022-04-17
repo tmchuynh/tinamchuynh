@@ -1,17 +1,16 @@
-:root {
-    --side-margin: 9vw;
-}
-
-
 #blog-list,
 #project-list {
     list-style: none;
-    margin: 25px var(--side-margin);
+    margin: 3rem 0rem;
     padding: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 35px;
     height: fit-content;
+}
+
+#blog-list li {
+    margin: 0.5rem 1rem;
 }
 
 #blog-list .url {
@@ -42,10 +41,4 @@
     align-items: center;
     text-align: center;
     border-radius: 0 0 15px 15px;
-}
-
-@media only screen and (max-width: 600px) {
-    :root {
-        --side-margin: 25px;
-    }
 }
