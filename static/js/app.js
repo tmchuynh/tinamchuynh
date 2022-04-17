@@ -22,6 +22,15 @@ const addArticle = article => {
     const template = document.querySelector('#blog-item');
     const clone = template.content.cloneNode(true);
     clone.querySelector('.title').textContent = article.title;
+
+    const date = article.published_timestamp;
+    parts = date.split("T")[0].split("-");
+    year = parts[0];
+    month = parts[1];
+    day = parts[2];
+    clone.querySelector('.updated').textContent = "Published on " + month + "/" + day + "/" + year;
+
+
     clone.querySelector('.url').href = `article.html?id=${article.id}`;
 
     // Only display blog posts that have a cover image
