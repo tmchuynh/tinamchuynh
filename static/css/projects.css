@@ -2,15 +2,14 @@
     color: var(--eerie-black);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 150px;
+    width: 85%;
     position: relative;
     justify-content: center;
     align-items: center;
     text-align: center;
     border-radius: 15px;
-    margin: 0rem 2rem;
+    margin: 0rem auto;
     border: 1px solid var(--eerie-black);
     box-shadow: 3px 10px 25px rgb(180,180,180, 0.4);
 }
