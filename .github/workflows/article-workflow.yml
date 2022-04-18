@@ -1,7 +1,7 @@
 name: Recent article workflow
 on:
   schedule:
-    - cron: "0/2 0 0 0 0"
-runs:
+    - cron: "0 0 0 0 0"
+jobs:
   using: 'node16'
   main: 'app.js'
