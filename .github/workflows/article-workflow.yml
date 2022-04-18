@@ -3,5 +3,7 @@ on:
   schedule:
     - cron: "0 0 0 0 0"
 jobs:
-  using: 'node16'
-  main: 'app.js'
+  update-readme-with-blog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: 'node@16'
