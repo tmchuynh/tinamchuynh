@@ -7,3 +7,8 @@ on:
       - main
   schedule:
     - cron: "0 * * * *"
+
+jobs:
+  - name: articles
+    runs-on: ubuntu-latest
+    uses: actions/setup-node@v1
