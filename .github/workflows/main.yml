@@ -13,4 +13,4 @@ jobs:
       - name: article
         uses: actions/checkout@main
         with:
-          feed_list: https://tmchuynh.me/
+          feed_list: https://dev.to/api/articles?username=tmchuynh
