@@ -7,7 +7,7 @@ on:
     - cron: "0 0 * * *"
 
 jobs:
-  devcard:
+  tmchuynhme:
     runs-on: ubuntu-latest
     steps:
       - name: article
