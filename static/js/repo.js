@@ -4,10 +4,16 @@ var obj = new Array();
 $.getJSON('https://api.github.com/users/tmchuynh/repos', (data) => {
     console.log(data);
 
-    data.sort((a, b) => (b.pushed_at > a.pushed_at) ? 1 : ((a.pushed_at > b.pushed_at) ? -1 : 0))
+
+
+    // data.sort((a, b) => (b.pushed_at > a.pushed_at) ? 1 : ((a.pushed_at > b.pushed_at) ? -1 : 0))
 
     data.forEach((element, index) => {
-        console.log(element.languages_url)
+        update = element.pushed_at.split("T")[0].split("-").join().replaceAll(",","");
+
+
+        data.sort((a, b) => b.pushed_at.split("T")[0].split("-").join().replaceAll(",", "").localeCompare(a.pushed_at));
+        
 
         $.getJSON(element.languages_url, (data) => {
             // console.log(data, index)

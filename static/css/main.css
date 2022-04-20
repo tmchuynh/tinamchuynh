@@ -287,6 +287,18 @@ section {
     left: calc(50% - 20px);
 }
 
+.section-title h4 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-left: 50px;
+    position: relative;
+    color: var(--grey-00);
+    font-weight: bold;
+    text-align: start;
+    font-size: 24px;
+}
+
 .section-title p {
     margin: auto;
     width: 90%;
