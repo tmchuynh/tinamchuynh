@@ -5,6 +5,7 @@
     flex-wrap: wrap;
     align-content: stretch;
     align-items: center;
+    justify-content: center;
 }
 
 #project-list .cards {

@@ -4,7 +4,9 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    margin: 1rem;
     align-content: center;
+    justify-content: center;
 }
 
 #featured-articles li,

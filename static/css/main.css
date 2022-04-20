@@ -535,6 +535,11 @@ section {
     background-color: #171717;
 }
 
+.social-icons a.instagram:hover {
+    color: #fff;
+    background-color: #964099;
+}
+
 .social-icons a.twitter:hover {
     color: #fff;
     background-color: #56b9ff;
@@ -556,9 +561,19 @@ section {
         background-color: #0a66c2;
     }
 
-    .social-icons a.dribble {
+    .social-icons a.instagram {
         color: #fff;
-        background-color: #e14a84;
+        background-color: #964099;
+    }
+
+    .social-icons a.devto {
+        color: #171717;
+        background-color: #fff;
+    }
+
+    .social-icons a.twitter {
+        background-color: #fff;
+        color: #56b9ff;
     }
 
     .social-icons a.github {
