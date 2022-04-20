@@ -1,11 +1,11 @@
 const username = 'tmchuynh'
-const perPage = 15; //If you have more articles, increase this or add pagination
+const perPage = 10000; //If you have more articles, increase this or add pagination
 var count = 0;
 var left = 0;
 
 
 const getArticles = async () => {
-    const response = await fetch(`https://dev.to/api/articles?username=${username}`);
+    const response = await fetch(`https://dev.to/api/articles?username=${username}&state=all`);
     const data = await response.json();
     const name = data[0].user.name;
     document.querySelectorAll('.blog-list .name').forEach(el => el.textContent = name);
