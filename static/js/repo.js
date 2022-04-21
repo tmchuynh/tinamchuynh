@@ -4,19 +4,9 @@ var obj = new Array();
 $.getJSON('https://api.github.com/users/tmchuynh/repos', (data) => {
     console.log(data);
 
-
-
-    // data.sort((a, b) => (b.pushed_at > a.pushed_at) ? 1 : ((a.pushed_at > b.pushed_at) ? -1 : 0))
-
-    data.forEach((element, index) => {
-        update = element.pushed_at.split("T")[0].split("-").join().replaceAll(",","");
-
-
-        data.sort((a, b) => b.pushed_at.split("T")[0].split("-").join().replaceAll(",", "").localeCompare(a.pushed_at));
-        
+    data.forEach((element) => {
 
         $.getJSON(element.languages_url, (data) => {
-            // console.log(data, index)
             console.log(Object.keys(data))
             populate(element.name, element.html_url, element.pushed_at, Object.keys(data));
         })
@@ -40,7 +30,6 @@ function populate(name, url, updated, languages) {
     console.log("read");
     if (languages.length == 0) {
         icon.innerHTML = " ";
-        // break;
     }
     if (languages.includes("HTML")) {
         var icon2 = document.createElement("i");
