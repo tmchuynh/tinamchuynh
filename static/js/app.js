@@ -31,7 +31,7 @@ const addArticle = article => {
     clone.querySelector('.updated').textContent = "Published on " + month + "/" + day + "/" + year;
 
 
-    clone.querySelector('.url').href = `article.html?id=${article.id}`;
+    clone.querySelector('.url').href = article.canonical_url;
 
     // Only display blog posts that have a cover image
     if (article.cover_image) {
