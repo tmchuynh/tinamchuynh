@@ -1,0 +1,121 @@
+  .content-wrapper {
+      overflow: hidden;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      height: 100%;
+  }
+
+  .content-wrapper .main-content {
+      width: 75%;
+      height: 68%;
+      padding: 10px 7%;
+      border-radius: 20px;
+      /* box-shadow: 1px 1px 10px 5px #3b3939 inset; */
+      z-index: 1;
+  }
+
+  .content-wrapper .main-content .info {
+      display: flex;
+      justify-content: center;
+      z-index: 1;
+  }
+
+  .content-wrapper .main-content .info .strengths {
+      width: 60%;
+      height: 30vh;
+      margin-top: -10px;
+      z-index: 2;
+  }
+
+  .content-wrapper .main-content .info .strengths .job {
+      line-height: 0;
+  }
+
+
+
+  .content-wrapper .main-content .info .strengths .qualities {
+      font-size: 14px;
+      color: #707070;
+      display: flex;
+      justify-content: center;
+  }
+
+  .content-wrapper .main-content .info .strengths .qualities p {
+      font-size: 1rem;
+      position: relative;
+      margin-left: 2rem;
+      margin-bottom: 0rem;
+  }
+
+  .content-wrapper .main-content .info .strengths .qualities i {
+    font-size: 1rem;
+    position: absolute;
+    left: -20px;
+    
+    bottom: 5px;
+}
+
+  .content-wrapper .main-content .info .strengths .buttons-wrapper {
+      margin-top: 10px;
+      z-index: 1;
+      text-align: center;
+  }
+
+  .content-wrapper .main-content .info .strengths .buttons-wrapper button {
+      padding: 8px 25px;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+  .content-wrapper .main-content .info .strengths .buttons-wrapper .main-button {
+      background-color: #a1242c;
+      color: white;
+      border: 1px black solid;
+      z-index: 1;
+  }
+
+  .content-wrapper .main-content .info .strengths .buttons-wrapper .second-button {
+      background-color: inherit;
+      border: 1px solid #707070;
+      margin-left: 10px;
+      color: black;
+      z-index: 1;
+  }
+
+  .content-wrapper .main-content .info .strengths .hand-right-wrapper {
+      width: 40%;
+      z-index: 2;
+      float: left;
+  }
+
+  .content-wrapper .main-content .info .strengths .hand-right-wrapper .hand-right {
+      width: 40vw;
+      height: 50vh;
+      z-index: 4;
+      margin-left: -31vw;
+      margin-top: -17vh;
+  }
+
+  .content-wrapper .main-content .info .strengths .hand-up-wrapper {
+      width: 40%;
+      z-index: 2;
+      float: left;
+  }
+
+  .content-wrapper .main-content .info .strengths .hand-up-wrapper .hand-up {
+      width: 40vw;
+      height: 55vh;
+      z-index: 5;
+      margin-left: -25vw;
+      margin-top: -2vh;
+  }
+
+  .content-wrapper .main-content .info .strengths .arrow-wrapper .arrow-down {
+      height: 70px;
+      width: 50px;
+      margin-top: 10vh;
+      z-index: 4;
+  }
