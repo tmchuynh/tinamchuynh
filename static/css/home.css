@@ -1,6 +1,6 @@
 #featured-articles,
 #blog-list {
-    padding: 2rem;
+    padding: 0rem 2rem 2rem 2rem;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
