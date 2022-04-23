@@ -36,7 +36,7 @@
 
   .content-wrapper .main-content .info .strengths .qualities {
       font-size: 14px;
-      color: #707070;
+      color: black;
       display: flex;
       justify-content: center;
   }
@@ -46,13 +46,13 @@
       position: relative;
       margin-left: 2rem;
       margin-bottom: 0rem;
+      font-weight: bold;
   }
 
   .content-wrapper .main-content .info .strengths .qualities i {
     font-size: 1rem;
     position: absolute;
     left: -20px;
-    
     bottom: 5px;
 }
 
