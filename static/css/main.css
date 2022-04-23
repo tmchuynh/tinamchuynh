@@ -333,6 +333,7 @@ section {
     justify-content: right;
     padding: 3rem;
     min-width: 30rem;
+    margin: auto;
 }
 
 .info-summary {
