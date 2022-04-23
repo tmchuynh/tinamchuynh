@@ -545,6 +545,11 @@ section {
     background-color: #56b9ff;
 }
 
+.social-icons a.codepen:hover {
+    color: #171717;
+    background-color: #fff;
+}
+
 .social-icons a.github:hover {
     background-color: #fff;
     color: var(--eerie-black);
@@ -559,6 +564,11 @@ section {
     .social-icons a.linkedin {
         color: #fff;
         background-color: #0a66c2;
+    }
+
+    .social-icons a.codepen {
+        color: #171717;
+        background-color: #fff;
     }
 
     .social-icons a.instagram {
