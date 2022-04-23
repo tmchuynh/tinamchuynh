@@ -64,7 +64,7 @@
       text-align: center;
   }
 
-  .content-wrapper .main-content .info .strengths .buttons-wrapper button {
+  .content-wrapper .main-content .info .strengths .buttons-wrapper a {
       padding: 8px 25px;
       border-radius: 5px;
       cursor: pointer;
