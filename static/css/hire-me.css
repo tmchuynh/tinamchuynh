@@ -60,6 +60,7 @@
       margin-top: 10px;
       z-index: 1;
       text-align: center;
+      display: flex;
   }
 
   .content-wrapper .main-content .info .strengths .buttons-wrapper a {
