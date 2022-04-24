@@ -222,6 +222,9 @@ a:hover {
     box-shadow: none;
 }
 
+.navbar-toggler-icon {
+    padding-right: 6rem;
+}
 
 .nav-letters {
     top: 37px;
