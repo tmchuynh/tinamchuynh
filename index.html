@@ -303,6 +303,7 @@
             </div>
 
             <div id="revue-embed">
+
                 <form class="d-block" action="https://www.getrevue.co/profile/tmchuynh/add_subscriber" method="post" id="revue-form"
                     name="revue-form" target="_blank">
                     <div class="d-flex">
@@ -323,7 +324,7 @@
                         </div>
                     </div>
                     <div class="revue-form-actions">
-                        <input class="btn" type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
+                        <input onclick="reset()" class="btn" type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
                         <div class="revue-form-footer">By subscribing, you agree with Revue’s <a target="_blank"
                             href="https://www.getrevue.co/terms">Terms of Service</a> and <a target="_blank"
                             href="https://www.getrevue.co/privacy">Privacy Policy</a>.</div>
@@ -378,6 +379,7 @@
 
     <script src="static/js/nav.js"></script>
     <script src="static/js/repo.js"></script>
+    <script src="static/js/revue.js"></script>
 </body>
 
 </html>

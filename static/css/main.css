@@ -396,10 +396,6 @@ section {
   # Revue form
 --------------------------------------------------------------*/
 
-input {
-    color: (var(--logo-red), white);
-}
-
 .revue-form-group {
     margin: 1rem;
 }
