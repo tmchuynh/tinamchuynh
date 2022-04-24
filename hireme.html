@@ -142,6 +142,7 @@
     </main>
 
 
+    <!--FOOTER-->
     <footer class="site-footer">
         <div class="container">
             <div class="row ps-3">
@@ -190,7 +191,7 @@
                     </p>
                 </div>
                 <div class="col-md-4 col-sm-12>
-                        <p class=" text-justify">
+                    <p class=" text-justify">
                     And it's thanks to people like Geoff Hinton, Yoshua Bengio, Yann LeCun, and Jurgen Schmidhuber
                     who had faith in neural networks even back in the 1990s and 2000s when their colleagues had left
                     the idea behind. People like that give hope that our dreams, our beliefs, our blueprints can be
@@ -199,6 +200,39 @@
                     </p>
                 </div>
             </div>
+
+            <div id="revue-embed">
+
+                <form class="d-block" action="https://www.getrevue.co/profile/tmchuynh/add_subscriber" method="post" id="revue-form"
+                    name="revue-form" target="_blank">
+                    <div class="d-flex">
+                        <div class="revue-form-group">
+                            <label for="member_email">Email address</label>
+                            <input class="revue-form-field" placeholder="Your email address..." type="email"
+                                name="member[email]" id="member_email">
+                        </div>
+                        <div class="revue-form-group">
+                            <label for="member_first_name">First name <span class="optional"></span></label>
+                            <input class="revue-form-field" placeholder="First name... (Optional)" type="text"
+                                name="member[first_name]" id="member_first_name">
+                        </div>
+                        <div class="revue-form-group">
+                            <label for="member_last_name">Last name <span class="optional"></span></label>
+                            <input class="revue-form-field" placeholder="Last name... (Optional)" type="text"
+                                name="member[last_name]" id="member_last_name">
+                        </div>
+                    </div>
+                    <div class="revue-form-actions">
+                        <input onclick="reset()" class="btn" type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
+                        <div class="revue-form-footer">By subscribing, you agree with Revue’s <a target="_blank"
+                            href="https://www.getrevue.co/terms">Terms of Service</a> and <a target="_blank"
+                            href="https://www.getrevue.co/privacy">Privacy Policy</a>.</div>
+                    </div>
+                    
+                    
+                </form>
+            </div>
+
             <hr>
         </div>
 
@@ -231,6 +265,7 @@
             </div>
         </div>
     </footer>
+    <!--END OF FOOTER-->
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
