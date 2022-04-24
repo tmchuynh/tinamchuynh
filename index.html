@@ -135,8 +135,8 @@
                                 </div>
 
                                 <div class="buttons-wrapper">
-                                    <a href="/hireme.html" class="main-button">Hire me</a>
-                                    <a href="mailto:tinamchuynh@gmail.com" class="second-button">Email Me</a>
+                                    <a href="/hireme.html" class="btn">Hire me</a>
+                                    <a href="mailto:tinamchuynh@gmail.com" class="btn">Email Me</a>
                                 </div>
                             </div>
                         </div>
@@ -301,9 +301,41 @@
                     </p>
                 </div>
             </div>
+
+            <div id="revue-embed">
+                <form class="d-block" action="https://www.getrevue.co/profile/tmchuynh/add_subscriber" method="post" id="revue-form"
+                    name="revue-form" target="_blank">
+                    <div class="d-flex">
+                        <div class="revue-form-group">
+                            <label for="member_email">Email address</label>
+                            <input class="revue-form-field" placeholder="Your email address..." type="email"
+                                name="member[email]" id="member_email">
+                        </div>
+                        <div class="revue-form-group">
+                            <label for="member_first_name">First name <span class="optional">(Optional)</span></label>
+                            <input class="revue-form-field" placeholder="First name... (Optional)" type="text"
+                                name="member[first_name]" id="member_first_name">
+                        </div>
+                        <div class="revue-form-group">
+                            <label for="member_last_name">Last name <span class="optional">(Optional)</span></label>
+                            <input class="revue-form-field" placeholder="Last name... (Optional)" type="text"
+                                name="member[last_name]" id="member_last_name">
+                        </div>
+                    </div>
+                    <div class="revue-form-actions">
+                        <input class="btn" type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
+                        <div class="revue-form-footer">By subscribing, you agree with Revue’s <a target="_blank"
+                            href="https://www.getrevue.co/terms">Terms of Service</a> and <a target="_blank"
+                            href="https://www.getrevue.co/privacy">Privacy Policy</a>.</div>
+                    </div>
+                    
+                    
+                </form>
+            </div>
+
             <hr>
         </div>
-        
+
         <div class="container">
             <div class="row ps-3">
                 <div class="col-xs-12">
