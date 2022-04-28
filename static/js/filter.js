@@ -28,3 +28,9 @@ document.addEventListener("click", (evt) => {
         filterOptions.classList.toggle("d-flex");
     }
 });
+
+
+var timeFilter = document.getElementById("times");
+var titleFilter = document.getElementById("title");
+var publishFilter = document.getElementById("published");
+
