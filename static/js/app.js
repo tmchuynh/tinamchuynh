@@ -28,7 +28,11 @@ const addArticle = article => {
     year = parts[0];
     month = parts[1];
     day = parts[2];
+    console.log(article);
     clone.querySelector('.updated').textContent = "Published on " + month + "/" + day + "/" + year;
+
+    const reading_time = article.reading_time_minutes + " minute read";
+    clone.querySelector('.reading-time').textContent = reading_time;
 
 
     clone.querySelector('.url').href = article.canonical_url;
