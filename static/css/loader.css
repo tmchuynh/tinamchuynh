@@ -1,19 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap");
 
-/* body {
-
-
-  line-height: 1.5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-
-  min-height: 100vh;
-  background: #fff;
-  overflow: hidden;
-} */
-
 #container {
     margin: 0;
     position: absolute;
