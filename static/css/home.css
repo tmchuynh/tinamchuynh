@@ -1,3 +1,5 @@
+
+
 #featured-articles,
 #blog-list {
     padding: 0rem 2rem 2rem 2rem;
@@ -8,6 +10,10 @@
     align-content: center;
     justify-content: center;
     width: 100%;
+}
+
+#my-articles {
+    margin-top: 7rem;
 }
 
 #featured-articles li,
