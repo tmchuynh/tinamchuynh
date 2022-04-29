@@ -29,6 +29,8 @@ var timeFilter = document.getElementById("times");
 var titleFilter = document.getElementById("title");
 var publishFilter = document.getElementById("published");
 
+
+
 /**
  * Filters by reading time
  */
@@ -36,10 +38,10 @@ var publishFilter = document.getElementById("published");
     let i, article, reading_time, approve, switching = true;
 
     while (switching) {
-
         article = document.querySelectorAll("#blog-list > li");
 
         reading_time = document.querySelectorAll(".reading-time");
+        
         console.log(reading_time);
 
         // by default, the loop only executes once
@@ -75,13 +77,11 @@ var publishFilter = document.getElementById("published");
  * Filters by title
  */
  titleFilter.addEventListener("click", function() {
-    let i, article, article_title, approve, switching = true;
+    let i, article_title, approve, switching = true;
+
+    article_title = document.querySelectorAll(".info > .title");
 
     while (switching) {
-
-        article = document.querySelectorAll("#blog-list > li");
-
-        article_title = document.querySelectorAll(".info > .title");
         console.log(article_title);
 
         // by default, the loop only executes once
@@ -117,13 +117,11 @@ var publishFilter = document.getElementById("published");
  * Filters by the published date (original)
  */
  publishFilter.addEventListener("click", function() {
-    let i, article, published, approve, switching = true;
+    let i, published, approve, switching = true;
+
+    published = document.querySelectorAll(".updated");
 
     while (switching) {
-
-        article = document.querySelectorAll("#blog-list > li");
-
-        published = document.querySelector(".info > .updated");
         console.log(published);
 
         // by default, the loop only executes once
@@ -134,16 +132,17 @@ var publishFilter = document.getElementById("published");
             console.log(i, published);
             console.log(article);
             // Checks if the first letter of the first name holds a greater value
-            if (published[i].innerHTML > published[i + 1].innerHTML) {
+            if (published[i].innerHTML.split(" on ")[1].replaceAll("/","") > published[i + 1].innerHTML.split(" on ")[1].replaceAll("/","")) {
                 // if so, it is earlier on in the alphabet and the switch gets approved
+                article[i].parentElement.insertBefore(article[i + 1], article[i]);
                 approve = true;
-                break;
+                // break;
             }
         }
 
         if (approve) {
             // The cards get switched and all the article get checked again
-            article[i].parentElement.insertBefore(article[i + 1], article[i]);
+            // article[i].parentElement.insertBefore(article[i + 1], article[i]);
             switching = true;
         } else {
             // if the article did not move, all changes have finished
