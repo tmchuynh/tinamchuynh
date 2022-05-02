@@ -40,7 +40,9 @@ const addArticle = article => {
     // Only display blog posts that have a cover image
     if (article.cover_image) {
         clone.querySelector('.cover').src = article.cover_image;
-        document.querySelector('#blog-list').appendChild(clone);
+        if (article.positive_reactions_count >= 20 || article.comments_count > 25) {
+            document.querySelector('#featured-articles').appendChild(clone);
+        }
 
         count += 1;
     }

@@ -114,6 +114,7 @@ grey-00 {
     padding: 12px 16px 10px;
     font-size: var(--spacing-medium);
     line-height: 1.25;
+    margin: 15px;
     background-color: var(--white);
     border-radius: var(--border-radius);
     text-decoration: none;
@@ -301,7 +302,7 @@ section {
     text-transform: uppercase;
     margin-bottom: 10px;
     margin-top: 15px;
-    margin-left: 50px;
+    padding-left: 4rem;
     position: relative;
     color: var(--grey-00);
     font-weight: bold;
@@ -322,11 +323,11 @@ section {
     display: none;
     position: fixed;
     bottom: 2rem;
-    right: 2.5rem;
+    right: 3.5rem;
     z-index: 99;
     outline: none;
     cursor: pointer;
-    padding: 1rem;
+    margin: 2rem;
     border-radius: 1rem;
     font-size: 1.5rem;
 }
