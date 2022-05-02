@@ -28,7 +28,7 @@ const addArticle = article => {
     year = parts[0];
     month = parts[1];
     day = parts[2];
-    console.log(article);
+    // console.log(article);
     clone.querySelector('.updated').textContent = "Published on " + month + "/" + day + "/" + year;
 
     const reading_time = article.reading_time_minutes + " minute read";
@@ -40,7 +40,11 @@ const addArticle = article => {
     // Only display blog posts that have a cover image
     if (article.cover_image) {
         clone.querySelector('.cover').src = article.cover_image;
+        if (article.positive_reactions_count >= 20 || article.comments_count > 25) {
+            document.querySelector('#featured-articles').appendChild(clone);
+        }
         document.querySelector('#blog-list').appendChild(clone);
+
         count += 1;
     }
 
