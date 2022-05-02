@@ -8,7 +8,7 @@ const getArticles = async () => {
     const response = await fetch(`https://dev.to/api/articles?username=${username}&state=all`);
     const data = await response.json();
     const name = data[0].user.name;
-    document.querySelectorAll('.blog-list .name').forEach(el => el.textContent = name);
+    document.querySelectorAll('#blog-list .title').forEach(el => el.textContent = name);
     document.title = `TMCHUYNH`;
 
     // console.log(data);
