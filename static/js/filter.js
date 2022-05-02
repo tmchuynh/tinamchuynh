@@ -73,85 +73,85 @@ var publishFilter = document.getElementById("published");
 });
 
 
-/**
- * Filters by title
- */
- titleFilter.addEventListener("click", function() {
-    let i, article_title, approve, switching = true;
+// /**
+//  * Filters by title
+//  */
+//  titleFilter.addEventListener("click", function() {
+//     let i, article_title, approve, switching = true;
 
-    article_title = document.querySelectorAll(".info > .title");
+//     article_title = document.querySelectorAll(".info > .title");
 
-    while (switching) {
-        console.log(article_title);
+//     while (switching) {
+//         console.log(article_title);
 
-        // by default, the loop only executes once
-        switching = false;
-        approve = false;
-        // all cards get looked through
-        for (i = 0; i < (article.length - 1); i++) {
-            console.log(i, article_title);
-            console.log(article);
-            // Checks if the first letter of the first name holds a greater value
-            if (article_title[i].innerHTML.toLowerCase() > article_title[i + 1].innerHTML.toLowerCase()) {
-                // if so, it is earlier on in the alphabet and the switch gets approved
-                approve = true;
-                break;
-            }
-        }
+//         // by default, the loop only executes once
+//         switching = false;
+//         approve = false;
+//         // all cards get looked through
+//         for (i = 0; i < (article.length - 1); i++) {
+//             console.log(i, article_title);
+//             console.log(article);
+//             // Checks if the first letter of the first name holds a greater value
+//             if (article_title[i].innerHTML.toLowerCase() > article_title[i + 1].innerHTML.toLowerCase()) {
+//                 // if so, it is earlier on in the alphabet and the switch gets approved
+//                 approve = true;
+//                 break;
+//             }
+//         }
 
-        if (approve) {
-            // The cards get switched and all the article get checked again
-            article[i].parentElement.insertBefore(article[i + 1], article[i]);
-            switching = true;
-        } else {
-            // if the article did not move, all changes have finished
-            switching = false;
-        }
-    }
+//         if (approve) {
+//             // The cards get switched and all the article get checked again
+//             article[i].parentElement.insertBefore(article[i + 1], article[i]);
+//             switching = true;
+//         } else {
+//             // if the article did not move, all changes have finished
+//             switching = false;
+//         }
+//     }
 
-    toggleFilterMenu();
-});
+//     toggleFilterMenu();
+// });
 
 
-/**
- * Filters by the published date (original)
- */
- publishFilter.addEventListener("click", function() {
-    let i, published, approve, switching = true;
+// /**
+//  * Filters by the published date (original)
+//  */
+//  publishFilter.addEventListener("click", function() {
+//     let i, published, approve, switching = true;
 
-    published = document.querySelectorAll(".updated");
+//     published = document.querySelectorAll(".updated");
 
-    while (switching) {
-        console.log(published);
+//     while (switching) {
+//         console.log(published);
 
-        // by default, the loop only executes once
-        switching = false;
-        approve = false;
-        // all cards get looked through
-        for (i = 0; i < (article.length - 1); i++) {
-            console.log(i, published);
-            console.log(article);
-            // Checks if the first letter of the first name holds a greater value
-            if (published[i].innerHTML.split(" on ")[1].replaceAll("/","") > published[i + 1].innerHTML.split(" on ")[1].replaceAll("/","")) {
-                // if so, it is earlier on in the alphabet and the switch gets approved
-                article[i].parentElement.insertBefore(article[i + 1], article[i]);
-                approve = true;
-                // break;
-            }
-        }
+//         // by default, the loop only executes once
+//         switching = false;
+//         approve = false;
+//         // all cards get looked through
+//         for (i = 0; i < (article.length - 1); i++) {
+//             console.log(i, published);
+//             console.log(article);
+//             // Checks if the first letter of the first name holds a greater value
+//             if (published[i].innerHTML.split(" on ")[1].replaceAll("/","") > published[i + 1].innerHTML.split(" on ")[1].replaceAll("/","")) {
+//                 // if so, it is earlier on in the alphabet and the switch gets approved
+//                 article[i].parentElement.insertBefore(article[i + 1], article[i]);
+//                 approve = true;
+//                 // break;
+//             }
+//         }
 
-        if (approve) {
-            // The cards get switched and all the article get checked again
-            // article[i].parentElement.insertBefore(article[i + 1], article[i]);
-            switching = true;
-        } else {
-            // if the article did not move, all changes have finished
-            switching = false;
-        }
-    }
+//         if (approve) {
+//             // The cards get switched and all the article get checked again
+//             // article[i].parentElement.insertBefore(article[i + 1], article[i]);
+//             switching = true;
+//         } else {
+//             // if the article did not move, all changes have finished
+//             switching = false;
+//         }
+//     }
 
-    toggleFilterMenu();
-});
+//     toggleFilterMenu();
+// });
 
 
 function toggleFilterMenu() {

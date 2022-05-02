@@ -2,12 +2,12 @@ var project_container = document.getElementById('project-list');
 var obj = new Array();
 
 $.getJSON('https://api.github.com/users/tmchuynh/repos', (data) => {
-    console.log(data);
+    // console.log(data);
 
     data.forEach((element) => {
 
         $.getJSON(element.languages_url, (data) => {
-            console.log(Object.keys(data))
+            // console.log(Object.keys(data))
             populate(element.name, element.html_url, element.pushed_at, Object.keys(data));
         })
 
@@ -15,9 +15,12 @@ $.getJSON('https://api.github.com/users/tmchuynh/repos', (data) => {
 })
 
 
+
+
+
 function populate(name, url, updated, languages) {
 
-    console.log(languages)
+    // console.log(languages)
 
     var card = document.createElement("div");
     card.classList.add("cards");
@@ -27,7 +30,7 @@ function populate(name, url, updated, languages) {
 
     var icon = document.createElement("i");
     icon.classList.add("bx")
-    console.log("read");
+    // console.log("read");
     if (languages.length == 0) {
         icon.innerHTML = " ";
     }
