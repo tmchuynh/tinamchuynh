@@ -448,15 +448,11 @@ section {
 }
 
 /*--------------------------------------------------------------
-  # Revue form
+  # Newsletter form
 --------------------------------------------------------------*/
 
-.revue-form-group {
-    margin: 1rem;
-}
-
-.revue-form-actions {
-    margin-left: 1rem;
+.footer .formkit-fields {
+    display: flex;
 }
 
 /*--------------------------------------------------------------
@@ -487,6 +483,10 @@ section {
     letter-spacing: 10px;
 }
 
+.site-footer p {
+    text-align: justify;
+}
+
 .footer-links {
     /* ul element itself */
     padding-left: 0;
@@ -494,6 +494,7 @@ section {
     display: flex;
     justify-content: center;
 }
+
 
 .footer-links li {
     /* list elements */
@@ -514,6 +515,21 @@ section {
     display: none;
     font-size: 22px;
 }
+
+@media (max-width: 520px) {
+    .footer-links {
+        display: block;
+        margin: auto;
+        padding: auto;
+    }
+
+    .site-footer a {
+        margin-right: 25px;
+    }
+}
+
+
+
 
 .site-footer a:active+.vanish,
 .site-footer a:focus+.vanish,
@@ -548,9 +564,7 @@ section {
 }
 
 @media only screen and (max-width: 991px) {
-    .site-footer [class^="col-"] {
-        margin-bottom: 10px;
-    }
+
 
     .site-footer .vanish {
         color: var(--sky-blue);
@@ -576,6 +590,7 @@ section {
 
     .site-footer p {
         margin-right: 20px;
+        margin-top: 15px;
     }
 }
 
