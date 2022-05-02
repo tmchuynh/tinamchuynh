@@ -48,21 +48,24 @@
 #blog-list .info {
     display: flex;
     flex-direction: column;
-    height: 150px;
+    min-height: 150px;
+    height: max-content;
+    background: #fff;
+    border-radius: 0 0 15px 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     position: relative;
 }
 
 #featured-articles .info .title,
 #blog-list .info .title {
-    background: #fff;
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    border-radius: 0 0 15px 15px;
-    margin: 0;
+    margin: 10px;
     padding-bottom: 0;
     position: absolute;
 }

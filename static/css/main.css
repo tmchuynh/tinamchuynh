@@ -387,9 +387,16 @@ section {
   # Info Summary
   --------------------------------------------------------------*/
 
-.social-badges {
+#social-badges {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+
+}
+
+#social-badges img {
+    margin: 10px;
+    height: 1.5rem;
 }
 
 
