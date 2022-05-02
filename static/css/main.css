@@ -455,6 +455,14 @@ section {
     display: flex;
 }
 
+
+.convertkit-button {
+    width: 200px;
+    height: fit-content;
+    display: block;
+    position: relative;
+}
+
 /*--------------------------------------------------------------
   # Footer
   --------------------------------------------------------------*/
