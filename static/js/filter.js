@@ -1,9 +1,8 @@
 var filterOptions = document.getElementById("myDropdown");
 
 var filterBtn = document.getElementById("filterBtn");
-filterBtn.addEventListener("click", function() {
+filterBtn.addEventListener("click", function () {
     console.log("clicked");
-    // filterOptions.classList.toggle("show");
     console.log(filterOptions);
     filterOptions.classList.toggle("d-flex");
 });
@@ -29,31 +28,32 @@ var timeFilter = document.getElementById("times");
 var titleFilter = document.getElementById("title");
 var publishFilter = document.getElementById("published");
 
-
-
 /**
  * Filters by reading time
  */
- timeFilter.addEventListener("click", function() {
+timeFilter.addEventListener("click", function () {
     let i, article, reading_time, approve, switching = true;
 
     while (switching) {
         article = document.querySelectorAll("#blog-list > li");
 
         reading_time = document.querySelectorAll(".reading-time");
-        
+
         console.log(reading_time);
 
         // by default, the loop only executes once
         switching = false;
         approve = false;
+
         // all cards get looked through
         for (i = 0; i < (article.length - 1); i++) {
             console.log(i, reading_time);
             console.log(article);
-            // Checks if the first letter of the first name holds a greater value
+
+            // Checks if the reading time holds a less value
             if (reading_time[i].innerHTML > reading_time[i + 1].innerHTML) {
-                // if so, it is earlier on in the alphabet and the switch gets approved
+                
+                // if so, it has a quicker reading time and the switch gets approved
                 article[i].parentElement.insertBefore(article[i + 1], article[i]);
                 approve = true;
             }
@@ -61,7 +61,6 @@ var publishFilter = document.getElementById("published");
 
         if (approve) {
             // The cards get switched and all the article get checked again
-            // article[i].parentElement.insertBefore(article[i + 1], article[i]);
             switching = true;
         } else {
             // if the article did not move, all changes have finished
@@ -73,85 +72,91 @@ var publishFilter = document.getElementById("published");
 });
 
 
-// /**
-//  * Filters by title
-//  */
-//  titleFilter.addEventListener("click", function() {
-//     let i, article_title, approve, switching = true;
+/**
+ * Filters by title
+ */
+titleFilter.addEventListener("click", function () {
+    let i, article, article_title, approve, switching = true;
 
-//     article_title = document.querySelectorAll(".info > .title");
+    while (switching) {
+        article = document.querySelectorAll("#blog-list > li");
 
-//     while (switching) {
-//         console.log(article_title);
+        article_title = document.querySelectorAll(".info > h3");
+        console.log(article_title);
 
-//         // by default, the loop only executes once
-//         switching = false;
-//         approve = false;
-//         // all cards get looked through
-//         for (i = 0; i < (article.length - 1); i++) {
-//             console.log(i, article_title);
-//             console.log(article);
-//             // Checks if the first letter of the first name holds a greater value
-//             if (article_title[i].innerHTML.toLowerCase() > article_title[i + 1].innerHTML.toLowerCase()) {
-//                 // if so, it is earlier on in the alphabet and the switch gets approved
-//                 approve = true;
-//                 break;
-//             }
-//         }
+        // by default, the loop only executes once
+        switching = false;
+        approve = false;
+        
+        // all cards get looked through
+        for (i = 0; i < (article.length - 1); i++) {
+            console.log(i, article_title);
+            console.log(article);
+            
+            // Checks if the first character of the title holds a greater value
+            if (article_title[i].innerHTML.toLowerCase() > article_title[i + 1].innerHTML.toLowerCase()) {
+                
+                // if so, it is earlier on in the alphabet and the switch gets approved
+                article[i].parentElement.insertBefore(article[i + 1], article[i]);
+                approve = true;
+            }
+        }
 
-//         if (approve) {
-//             // The cards get switched and all the article get checked again
-//             article[i].parentElement.insertBefore(article[i + 1], article[i]);
-//             switching = true;
-//         } else {
-//             // if the article did not move, all changes have finished
-//             switching = false;
-//         }
-//     }
+        if (approve) {
+            // The cards get switched and all the article get checked again
+            switching = true;
+        } else {
+            // if the article did not move, all changes have finished
+            switching = false;
+        }
+    }
 
-//     toggleFilterMenu();
-// });
+    toggleFilterMenu();
+});
 
 
-// /**
-//  * Filters by the published date (original)
-//  */
-//  publishFilter.addEventListener("click", function() {
-//     let i, published, approve, switching = true;
+/**
+ * Filters by the published date (original)
+ */
+publishFilter.addEventListener("click", function () {
+    let i, article, published, approve, switching = true;
 
-//     published = document.querySelectorAll(".updated");
+    while (switching) {
 
-//     while (switching) {
-//         console.log(published);
+        article = document.querySelectorAll("#blog-list > li");
 
-//         // by default, the loop only executes once
-//         switching = false;
-//         approve = false;
-//         // all cards get looked through
-//         for (i = 0; i < (article.length - 1); i++) {
-//             console.log(i, published);
-//             console.log(article);
-//             // Checks if the first letter of the first name holds a greater value
-//             if (published[i].innerHTML.split(" on ")[1].replaceAll("/","") > published[i + 1].innerHTML.split(" on ")[1].replaceAll("/","")) {
-//                 // if so, it is earlier on in the alphabet and the switch gets approved
-//                 article[i].parentElement.insertBefore(article[i + 1], article[i]);
-//                 approve = true;
-//                 // break;
-//             }
-//         }
+        published = document.querySelectorAll(".info > code");
+        console.log(published);
 
-//         if (approve) {
-//             // The cards get switched and all the article get checked again
-//             // article[i].parentElement.insertBefore(article[i + 1], article[i]);
-//             switching = true;
-//         } else {
-//             // if the article did not move, all changes have finished
-//             switching = false;
-//         }
-//     }
+        // by default, the loop only executes once
+        switching = false;
+        approve = false;
 
-//     toggleFilterMenu();
-// });
+        // all cards get looked through
+        for (i = 0; i < (article.length - 1); i++) {
+            console.log(i, published);
+            console.log(article);
+
+            // Checks if the number is greater
+            if (published[i].innerHTML.split(" on ")[1].replaceAll("/", "") < published[i + 1].innerHTML.split(" on ")[1].replaceAll("/", "")) {
+                
+                // if so, it is more current on the calendar and the switch gets approved
+                article[i].parentElement.insertBefore(article[i + 1], article[i]);
+                approve = true;
+            }
+        }
+
+        if (approve) {
+            // The cards get switched and all the article get checked again
+            switching = true;
+        } else {
+            // if the article did not move, all changes have finished
+            switching = false;
+        }
+    }
+
+    toggleFilterMenu();
+});
 
 
 function toggleFilterMenu() {
