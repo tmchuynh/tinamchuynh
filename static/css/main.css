@@ -451,16 +451,25 @@ section {
   # Newsletter form
 --------------------------------------------------------------*/
 
-.footer .formkit-fields {
-    display: flex;
-}
-
-
-.convertkit-button {
-    width: 200px;
-    height: fit-content;
-    display: block;
+.newsletter-button {
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--logo-red);
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    font-weight: 500;
+    outline: none;
+    cursor: pointer;
+    -ms-flex: 1 0 100%;
+    overflow: hidden;
+    padding: 0.5rem 2rem;
+    margin: 0 5px 15px 5px;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     position: relative;
+    vertical-align: middle;
 }
 
 /*--------------------------------------------------------------
