@@ -12,10 +12,6 @@
     width: 100%;
 }
 
-#my-articles {
-    margin-top: 7rem;
-}
-
 #featured-articles li,
 #blog-list li {
     margin: 0.5rem 2rem;
@@ -91,12 +87,24 @@
 #view-all {
     text-align: right;
     position: absolute;
-    left: 15rem;
+    right: 5rem;
 }
 
 #filterBtn {
     text-align: left;
     position: relative;
+}
+
+#myDropdown {
+    position: absolute;
+    bottom: 34px;
+    left: 140px;
+    background-color: transparent;
+}
+
+#myDropdown a {
+    border: 1px solid gray;
+    margin: 5px;
 }
 
 /* ----------------------------------- 
