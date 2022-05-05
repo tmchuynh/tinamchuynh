@@ -20,7 +20,7 @@ $.getJSON('https://api.github.com/users/tmchuynh/repos', (data) => {
 
 function populate(name, url, updated, languages) {
 
-    // console.log(languages)
+    console.log(languages)
 
     var card = document.createElement("div");
     card.classList.add("cards");
@@ -61,6 +61,22 @@ function populate(name, url, updated, languages) {
         icon5.classList.add("bxl-css3")
         icon5.classList.add("css");
         lang_icons.appendChild(icon5);
+    }
+    if (languages.includes("TypeScript")) {
+        var icon6 = document.createElement("img");
+        var source = document.createAttribute("src");
+        source.value = "./static/icons/typescript.svg";
+        icon6.setAttributeNode(source);
+        icon6.classList.add("typescript");
+        lang_icons.appendChild(icon6);
+    }
+    if (languages.includes("C#")) {
+        var icon7 = document.createElement("img");
+        var source = document.createAttribute("src");
+        source.value = "./static/icons/csharp.svg";
+        icon7.setAttributeNode(source);
+        icon7.classList.add("csharp");
+        lang_icons.appendChild(icon7);
     }
     lang_icons.appendChild(icon);
 

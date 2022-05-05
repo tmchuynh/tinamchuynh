@@ -64,6 +64,11 @@
     color: #f0d44c;
 }
 
+#project-list .typescript,
+#project-list .csharp  {
+    width: 30px;
+}
+
 #project-list .html { 
     color: #e34c27;
 }
