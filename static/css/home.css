@@ -99,7 +99,7 @@
     right: 5rem;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 768px) {
     #view-all {
         display: block;
         position: relative;
@@ -107,7 +107,13 @@
         right: 0px;
         width: fit-content;
         margin: 0px;
-        left: 5%;
+        left: 5rem;
+    }
+}
+
+@media (max-width: 420px) {
+    #view-all {
+        left: 2rem;
     }
 }
 

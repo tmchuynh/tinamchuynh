@@ -302,7 +302,7 @@ section {
     text-transform: uppercase;
     margin-bottom: 10px;
     margin-top: 15px;
-    padding-left: 4rem;
+    padding-left: 6rem;
     position: relative;
     color: var(--grey-00);
     font-weight: bold;
@@ -311,6 +311,13 @@ section {
 }
 
 @media (max-width: 940px) {
+    .section-title h4 {
+        margin-bottom: 7rem;
+        padding-left: 5rem;
+    }
+}
+
+@media (max-width: 420px) {
     .section-title h4 {
         margin-bottom: 5rem;
     }
@@ -428,6 +435,7 @@ section {
 .dropdown2 {
     display: flex;
     float: left;
+    left: 5rem;
     position: relative;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -440,16 +448,8 @@ section {
     margin-left: 1.255em;
 }
 
-@media (max-width: 768px) {
-    .dropdown2 {
-        margin-left: 0.8rem;
-    }
-}
-
-
-
 .dropdown2 .dropdown-content {
-    /* display: none; */
+    display: none;
     position: relative;
     background-color: #f6f6f6;
     min-width: max-content;
@@ -458,18 +458,30 @@ section {
     z-index: 99;
 }
 
+@media (max-width: 768px) {
+    .dropdown2 {
+        left: 4.5rem;
+    }
+    .dropdown2 .dropdown-content {
+        top: -85px;
+        overflow: visible;
+    }
+}
+
 @media (max-width: 420px) {
     .dropdown2 {
         display: flex;
         padding: 0px;
         top: -70px;
-        left: 10px;
+        left: 2rem;
     }
     .dropdown2 .dropdown-content {
         top: 10px;
         overflow: visible;
     }
 }
+
+
 
 .dropdown2 .dropdown-content a {
     color: black;
