@@ -25,6 +25,12 @@
     box-shadow: 3px 10px 25px rgb(180,180,180, 0.4);
 }
 
+@media (max-width: 420px) {
+    #project-list .cards {
+        min-width: 300px;
+    }
+}
+
 #project-list .cards:hover {
     box-shadow: 3px 10px 25px rgb(180,180,180, 0.8);
 }

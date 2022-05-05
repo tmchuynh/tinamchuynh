@@ -310,6 +310,12 @@ section {
     font-size: 24px;
 }
 
+@media (max-width: 940px) {
+    .section-title h4 {
+        margin-bottom: 5rem;
+    }
+}
+
 .section-title p {
     margin: auto;
     width: 90%;
@@ -391,7 +397,7 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
+    flex-wrap: wrap;
 }
 
 #social-badges img {
@@ -402,6 +408,19 @@ section {
 #threeD-commit {
     width: 50%;
 }
+
+
+@media (max-width: 768px) {
+    #threeD-commit {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1200px) {
+    #threeD-commit {
+        width: 75%;
+    }
+}
 /*--------------------------------------------------------------
   # Dropdown Filter
   --------------------------------------------------------------*/
@@ -409,7 +428,6 @@ section {
 .dropdown2 {
     display: flex;
     float: left;
-    margin-left: 5.75rem;
     position: relative;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -417,9 +435,20 @@ section {
     align-items: flex-start;
 }
 
+.dropdown-toggle::after {
+    transform: rotate(-90deg);
+    margin-left: 1.255em;
+}
+
 @media (max-width: 768px) {
     .dropdown2 {
         margin-left: 0.8rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .dropdown2 {
+        display: block;
     }
 }
 
@@ -444,10 +473,7 @@ section {
     background-color: #fff;
 }
 
-.dropdown-toggle::after {
-    transform: rotate(-90deg);
-    margin-left: 1.255em;
-}
+
 
 /*--------------------------------------------------------------
   # Newsletter form
@@ -472,6 +498,12 @@ section {
     flex: 1 1 auto;
     position: relative;
     vertical-align: middle;
+}
+
+@media (max-width: 420px) {
+    .newsletter-button {
+        width: 90%;
+    }
 }
 
 /*--------------------------------------------------------------

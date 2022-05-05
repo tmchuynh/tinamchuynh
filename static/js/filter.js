@@ -4,7 +4,11 @@ var filterBtn = document.getElementById("filterBtn");
 filterBtn.addEventListener("click", function () {
     console.log("clicked");
     console.log(filterOptions);
-    filterOptions.classList.toggle("d-flex");
+    if ($(document).width() > 940 ) {
+        filterOptions.classList.toggle("d-flex");
+    } else {
+        filterOptions.classList.toggle("d-block");
+    }
 });
 
 
@@ -20,6 +24,8 @@ document.addEventListener("click", (evt) => {
     } while (userClick);
     if (filterOptions.classList.contains("d-flex")) {
         filterOptions.classList.toggle("d-flex");
+    } else {
+        filterOptions.classList.toggle("d-block");
     }
 });
 
