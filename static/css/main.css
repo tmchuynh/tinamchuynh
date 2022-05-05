@@ -446,20 +446,29 @@ section {
     }
 }
 
-@media (max-width: 420px) {
-    .dropdown2 {
-        display: block;
-    }
-}
+
 
 .dropdown2 .dropdown-content {
-    display: none;
+    /* display: none; */
     position: relative;
     background-color: #f6f6f6;
     min-width: max-content;
     overflow: auto;
     border: 1px solid #fff;
     z-index: 99;
+}
+
+@media (max-width: 420px) {
+    .dropdown2 {
+        display: flex;
+        padding: 0px;
+        top: -70px;
+        left: 10px;
+    }
+    .dropdown2 .dropdown-content {
+        top: 10px;
+        overflow: visible;
+    }
 }
 
 .dropdown2 .dropdown-content a {
