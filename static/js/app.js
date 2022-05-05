@@ -18,6 +18,13 @@ const getArticles = async () => {
     }
 }
 
+/**
+ * Creates article cards from DEV.to API informtion
+ * Displays ALL articles     
+ * 
+ * @param {any} article = the information of each article written from DEV.to API
+ * @returns the number of articles
+ */
 const addArticle = article => {
     const template = document.querySelector('#blog-item');
     const clone = template.content.cloneNode(true);

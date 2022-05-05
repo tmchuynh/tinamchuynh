@@ -4,6 +4,10 @@ var count = 0;
 var left = 0;
 
 
+/**
+ * Retrieves the articles from the DEV.to API
+ * 
+ */
 const getArticles = async () => {
     const response = await fetch(`https://dev.to/api/articles?username=${username}&state=all`);
     const data = await response.json();
@@ -18,6 +22,16 @@ const getArticles = async () => {
     }
 }
 
+/**
+ * Creates article cards from DEV.to API informtion
+ * Will only display the articles dependent on certain criteria
+ * 
+ * positive_reaction_count >= 20
+ * comments_count > 25
+ * 
+ * @param {any} article = the information of each article written from DEV.to API
+ * @returns the number of articles
+ */
 const addArticle = article => {
     const template = document.querySelector('#blog-item');
     const clone = template.content.cloneNode(true);

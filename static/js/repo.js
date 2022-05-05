@@ -1,6 +1,9 @@
 var project_container = document.getElementById('project-list');
 var obj = new Array();
 
+/**
+ * Get repository info from GitHub API 
+ * /
 $.getJSON('https://api.github.com/users/tmchuynh/repos', (data) => {
     // console.log(data);
 
@@ -15,9 +18,14 @@ $.getJSON('https://api.github.com/users/tmchuynh/repos', (data) => {
 })
 
 
-
-
-
+/**
+ * Populate repository project cards with language icons respectively
+ * 
+ * @param {any} name = Project name
+ * @param {any} url = GitHub URL link
+ * @param {any} updated = Last commit / push date MM/DD/YYYY
+ * @param {any} languages = Programming languages used
+ */
 function populate(name, url, updated, languages) {
 
     console.log(languages)
