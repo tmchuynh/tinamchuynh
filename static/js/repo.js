@@ -3,7 +3,7 @@ var obj = new Array();
 
 /**
  * Get repository info from GitHub API 
- * /
+*/
 $.getJSON('https://api.github.com/users/tmchuynh/repos', (data) => {
     // console.log(data);
 
