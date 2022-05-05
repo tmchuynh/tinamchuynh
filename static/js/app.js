@@ -1,9 +1,9 @@
 const username = 'tmchuynh'
-const perPage = 10000; //If you have more articles, increase this or add pagination
 var count = 0;
-var left = 0;
 
-
+/**
+ * Get article information info from DEV.to API 
+*/
 const getArticles = async () => {
     const response = await fetch(`https://dev.to/api/articles?username=${username}&state=all`);
     const data = await response.json();

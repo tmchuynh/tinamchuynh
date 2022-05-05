@@ -1,5 +1,8 @@
 var filterOptions = document.getElementById("myDropdown");
 
+/**
+ * Displays filter options when filter button is clicked 
+*/
 var filterBtn = document.getElementById("filterBtn");
 filterBtn.addEventListener("click", function () {
     console.log("clicked");
@@ -11,7 +14,9 @@ filterBtn.addEventListener("click", function () {
     }
 });
 
-
+/**
+ * Hides filter options as needed 
+*/
 document.addEventListener("click", (evt) => {
     let userClick = evt.target;
 
