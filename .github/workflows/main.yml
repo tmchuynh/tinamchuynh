@@ -11,6 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: article
-        uses: actions/checkout@main
+        uses: actions/checkout@v3
         with:
           feed_list: https://dev.to/api/articles?username=tmchuynh
