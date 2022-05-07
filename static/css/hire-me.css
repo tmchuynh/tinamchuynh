@@ -21,8 +21,8 @@ h1 {
 }
 
 .logo {
-    padding: 2rem;
-    margin-right: 1.5rem;
+    padding: 2rem 0rem 2rem 2rem;
+    text-align: end;
 }
 
 .content {
