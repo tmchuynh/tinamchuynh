@@ -5,13 +5,17 @@ var obj = new Array();
  * Get repository info from GitHub API 
 */
 $.getJSON('https://api.github.com/users/tmchuynh/repos', (data) => {
-    // console.log(data);
+    console.log(data);
 
     data.forEach((element) => {
 
         $.getJSON(element.languages_url, (data) => {
             // console.log(Object.keys(data))
-            populate(element.name, element.html_url, element.pushed_at, Object.keys(data));
+
+            // don't display repositories that were forked
+            if (element.fork === false) {
+                populate(element.name, element.html_url, element.pushed_at, Object.keys(data));
+            }
         })
 
     })
@@ -95,7 +99,7 @@ function populate(name, url, updated, languages) {
     var title = document.createElement("a");
     title.classList.add("title");
     name_parts = name.replaceAll("-", " ");
-    title.innerHTML = name_parts
+    title.innerHTML = name_parts;
     var hyperlink = document.createAttribute("href");
     hyperlink.value = url;
     title.setAttributeNode(hyperlink);
