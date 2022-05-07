@@ -29,7 +29,7 @@ document.addEventListener("click", (evt) => {
     } while (userClick);
     if (filterOptions.classList.contains("d-flex")) {
         filterOptions.classList.toggle("d-flex");
-    } else {
+    } else if(filterOptions.classList.contains("d-block")) {
         filterOptions.classList.toggle("d-block");
     }
 });
