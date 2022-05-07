@@ -62,41 +62,13 @@ li {
   # Text Colors
 --------------------------------------------------------------*/
 
-.logo-red,
-logo-red {
-    color: var(--logo-red);
-}
-
-.honolulu-blue,
-honolulu-blue {
-    color: var(--honolulu-blue);
-}
-
 .white {
     color: var(--white);
 }
 
-.grey-00,
-grey-00 {
-    color: var(--grey-00);
-}
-
-
 /*--------------------------------------------------------------
   # Background Colors
 --------------------------------------------------------------*/
-
-.bg-logo-red {
-    background-color: var(--logo-red);
-}
-
-.bg-white {
-    background-color: var(--white);
-}
-
-.bg-off-white {
-    background-color: var(--off-white);
-}
 
 .bg-eerie-black {
     background-color: var(--eerie-black);
@@ -155,26 +127,6 @@ a:hover {
     cursor: unset;
 }
 
-/*--------------------------------------------------------------
-  # Focus States
---------------------------------------------------------------*/
-
-.raise {
-    transition: var(--hover-transition);
-    transform: translateY(0) translateZ(0);
-}
-
-.raise:hover,
-.raise:focus {
-    transition: var(--hover-transition);
-    transform: translateY(-.12rem) translateZ(0);
-}
-
-.raise:active {
-    transition: var(--hover-transition);
-    opacity: .5;
-}
-
 
 /*--------------------------------------------------------------
   # Navigation Bar (Desktop)
@@ -188,6 +140,7 @@ a:hover {
 }
 
 @media (min-width: 1024px) {
+
     .nav-item,
     .dropdown-item {
         text-align: center;
@@ -419,6 +372,7 @@ section {
         width: 75%;
     }
 }
+
 /*--------------------------------------------------------------
   # Dropdown Filter
   --------------------------------------------------------------*/
@@ -453,6 +407,7 @@ section {
     .dropdown2 {
         left: 4.5rem;
     }
+
     .dropdown2 .dropdown-content {
         top: -85px;
         overflow: visible;
@@ -466,6 +421,7 @@ section {
         top: -70px;
         left: 2rem;
     }
+
     .dropdown2 .dropdown-content {
         top: 10px;
         overflow: visible;
@@ -591,9 +547,6 @@ section {
     }
 }
 
-
-
-
 .site-footer a:active+.vanish,
 .site-footer a:focus+.vanish,
 .site-footer a:hover+.vanish {
@@ -627,8 +580,6 @@ section {
 }
 
 @media only screen and (max-width: 991px) {
-
-
     .site-footer .vanish {
         color: var(--logo-red);
         display: inline-block;
