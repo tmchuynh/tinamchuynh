@@ -4,6 +4,7 @@
 
 My journey started with the medical field, ventured off into engineering, business, and landed me back into the tech industry where my youngest creative curiosities first flowed. Back when iPhones still had these icons ( ), I had been sitting in my parents' room curious who developed the software updates for the iOS, how I could become one, and what great of a job that would be to be able to be so creative and impact. I was probably in elementary school, waiting for my phone to update as I laid on the carpet floor. I wrote an article about these memories once - [read it here.](https://www.bridge-to-connect.org/blog-articles/discovering-my-field)
 
+<a href="https://book.morgen.so/tinahuynh989893/tmchuynh"><img src="https://img.shields.io/badge/-Schedule_A_Meeting-red?style=flat&color=a1242c&logo=Google-Calendar&logoColor=E0E0E0"></a>
 <a href="https://www.linkedin.com/in/tinamchuynh/"><img src="https://img.shields.io/badge/-LinkedIn-blue?style=flat&color=a1242c&logo=linkedin&logoColor=E0E0E0"></a>
 <a href="https://drive.google.com/file/d/1EIzo1D1uT-5Pfy4zepyPQ3m-VEM2InnU/view?usp=sharing"><img src="https://img.shields.io/badge/-Resume-red?style=flat&color=a1242c&logo=adobe-acrobat-reader&logoColor=E0E0E0"></a>
 <a href="https://dev.to/tmchuynh"><img src="https://img.shields.io/badge/-DEV.to-blue?style=flat&color=a1242c&logo=dev.to&logoColor=E0E0E0"></a>
