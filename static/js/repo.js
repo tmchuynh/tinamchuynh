@@ -12,10 +12,7 @@ $.getJSON('https://api.github.com/users/tmchuynh/repos', (data) => {
         $.getJSON(element.languages_url, (data) => {
             // console.log(Object.keys(data))
 
-            // don't display repositories that were forked
-            if (element.fork === false) {
-                populate(element.name, element.html_url, element.pushed_at, Object.keys(data));
-            }
+            populate(element.name, element.html_url, element.pushed_at, Object.keys(data));
         })
 
     })
@@ -89,6 +86,13 @@ function populate(name, url, updated, languages) {
         icon7.setAttributeNode(source);
         icon7.classList.add("csharp");
         lang_icons.appendChild(icon7);
+    }
+    // display symbol for forked repos
+    if (element.fork === true) {
+        var icon8 = document.createElement("i");
+        icon8.classList.add("bx")
+        icon8.classList.add("bx-git-repo-forked");
+        icon8.classList.add("git-fork");
     }
     lang_icons.appendChild(icon);
 

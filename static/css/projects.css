@@ -76,3 +76,7 @@
 #project-list .css {
     color: #4266f5;
 }
+
+#project-list .git-fork {
+    color: black;
+}
