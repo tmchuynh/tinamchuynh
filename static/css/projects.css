@@ -78,6 +78,11 @@
     color: #4266f5;
 }
 
+#project-list .plain-java {
+    color: #d50308;
+    font-size: 2rem;
+}
+
 #project-list .git-fork {
     color: black;
     font-size: 1.5rem;

@@ -93,6 +93,13 @@ function populate(name, url, updated, languages, element) {
         icon8.classList.add("git-fork");
         lang_icons.appendChild(icon8);
     }
+    if(languages.includes("Java")) {
+        var icon9 = document.createElement("i");
+        icon9.classList.add("bx");
+        icon9.classList.add("bxl-java");
+        icon9.classList.add("plain-java");
+        lang_icons.appendChild(icon9);
+    }
     lang_icons.appendChild(icon);
 
 
