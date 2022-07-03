@@ -12,7 +12,7 @@ $.getJSON('https://api.github.com/users/tmchuynh/repos', (data) => {
         $.getJSON(element.languages_url, (data) => {
             // console.log(Object.keys(data))
 
-            populate(element.name, element.html_url, element.pushed_at, Object.keys(data));
+            populate(element.name, element.html_url, element.pushed_at, Object.keys(data), element);
         })
 
     })
@@ -27,9 +27,7 @@ $.getJSON('https://api.github.com/users/tmchuynh/repos', (data) => {
  * @param {any} updated = Last commit / push date MM/DD/YYYY
  * @param {any} languages = Programming languages used
  */
-function populate(name, url, updated, languages) {
-
-    console.log(languages)
+function populate(name, url, updated, languages, element) {
 
     var card = document.createElement("div");
     card.classList.add("cards");
@@ -93,6 +91,7 @@ function populate(name, url, updated, languages) {
         icon8.classList.add("bx")
         icon8.classList.add("bx-git-repo-forked");
         icon8.classList.add("git-fork");
+        lang_icons.appendChild(icon8);
     }
     lang_icons.appendChild(icon);
 
