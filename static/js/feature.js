@@ -26,7 +26,7 @@ const getArticles = async () => {
  * Creates article cards from DEV.to API informtion
  * Will only display the articles dependent on certain criteria
  * 
- * positive_reaction_count >= 20
+ * positive_reaction_count >= 30
  * comments_count > 25
  * 
  * @param {any} article = the information of each article written from DEV.to API
@@ -56,7 +56,7 @@ const addArticle = article => {
         clone.querySelector('.cover').src = article.cover_image;
 
         // Only display blog posts with certain criteria 
-        if (article.positive_reactions_count >= 20 || article.comments_count > 25) {
+        if (article.positive_reactions_count >= 30 || article.comments_count > 25) {
             document.querySelector('#featured-articles').appendChild(clone);
         }
 
