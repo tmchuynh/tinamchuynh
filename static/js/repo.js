@@ -109,6 +109,7 @@ function populate(name, url, updated, languages, element) {
     var title = document.createElement("a");
     title.classList.add("title");
     name_parts = name.replaceAll("-", " ");
+    name_parts = name.replaceAll("_", " ");
     title.innerHTML = name_parts;
     var hyperlink = document.createAttribute("href");
     hyperlink.value = url;
