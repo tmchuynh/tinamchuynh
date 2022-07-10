@@ -51,6 +51,14 @@ const addArticle = article => {
 
         count += 1;
     }
+    // use placeholder.jpg for articles without a cover image
+    else {
+        clone.querySelector('.cover').src  = "static/assets/placeholder.jpg";
+        document.querySelector("#blog-list").appendChild(clone);
+
+        count += 1;
+
+    }
 
     return count;
 }
