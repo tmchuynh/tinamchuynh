@@ -380,7 +380,7 @@ section {
 .dropdown2 {
     display: flex;
     float: left;
-    left: 5rem;
+    /* left: 5rem; */
     position: relative;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -419,7 +419,7 @@ section {
         display: flex;
         padding: 0px;
         top: -70px;
-        left: 2rem;
+        left: 1rem;
     }
 
     .dropdown2 .dropdown-content {
