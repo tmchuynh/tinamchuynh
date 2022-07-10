@@ -53,7 +53,11 @@ const addArticle = article => {
     }
     // use placeholder.jpg for articles without a cover image
     else {
-        clone.querySelector('.cover').src  = "static/assets/placeholder.jpg";
+        article.cover_image = "static/assets/placeholder.jpg";
+        
+        clone.querySelector('.cover').src  = article.cover_image;
+        console.log(clone.querySelector('.cover').src)
+        
         document.querySelector("#blog-list").appendChild(clone);
 
         count += 1;
