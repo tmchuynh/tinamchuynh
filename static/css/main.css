@@ -175,10 +175,16 @@ a:hover {
 }
 
 .nav-letters {
-    top: 37px;
+    top: 34px;
     position: absolute;
     display: inline;
+    color: var(--white);
+    font-size: 27px;
     visibility: hidden;
+}
+
+.nav-letters:hover {
+    color: var(--logo-red);
 }
 
 @media (min-width: 1400px) {
