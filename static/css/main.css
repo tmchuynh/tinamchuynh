@@ -161,6 +161,11 @@ a:hover {
     color: var(--white);
 }
 
+.navbar-toggler {
+    padding-right: 2rem;
+    width: 1rem;
+}
+
 .navbar-toggler:focus {
     box-shadow: none;
 }
