@@ -56,7 +56,7 @@ const addArticle = article => {
         clone.querySelector('.cover').src = article.cover_image;
 
         // Only display blog posts with certain criteria 
-        if (article.positive_reactions_count >= 15 || article.comments_count > 10) {
+        if (article.positive_reactions_count >= 10 || article.comments_count > 10) {
             document.querySelector('#featured-articles').appendChild(clone);
         }
 
