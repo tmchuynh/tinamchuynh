@@ -3,14 +3,14 @@ var obj = new Array();
 
 /**
  * Get repository info from GitHub API 
-*/
+ */
 $.getJSON('https://api.github.com/users/tmchuynh/repos', (data) => {
     console.log(data);
 
     data.forEach((element) => {
 
         $.getJSON(element.languages_url, (data) => {
-            // console.log(Object.keys(data))
+            console.log(Object.keys(data))
 
             populate(element.name, element.html_url, element.pushed_at, Object.keys(data), element);
         })
@@ -37,7 +37,7 @@ function populate(name, url, updated, languages, element) {
 
     var icon = document.createElement("i");
     icon.classList.add("bx")
-    // console.log("read");
+    console.log("read");
     if (languages.length == 0) {
         icon.innerHTML = " ";
     }
@@ -93,12 +93,19 @@ function populate(name, url, updated, languages, element) {
         icon8.classList.add("git-fork");
         lang_icons.appendChild(icon8);
     }
-    if(languages.includes("Java")) {
+    if (languages.includes("Java")) {
         var icon9 = document.createElement("i");
         icon9.classList.add("bx");
         icon9.classList.add("bxl-java");
         icon9.classList.add("plain-java");
         lang_icons.appendChild(icon9);
+    }
+    if (languages.includes("SCSS")) {
+        var icon10 = document.createElement("i");
+        icon10.classList.add("bx");
+        icon10.classList.add("bx1-sass");
+        icon10.classList.add("scss");
+        lang_icons.appendChild(icon10);
     }
     lang_icons.appendChild(icon);
 
@@ -117,7 +124,7 @@ function populate(name, url, updated, languages, element) {
 
     // console.log(updated);
     date = updated.split("T")[0]
-    // console.log(date);
+        // console.log(date);
     date_0 = date.split("-");
 
     year = date_0[0];

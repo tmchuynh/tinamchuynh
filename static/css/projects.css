@@ -22,7 +22,7 @@
     border-radius: 15px;
     margin: 1rem 0.8rem;
     border: 1px solid var(--eerie-black);
-    box-shadow: 3px 10px 25px rgb(180,180,180, 0.4);
+    box-shadow: 3px 10px 25px rgb(180, 180, 180, 0.4);
 }
 
 @media (max-width: 420px) {
@@ -32,7 +32,7 @@
 }
 
 #project-list .cards:hover {
-    box-shadow: 3px 10px 25px rgb(180,180,180, 0.8);
+    box-shadow: 3px 10px 25px rgb(180, 180, 180, 0.8);
 }
 
 #project-list .title {
@@ -66,11 +66,11 @@
 }
 
 #project-list .typescript,
-#project-list .csharp  {
+#project-list .csharp {
     width: 2rem;
 }
 
-#project-list .html { 
+#project-list .html {
     color: #e34c27;
 }
 
@@ -80,6 +80,11 @@
 
 #project-list .plain-java {
     color: #d50308;
+    font-size: 2rem;
+}
+
+#project-list .scss {
+    color: #d742f5;
     font-size: 2rem;
 }
 
