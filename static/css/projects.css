@@ -1,3 +1,7 @@
+#project-tiles {
+    padding-top: 3rem;
+}
+
 #project-list {
     display: flex;
     flex-direction: row;

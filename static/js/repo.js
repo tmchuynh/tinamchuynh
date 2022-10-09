@@ -115,7 +115,7 @@ function populate(name, url, updated, languages, element) {
 
     var title = document.createElement("a");
     title.classList.add("title");
-    name_parts = name.replaceAll("-", " ");
+    var name_parts = name.replaceAll("-", " ");
     title.innerHTML = name_parts;
     var hyperlink = document.createAttribute("href");
     hyperlink.value = url;
@@ -123,13 +123,13 @@ function populate(name, url, updated, languages, element) {
     card.appendChild(title);
 
     // console.log(updated);
-    date = updated.split("T")[0]
+    var date = updated.split("T")[0]
         // console.log(date);
-    date_0 = date.split("-");
+    var date_0 = date.split("-");
 
-    year = date_0[0];
-    month = date_0[1];
-    day = date_0[2];
+    var year = date_0[0];
+    var month = date_0[1];
+    var day = date_0[2];
 
     // console.log(month, " ", day, " ", year)
 
