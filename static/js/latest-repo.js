@@ -5,16 +5,17 @@ var obj = new Array();
  * Get repository info from GitHub API 
  */
 $.getJSON('https://api.github.com/users/tmchuynh/repos', (data) => {
-    // console.log(data);
+    console.log(data);
 
     data.forEach((element) => {
 
-        $.getJSON(element.languages_url, (data) => {
-            console.log(Object.keys(data))
-
-            populate(element.name, element.html_url, element.pushed_at, Object.keys(data), element);
-        })
-
+        if (element.fork == false) {
+            $.getJSON(element.languages_url, (data) => {
+                // console.log(Object.keys(data))
+    
+                populate(element.name, element.html_url, element.pushed_at, Object.keys(data), element);
+            })
+        }
     })
 })
 
@@ -37,7 +38,7 @@ function populate(name, url, updated, languages, element) {
 
     var icon = document.createElement("i");
     icon.classList.add("bx")
-    console.log("read");
+    // console.log("read");
     if (languages.length == 0) {
         icon.innerHTML = " ";
     }
@@ -84,14 +85,6 @@ function populate(name, url, updated, languages, element) {
         icon7.setAttributeNode(source);
         icon7.classList.add("csharp");
         lang_icons.appendChild(icon7);
-    }
-    // display symbol for forked repos
-    if (element.fork === true) {
-        var icon8 = document.createElement("i");
-        icon8.classList.add("bx")
-        icon8.classList.add("bx-git-repo-forked");
-        icon8.classList.add("git-fork");
-        lang_icons.appendChild(icon8);
     }
     if (languages.includes("Java")) {
         var icon9 = document.createElement("i");
@@ -145,5 +138,24 @@ function populate(name, url, updated, languages, element) {
     last_updated.classList.add("mt-0");
     card.appendChild(last_updated);
 
-    project_container.appendChild(card);
+    today(month);
+
+    function today(month) {
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0');
+        var yyyy = today.getFullYear();
+    
+        today = mm + '/' + dd + '/' + yyyy;
+        // console.log(today);
+    
+        if (month > (mm - 3) || month == mm) {
+            project_container.appendChild(card);
+            // console.log(month, " ", mm)
+        }
+    }
+
+
+
 }
+

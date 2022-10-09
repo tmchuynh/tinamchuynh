@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: center;
     margin: 0rem 1rem !important;
+    padding-top: 4rem;
 }
 
 #project-list .cards {
@@ -27,12 +28,19 @@
     margin: 1rem 0.8rem;
     border: 1px solid var(--eerie-black);
     box-shadow: 3px 10px 25px rgb(180, 180, 180, 0.4);
+
 }
 
 @media (max-width: 420px) {
     #project-list .cards {
         min-width: 300px;
     }
+}
+
+#view-all-repos {
+    position: absolute;
+    padding: .5rem;
+    right: 6rem;
 }
 
 #project-list .cards:hover {
