@@ -97,14 +97,5 @@
 
 #project-list .scss {
     color: #d742f5;
-    font-size: 2rem;
-}
-
-#project-list .git-fork {
-    color: black;
-    font-size: 1.5rem;
-    margin: auto;
-    position: absolute;
-    right: 1rem;
-    bottom: 1rem;
+    font-size: 1rem;
 }

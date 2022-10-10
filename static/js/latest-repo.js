@@ -94,9 +94,10 @@ function populate(name, url, updated, languages, element) {
         lang_icons.appendChild(icon9);
     }
     if (languages.includes("SCSS")) {
-        var icon10 = document.createElement("i");
-        icon10.classList.add("bx");
-        icon10.classList.add("bx1-sass");
+        var icon10 = document.createElement("img");
+        var source = document.createAttribute("src");
+        source.value = "./static/icons/sass.svg";
+        icon10.setAttributeNode(source);
         icon10.classList.add("scss");
         lang_icons.appendChild(icon10);
     }

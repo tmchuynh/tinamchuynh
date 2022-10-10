@@ -9,12 +9,13 @@ $.getJSON('https://api.github.com/users/tmchuynh/repos', (data) => {
 
     data.forEach((element) => {
 
-        $.getJSON(element.languages_url, (data) => {
-            console.log(Object.keys(data))
+        if (element.fork == false) {
+            $.getJSON(element.languages_url, (data) => {
+                console.log(Object.keys(data))
 
-            populate(element.name, element.html_url, element.pushed_at, Object.keys(data), element);
-        })
-
+                populate(element.name, element.html_url, element.pushed_at, Object.keys(data), element);
+            })
+        }
     })
 })
 
@@ -85,14 +86,6 @@ function populate(name, url, updated, languages, element) {
         icon7.classList.add("csharp");
         lang_icons.appendChild(icon7);
     }
-    // display symbol for forked repos
-    if (element.fork === true) {
-        var icon8 = document.createElement("i");
-        icon8.classList.add("bx")
-        icon8.classList.add("bx-git-repo-forked");
-        icon8.classList.add("git-fork");
-        lang_icons.appendChild(icon8);
-    }
     if (languages.includes("Java")) {
         var icon9 = document.createElement("i");
         icon9.classList.add("bx");
@@ -124,7 +117,7 @@ function populate(name, url, updated, languages, element) {
 
     // console.log(updated);
     var date = updated.split("T")[0]
-        // console.log(date);
+    // console.log(date);
     var date_0 = date.split("-");
 
     var year = date_0[0];
