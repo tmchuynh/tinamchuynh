@@ -39,9 +39,14 @@
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     overflow-x: hidden;
     font-family: var(--font-family);
+    width: 100%;
 }
 
 p {
@@ -278,6 +283,12 @@ section {
     }
 }
 
+@media (max-width: 320px) {
+    #devto-articles+h4 {
+        padding-left: 3rem;
+    }
+}
+
 .section-title p {
     margin: auto;
     width: 90%;
@@ -298,6 +309,12 @@ section {
     margin: 2rem;
     border-radius: 1rem;
     font-size: 1.5rem;
+}
+
+@media (max-width: 420px) {
+    #backToTop {
+        right: 1rem;
+    }
 }
 
 /*--------------------------------------------------------------
@@ -472,7 +489,7 @@ section {
 
 .site-footer h6 {
     /*category names*/
-    color: var(--logo-red);
+    color: var(--white);
     text-transform: uppercase;
     font-size: 16px;
     margin-top: 5px;

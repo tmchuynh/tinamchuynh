@@ -43,6 +43,22 @@
     right: 6rem;
 }
 
+@media (max-width: 420px) {
+    #view-all-repos {
+        right: 9rem;
+    }
+}
+
+@media (max-width: 320px) {
+    #project-list .cards {
+        min-width: 250px;
+    }
+    #view-all-repos {
+        right: 6rem;
+    }
+
+}
+
 #project-list .cards:hover {
     box-shadow: 3px 10px 25px rgb(180, 180, 180, 0.8);
 }

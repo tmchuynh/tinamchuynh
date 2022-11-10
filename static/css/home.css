@@ -114,6 +114,8 @@
 @media (max-width: 420px) {
     #view-all {
         left: 1rem;
+        margin-top: -80px;
+        top: 4rem;
     }
 }
 
