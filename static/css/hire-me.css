@@ -125,7 +125,7 @@ h1 {
 
 .gtco-testimonials .card {
     background: #fff;
-    box-shadow: 0 10px 50px -10px rgb(161,36,44, 0.25);
+    box-shadow: 0 10px 50px -10px rgb(161, 36, 44, 0.25);
     margin: 0 20px;
     padding: 0 10px;
     border-radius: 20px;
@@ -195,4 +195,121 @@ h1 {
 
 .owl-carousel button.owl-dot {
     outline: 0;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Baloo+2:400,800&display=swap");
+
+.logo {
+    min-height: 50vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    background-color: #fff;
+}
+
+.speech-bubble {
+    transform: translatey(0px);
+    animation: float 5s ease-in-out infinite;
+    mix-blend-mode: multiply;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 15px;
+    background-color: #ff4d4f;
+    padding: 50px;
+    border-radius: 11px;
+    position: relative;
+    box-shadow: 20px 20px #af8383;
+    font-family: "Baloo 2";
+}
+
+.speech-bubble:after {
+    transform: translatey(0px);
+    content: ".";
+    animation: float2 5s ease-in-out infinite;
+    -webkit-text-fill-color: hsl(0, 0%, 100%);
+    text-shadow: 22px 22px #af8383;
+    text-align: left;
+    font-size: 55px;
+    font-weight: bold;
+    line-height: 30px;
+    width: 55px;
+    height: 11px;
+    border-radius: 11px;
+    background-color: #ff4d4f;
+    position: absolute;
+    display: block;
+    bottom: -30px;
+    left: 0;
+    z-index: -2;
+    box-shadow: 22px 22px #af8383;
+}
+
+@-webkit-keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-20px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-20px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@-webkit-keyframes float2 {
+    0% {
+        line-height: 30px;
+        transform: translatey(0px);
+    }
+
+    55% {
+        transform: translatey(-20px);
+    }
+
+    60% {
+        line-height: 10px;
+    }
+
+    100% {
+        line-height: 30px;
+        transform: translatey(0px);
+    }
+}
+
+@keyframes float2 {
+    0% {
+        line-height: 30px;
+        transform: translatey(0px);
+    }
+
+    55% {
+        transform: translatey(-20px);
+    }
+
+    60% {
+        line-height: 10px;
+    }
+
+    100% {
+        line-height: 30px;
+        transform: translatey(0px);
+    }
 }
