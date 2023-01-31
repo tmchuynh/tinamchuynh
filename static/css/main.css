@@ -381,17 +381,6 @@ section {
     .images {
         display: block;
     }
-
-    .scene {
-        perspective: calc(var(--perspective, 800) * 1px);
-        transform-style: preserve-3d;
-        height: 76vh;
-        width: 105vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transform: scale(var(--scale)) translate3d(0, 0, 50vmin);
-    }
 }
 
 

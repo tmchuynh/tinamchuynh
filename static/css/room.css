@@ -741,7 +741,7 @@ label svg:last-of-type {
 }
 .jfdi div:nth-of-type(3):after {
     transition: color var(--transition);
-    content: 'JFDI';
+    content: '</>';
     position: absolute;
     top: 0;
     left: 0;
