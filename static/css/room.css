@@ -882,7 +882,7 @@ label {
     transition: filter var(--transition);
 }
 .bear-canvas div:nth-of-type(1) {
-    background: linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.25)), url("https://assets.codepen.io/605876/avatar.png"), #fafafa;
+    background: linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.25)), url("../images/pacman.png"), #fafafa;
     background-size: 75%;
     background-position: center;
     background-repeat: no-repeat;
