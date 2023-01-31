@@ -289,7 +289,7 @@ label svg:last-of-type {
     perspective: calc(var(--perspective, 800) * 1px);
     transform-style: preserve-3d;
     height: 76vh;
-    width: 19vw;
+    width: 20vw;
     display: flex;
     align-items: center;
     justify-content: center;
