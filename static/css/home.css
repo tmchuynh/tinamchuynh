@@ -184,6 +184,37 @@ HIRE ME SECTION
     justify-content: center;
 }
 
+@media (max-width: 1500px) {
+
+    .content-wrapper .main-content {
+        width: 50%;
+        margin-top: -8rem;
+    }
+    .content-wrapper .main-content .info {
+        height: 30rem;
+
+    }
+    .content-wrapper .main-content .info .strengths .qualities {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .content-wrapper .main-content {
+        margin-top: 0rem;
+        width: 60%;
+    }
+    .content-wrapper .main-content .info {
+        height: 22rem;
+    }
+    /* .content-wrapper .main-content .info .strengths .qualities {
+        display: block;
+    } */
+}
+
 .content-wrapper .main-content .info .strengths .qualities p {
     font-size: 1rem;
     position: relative;
