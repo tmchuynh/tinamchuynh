@@ -18,7 +18,8 @@
     color: var(--eerie-black);
     display: flex;
     flex-direction: column;
-    height: 150px;
+    height: fit-content;
+    min-height: 200px;
     min-width: 400px;
     position: relative;
     justify-content: center;
@@ -69,14 +70,26 @@
     text-transform: capitalize;
 }
 
-#project-list .cards:hover .title {
+#project-list .pages {
+    font-size: 1rem;
     color: var(--logo-red);
+    margin-top: 1rem;
+}
+
+#project-list .cards:hover .pages {
+    color: var(--eerie-black);
+
 }
 
 #project-list .last-updated {
     display: flex;
-    color: var(--logo-red);
+    color: var(--eerie-black);
     margin-top: 1rem;
+}
+
+#project-list .cards:hover .title,
+#project-list .cards:hover .last-updated {
+    color: var(--logo-red);
 }
 
 #project-list i {

@@ -1,0 +1,342 @@
+.o_ghost,
+.a_pacman {
+    margin: 0;
+}
+
+.o_ghost,
+.a_pacman {
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    top: 0;
+    left: -5vw;
+    z-index: 2;
+}
+
+
+.m-path {
+    position: relative;
+    height: 5vw;
+    width: 100vw;
+    margin: 2vw 0;
+}
+
+.m-path:before {
+    top: -2vw;
+}
+
+.m-path:after {
+    bottom: -2vw;
+}
+
+.a_pacman {
+    -webkit-animation: path 8.4s infinite linear;
+    animation: path 8.4s infinite linear;
+}
+
+.a_pacman:before,
+.a_pacman:after {
+    content: "";
+    position: absolute;
+    background-color: #ffee00;
+    width: 5vw;
+    height: 2.5vw;
+    -webkit-animation: pacman_mouth 0.4s -0.1s infinite;
+    animation: pacman_mouth 0.4s -0.1s infinite;
+    box-shadow: 0 0 0 1px #ffee00;
+}
+
+.a_pacman:before {
+    top: 0;
+    border-top-left-radius: 5vw;
+    border-top-right-radius: 5vw;
+    transform-origin: bottom center;
+    transform: rotate(40deg);
+}
+
+.a_pacman:after {
+    bottom: 0;
+    border-bottom-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    transform-origin: top center;
+    transform: rotate(-40deg);
+}
+
+.o_ghost {
+    border-radius: 2.5vw 2.5vw 0 0;
+    background-color: currentColor;
+    top: 0;
+    transition: top 1s ease;
+    -webkit-animation: ghost_hover 1s infinite, path 8.4s infinite linear;
+    animation: ghost_hover 1s infinite, path 8.4s infinite linear;
+}
+
+.o_ghost:after {
+    content: "";
+    position: absolute;
+    top: 90%;
+    height: 1.666665vw;
+    width: 100%;
+    background-repeat: repeat-x;
+    background-size: 1.666665vw 1.666665vw;
+    background-image: linear-gradient(45deg, transparent 50%, currentColor 0), linear-gradient(-45deg, transparent 50%, currentColor 0);
+    background-position: -1.5833325vw, -1.5833325vw;
+    -webkit-animation: ghost 0.6s infinite steps(2, start);
+    animation: ghost 0.6s infinite steps(2, start);
+}
+
+.o_ghost.-g01 {
+    color: #ea82e5;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+.o_ghost.-g02 {
+    color: #46bfee;
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+}
+
+.o_ghost.-g03 {
+    color: #d03e19;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.o_ghost.-g04 {
+    color: #db851c;
+    -webkit-animation-delay: 2.6s;
+    animation-delay: 2.6s;
+}
+
+.o_ghost.-hunted {
+    color: #0a50fe;
+    opacity: 0.8;
+    -webkit-animation-delay: 3.2s;
+    animation-delay: 3.2s;
+}
+
+.m_ghost__eyes {
+    position: absolute;
+    top: 30%;
+}
+
+.a_ghost__eye {
+    float: left;
+    margin: 0 0.25vw;
+    height: 1.9vw;
+    width: 1.7vw;
+    border-radius: 50%;
+    background-color: white;
+    background-image: radial-gradient(ellipse at center, #0a50fe 0%, #0a50fe 25%, transparent 50%, transparent 100%);
+    background-repeat: no-repeat;
+    background-position: 25% 50%;
+    background-size: 1.25vw 1.25vw;
+}
+
+.a-dot {
+    float: right;
+    height: 5vw;
+    width: 5vw;
+    background: transparent radial-gradient(ellipse at center, white 0%, white 10%, transparent 14%, transparent 100%) repeat scroll left center/100%;
+    -webkit-animation: dot 8.4s infinite ease;
+    animation: dot 8.4s infinite ease;
+}
+
+.a-dot:nth-child(1) {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.a-dot:nth-child(2) {
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+.a-dot:nth-child(3) {
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+
+.a-dot:nth-child(4) {
+    -webkit-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+}
+
+.a-dot:nth-child(5) {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.a-dot:nth-child(6) {
+    -webkit-animation-delay: 2.4s;
+    animation-delay: 2.4s;
+}
+
+.a-dot:nth-child(7) {
+    -webkit-animation-delay: 2.8s;
+    animation-delay: 2.8s;
+}
+
+.a-dot:nth-child(8) {
+    -webkit-animation-delay: 3.2s;
+    animation-delay: 3.2s;
+}
+
+.a-dot:nth-child(9) {
+    -webkit-animation-delay: 3.6s;
+    animation-delay: 3.6s;
+}
+
+.a-dot:nth-child(10) {
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+}
+
+.a-dot:nth-child(11) {
+    -webkit-animation-delay: 4.4s;
+    animation-delay: 4.4s;
+}
+
+.a-dot:nth-child(12) {
+    -webkit-animation-delay: 4.8s;
+    animation-delay: 4.8s;
+}
+
+.a-dot:nth-child(13) {
+    -webkit-animation-delay: 5.2s;
+    animation-delay: 5.2s;
+}
+
+.a-dot:nth-child(14) {
+    -webkit-animation-delay: 5.6s;
+    animation-delay: 5.6s;
+}
+
+.a-dot:nth-child(15) {
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+}
+
+.a-dot:nth-child(16) {
+    -webkit-animation-delay: 6.4s;
+    animation-delay: 6.4s;
+}
+
+.a-dot:nth-child(17) {
+    -webkit-animation-delay: 6.8s;
+    animation-delay: 6.8s;
+}
+
+.a-dot:nth-child(18) {
+    -webkit-animation-delay: 7.2s;
+    animation-delay: 7.2s;
+}
+
+.a-dot:nth-child(19) {
+    -webkit-animation-delay: 7.6s;
+    animation-delay: 7.6s;
+}
+
+.a-dot:nth-child(20) {
+    -webkit-animation-delay: 8s;
+    animation-delay: 8s;
+}
+
+.m-title {
+    color: #ffee00;
+    padding: 1vw 2.5vw;
+}
+
+.a-title {
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.a-message.-alert {
+    text-transform: uppercase;
+}
+
+@-webkit-keyframes path {
+    0% {
+        left: 100vw;
+    }
+
+    100% {
+        left: -5vw;
+    }
+}
+
+@keyframes path {
+    0% {
+        left: 100vw;
+    }
+
+    100% {
+        left: -5vw;
+    }
+}
+
+@-webkit-keyframes pacman_mouth {
+    50% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes pacman_mouth {
+    50% {
+        transform: rotate(0);
+    }
+}
+
+@-webkit-keyframes ghost_hover {
+    50% {
+        top: -0.6vw;
+    }
+}
+
+@keyframes ghost_hover {
+    50% {
+        top: -0.6vw;
+    }
+}
+
+@-webkit-keyframes ghost {
+    to {
+        background-position: 0, 0;
+    }
+}
+
+@keyframes ghost {
+    to {
+        background-position: 0, 0;
+    }
+}
+
+@-webkit-keyframes dot {
+
+    0%,
+    2%,
+    54% {
+        transform: scale(1);
+    }
+
+    2.01%,
+    50% {
+        transform: scale(0);
+    }
+}
+
+@keyframes dot {
+
+    0%,
+    2%,
+    54% {
+        transform: scale(1);
+    }
+
+    2.01%,
+    50% {
+        transform: scale(0);
+    }
+}
