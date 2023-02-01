@@ -73,10 +73,22 @@
     color: var(--logo-red);
 }
 
+#project-list .pages {
+    margin-top: .5rem;
+}
+
+#project-list .cards:hover .pages {
+    color: var(--eerie-black);
+}
+
 #project-list .last-updated {
     display: flex;
-    color: var(--logo-red);
+    color: var(--eerie-black);
     margin-top: 1rem;
+}
+
+#project-list .cards:hover .last-updated {
+    color: var(--logo-red);
 }
 
 #project-list i {
