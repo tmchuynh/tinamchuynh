@@ -41,6 +41,8 @@
     position: absolute;
     padding: .5rem;
     right: 6rem;
+    top: -5rem;
+    cursor: pointer;
 }
 
 @media (max-width: 420px) {
