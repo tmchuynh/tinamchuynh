@@ -5,15 +5,16 @@ var obj = new Array();
  * Get repository info from GitHub API 
  */
 $.getJSON('https://api.github.com/users/tmchuynh/repos', (data) => {
-    console.log(data);
+    // console.log(data);
 
     data.forEach((element) => {
 
         if (element.fork == false) {
             $.getJSON(element.languages_url, (data) => {
-                // console.log(Object.keys(data))
-    
-                populate(element.name, element.html_url, element.pushed_at, Object.keys(data), element);
+                if (element.has_pages) {
+                    var pages = "https://tmchuynh.github.io/" + element.name + "/";
+                }
+                populate(element.name, element.html_url, element.pushed_at, Object.keys(data), element, pages);
             })
         }
     })
@@ -28,8 +29,7 @@ $.getJSON('https://api.github.com/users/tmchuynh/repos', (data) => {
  * @param {any} updated = Last commit / push date MM/DD/YYYY
  * @param {any} languages = Programming languages used
  */
-function populate(name, url, updated, languages, element) {
-
+function populate(name, url, updated, languages, element, pages) {
     var card = document.createElement("div");
     card.classList.add("cards");
 
@@ -126,6 +126,16 @@ function populate(name, url, updated, languages, element) {
     var day = date_0[2];
 
     // console.log(month, " ", day, " ", year)
+
+    if (pages != undefined) {
+        var pg = document.createElement("a");
+        pg.classList.add("pages");
+        var link = document.createAttribute("href");
+        link.value = pages;
+        pg.innerHTML = pages;
+        pg.setAttributeNode(link);
+        card.appendChild(pg);
+    }
 
     var subtitle = document.createElement("code");
     subtitle.classList.add("last-updated");
