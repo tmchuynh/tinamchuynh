@@ -18,8 +18,7 @@
     color: var(--eerie-black);
     display: flex;
     flex-direction: column;
-    height: fit-content;
-    min-height: 200px;
+    height: 150px;
     min-width: 400px;
     position: relative;
     justify-content: center;
@@ -70,26 +69,14 @@
     text-transform: capitalize;
 }
 
-#project-list .pages {
-    font-size: 1rem;
+#project-list .cards:hover .title {
     color: var(--logo-red);
-    margin-top: 1rem;
-}
-
-#project-list .cards:hover .pages {
-    color: var(--eerie-black);
-
 }
 
 #project-list .last-updated {
     display: flex;
-    color: var(--eerie-black);
-    margin-top: 1rem;
-}
-
-#project-list .cards:hover .title,
-#project-list .cards:hover .last-updated {
     color: var(--logo-red);
+    margin-top: 1rem;
 }
 
 #project-list i {
