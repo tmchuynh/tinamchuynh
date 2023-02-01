@@ -40,8 +40,8 @@
 #view-all-repos {
     position: absolute;
     padding: .5rem;
-    right: 6rem;
-    top: -5rem;
+    right: 1rem;
+    top: -15rem;
     cursor: pointer;
 }
 
