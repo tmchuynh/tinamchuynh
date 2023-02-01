@@ -97,6 +97,7 @@
     text-align: right;
     position: absolute;
     right: 5rem;
+    top: 15rem;
 }
 
 @media (max-width: 768px) {
@@ -117,23 +118,6 @@
         margin-top: -80px;
         top: 4rem;
     }
-}
-
-#filterBtn {
-    text-align: left;
-    position: relative;
-}
-
-#myDropdown {
-    position: absolute;
-    bottom: 34px;
-    left: 140px;
-    background-color: transparent;
-}
-
-#myDropdown a {
-    border: 1px solid gray;
-    margin: 5px;
 }
 
 /* ----------------------------------- 
