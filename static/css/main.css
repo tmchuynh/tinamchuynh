@@ -180,12 +180,16 @@ a:hover {
 }
 
 .nav-letters {
-    top: 34px;
+    top: 36px;
     position: absolute;
     display: inline;
     color: var(--white);
     font-size: 27px;
     visibility: hidden;
+}
+
+#letters {
+    top: 14px;
 }
 
 .nav-letters:hover {
