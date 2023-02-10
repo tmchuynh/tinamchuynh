@@ -1,9 +1,9 @@
 var project_container = document.getElementById('project-list');
 var obj = new Array();
 
-/**
- * Get repository info from GitHub API 
- */
+/* The below code is using the GitHub API to get a list of all the repositories that I have created. It
+then loops through each repository and checks if it is a fork or not. If it is not a fork, it then
+gets the languages used in that repository and populates the HTML with the information. */
 $.getJSON('https://api.github.com/users/tmchuynh/repos', (data) => {
     // console.log(data);
 
@@ -21,12 +21,13 @@ $.getJSON('https://api.github.com/users/tmchuynh/repos', (data) => {
 
 
 /**
- * Populate repository project cards with language icons respectively
- * 
- * @param {any} name = Project name
- * @param {any} url = GitHub URL link
- * @param {any} updated = Last commit / push date MM/DD/YYYY
- * @param {any} languages = Programming languages used
+ * It creates a card for each project and populates it with the project's name, url, last updated date,
+ * and languages used
+ * @param name - The name of the project
+ * @param url - The url of the project
+ * @param updated - The date the project was last updated
+ * @param languages - an array of languages used in the project
+ * @param element - The element that the card will be appended to.
  */
 function populate(name, url, updated, languages, element) {
 

@@ -44,7 +44,9 @@ const addArticle = article => {
 
     clone.querySelector('.url').href = article.canonical_url;
 
-    // Only display blog posts that have a cover image
+
+    /* The below code is checking if the article has a cover image. If it does, it will display the cover
+    image. If it doesn't, it will display a placeholder image. */
     if (article.cover_image) {
         clone.querySelector('.cover').src = article.cover_image;
         document.querySelector('#blog-list').appendChild(clone);
@@ -54,10 +56,10 @@ const addArticle = article => {
     // use placeholder.jpg for articles without a cover image
     else {
         article.cover_image = "static/assets/placeholder.jpg";
-        
-        clone.querySelector('.cover').src  = article.cover_image;
+
+        clone.querySelector('.cover').src = article.cover_image;
         console.log(clone.querySelector('.cover').src)
-        
+
         document.querySelector("#blog-list").appendChild(clone);
 
         count += 1;

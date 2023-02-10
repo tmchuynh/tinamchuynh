@@ -1,4 +1,4 @@
-// Purely for toggling audio
+/* Toggling the audio on and off. */
 const AUDIO_TOGGLE = document.querySelector('#audio')
 const AUDIO = document.querySelector('.ambience')
 AUDIO.volume = 0.5

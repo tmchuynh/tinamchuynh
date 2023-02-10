@@ -5,8 +5,7 @@ var left = 0;
 
 
 /**
- * Retrieves the articles from the DEV.to API
- * 
+ * It fetches the articles from the API, then adds them to the page
  */
 const getArticles = async () => {
     const response = await fetch(`https://dev.to/api/articles?username=${username}&state=all`);

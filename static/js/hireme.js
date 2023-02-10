@@ -8,6 +8,7 @@
         margin: 0,
         responsiveClass: true,
         nav: false,
+        /* Telling the carousel how many items to show at different screen sizes. */
         responsive: {
           0: {
             items: 1,
