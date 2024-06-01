@@ -1,0 +1,64 @@
+body {
+      font-size: 1rem;
+      margin: 0;
+      background-color: #1f2020;
+      color: #f9f6ef;
+}
+
+h1,
+h2,
+h3 {
+      text-wrap: balance;
+      line-height: 0.8;
+}
+
+p {
+      text-wrap: pretty;
+      line-height: 1.5;
+}
+
+.hero,
+nav,
+main {
+      max-width: 60%;
+      margin: 0 auto;
+      padding-inline: 1em;
+}
+
+nav {
+      position: sticky;
+      top: 0;
+      left: 0;
+      min-height: 3rem;
+      background-color: #1f2020d0;
+      backdrop-filter: blur(0.2em);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+}
+nav ul {
+      padding-right: 1em;
+      margin: 0;
+      display: inline-flex;
+      gap: 1rem;
+}
+nav ul li {
+      list-style: none;
+      display: inline-block;
+      cursor: pointer;
+      transition: 0.5s linear;
+}
+nav ul li:hover {
+      text-decoration: underline #5eb0e5;
+}
+
+nav:after {
+      content: "";
+      position: absolute;
+      opacity: 0;
+      height: 0.05em;
+      width: 100%;
+      bottom: 0;
+      background: linear-gradient(rgb(255, 255, 255) 0 0);
+}
