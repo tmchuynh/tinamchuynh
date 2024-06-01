@@ -6,6 +6,10 @@ body {
 
 }
 
+.container {
+      font-size: 10rem;
+}
+
 h1,
 h2,
 h3 {
