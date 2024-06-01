@@ -15,8 +15,6 @@
     "url": "https://github.com/tmchuynh/tinamchuynh/issues"
   },
   "homepage": "https://github.com/tmchuynh/tinamchuynh#readme",
-  "description": "",
-  "dependencies": {
-    "sass": "^1.77.4"
-  }
+  "description": ""
 }
+
