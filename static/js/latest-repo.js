@@ -118,7 +118,7 @@ function populate(name, url, updated, languages, element, pages) {
 
     // console.log(updated);
     var date = updated.split("T")[0]
-        // console.log(date);
+    // console.log(date);
     var date_0 = date.split("-");
 
     var year = date_0[0];
@@ -156,10 +156,10 @@ function populate(name, url, updated, languages, element, pages) {
         var dd = String(today.getDate()).padStart(2, '0');
         var mm = String(today.getMonth() + 1).padStart(2, '0');
         var yyyy = today.getFullYear();
-    
+
         today = mm + '/' + dd + '/' + yyyy;
         // console.log(today);
-    
+
         if (month > (mm - 3) || month == mm) {
             project_container.appendChild(card);
             // console.log(month, " ", mm)
