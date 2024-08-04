@@ -1,0 +1,133 @@
+#project-tiles {
+    padding-top: 3rem;
+}
+
+#project-list {
+    display: flex;
+    flex-direction: row;
+    padding: 0rem 3rem 1rem 3rem;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 1rem !important;
+    padding-top: 4rem;
+}
+
+#project-list .cards {
+    color: var(--eerie-black);
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    min-width: 400px;
+    max-width: min-content;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    margin: 1rem 0.8rem;
+    padding: 0.5rem;
+    border: 1px solid var(--eerie-black);
+    box-shadow: 3px 10px 25px rgb(180, 180, 180, 0.4);
+
+}
+
+@media (max-width: 420px) {
+    #project-list .cards {
+        min-width: 300px;
+    }
+}
+
+#view-all-repos {
+    position: absolute;
+    padding: .5rem;
+    right: 1rem;
+    top: -15rem;
+    cursor: pointer;
+}
+
+@media (max-width: 420px) {
+    #view-all-repos {
+        right: 9rem;
+    }
+}
+
+@media (max-width: 320px) {
+    #project-list .cards {
+        min-width: 250px;
+    }
+    #view-all-repos {
+        right: 6rem;
+    }
+
+}
+
+#project-list .cards:hover {
+    box-shadow: 3px 10px 25px rgb(180, 180, 180, 0.8);
+}
+
+#project-list .title {
+    font-size: 1.5rem;
+    color: black;
+    text-transform: capitalize;
+}
+
+#project-list .cards:hover .title {
+    color: var(--logo-red);
+}
+
+#project-list .pages {
+    margin-top: .5rem;
+}
+
+#project-list .cards:hover .pages {
+    color: var(--eerie-black);
+}
+
+#project-list .last-updated {
+    display: flex;
+    color: var(--eerie-black);
+    margin-top: 1rem;
+}
+
+#project-list .cards:hover .last-updated {
+    color: var(--logo-red);
+}
+
+#project-list i {
+    font-size: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+
+#project-list .python {
+    color: #5ea9eb;
+}
+
+#project-list .javascript {
+    color: #f0d44c;
+}
+
+#project-list .typescript,
+#project-list .csharp {
+    width: 2rem;
+}
+
+#project-list .html {
+    color: #e34c27;
+}
+
+#project-list .css {
+    color: #4266f5;
+}
+
+#project-list .plain-java {
+    color: #d50308;
+    font-size: 2rem;
+}
+
+#project-list .scss {
+    color: #d742f5;
+    font-size: 1rem;
+}
