@@ -1,2 +1,4 @@
 TEMPLATE.html
 .tasks
+/node_modules
+/.unotes
