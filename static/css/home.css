@@ -1,5 +1,3 @@
-
-
 #featured-articles,
 #blog-list {
     list-style: none;
@@ -158,8 +156,8 @@ HIRE ME SECTION
 }
 
 .content-wrapper .main-content .info .strengths {
-  width: 100%;
-  height: 150px;
+    width: 100%;
+    height: 150px;
 }
 
 .content-wrapper .main-content .info .strengths .qualities {
@@ -170,21 +168,18 @@ HIRE ME SECTION
 }
 
 @media (max-width: 1500px) {
-
     .content-wrapper .main-content {
         width: 50%;
         margin-top: -8rem;
     }
     .content-wrapper .main-content .info {
         height: 30rem;
-
     }
     .content-wrapper .main-content .info .strengths .qualities {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-
 }
 
 @media (max-width: 1200px) {
@@ -209,10 +204,10 @@ HIRE ME SECTION
 }
 
 .content-wrapper .main-content .info .strengths .qualities i {
-  font-size: 1rem;
-  position: absolute;
-  left: -20px;
-  bottom: 5px;
+    font-size: 1rem;
+    position: absolute;
+    left: -20px;
+    bottom: 5px;
 }
 
 .content-wrapper .main-content .info .strengths .buttons-wrapper {
@@ -228,4 +223,3 @@ HIRE ME SECTION
     border-radius: 5px;
     cursor: pointer;
 }
-
