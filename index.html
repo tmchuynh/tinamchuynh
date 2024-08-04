@@ -1,654 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <!--The title is what shows up on the bookmark tab-->
-    <title>tmchuynh</title>
-
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="description" content="">
-
-    <!-- FAVICON(S) -->
-    <link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.ico">
-
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Rufina:wght@400;700&display=swap"
-        rel="stylesheet">
-
-    <link href="static/css/home.css" rel="stylesheet">
-    <link href="static/css/projects.css" rel="stylesheet">
-
-    <link href="static/css/room.css" rel="stylesheet">
-    <link href="static/css/main.css" rel="stylesheet">
-
-
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title></title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+      <link rel="stylesheet" href="static/css/main.css">
+      <link rel="stylesheet" href="static/css/hero.css">
+      <link rel="stylesheet" href="static/css/spiral.css">
+      <link rel="stylesheet" href="static/css/slider.css">
 </head>
 
 <body>
-    <nav id="home-page-nav" class="navbar navbar-expand-lg bg-eerie-black fixed-md-top pb-0 white">
-        <div class="container-fluid d-block center-md">
 
-            <div class="container-fluid mt-3 mb-4 col-lg-2 col-sm-12">
-                <a href="index.html#home-page-nav" class="navbar-brand">
-                    <img src="static/images/Logo.png" alt="TH logo" style="width: 125px;" />
-                </a>
-                <a href="index.html" id="letters" class="nav-letters">TMCHUYNH</a>
-
-                <button class="navbar-toggler float-end" style="padding-top: 12px;" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                    <i class="bi bi-list navbar-toggler-icon white pt-2"></i>
-                </button>
+      <div class="hero py-5 my-5">
+            <div class="spiral-container">
+                  <div id="spiral" class="spiral"></div>
+                  <div id="spiral2" class="spiral"></div>
             </div>
-
-            <div class="container-fluid col-lg-11">
-                <div class="collapse navbar-collapse row ps-5 ms-5 pb-2" id="collapsibleNavbar">
-                    <ul class="navbar-nav justify-between float-end">
-                        <li class="nav-item col-lg-2">
-                            <a class="nav-link white"
-                                href="https://drive.google.com/file/d/1NJDgLyIBpV1XYvuPzZBDvZC2Qfe3ZCq8/view?usp=sharing">About</a>
-                        </li>
-                        <li class="nav-item col-lg-2">
-                            <a class="nav-link white" href="https://github.com/tmchuynh">Projects</a>
-                        </li>
-                        <li class="nav-item col-lg-2">
-                            <a class="nav-link white" href="articles.html">DEV.to Posts</a>
-                        </li>
-                        <li class="nav-item col-lg-2">
-                            <a class="nav-link white" href="/hireme.html">Hire Me</a>
-                        </li>
-                        <li class="nav-item col-lg-2">
-                            <a class="nav-link white" href="mailto:tinamchuynh@gmail.com">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <main>
-        <!--DevCard and Introduction-->
-        <div class="container-fluid p-0 d-xl-flex d-block introduction">
-
-            <div class="devcard d-flex">
-                <a href="https://app.daily.dev/tmchuynh"><img
-                        src="https://api.daily.dev/devcards/9b4d6fa7ff784d3297e67d1edf73fc06.png?r=mg3" width="500"
-                        alt="Tina Huynh's Dev Card" /></a>
-            </div>
-
-            <!--social badge icons-->
-            <div class="d-xl-flex d-block info-summary">
-                <div class="about-me section-title">
-                    <h2 id="hello">Hi, My name is Tina Huynh</h2>
-                    <div id="social-badges" class="container pb-3">
-                        <a href="https://github.com/tmchuynh"><img
-                                src="https://img.shields.io/badge/-GitHub-red?style=flat&amp;color=a1242c&amp;logo=github&amp;logoColor=white"></a>
-                        <a href="https://drive.google.com/file/d/1oZKmbfU1IQHL1ve8uMOdhc96M6Fbja-w/view?usp=sharing"><img
-                                src="https://img.shields.io/badge/-Resume-red?style=flat&amp;color=a1242c&amp;logo=adobe-acrobat-reader&amp;logoColor=white"></a>
-                        <a href="https://www.linkedin.com/in/tinamchuynh/"><img
-                                src="https://img.shields.io/badge/-LinkedIn-blue?style=flat&amp;color=a1242c&amp;logo=linkedin&amp;logoColor=white"></a>
-                        <a href="https://dev.to/tmchuynh"><img
-                                src="https://img.shields.io/badge/-DEV.to-blue?style=flat&amp;color=a1242c&amp;logo=dev.to&amp;logoColor=white"></a>
-                        <a href="https://twitter.com/tinamchuynh"><img
-                                src="https://img.shields.io/badge/-Twitter-white?style=flat&amp;logo=twitter&amp;logoColor=a1242c&amp;color=white"></a>
-                        <a href="https://codepen.io/tmchuynh"><img
-                                src="https://img.shields.io/badge/-CodePen-white?style=flat&amp;logo=codepen&amp;logoColor=a1242c&amp;color=white"></a>
-                        <a href="paypal.me/tmchuynh"><img
-                                src="https://img.shields.io/badge/-Donate-white?style=flat&logo=paypal" /></a>
-                    </div>
-                    <p>Technology is our future; the focus of the newer generations to come is rooted deep inside the
-                        new innovations that are being developed right this very second. We will turn what was once
-                        "impossible" into the new normal.<br><br>But as true as that is, a future where we have more
-                        time, energy, resources and abundance to create the life of our dreams is truly the life we all
-                        deserve. A life where we are in control of our time, our money, and our values. That is our
-                        tomorrow; that is the tomorrow I dream of creating and am building each and every
-                        day.<br><br>Our tomorrow starts today. A journey of a thousand steps starts with one; and the
-                        farthest journey you will ever have to travel is the distance between your head and your heart.
-                        At the end of the day, you are your own greatest enemy because your fear is everything that
-                        stands in your way. Conquer that and everything else will fall into their places.
-                    </p>
-                </div>
-
-                <!--Hire me section-->
-                <div class="content-wrapper">
-                    <div class="main-content">
-
-                        <div class="info">
-                            <div class="strengths">
-                                <div class="qualities d-block d-md-flex">
-                                    <p><i class='bx bxs-check-square'></i>Trusted</p>
-                                    <p><i class='bx bxs-check-square'></i>Goal-oriented</p>
-                                    <p><i class='bx bxs-check-square'></i>Ambitious</p>
-                                    <p><i class='bx bxs-check-square'></i>Creative</p>
-                                </div>
-                                <div class="qualities d-block d-md-flex">
-                                    <p><i class='bx bxs-check-square'></i>Personable</p>
-                                    <p><i class='bx bxs-check-square'></i>Hard-working</p>
-                                    <p><i class='bx bxs-check-square'></i>Dedcated & Passionate</p>
-                                    <p><i class='bx bxs-check-square'></i>Communicative</p>
-                                </div>
-
-                                <div class="buttons-wrapper">
-                                    <a href="/hireme.html" class="btn">Hire me</a>
-                                    <a href="mailto:tinamchuynh@gmail.com" class="btn">Email Me</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!--Projects-->
-        <div class="section-title">
-            <h2 id="project-tiles">Latest Projects</h2>
-            <div style="position: relative;">
-                <div id="view-all-repos">
-                    <a href="projects.html" class="btn" type="button">View All</a>
-                </div>
-                <ul id="project-list">
-
-                </ul>
-
-            </div>
-
-        </div>
-
-        <div class="images">
-            <!--Git Commit History-->
-            <div class="git-history section-title">
-                <h2>Git History</h2>
-                <div>
-                    <img id="threeD-commit" src="./profile-3d-contrib/profile-gitblock.svg" />
-                </div>
-            </div>
-
-            <!--decoration 3d room-->
-
-            <div class="scene__wrapper">
-                <div class="scene">
-                    <div class="plane">
-                        <div class="studio">
-                            <div class="cuboid floor">
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                            </div>
-                            <div class="cuboid rug">
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                            </div>
-                            <div class="cuboid wall wall--left">
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                            </div>
-                            <div class="window">
-                                <div class="cuboid window__frame window__frame--top">
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                </div>
-                                <div class="cuboid window__frame window__frame--left">
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                </div>
-                                <div class="cuboid window__frame window__frame--right">
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                </div>
-                                <div class="cuboid window__frame window__frame--bottom">
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                </div>
-                                <div class="cuboid window__frame window__frame--middle">
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                </div>
-                                <div class="blinds">
-                                    <div class="blind" style="--index: 0"></div>
-                                    <div class="blind" style="--index: 1"></div>
-                                    <div class="blind" style="--index: 2"></div>
-                                    <div class="blind" style="--index: 3"></div>
-                                    <div class="blind" style="--index: 4"></div>
-                                    <div class="blind" style="--index: 5"></div>
-                                    <div class="blind" style="--index: 6"></div>
-                                    <div class="blind" style="--index: 7"></div>
-                                    <div class="blind" style="--index: 8"></div>
-                                    <div class="blind" style="--index: 9"></div>
-                                    <div class="blind" style="--index: 10"></div>
-                                </div>
-                            </div>
-                            <div class="cuboid wall wall--right-left">
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                            </div>
-                            <div class="cuboid wall wall--right-upper">
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                            </div>
-                            <div class="cuboid wall wall--right-right">
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                            </div>
-                            <div class="cuboid skirting skirting--left">
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                            </div>
-                            <div class="cuboid skirting skirting--right">
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                            </div>
-                            <div class="cuboid windowsill">
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                            </div>
-                            <div class="cuboid wall wall--right-lower">
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                            </div>
-                            <div class="cuboid jfdi">
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                            </div>
-                            <div class="cuboid shelf">
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                            </div>
-                            <div class="plant"><img class="plant__plant"
-                                    src="https://assets.codepen.io/605876/plant.png?width=204&amp;height=306&amp;format=auto" /><img
-                                    class="plant__plant"
-                                    src="https://assets.codepen.io/605876/plant.png?width=204&amp;height=306&amp;format=auto" /><img
-                                    class="plant__plant"
-                                    src="https://assets.codepen.io/605876/plant.png?width=204&amp;height=306&amp;format=auto" />
-                                <div class="cuboid plant__pot">
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                </div>
-                            </div>
-                            <div class="cuboid light-cube">
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                            </div>
-                            <div class="desk">
-                                <div class="desk__shadow desk__shadow--floor"></div>
-                                <div class="cuboid desk__leg desk__leg--left">
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                </div>
-                                <div class="cuboid desk__leg desk__leg--right">
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                </div>
-                                <div class="cuboid desk__leg desk__leg--bottom-left">
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                </div>
-                                <div class="cuboid desk__leg desk__leg--bottom-right">
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                </div>
-                                <div class="cuboid mac">
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                </div>
-                                <div class="cuboid desk__top">
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                </div>
-                                <div class="cuboid monitor__arm monitor__arm--main">
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                </div>
-                                <div class="cuboid monitor__arm monitor__arm--portrait">
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                </div>
-                                <div class="cuboid monitor monitor--main">
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side">
-                                        <iframe src="https://css-tricks.com"></iframe>
-                                    </div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                </div>
-                                <div class="cuboid monitor monitor--portrait">
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side">
-                                        <iframe src="https://jhey.dev"></iframe>
-                                    </div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                </div>
-                                <div class="keyboard__base">
-                                    <div class="mousemat"></div>
-                                    <div class="cuboid mouse">
-                                        <div class="cuboid__side"></div>
-                                        <div class="cuboid__side"></div>
-                                        <div class="cuboid__side"></div>
-                                        <div class="cuboid__side"></div>
-                                        <div class="cuboid__side"></div>
-                                        <div class="cuboid__side"></div>
-                                    </div>
-                                    <div class="cuboid keyboard">
-                                        <div class="cuboid__side"></div>
-                                        <div class="cuboid__side"></div>
-                                        <div class="cuboid__side"></div>
-                                        <div class="cuboid__side"></div>
-                                        <div class="cuboid__side"></div>
-                                        <div class="cuboid__side"></div>
-                                    </div>
-                                    <div class="cuboid keyboard__keys">
-                                        <div class="cuboid__side"></div>
-                                        <div class="cuboid__side"></div>
-                                        <div class="cuboid__side"></div>
-                                        <div class="cuboid__side"></div>
-                                        <div class="cuboid__side"></div>
-                                        <div class="cuboid__side"></div>
-                                    </div>
-                                </div>
-                                <div class="cuboid studio-light__stand">
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                </div>
-                                <div class="cuboid studio-light">
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                    <div class="cuboid__side"></div>
-                                </div>
-                            </div>
-                            <div class="cuboid bear-canvas">
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                                <div class="cuboid__side"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!--DEV.to Blog Posts-->
-        <div class="section-title pt-5">
-            <h2 id="devto-articles">DEV.to Articles</h2>
-            <h4>Popular Articles</h4>
-
-            <div id="view-all">
-                <a href="articles.html" class="btn" type="button">View All</a>
-            </div>
-
-            <!--Article cards-->
-            <ul id="featured-articles" class="mb-5">
-
-
+            <h1>"Programming isn't about what you know; it's about what you can figure out" </h1>
+            <h4>Chris Pine</h4>
+      </div>
+      <nav>
+            <div class="logo">Tina Huynh</div>
+            <ul>
+                  <li>Home</li>
+                  <li>About</li>
+                  <li>Contact</li>
             </ul>
-        </div>
-
-
-
-        <!--back to top button-->
-        <button class="btn" onclick="topFunction()" id="backToTop" title="Go to top"><i
-                class="bi-arrow-up-circle-fill"></i></button>
-    </main>
-
-    <!--FOOTER-->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="row ps-3">
-
-                <div class="row ps-3">
-                    <div class="text-center col-sm-12">
-                        <h6>Categories</h6>
-                        <ul class="footer-links">
-                            <li><a href="index.html#hello">About</a>
-                                <i class="bi bi-file-earmark-person-fill vanish"></i>
-                            </li>
-
-                            <li><a href="index.html#project-tiles">Projects</a>
-                                <i class="bi bi-code-slash vanish"></i>
-                            </li>
-
-                            <li><a href="index.html#devto-articles">DEV.to</a>
-                                <i class="bi bi-pencil-square vanish"></i>
-                            </li>
-
-                            <li><a href="/hireme.html">Hire Me</a>
-                                <i class="bi bi-cash-coin vanish"></i>
-                            </li>
-
-                            <li><a href="index.html#hello">Contact</a>
-                                <i class="bi bi-telephone-fill vanish"></i>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-12">
-                    <p>
-                        Technology is our future. One way or another, future developments will change how we view our
-                        lives, how we connect with those who mean the most to us, and potentially get connected with new
-                        friends. There's no doubt about it, how technology advances will shape our future for the rest
-                        of our lives. And I want to be in the center of it all. But where is that exactly?
-                    </p>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <p>
-                        As you once watched movies of holographic keyboards, touchscreen tables, and flying cars, we are
-                        seeing today that we not only have some of those things but are only getting closer to making
-                        everything we can imagine a reality. Self-driving cars, virtual personal assistants, robotic
-                        surgeries, and many more uses of machine learning are helping everyone across the world.
-                    </p>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <p>
-                        And it's thanks to people like Geoff Hinton, Yoshua Bengio, Yann LeCun, and Jurgen Schmidhuber
-                        who had faith in neural networks even back in the 1990s and 2000s when their colleagues had left
-                        the idea behind. People like that give hope that our dreams, our beliefs, our blueprints can be
-                        made into reality. We are only going to advance further, as a society. And, together, we are
-                        unstoppable.
-                    </p>
-                </div>
+      </nav>
+      <main>
+            <p class="notice"></p>
+            <h2>"Jack of all trades - master of none - oftentimes better than a master of one.</h2>
+            <p>A former computer science student, a coding bootcamp graduate, a business major, notary public, a STEM and coding instructor, Chief Operations Officer, and Center Manager are all things I am. Titles I've held in the past include cashier, teacher's assistant, salesperson assistant, and tutor. And with each position came numerous learning opportunities and their own challenges to be overcome.
+            </p>
+            <p>I am the type of person who asks "Why not?" when faced with opportunity and difficulities. The world around us is constantly evolving and developing; learning and adapting is an apparent part of the journey.</p>
+            <h2>Being a Full Stack Web Developer</h2>
+            <p>Having majored in computer science in university, I have confidence in acknowledging my passion for software development. Learning through mentorship, CodingDojo's bootcamp gave me invaluable experience and knowledge. A touch into Express, MongoDB, React, and Node.js gave me a more well-rounded foundation with not only front-end skills but also back-end knowledge. The project based curriculum provided more guided practice with Python, Java, JavaScript and React. It was the portfolio through the dojo that I landed my first couple clients.</p>
+            <h2>As a Business Major</h2>
+            <p>Growing up in an entrepenuer-type household, business has always perked my curiousity. But knowing the percentage of business that fail within the first year of being founded, I know there is a lot for me to learn before being ready for my own project. Being a Chief Operations Officer and Center Manager has provided me crucial experience and mentorship in learning about the business industry and I couldn't be more grateful.</p>
+      </main>
+      <div class="slider-container">
+            <div class="main">
+                  <ul class='slider'>
+                        <li class='item'
+                              style="background-image: url('https://cdn.mos.cms.futurecdn.net/dP3N4qnEZ4tCTCLq59iysd.jpg')">
+                              <div class='content'>
+                                    <h2 class='title'>"Lossless Youths"</h2>
+                                    <p class='description'> Lorem ipsum, dolor sit amet consectetur
+                                          adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
+                                          praesentium nisi. Id laboriosam ipsam enim. </p>
+                                    <button>Read More</button>
+                              </div>
+                        </li>
+                        <li class='item' style="background-image: url('https://i.redd.it/tc0aqpv92pn21.jpg')">
+                              <div class='content'>
+                                    <h2 class='title'>"Estrange Bond"</h2>
+                                    <p class='description'> Lorem ipsum, dolor sit amet consectetur
+                                          adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
+                                          praesentium nisi. Id laboriosam ipsam enim. </p>
+                                    <button>Read More</button>
+                              </div>
+                        </li>
+                        <li class='item'
+                              style="background-image: url('https://wharferj.files.wordpress.com/2015/11/bio_north.jpg')">
+                              <div class='content'>
+                                    <h2 class='title'>"The Gate Keeper"</h2>
+                                    <p class='description'> Lorem ipsum, dolor sit amet consectetur
+                                          adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
+                                          praesentium nisi. Id laboriosam ipsam enim. </p>
+                                    <button>Read More</button>
+                              </div>
+                        </li>
+                        <li class='item'
+                              style="background-image: url('https://images7.alphacoders.com/878/878663.jpg')">
+                              <div class='content'>
+                                    <h2 class='title'>"Last Trace Of Us"</h2>
+                                    <p class='description'>
+                                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga
+                                          voluptatum, iure corporis inventore praesentium nisi. Id laboriosam ipsam
+                                          enim.
+                                    </p>
+                                    <button>Read More</button>
+                              </div>
+                        </li>
+                        <li class='item'
+                              style="background-image: url('https://theawesomer.com/photos/2017/07/simon_stalenhag_the_electric_state_6.jpg')">
+                              <div class='content'>
+                                    <h2 class='title'>"Urban Decay"</h2>
+                                    <p class='description'>
+                                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga
+                                          voluptatum, iure corporis inventore praesentium nisi. Id laboriosam ipsam
+                                          enim.
+                                    </p>
+                                    <button>Read More</button>
+                              </div>
+                        </li>
+                        <li class='item'
+                              style="background-image: url('https://da.se/app/uploads/2015/09/simon-december1994.jpg')">
+                              <div class='content'>
+                                    <h2 class='title'>"The Migration"</h2>
+                                    <p class='description'> Lorem ipsum, dolor sit amet consectetur
+                                          adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
+                                          praesentium nisi. Id laboriosam ipsam enim. </p>
+                                    <button>Read More</button>
+                              </div>
+                        </li>
+                  </ul>
+                  <div class='nav'>
+                        <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+                        <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+                  </div>
             </div>
 
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      </div>
 
-            <hr>
-        </div>
-
-        <!--social media icons-->
-        <div class="container">
-            <div class="row ps-3">
-                <div class="col-md-6 col-xs-12">
-                    <ul class="social-icons">
-                        <li><a class="codepen" href="https://codepen.io/tmchuynh"><i class='bx bxl-codepen'></i></a>
-                        </li>
-                        <li><a class="linkedin" href="hhttps://www.linkedin.com/in/tinamchuynh/"><i
-                                    class='bx bxl-linkedin-square'></i></a></li>
-                        <li><a class="github" href="https://github.com/tmchuynh"><i class='bx bxl-github'></i></a></li>
-                        <li><a class="twitter" href="https://twitter.com/tinamchuynh"><i class='bx bxl-twitter'></i></a>
-                        </li>
-                        <li><a class="gmail" href="mailto:tinamchuynh@gmail.com"><i class='bx bxs-envelope'></i></a>
-                        </li>
-                        <li><a class="devto" href="https://dev.to/tmchuynh"><i class='bx bxl-dev-to'></i></a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-6 col-xs-12 mt-md-3">
-                    <p class="copyright-text">
-                        Copyright &copy; 2022 All Rights Reserved by <a href="https://www.linkedin.com/in/tinamchuynh/"
-                            style="text-decoration: underline;">Tina Huynh</a>
-                        <br>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!--END OF FOOTER-->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-        </script>
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script src="static/js/roomAnimate.js"></script>
-
-    <script src="static/js/filter.js"></script>
-
-    <script src="static/js/feature.js"></script>
-
-    <script src="static/js/nav.js"></script>
-    <script src="static/js/latest-repo.js"></script>
-
-    <script>
-        $(window).on("load", function () {
-            $("#container").fadeOut("slow");
-        })
-    </script>
-
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+            integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+      <script src="static/js/slider.js"></script>
+      <script src="static/js/spiral.js"></script>
 </body>
 
 </html>
-
-
-<template id="blog-item">
-    <li>
-        <a class="url">
-            <img class="cover" alt="cover image">
-            <div class="info">
-                <h4 class="title"></h4>
-                <code class="updated"></code>
-                <p class="reading-time"></p>
-            </div>
-        </a>
-    </li>
-</template>
