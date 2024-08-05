@@ -41,8 +41,16 @@
       position: inherit;
 }
 
+.project .project-description {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+}
+
 .project-links {
-      margin-top: 12%;
+      /* margin-top: 12%; */
+      margin: 0 3em;
 }
 
 .projects-section .project:nth-of-type(2n + 1) div {
@@ -51,6 +59,10 @@
 
 .projects-section .project:nth-of-type(2n + 1) img {
       order: 2;
+}
+
+.projects-section .project:nth-of-type(2n + 1) .project-description {
+      order: 1;
 }
 
 .project h3 {
