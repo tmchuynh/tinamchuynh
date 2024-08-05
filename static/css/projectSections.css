@@ -1,0 +1,38 @@
+.project {
+      display: flex;
+      width: 85%;
+      border: 1px solid red;
+      position: relative;
+      padding: 2rem;
+}
+
+.project img {
+      height: 15rem;
+}
+
+.project div {
+      flex-direction: column;
+      text-align: start;
+      position: inherit;
+}
+
+.projects-section .project:nth-of-type(2n + 1) div {
+      text-align: end;
+      color: red;
+}
+
+.projects-section .project:nth-of-type(2n + 1) img {
+      order: 2;
+}
+
+.project h3 {
+      width: 50%;
+      padding: 0 2.25em;
+}
+
+.projects-section .project:nth-of-type(2n + 1) div h3 {
+      width: 100%;
+      text-align: end;
+      padding: 0 2.25em;
+      color: red;
+}
