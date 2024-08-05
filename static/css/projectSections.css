@@ -1,13 +1,38 @@
+:root {
+      --logo-red: #a1242c;
+      --eerie-black: #1b1c1e;
+      --white: #ffffff;
+      --off-white: #fffdfc;
+      --font-family: "Rufina", serif;
+}
+
 .project {
+      font-family: var(--font-family);
       display: flex;
       width: 85%;
-      border: 1px solid red;
+      height: 20rem;
       position: relative;
       padding: 2rem;
 }
 
+.projects-section .project::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 500px;
+      height: 1px;
+      background: var(--logo-red);
+      bottom: 1px;
+      left: calc(50% - 250px);
+}
+
+.projects-section .project:last-of-type::before {
+      display: none;
+}
+
 .project img {
-      height: 15rem;
+      height: 100%;
+      padding: 1rem;
 }
 
 .project div {
@@ -16,9 +41,12 @@
       position: inherit;
 }
 
+.project-links {
+      margin-top: 12%;
+}
+
 .projects-section .project:nth-of-type(2n + 1) div {
       text-align: end;
-      color: red;
 }
 
 .projects-section .project:nth-of-type(2n + 1) img {
@@ -34,5 +62,4 @@
       width: 100%;
       text-align: end;
       padding: 0 2.25em;
-      color: red;
 }
