@@ -196,10 +196,13 @@
                 <div class="project-description">
                     <div>
                         <h3>Battleship</h3>
-                        <p>This old retro game of battleship taught the CodeNinjas students the
-                            ability to style HTML elements within JS, objects, more Math functions, what SVGs are, and
-                            why
-                            it's important to takee a look at the data collected and processed before moving forward.
+                        <p>This code sets up a 10x10 grid game board for a battleship-style game. It first creates and
+                            styles column and row labels, then generates grid squares within a container. Each square is
+                            given a unique ID and positioned using CSS. Ships of various sizes are randomly placed on
+                            the board while ensuring they don't overlap. Players can click on squares to fire torpedos,
+                            with the game tracking hits, misses, and completed ships. The game also includes functions
+                            to reset the board and reveal ship positions, and event listeners are set up to handle user
+                            interactions, including firing torpedos and resetting or revealing the board.
                         </p>
                     </div>
                     <div class="project-links">
@@ -214,11 +217,15 @@
                 <div class="project-description">
                     <div>
                         <h3>Sudoku</h3>
-                        <p>I challenged the CodeNinjas students in the Intro to Web Development
-                            class with building their own puzzle, which taught them even more about arrays, 2D arrays,
-                            indexes, loops, event listeners, classes, and importance of UI, and the importance of
-                            functions
-                            and code organization.</p>
+                        <p>This project dynamically generates and manages a Sudoku puzzle on a web page. It creates a
+                            9x9 grid, allowing users to set the difficulty by removing a specified number of cells,
+                            which adjusts the puzzle's complexity. The code includes functionality for user input
+                            validation, solving the puzzle, and providing feedback on correctness. It features event
+                            listeners to handle interactions, such as generating a new puzzle, solving it, and resetting
+                            it. The code also supports multiple difficulty levels by varying the number of removed
+                            cells, and updates the UI to reflect the puzzle state and user progress. This implementation
+                            showcases advanced JavaScript techniques and user interface design for an engaging
+                            interactive experience</p>
                     </div>
                     <div class="project-links">
                         <a class="btn" href="https://github.com/tmchuynh/sudoku">GitHub Link</a>
@@ -232,12 +239,14 @@
                 <div class="project-description">
                     <div>
                         <h3>Memory Game</h3>
-                        <p>This project is one of the first games I coded during my off-hours
-                            for CodeNinjas in order to make their Intro to Web Development course more engaging and
-                            insightful for the students. In this game, the students reviewed and learned more about
-                            arrays,
-                            functions, loops, and conditionals. They had a lot of fun picking out their images for their
-                            games.</p>
+                        <p>A memory card game with functionalities for creating, shuffling, and managing game cards. It
+                            begins by defining constants for key elements such as buttons and the game board, and sets
+                            up an array of image URLs used for the cards. The createCards function generates a grid of
+                            card elements with paired images, shuffles them, and adds them to the game board. Cards are
+                            flipped to reveal their images, and matches are checked to determine if they should remain
+                            visible or be hidden. The code includes functionality to check if all cards have been
+                            matched, reveal all cards, and reset the game. Event listeners are set up for restarting,
+                            shuffling, and revealing the cards, ensuring interactive gameplay..</p>
                     </div>
                     <div class="project-links">
                         <a class="btn" href="https://github.com/tmchuynh/memory_game">GitHub Link</a>
@@ -251,12 +260,16 @@
                 <div class="project-description">
                     <div>
                         <h3>Word Search</h3>
-                        <p>Crossword puzzles and word searches once filled newspapers but now
-                            can be easily accessible through websites and phone apps. This is another simple project I
-                            created during my off-hours while working for CodeNinjas for their Intro to Web Development
-                            course. Though there was a bug in forgetting to link bootstrap, I sent the fix out the next
-                            day
-                            after camp ended.</p>
+                        <p>This interactive word search game dynamically generates a grid filled with random letters and
+                            strategically places a list of unique words either horizontally, vertically, or diagonally.
+                            The grid's dimensions adapt to accommodate the longest word and overall word length,
+                            ensuring a balanced and engaging puzzle experience. Users can interact with the game by
+                            highlighting words through clicking and dragging, with the game validating their selections
+                            and marking correctly identified words. A built-in timer tracks the time spent solving the
+                            puzzle, adding an element of challenge. This project showcases my ability to integrate user
+                            interactions, dynamic content generation, and real-time feedback into a cohesive and
+                            enjoyable game experience.
+                            .</p>
                     </div>
                     <div class="project-links">
                         <a class="btn" href="https://github.com/tmchuynh/word_search">GitHub Link</a>
@@ -271,12 +284,39 @@
                 <div class="project-description">
                     <div>
                         <h3>Tic Tac Toe</h3>
-                        <p>Who doesn't love Tic Tac Toe? This simple code I wrote taught the
-                            students in CodeNinja's Intro to Web Development course about 2D arrays, timers, more about
-                            conditionals, indexes, and the importance of resetting a game.</p>
+                        <p>This interactive Tic Tac Toe game allows two players to compete by taking turns marking cells
+                            on a 3x3 board. The game dynamically tracks the state of the board, determines winners based
+                            on predefined winning conditions, and updates the scoreboard to reflect victories and ties.
+                            It includes features such as highlighting winning combinations, updating player scores, and
+                            resetting the board for a new game. The game begins with a randomly selected starting player
+                            and handles game logic, including detecting wins or ties and providing real-time feedback to
+                            players. This project demonstrates my ability to implement game mechanics, user
+                            interactions, and state management in a web-based application..</p>
                     </div>
                     <div class="project-links">
                         <a class="btn" href="https://github.com/tmchuynh/Updated_Tic_Tac_Toe">GitHub Link</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="project container-fluid">
+                <img src="static/images/meta_tic_tac_toe.png" class="img-responsive"
+                    alt="responsive space shooters game image" />
+                <div class="project-description">
+                    <div>
+                        <h3>Meta Tic Tac Toe</h3>
+                        <p>This code implements a Tic Tac Toe variant on a "mini-board" grid where each mini-board
+                            represents a square in a larger Tic Tac Toe board. Players alternately mark cells within
+                            mini-boards, with winning mini-boards influencing the main board. The game tracks wins,
+                            ties, and scores for players X and O, displaying results and updating the scoreboard. When a
+                            mini-board is won or tied, it visually indicates the result, disables further interactions,
+                            and updates the main board. The game can be reset with a button, clearing all states and
+                            scores, and allowing for a new round of play.
+                        </p>
+                    </div>
+                    <div class="project-links">
+                        <a class="btn" href="https://github.com/tmchuynh/meta_tic_tac_toe">GitHub Link</a>
                     </div>
                 </div>
             </div>
@@ -288,19 +328,21 @@
                 <div class="project-description">
                     <div>
                         <h3>Space Adventures</h3>
-                        <p>A simple take on the ole retro space shooters game from the 90's,
-                            created during my off-hours while working for CodeNinjas for their Intro to Web Development
-                            course. I took a personal interest in teaching the students an in-depth and engaging class
-                            the
-                            curriculum provided lacked and provided my own insight, coding a basic game the students
-                            fell in
-                            love with.</p>
+                        <p>This game is a space shooter where players control a spaceship and shoot lasers at incoming
+                            enemies. The game features player movement, laser firing, and collision detection to manage
+                            game mechanics. Players use the arrow keys to move left or right and the spacebar to fire
+                            lasers. Enemies are created at regular intervals and move down the screen, with collisions
+                            between lasers and enemies increasing the score. The game tracks the player's score, lives,
+                            and high score, updating the high score in local storage. Players lose lives when they
+                            collide with enemies or miss them, and the game ends when lives reach zero. The game
+                            includes a start button to begin gameplay and a reset function to restart the game after
+                            completion.
+                        </p>
                     </div>
                     <div class="project-links">
                         <a class="btn" href="https://github.com/tmchuynh/space_adventures">GitHub Link</a>
                     </div>
                 </div>
-
             </div>
 
 
