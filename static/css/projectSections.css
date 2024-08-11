@@ -13,6 +13,7 @@
       height: 20rem;
       position: relative;
       padding: 2rem;
+      box-sizing: border-box;
 }
 
 .projects-section .project::before {
@@ -33,15 +34,11 @@
 .project img {
       height: 100%;
       padding: 1rem;
-}
-
-.project div {
-      flex-direction: column;
-      text-align: start;
-      position: inherit;
+      object-fit: cover;
 }
 
 .project .project-description {
+      text-align: start;
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -49,7 +46,6 @@
 }
 
 .project-links {
-      /* margin-top: 12%; */
       margin: 0 3em;
 }
 
@@ -74,4 +70,70 @@
       width: 100%;
       text-align: end;
       padding: 0 2.25em;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+      .project {
+            width: 90%;
+      }
+
+      .project h3 {
+            width: 60%;
+            padding: 0 1.5em;
+      }
+
+      .projects-section .project:nth-of-type(2n + 1) div h3 {
+            padding: 0 1.5em;
+      }
+}
+
+@media (max-width: 992px) {
+      .project {
+            width: 95%;
+            height: auto;
+            flex-direction: column;
+      }
+
+      .project img {
+            width: 100%;
+            height: auto;
+      }
+
+      .project .project-description {
+            text-align: center;
+            padding: 1rem;
+      }
+
+      .project-links {
+            margin: 1em 0;
+      }
+}
+
+@media (max-width: 768px) {
+      .project h3 {
+            width: 100%;
+            padding: 0 1em;
+      }
+
+      .projects-section .project:nth-of-type(2n + 1) div h3 {
+            padding: 0 1em;
+      }
+}
+
+@media (max-width: 576px) {
+      .project {
+            flex-direction: column;
+            height: auto;
+            padding: 1rem;
+      }
+
+      .project img {
+            padding: 0;
+      }
+
+      .project-links {
+            margin: 1em 0;
+      }
 }
