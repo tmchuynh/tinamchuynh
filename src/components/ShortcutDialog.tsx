@@ -28,7 +28,7 @@ export function ShortcutDialog() {
     {
       shortcut: (
         <span>
-          Alt + <FaWindows className="inline-block mr-1" /> + D
+          Ctrl + <FaWindows className="inline-block mr-1" /> + D
         </span>
       ), description: "Toggle Dark/Light Mode"
     },
@@ -96,7 +96,7 @@ export function ShortcutDialog() {
     <Dialog open={open} onOpenChange={setOpen}>
       <p className="font-mono flex items-center gap-2 px-7 justify-end text-muted-foreground my-2">
         Keyboard Shortcuts: Press{" "}
-        <kbd className="pointer-events-none inline-flex h-full select-none items-center gap-1 rounded border bg-muted px-1.5 py-1 font-mono text-[14px] font-medium text-muted-foreground opacity-100 align-text-bottom">
+        <kbd className="pointer-events-none inline-flex h-full select-none items-center gap-1 rounded bg-muted px-1.5 py-1 font-mono text-[14px] font-medium text-muted-foreground opacity-100 align-text-bottom">
           <span><FaWindows /></span>/
         </kbd>
         <span className="sr-only">Show keyboard shortcuts</span>
