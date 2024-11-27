@@ -33,33 +33,30 @@ import { NavFooter } from "@/components/ui/NavFooter";
 const data = {
     navMain: [
         {
-            title: "Flashcards",
-            url: "/flashcards",
+            title: "Home",
+            url: "/",
             icon: NotebookPen,
         },
         {
-            title: "Quizzes",
+            title: "About Me",
+            url: "/",
+            icon: NotebookPen,
+        },
+        {
+            title: "Information",
             url: "/quiz",
             icon: CheckCheck,
             items: [
                 {
-                    title: "Software Engineering",
+                    title: "Resume",
                     url: "#",
                 },
                 {
-                    title: "Pre Medical",
+                    title: "Education",
                     url: "#",
                 },
                 {
-                    title: "Business",
-                    url: "#",
-                },
-                {
-                    title: "Law",
-                    url: "#",
-                },
-                {
-                    title: "Entrepreneurship",
+                    title: "Relevant Experiences",
                     url: "#",
                 },
                 {
@@ -69,7 +66,15 @@ const data = {
             ],
         },
         {
-            title: "Tests",
+            title: "Contact",
+            url: "/",
+            icon: NotebookPen,
+        },
+
+    ],
+    "information": [
+        {
+            title: "Projects",
             url: "/exams",
             icon: BookCheck,
             items: [
@@ -92,7 +97,7 @@ const data = {
             ],
         },
         {
-            title: "Learning Paths",
+            title: "Future Projects",
             url: "/roadmaps",
             icon: NotebookPen,
             items: [
@@ -127,87 +132,27 @@ const data = {
             ],
         },
     ],
-    information: [
-        {
-            title: "Badges",
-            url: "/badges",
-            icon: Medal,
-        },
-        {
-            title: "Current Challenges",
-            url: "/challenges",
-            icon: Swords,
-        },
-        {
-            title: "Memory Techniques",
-            url: "#",
-            icon: Brain,
-        },
-        {
-            title: "Boost Your Confidence",
-            url: "#",
-            icon: Rocket,
-        },
-        {
-            title: "Study Tips",
-            url: "#",
-            icon: LibraryBig,
-        },
-        {
-            title: "Mastering Complex Topics",
-            url: "#",
-            icon: GraduationCap,
-        },
-        {
-            title: "Progress Reports",
-            url: "#",
-            icon: ChartNoAxesCombined,
-        },
-        {
-            title: "Example Insights",
-            url: "/mock_data",
-            icon: TrendingUp,
-        },
-    ],
-    foryou: [
-        {
-            title: "Leaderboards",
-            url: "/leaderboard",
-            icon: Table2,
-        },
-        {
-            title: "Score History",
-            url: "/scores",
-            icon: FolderClock,
-        },
-    ],
 };
 
 export function NavSidebar( { ...props }: React.ComponentProps<typeof Sidebar> ) {
 
     return (
-        <Sidebar variant="inset" {...props} className="rounded-3xl shadow-md border hover:shadow-md">
+        <Sidebar variant="inset" {...props} className="rounded-e-3xl shadow-md border hover:shadow-md">
             <SidebarHeader>
                 <SidebarMenu>
                     <SidebarMenuItem>
                         <SidebarMenuButton size="lg" asChild>
-                            <a href="/">
-                                <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
-                                    <Command className="size-4" />
-                                </div>
-                                <div className="grid flex-1 text-left text-sm leading-tight">
-                                    <span className="truncate font-semibold">Knowledge Knockout</span>
-                                    <span className="truncate text-xs">Enterprise</span>
-                                </div>
-                            </a>
+                            <div className="grid flex-1 text-left text-sm leading-tight">
+                                <span className="truncate font-semibold">Tina Huynh</span>
+                                <span className="truncate text-xs">Full Stack Web Developer</span>
+                            </div>
                         </SidebarMenuButton>
                     </SidebarMenuItem>
                 </SidebarMenu>
             </SidebarHeader>
             <SidebarContent>
-                <NavMain title="Platforms" items={data.navMain} />
-                <NavMain title="Information" items={data.information} />
-                <NavMain title="For You" items={data.foryou} />
+                <NavMain title="General" items={data.navMain} />
+                <NavMain title="Past & Future Work" items={data.information} />
             </SidebarContent>
             <SidebarFooter>
                 <NavFooter />
