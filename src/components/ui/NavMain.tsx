@@ -1,80 +1,119 @@
 "use client";
 
-import { ChevronRight, type LucideIcon } from "lucide-react";
-
 import {
-    Collapsible,
-    CollapsibleContent,
-    CollapsibleTrigger,
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
 } from "@/components/ui/collapsible";
 import {
-    SidebarGroup,
-    SidebarGroupLabel,
-    SidebarMenu,
-    SidebarMenuAction,
-    SidebarMenuButton,
-    SidebarMenuItem,
-    SidebarMenuSub,
-    SidebarMenuSubButton,
-    SidebarMenuSubItem,
+  SidebarGroup,
+  SidebarGroupLabel,
+  SidebarMenu,
+  SidebarMenuButton,
+  SidebarMenuItem,
+  SidebarMenuSub,
+  SidebarMenuSubButton,
+  SidebarMenuSubItem,
 } from "@/components/ui/sidebar";
+import { ChevronRight, type LucideIcon } from "lucide-react";
+import React from "react";
+
+export function NavMenuItem( {
+  item,
+  itemKey,
+  isOpen,
+  onOpenChange,
+}: {
+  item: any;
+  itemKey: string;
+  isOpen: boolean;
+  onOpenChange: ( open: boolean ) => void;
+} ) {
+  return (
+    <Collapsible open={isOpen} onOpenChange={onOpenChange}>
+      <SidebarMenuItem>
+        <CollapsibleTrigger asChild>
+          <SidebarMenuButton
+            tooltip={item.title}
+            className="flex w-full items-center gap-2 p-2"
+          >
+            <div className="flex items-center justify-between w-full">
+              <div className="flex items-center gap-2">
+                <item.icon />
+                <span>{item.title}</span>
+              </div>
+              {item.items?.length ? (
+                <ChevronRight
+                  className={`transition-transform duration-200 ease-in-out transform ${ isOpen ? "rotate-90" : ""
+                    }`}
+                />
+              ) : null}
+            </div>
+          </SidebarMenuButton>
+        </CollapsibleTrigger>
+
+        {item.items?.length ? (
+          <CollapsibleContent>
+            <SidebarMenuSub>
+              {item.items.map( ( subItem: any, subIndex: number ) => (
+                <SidebarMenuSubItem key={`${ itemKey }_sub_${ subIndex }`}>
+                  <SidebarMenuSubButton asChild>
+                    <a href={subItem.url}>
+                      <span>{subItem.title}</span>
+                    </a>
+                  </SidebarMenuSubButton>
+                </SidebarMenuSubItem>
+              ) )}
+            </SidebarMenuSub>
+          </CollapsibleContent>
+        ) : null}
+      </SidebarMenuItem>
+    </Collapsible>
+  );
+}
+
 
 export function NavMain( {
-    items,
-    title
+  items,
+  title,
+  openItemKey,
+  setOpenItemKey,
 }: {
+  title: string;
+  items: {
     title: string;
-    items: {
-        title: string;
-        url: string;
-        icon: LucideIcon;
-        isActive?: boolean;
-        items?: {
-            title: string;
-            url: string;
-        }[];
+    url: string;
+    icon: LucideIcon;
+    isActive?: boolean;
+    items?: {
+      title: string;
+      url: string;
     }[];
+  }[];
+  openItemKey: string | null;
+  setOpenItemKey: React.Dispatch<React.SetStateAction<string | null>>;
 } ) {
-    return (
-        <SidebarGroup>
-            <SidebarGroupLabel>{title}</SidebarGroupLabel>
-            <SidebarMenu>
-                {items.map( ( item, index ) => (
-                    <Collapsible key={`${ item.title }__${ index }`} asChild defaultOpen={item.isActive}>
-                        <SidebarMenuItem>
-                            <SidebarMenuButton asChild tooltip={item.title}>
-                                <a href={item.url}>
-                                    <item.icon />
-                                    <span>{item.title}</span>
-                                </a>
-                            </SidebarMenuButton>
-                            {item.items?.length ? (
-                                <>
-                                    <CollapsibleTrigger asChild>
-                                        <SidebarMenuAction className="data-[state=open]:rotate-90">
-                                            <ChevronRight />
-                                            <span className="sr-only">Toggle</span>
-                                        </SidebarMenuAction>
-                                    </CollapsibleTrigger>
-                                    <CollapsibleContent>
-                                        <SidebarMenuSub>
-                                            {item.items?.map( ( subItem, index ) => (
-                                                <SidebarMenuSubItem key={`${ item.title }__${ index }`}>
-                                                    <SidebarMenuSubButton asChild>
-                                                        <a href={subItem.url}>
-                                                            <span>{subItem.title}</span>
-                                                        </a>
-                                                    </SidebarMenuSubButton>
-                                                </SidebarMenuSubItem>
-                                            ) )}
-                                        </SidebarMenuSub>
-                                    </CollapsibleContent>
-                                </>
-                            ) : null}
-                        </SidebarMenuItem>
-                    </Collapsible>
-                ) )}
-            </SidebarMenu>
-        </SidebarGroup>
-    );
+  return (
+    <SidebarGroup>
+      <SidebarGroupLabel>{title}</SidebarGroupLabel>
+      <SidebarMenu>
+        {items.map( ( item, index ) => {
+          const itemKey = `${ title }_${ item.title }__${ index }`; // Including `title` to ensure uniqueness across NavMain components
+          const isOpen = openItemKey === itemKey;
+
+          return (
+            <NavMenuItem
+              key={itemKey}
+              item={item}
+              itemKey={itemKey}
+              isOpen={isOpen}
+              onOpenChange={( open: boolean ) => {
+                setOpenItemKey( open ? itemKey : null );
+              }}
+            />
+          );
+        } )}
+      </SidebarMenu>
+    </SidebarGroup>
+  );
 }

@@ -1,22 +1,6 @@
 "use client";
 
 import * as React from "react";
-import {
-  BookCheck,
-  Brain,
-  ChartNoAxesCombined,
-  CheckCheck,
-  Command,
-  FolderClock,
-  GraduationCap,
-  LibraryBig,
-  Medal,
-  NotebookPen,
-  Rocket,
-  Swords,
-  Table2,
-  TrendingUp,
-} from "lucide-react";
 
 import {
   Sidebar,
@@ -29,120 +13,11 @@ import {
 } from "@/components/ui/sidebar";
 import { NavMain } from "@/components/ui/NavMain";
 import { NavFooter } from "@/components/ui/NavFooter";
-
-const data = {
-  navMain: [
-    {
-      title: "Home",
-      url: "/",
-      icon: NotebookPen,
-    },
-    {
-      title: "About Me",
-      url: "/",
-      icon: NotebookPen,
-    },
-    {
-      title: "Information",
-      url: "/quiz",
-      icon: CheckCheck,
-      items: [
-        {
-          title: "Resume",
-          url: "#",
-        },
-        {
-          title: "Education",
-          url: "#",
-        },
-        {
-          title: "Relevant Experiences",
-          url: "#",
-        },
-        {
-          title: "Miscellaneous",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Contact",
-      url: "/",
-      icon: NotebookPen,
-    },
-
-  ],
-  "information": [
-    {
-      title: "Projects",
-      url: "/exams",
-      icon: BookCheck,
-      items: [
-        {
-          title: "My Business",
-          url: "#",
-        },
-        {
-          title: "IAC Website",
-          url: "#",
-        },
-        {
-          title: "Quiz Application",
-          url: "#",
-        },
-        {
-          title: "Sudoku",
-          url: "#",
-        },
-        {
-          title: "Front-End Development Book",
-          url: "#",
-        },
-        {
-          title: "Back-End Development Book",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Future Projects",
-      url: "/roadmaps",
-      icon: NotebookPen,
-      items: [
-        {
-          title: "Full-Stack Web Development",
-          url: "/roadmaps/fullstack",
-        },
-        {
-          title: "Front-end Development",
-          url: "/roadmaps/frontend",
-        },
-        {
-          title: "Back-end Development",
-          url: "/roadmaps/backend",
-        },
-        {
-          title: "Pre Medical",
-          url: "/roadmaps/premed",
-        },
-        {
-          title: "Business",
-          url: "/roadmaps/business",
-        },
-        {
-          title: "Law",
-          url: "/roadmaps/law",
-        },
-        {
-          title: "Entrepreneurship",
-          url: "/roadmaps/entrepreneurship",
-        },
-      ],
-    },
-  ],
-};
+import { data } from "@/data/data";
 
 export function NavSidebar( { ...props }: React.ComponentProps<typeof Sidebar> ) {
+  // State to keep track of the currently open menu item's key across all NavMain components
+  const [openItemKey, setOpenItemKey] = React.useState<string | null>( null );
 
   return (
     <Sidebar variant="inset" {...props} className="rounded-e-3xl shadow-md border hover:shadow-md">
@@ -159,8 +34,18 @@ export function NavSidebar( { ...props }: React.ComponentProps<typeof Sidebar> )
         </SidebarMenu>
       </SidebarHeader>
       <SidebarContent>
-        <NavMain title="General" items={data.navMain} />
-        <NavMain title="Past & Future Work" items={data.information} />
+        <NavMain
+          title="General"
+          items={data.navMain}
+          openItemKey={openItemKey}
+          setOpenItemKey={setOpenItemKey}
+        />
+        <NavMain
+          title="Past & Future Work"
+          items={data.information}
+          openItemKey={openItemKey}
+          setOpenItemKey={setOpenItemKey}
+        />
       </SidebarContent>
       <SidebarFooter>
         <NavFooter />
