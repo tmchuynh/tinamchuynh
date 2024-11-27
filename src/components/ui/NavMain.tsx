@@ -16,6 +16,7 @@ import {
   SidebarMenuSubItem,
 } from "@/components/ui/sidebar";
 import { ChevronRight, type LucideIcon } from "lucide-react";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 export function NavMenuItem( {
@@ -29,12 +30,25 @@ export function NavMenuItem( {
   isOpen: boolean;
   onOpenChange: ( open: boolean ) => void;
 } ) {
+  const router = useRouter(); // Initialize the useRouter hook
+
+  const handleClick = ( url: string ) => {
+    // Close the collapsible menu when clicked
+    onOpenChange( false );
+
+    // If the item has a URL, navigate to it using useRouter
+    if ( url ) {
+      router.push( url ); // Use router.push to navigate to the URL within the app
+    }
+  };
+
   return (
     <Collapsible open={isOpen} onOpenChange={onOpenChange}>
       <SidebarMenuItem>
         <CollapsibleTrigger asChild>
           <SidebarMenuButton
             tooltip={item.title}
+            onClick={() => handleClick( item.url )} // Call handleClick with the URL
             className="flex w-full items-center gap-2 p-2"
           >
             <div className="flex items-center justify-between w-full">
@@ -82,7 +96,7 @@ export function NavMain( {
   title: string;
   items: {
     title: string;
-    url: string;
+    url?: string;
     icon: LucideIcon;
     isActive?: boolean;
     items?: {

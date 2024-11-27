@@ -9,12 +9,11 @@ export const data = {
     },
     {
       title: "About Me",
-      url: "/",
+      url: "/about",
       icon: NotebookPen,
     },
     {
       title: "Information",
-      url: "/quiz",
       icon: CheckCheck,
       items: [
         {
@@ -45,7 +44,6 @@ export const data = {
   "information": [
     {
       title: "Projects",
-      url: "/exams",
       icon: BookCheck,
       items: [
         {
@@ -76,7 +74,6 @@ export const data = {
     },
     {
       title: "Future Projects",
-      url: "/roadmaps",
       icon: NotebookPen,
       items: [
         {
