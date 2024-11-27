@@ -48,11 +48,11 @@ export function ModeToggle() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="default" size="icon" aria-label="Toggle Dark Mode" className="min-h-12 min-w-12 hover:bg-secondary">
+        <Button variant={theme === "dark" ? "secondary" : "default"} size="icon" aria-label="Toggle Dark Mode" className="min-h-12 min-w-12">
           {theme === "dark" ? (
-            <Sun className="h-[1.2rem] w-[1.2rem] transition-all rotate-0 scale-100" />
+            <Sun className="transition-all rotate-0 scale-100" />
           ) : (
-            <Moon className="h-[1.2rem] w-[1.2rem] transition-all rotate-12 scale-100" />
+            <Moon className="transition-all rotate-12 scale-100" />
           )}
           <span className="sr-only">Toggle theme</span>
         </Button>
