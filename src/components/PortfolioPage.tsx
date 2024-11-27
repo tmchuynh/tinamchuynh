@@ -4,8 +4,9 @@ import { PortfolioProject } from "@/data/types";
 import { Check, StarHalf } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import { Button } from "./ui/button";
-import ImageGrid from "./ui/image-grid";
+import { Button } from "@/components/ui/button";
+import ImageGrid from "@/components/ui/image-grid";
+import BlurFade from "@/components/ui/blur-fade";
 const PortfolioPage = ( {
   project,
 }: {
@@ -51,25 +52,29 @@ const PortfolioPage = ( {
       </div>
 
       <h2 className="text-2xl font-semibold mb-4">Technologies Used</h2>
-      <ul className="list-disc pl-6 mb-8 flex flex-col">
-        {project.technologies.map( ( tech, index ) => (
-          <div className="inline-flex">
-            <Check color={theme === "dark" ? "#4bd579" : "#395798"} className="mr-2" />
-            <li key={index} className="text-lg list-none">{tech}</li>
-          </div>
-        ) )}
-      </ul>
+      <BlurFade delay={0.25} inView>
+        <ul className="list-disc pl-6 mb-8 flex flex-col">
+          {project.technologies.map( ( tech, index ) => (
+            <div className="inline-flex" key={tech}>
+              <Check color={theme === "dark" ? "#4bd579" : "#395798"} className="mr-2" />
+              <li key={index} className="text-lg list-none">{tech}</li>
+            </div>
+          ) )}
+        </ul>
+      </BlurFade>
 
       <div>
         <h2 className="text-2xl font-semibold mb-4">Project Features</h2>
-        <p className="text-lg flex flex-col pl-6 mb-8">
-          {project.features.map( ( feature, index ) => (
-            <div className="inline-flex">
-              <StarHalf color={theme === "dark" ? "#4bd579" : "#395798"} />
-              <li key={index} className="text-lg list-none">{feature}</li>
-            </div>
-          ) )}
-        </p>
+        <BlurFade delay={0.25} inView>
+          <div className="text-lg flex flex-col pl-6 mb-8">
+            {project.features.map( ( feature, index ) => (
+              <div className="inline-flex" key={feature}>
+                <StarHalf color={theme === "dark" ? "#4bd579" : "#395798"} />
+                <li key={index} className="text-lg list-none">{feature}</li>
+              </div>
+            ) )}
+          </div>
+        </BlurFade>
       </div>
 
       <ImageGrid images={project.images} />

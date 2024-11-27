@@ -45,7 +45,7 @@ export function CommandMenu() {
   return (
     <>
       <p className="font-mono flex items-center gap-2 px-7 justify-end text-muted-foreground my-2">
-        Command Menu: Press{" "}
+        Command Menu:
         <kbd className="pointer-events-none inline-flex h-full select-none items-center gap-1 rounded bg-muted px-1.5 py-1 font-mono text-[14px] font-medium text-muted-foreground opacity-100 align-text-bottom">
           <span><FaWindows /></span>M
         </kbd>

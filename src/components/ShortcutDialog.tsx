@@ -33,7 +33,7 @@ export function ShortcutDialog() {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <p className="font-mono flex items-center gap-2 px-7 justify-end text-muted-foreground my-2">
-        Keyboard Shortcuts: Press{" "}
+        Keyboard Shortcuts:
         <kbd className="pointer-events-none inline-flex h-full select-none items-center gap-1 rounded bg-muted px-1.5 py-1 font-mono text-[14px] font-medium text-muted-foreground opacity-100 align-text-bottom">
           <span><FaWindows /></span>/
         </kbd>
