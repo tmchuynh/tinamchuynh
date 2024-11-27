@@ -22,11 +22,13 @@ const PortfolioPage = ( {
   function handleClick( link: string | undefined ) {
     window.open( link, "_blank" );
   }
+
   return (
     <div className="max-w-7xl mx-auto p-6">
       <h1 className="text-4xl font-bold text-center mb-4">{project.title}</h1>
 
       <p className="text-lg mb-8">{project.description}</p>
+
       {/* Project Links */}
       <div className="flex space-x-6 mb-8 justify-center">
         {project.liveLink ? (
@@ -64,17 +66,21 @@ const PortfolioPage = ( {
       </BlurFade>
 
       <div>
-        <h2 className="text-2xl font-semibold mb-4">Project Features</h2>
-        <BlurFade delay={0.25} inView>
-          <div className="text-lg flex flex-col pl-6 mb-8">
-            {project.features.map( ( feature, index ) => (
-              <div className="inline-flex" key={feature}>
-                <StarHalf color={theme === "dark" ? "#4bd579" : "#395798"} />
-                <li key={index} className="text-lg list-none">{feature}</li>
+        {project.features ? (
+          <>
+            <h2 className="text-2xl font-semibold mb-4">Project Features</h2>
+            <BlurFade delay={0.25} inView>
+              <div className="text-lg flex flex-col pl-6 mb-8">
+                {project.features.map( ( feature, index ) => (
+                  <div className="inline-flex" key={feature}>
+                    <StarHalf color={theme === "dark" ? "#4bd579" : "#395798"} />
+                    <li key={index} className="text-lg list-none">{feature}</li>
+                  </div>
+                ) )}
               </div>
-            ) )}
-          </div>
-        </BlurFade>
+            </BlurFade>
+          </>
+        ) : ''}
       </div>
 
       <ImageGrid images={project.images} />

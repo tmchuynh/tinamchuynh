@@ -77,6 +77,40 @@ export const shortcuts = [
   },
 ];
 
+export const futureProjects: PortfolioProject[] = [
+  {
+    id: "futureProject1",
+    title: "Future E-commerce Platform",
+    description:
+      "This project involves building a scalable and robust e-commerce platform that can handle high traffic, provide excellent user experience, and integrate with various payment systems.",
+    focuses: [
+      "Performance Optimization",
+      "User Experience",
+      "Scalability and Load Balancing",
+      "Security and Payment Integration",
+    ],
+    technologies: ["React", "Node.js", "MongoDB", "GraphQL", "TailwindCSS"],
+    images: [
+      { src: "/images/inspiration1.jpg" },
+      { src: "/images/inspiration2.jpg" },
+      { src: "/images/inspiration3.jpg" },
+    ],
+    timeline: [
+      "Research and Initial Planning",
+      "Prototype and Design",
+      "Development (Frontend and Backend)",
+      "Testing and Deployment",
+    ],
+    inspiration: [
+      "/images/inspiration4.jpg",
+      "/images/inspiration5.jpg",
+      "/images/inspiration6.jpg",
+    ],
+    githubLink: "https://github.com/yourgithub/future-ecommerce",
+    liveLink: "https://future-ecommerce.com",
+  },
+];
+
 export const projects: PortfolioProject[] = [
   {
     id: "mybussiness",
@@ -254,7 +288,7 @@ export const data = {
       items: [
         {
           title: "Full-Stack Web Development",
-          url: "/roadmaps/fullstack",
+          url: "/futureProjects/futureProject1",
         },
         {
           title: "Front-end Development",

@@ -30,7 +30,7 @@ body {
     --destructive-foreground: #e7e6e4;
     --border: #265dd3;
     --input: #e7e6e4;
-    --ring: #204cac;
+    --ring: #4e7ad892;
     --chart-1: #3b7eb8;
     --chart-2: #5bba9f;
     --chart-3: #bb8352;
@@ -48,10 +48,10 @@ body {
   }
 
   .dark {
-    --primary: #3576e8;
-    --primary-foreground: #e7e6e4;
-    --secondary: #e29552;
-    --secondary-foreground: #090909;
+    --primary: #e29552;
+    --primary-foreground: #090909;
+    --secondary: #3576e8;
+    --secondary-foreground: #e7e6e4;
     --tertiary: #4bd579;
     --tertiary-foreground: #090909;
     --highlight: #ec5b84;
@@ -70,7 +70,7 @@ body {
     --destructive-foreground: #e7e6e4;
     --border: #1158d4;
     --input: #090909;
-    --ring: #4f71bb;
+    --ring: #ee8020cd;
     --chart-1: #f9d6c8;
     --chart-2: #b1c5e7;
     --chart-3: #efa9b0;
