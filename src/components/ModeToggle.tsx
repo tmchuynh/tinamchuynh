@@ -48,7 +48,12 @@ export function ModeToggle() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant={theme === "dark" ? "secondary" : "default"} size="icon" aria-label="Toggle Dark Mode" className="min-h-12 min-w-12">
+        <Button
+          variant={theme === "dark" ? "secondary" : "default"}
+          size="icon"
+          aria-label="Toggle Dark Mode"
+          className="min-h-12 min-w-12"
+        >
           {theme === "dark" ? (
             <Sun className="transition-all rotate-0 scale-100" />
           ) : (
@@ -58,13 +63,26 @@ export function ModeToggle() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => { setTheme( "light" ); handleThemeToggle(); console.log( theme ); }}>
+        <DropdownMenuItem
+          onClick={() => {
+            setTheme( "light" );
+            handleThemeToggle();
+            console.log( theme );
+          }}
+        >
           Light
           {theme === "light" && (
-            <span className="ml-2 text-sm text-popover-foreground">(active)</span>
+            <span className="ml-2 text-sm text-popover-foreground">
+              (active)
+            </span>
           )}
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => { setTheme( "dark" ); handleThemeToggle(); }}>
+        <DropdownMenuItem
+          onClick={() => {
+            setTheme( "dark" );
+            handleThemeToggle();
+          }}
+        >
           Dark
           {theme === "dark" && (
             <span className="ml-2 text-sm text-muted-foreground">(active)</span>

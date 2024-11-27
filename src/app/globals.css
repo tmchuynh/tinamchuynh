@@ -9,7 +9,7 @@ body {
 @layer base {
   :root {
     --primary: #395798;
-    --primary-foreground: #0a0a0a;
+    --primary-foreground: #e7e6e4;
     --secondary: #c9af98;
     --secondary-foreground: #0a0a0a;
     --tertiary: #64a97a;
@@ -55,7 +55,7 @@ body {
     --tertiary: #4bd579;
     --tertiary-foreground: #090909;
     --highlight: #ec5b84;
-    --highlight-foreground: #e7e6e4;
+    --highlight-foreground: #090909;
     --accent: #471a9a;
     --accent-foreground: #e7e6e4;
     --background: #090909;
@@ -94,5 +94,9 @@ body {
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  strong {
+    @apply text-tertiary;
   }
 }
