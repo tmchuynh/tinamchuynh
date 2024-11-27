@@ -1,4 +1,119 @@
 import { NotebookPen, CheckCheck, BookCheck } from "lucide-react";
+import { PortfolioProject } from "./types";
+
+export const listItems = [
+  {
+    title: "Your call has been confirmed.",
+    description: "1 hour ago",
+  },
+  {
+    title: "You have a new message!",
+    description: "1 hour ago",
+  },
+  {
+    title: "Your subscription is expiring soon!",
+    description: "2 hours ago",
+  },
+];
+
+export const projects: PortfolioProject[] = [
+  {
+    id: "mybussiness",
+    title: "My Website Business Project",
+    description:
+      "This is a personal photography portfolio showcasing my journey through various landscapes and cityscapes. The project features a dynamic gallery, an interactive gallery layout, and optimized images for different screen sizes.",
+    technologies: ["React", "TailwindCSS", "Node.js", "Express", "MongoDB"],
+    features: ["React", "TailwindCSS", "Node.js", "Express", "MongoDB"],
+    images: [
+      { src: "/images/ecommerce1.jpg" },
+      { src: "/images/ecommerce2.jpg" },
+      { src: "/images/ecommerce3.jpg" },
+      { src: "/images/ecommerce4.jpg" },
+    ],
+    githubLink: "https://github.com/yourgithub/photography-portfolio",
+    liveLink: "https://yourportfolio.com",
+  },
+  {
+    id: "iacwebsite",
+    title: "International Activites Club Official Website",
+    description:
+      "An e-commerce platform built with React and Node.js. It supports user authentication, a shopping cart, and a complete checkout system.",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe"],
+    features: [],
+    images: [
+      { src: "/images/ecommerce1.jpg" },
+      { src: "/images/ecommerce2.jpg" },
+      { src: "/images/ecommerce3.jpg" },
+      { src: "/images/ecommerce4.jpg" },
+    ],
+    githubLink: "https://github.com/yourgithub/ecommerce-website",
+    liveLink: "https://ecommerce-website.com",
+  },
+  {
+    id: "quizapplication",
+    title: "A Full-Stack Quiz Application",
+    description:
+      "An e-commerce platform built with React and Node.js. It supports user authentication, a shopping cart, and a complete checkout system.",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe"],
+    features: [],
+    images: [
+      { src: "/images/ecommerce1.jpg" },
+      { src: "/images/ecommerce2.jpg" },
+      { src: "/images/ecommerce3.jpg" },
+      { src: "/images/ecommerce4.jpg" },
+    ],
+    githubLink: "https://github.com/yourgithub/ecommerce-website",
+    liveLink: "https://ecommerce-website.com",
+  },
+  {
+    id: "sudoku",
+    title: "A Sudoku Application for CodeNinjas",
+    description:
+      "An e-commerce platform built with React and Node.js. It supports user authentication, a shopping cart, and a complete checkout system.",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe"],
+    features: [],
+    images: [
+      { src: "/images/ecommerce1.jpg" },
+      { src: "/images/ecommerce2.jpg" },
+      { src: "/images/ecommerce3.jpg" },
+      { src: "/images/ecommerce4.jpg" },
+    ],
+    githubLink: "https://github.com/yourgithub/ecommerce-website",
+    liveLink: "https://ecommerce-website.com",
+  },
+  {
+    id: "frontendbook",
+    title: "A Front-end Development Book for Beginners",
+    description:
+      "An e-commerce platform built with React and Node.js. It supports user authentication, a shopping cart, and a complete checkout system.",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe"],
+    features: [],
+    images: [
+      { src: "/images/ecommerce1.jpg" },
+      { src: "/images/ecommerce2.jpg" },
+      { src: "/images/ecommerce3.jpg" },
+      { src: "/images/ecommerce4.jpg" },
+    ],
+    githubLink: "https://github.com/yourgithub/ecommerce-website",
+    liveLink: "https://ecommerce-website.com",
+  },
+  {
+    id: "backendbook",
+    title: "A Back-end Development Book for Beginners",
+    description:
+      "An e-commerce platform built with React and Node.js. It supports user authentication, a shopping cart, and a complete checkout system.",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe"],
+    features: [],
+    images: [
+      { src: "/images/ecommerce1.jpg" },
+      { src: "/images/ecommerce2.jpg" },
+      { src: "/images/ecommerce3.jpg" },
+      { src: "/images/ecommerce4.jpg" },
+    ],
+    githubLink: "https://github.com/yourgithub/ecommerce-website",
+    liveLink: "https://ecommerce-website.com",
+  },
+];
 
 export const data = {
   navMain: [
@@ -48,27 +163,27 @@ export const data = {
       items: [
         {
           title: "My Business",
-          url: "#",
+          url: "/projects/mybussiness",
         },
         {
           title: "IAC Website",
-          url: "#",
+          url: "/projects/iacwebsite",
         },
         {
           title: "Quiz Application",
-          url: "#",
+          url: "/projects/quizapplication",
         },
         {
           title: "Sudoku",
-          url: "#",
+          url: "/projects/sudoku",
         },
         {
           title: "Front-End Development Book",
-          url: "#",
+          url: "/projects/frontendbook",
         },
         {
           title: "Back-End Development Book",
-          url: "#",
+          url: "/projects/backendbook",
         },
       ],
     },
