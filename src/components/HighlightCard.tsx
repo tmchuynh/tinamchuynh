@@ -44,7 +44,7 @@ export function HighlightCard( {
 							<span className="flex h-2 w-2 translate-y-1 rounded-full bg-tertiary" />
 							<div className="space-y-1">
 								<p className="text-sm leading-none">{item.title}</p>
-								<p className="text-sm text-highlight opacity-70">{item.description}</p>
+								<p className="text-sm text-highlight dark:opacity-70">{item.description}</p>
 							</div>
 						</div>
 					) )}
