@@ -1,8 +1,5 @@
 "use client";
 
-import * as React from "react";
-import { Moon, Sun } from "lucide-react";
-import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -10,13 +7,16 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { Moon, Sun } from "lucide-react";
+import { useTheme } from "next-themes";
+import * as React from "react";
 import { useEffect, useState } from "react";
 
 export function ModeToggle() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState( false );
 
-  // Ensure the theme is accessed after the component is mounted
+
   useEffect( () => {
     setMounted( true );
   }, [] );
@@ -37,11 +37,10 @@ export function ModeToggle() {
   } );
 
   if ( !mounted ) {
-    return null; // Render nothing until the component is mounted
+    return null;
   }
-
   const handleThemeToggle = () => {
-    // Toggle between light and dark themes
+
     setTheme( theme === "dark" ? "light" : "dark" );
   };
 

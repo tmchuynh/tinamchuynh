@@ -1,5 +1,6 @@
 import { NotebookPen, CheckCheck, BookCheck } from "lucide-react";
 import { PortfolioProject } from "./types";
+import { FaWindows } from "react-icons/fa6";
 
 export const listItems = [
   {
@@ -13,6 +14,66 @@ export const listItems = [
   {
     title: "Your subscription is expiring soon!",
     description: "2 hours ago",
+  },
+];
+
+export const shortcuts = [
+  {
+    shortcut: (
+      <span>
+        <FaWindows className="inline-block mr-1" /> + B
+      </span>
+    ),
+    description: "Open/Close Side Menu",
+  },
+  {
+    shortcut: (
+      <span>
+        <FaWindows className="inline-block mr-1" /> + M
+      </span>
+    ), description: "Open/Close Spotlight Search"
+  },
+  {
+    shortcut: (
+      <span>
+        Ctrl + <FaWindows className="inline-block mr-1" /> + D
+      </span>
+    ), description: "Toggle Dark/Light Mode"
+  },
+  {
+    shortcut: (
+      <span>
+        <FaWindows className="inline-block mr-1" /> + /
+      </span>
+    ), description: "Cut selected text"
+  },
+  {
+    shortcut: (
+      <span>
+        <FaWindows className="inline-block mr-1" /> + /
+      </span>
+    ), description: "Undo last action"
+  },
+  {
+    shortcut: (
+      <span>
+        <FaWindows className="inline-block mr-1" /> + /
+      </span>
+    ), description: "Redo last action"
+  },
+  {
+    shortcut: (
+      <span>
+        <FaWindows className="inline-block mr-1" /> + /
+      </span>
+    ), description: "Save the current document"
+  },
+  {
+    shortcut: (
+      <span>
+        <FaWindows className="inline-block mr-1" /> + /
+      </span>
+    ), description: "Close dialog or cancel"
   },
 ];
 

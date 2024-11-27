@@ -2,6 +2,8 @@
 
 import * as React from "react";
 
+import { NavFooter } from "@/components/ui/NavFooter";
+import { NavMain } from "@/components/ui/NavMain";
 import {
   Sidebar,
   SidebarContent,
@@ -11,8 +13,6 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
-import { NavMain } from "@/components/ui/NavMain";
-import { NavFooter } from "@/components/ui/NavFooter";
 import { data } from "@/data/data";
 
 export function NavSidebar( { ...props }: React.ComponentProps<typeof Sidebar> ) {

@@ -30,15 +30,13 @@ export function NavMenuItem( {
   isOpen: boolean;
   onOpenChange: ( open: boolean ) => void;
 } ) {
-  const router = useRouter(); // Initialize the useRouter hook
+  const router = useRouter();
 
   const handleClick = ( url: string ) => {
-    // Close the collapsible menu when clicked
     onOpenChange( false );
 
-    // If the item has a URL, navigate to it using useRouter
     if ( url ) {
-      router.push( url ); // Use router.push to navigate to the URL within the app
+      router.push( url );
     }
   };
 
@@ -48,7 +46,7 @@ export function NavMenuItem( {
         <CollapsibleTrigger asChild>
           <SidebarMenuButton
             tooltip={item.title}
-            onClick={() => handleClick( item.url )} // Call handleClick with the URL
+            onClick={() => handleClick( item.url )}
             className="flex w-full items-center gap-2 p-2"
           >
             <div className="flex items-center justify-between w-full">
@@ -112,7 +110,7 @@ export function NavMain( {
       <SidebarGroupLabel>{title}</SidebarGroupLabel>
       <SidebarMenu>
         {items.map( ( item, index ) => {
-          const itemKey = `${ title }_${ item.title }__${ index }`; // Including `title` to ensure uniqueness across NavMain components
+          const itemKey = `${ title }_${ item.title }__${ index }`;
           const isOpen = openItemKey === itemKey;
 
           return (

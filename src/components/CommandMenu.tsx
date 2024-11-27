@@ -1,6 +1,5 @@
 "use client";
 
-import * as React from "react";
 import {
   Calculator,
   Calendar,
@@ -9,6 +8,7 @@ import {
   Smile,
   User,
 } from "lucide-react";
+import * as React from "react";
 
 import {
   CommandDialog,
@@ -20,9 +20,9 @@ import {
   CommandSeparator,
   CommandShortcut,
 } from "@/components/ui/command";
-import { FaWindows } from "react-icons/fa6";
-import { useEffect, useState } from "react";
 import { Command } from "cmdk";
+import { useEffect, useState } from "react";
+import { FaWindows } from "react-icons/fa6";
 
 
 export function CommandMenu() {
