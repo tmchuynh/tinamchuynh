@@ -6,9 +6,9 @@ import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar';
 import './globals.css';
 import { NotFoundProvider, useNotFound } from "./context/NotFoundContext";
 import { NavSidebar } from "@/components/NavSidebar";
-import { ThemeProvider } from "./context/theme-provider";
-import { ModeToggle } from "@/components/ModeToggle";
 import { Providers } from "./providers";
+import { CommandMenu } from "@/components/CommandMenu";
+import { ShortcutDialog } from "@/components/ShortcutDialog";
 
 export default function RootLayout( {
   children,
@@ -56,8 +56,12 @@ const MainContent = ( {
           <NavSidebar />
           <SidebarTrigger className='py-10 px-9' />
         </>}
-      <main className='w-11/12 mx-auto py-10'>
+      <main className='relative w-11/12 mx-auto py-10'>
         {children}
+        <div className="absolute top-8 right-10">
+          <CommandMenu />
+          <ShortcutDialog />
+        </div>
       </main>
     </>
   );

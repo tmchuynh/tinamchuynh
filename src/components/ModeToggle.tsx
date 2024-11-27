@@ -21,6 +21,21 @@ export function ModeToggle() {
     setMounted( true );
   }, [] );
 
+  useEffect( () => {
+    const handleKeydown = ( e: KeyboardEvent ) => {
+      console.log( e.key );
+      if ( e.ctrlKey && e.metaKey && e.key === "d" ) {
+        setTheme( theme === "dark" ? "light" : "dark" );
+      }
+    };
+
+    window.addEventListener( "keydown", handleKeydown );
+
+    return () => {
+      window.removeEventListener( "keydown", handleKeydown );
+    };
+  } );
+
   if ( !mounted ) {
     return null; // Render nothing until the component is mounted
   }
@@ -33,7 +48,7 @@ export function ModeToggle() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="default" size="icon" aria-label="Toggle Dark Mode">
+        <Button variant="default" size="icon" aria-label="Toggle Dark Mode" className="min-h-12 min-w-12 hover:bg-secondary">
           {theme === "dark" ? (
             <Sun className="h-[1.2rem] w-[1.2rem] transition-all rotate-0 scale-100" />
           ) : (

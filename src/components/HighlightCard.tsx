@@ -1,12 +1,9 @@
-import { Check } from "lucide-react";
 
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
 import {
 	Card,
 	CardContent,
 	CardDescription,
-	CardFooter,
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card";
@@ -34,7 +31,7 @@ export function HighlightCard( {
 	return (
 		<Card className={cn( "w-[380px] mx-5", className )} {...props}>
 			<CardHeader>
-				<CardTitle className="text-primary">{title}</CardTitle>
+				<CardTitle>{title}</CardTitle>
 				<CardDescription>{description}</CardDescription>
 			</CardHeader>
 			<CardContent className="grid gap-4">
@@ -44,10 +41,10 @@ export function HighlightCard( {
 							key={index}
 							className="mb-4 grid grid-cols-[25px_1fr] items-start pb-4 last:mb-0 last:pb-0"
 						>
-							<span className="flex h-2 w-2 translate-y-1 rounded-full bg-primary" />
+							<span className="flex h-2 w-2 translate-y-1 rounded-full bg-tertiary" />
 							<div className="space-y-1">
-								<p className="text-sm font-medium leading-none">{item.title}</p>
-								<p className="text-sm text-muted-foreground">{item.description}</p>
+								<p className="text-sm leading-none">{item.title}</p>
+								<p className="text-sm text-highlight opacity-70">{item.description}</p>
 							</div>
 						</div>
 					) )}

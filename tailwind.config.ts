@@ -10,10 +10,18 @@ export default {
   theme: {
     extend: {
       colors: {
+        tertiary: {
+          DEFAULT: 'var(--tertiary)',
+          foreground: 'var(--tertiary-foreground)'
+        },
+        highlight: {
+          DEFAULT: 'var(--highlight)',
+          foreground: 'var(--highlight-foreground)'
+        },
         background: 'var(--background)',
         foreground: 'var(--foreground)',
         card: {
-          DEFAULT: 'var(--card))',
+          DEFAULT: 'var(--card)',
           foreground: 'var(--card-foreground)'
         },
         popover: {
@@ -51,14 +59,14 @@ export default {
           '5': 'var(--chart-5)'
         },
         sidebar: {
-          DEFAULT: 'hsl(var(--sidebar-background))',
-          foreground: 'hsl(var(--sidebar-foreground))',
-          primary: 'hsl(var(--sidebar-primary))',
-          'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-          accent: 'hsl(var(--sidebar-accent))',
-          'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-          border: 'hsl(var(--sidebar-border))',
-          ring: 'hsl(var(--sidebar-ring))'
+          DEFAULT: 'var(--sidebar-background)',
+          foreground: 'var(--sidebar-foreground)',
+          primary: 'var(--sidebar-primary)',
+          'primary-foreground': 'var(--sidebar-primary-foreground)',
+          accent: 'var(--sidebar-accent)',
+          'accent-foreground': 'var(--sidebar-accent-foreground)',
+          border: 'var(--sidebar-border)',
+          ring: 'var(--sidebar-ring)'
         }
       },
       borderRadius: {
