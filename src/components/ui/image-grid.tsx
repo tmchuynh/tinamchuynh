@@ -5,8 +5,12 @@ import BlurFade from "./blur-fade";
 import Image from "next/image";
 import { DialogContent, DialogTrigger, DialogPortal } from "@radix-ui/react-dialog";
 import { Dialog, DialogTitle, DialogClose } from "./dialog";
+import { Button } from "./button";
+import { useTheme } from "next-themes";
 
 const ImageGrid = ( { images }: { images: ImageProps[]; } ) => {
+  const { theme } = useTheme();
+
   return (
     <div className="max-w-7xl mx-auto p-6">
       <h1 className="text-4xl font-bold text-center mb-8">Project Images</h1>
@@ -28,10 +32,13 @@ const ImageGrid = ( { images }: { images: ImageProps[]; } ) => {
 
                   {/* Overlay and Button */}
                   <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex justify-center items-center rounded-lg">
-                    <button className="text-white px-4 py-2 bg-primary hover:bg-secondary rounded-md ">
+                    <Button
+                      variant={theme === "dark" ? "default" : "secondary"}
+                      className="px-4 py-2 transition duration-300">
                       View Full Image
-                    </button>
+                    </Button>
                   </div>
+
                 </div>
               </DialogTrigger>
 
@@ -48,6 +55,7 @@ const ImageGrid = ( { images }: { images: ImageProps[]; } ) => {
                       height={3000}
                       className="h-full w-full object-contain text-foreground rounded-lg shadow-lg"
                     />
+                    <h4 className="flex items-center ml-3 -m-2 text-md font-light text-foreground">{image.description}</h4>
                   </div>
                 </DialogContent>
               </DialogPortal>

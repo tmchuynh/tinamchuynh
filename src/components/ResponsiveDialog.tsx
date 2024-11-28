@@ -23,16 +23,25 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useMediaQuery } from "@/hooks/use-media-query";
 import { cn } from "@/lib/utils";
+import { useTheme } from "next-themes";
 
 export function DrawerDialogDemo() {
   const [open, setOpen] = React.useState( false );
   const isDesktop = useMediaQuery( "(min-width: 768px)" );
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = React.useState( false );
+
+  React.useEffect( () => {
+    setMounted( true );
+  }, [] );
 
   if ( isDesktop ) {
     return (
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogTrigger asChild>
-          <Button variant="outline">Edit Profile</Button>
+          <Button
+            variant={theme === "dark" ? "secondary" : "outline"}
+          >Edit Profile</Button>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>
