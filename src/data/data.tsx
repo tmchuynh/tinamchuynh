@@ -227,25 +227,25 @@ export const data = {
       items: [
         {
           title: "Resume",
-          url: "#",
+          url: "/info/resume",
         },
         {
           title: "Education",
-          url: "#",
+          url: "/info/education",
         },
         {
           title: "Relevant Experiences",
-          url: "#",
+          url: "/info/experience",
         },
         {
           title: "Miscellaneous",
-          url: "#",
+          url: "/info/miscellaneous",
         },
       ],
     },
     {
       title: "Contact",
-      url: "/",
+      url: "/contact",
       icon: NotebookPen,
     },
 
@@ -291,23 +291,23 @@ export const data = {
         },
         {
           title: "Front-end Development",
-          url: "/roadmaps/frontend",
+          url: "/futureProjects/futureProject1",
         },
         {
           title: "Back-end Development",
-          url: "/roadmaps/backend",
+          url: "/futureProjects/futureProject1",
         },
         {
           title: "Pre Medical",
-          url: "/roadmaps/premed",
+          url: "/futureProjects/futureProject1",
         },
         {
           title: "Business",
-          url: "/roadmaps/business",
+          url: "/futureProjects/futureProject1",
         },
         {
           title: "Law",
-          url: "/roadmaps/law",
+          url: "/futureProjects/futureProject1",
         },
         {
           title: "Entrepreneurship",

@@ -1,3 +1,5 @@
+import { SvgIconComponent } from "@mui/icons-material";
+
 export interface ImageProps {
   src: string;
   alt: string;
@@ -16,4 +18,18 @@ export interface PortfolioProject {
   inspiration?: string[];
   githubLink?: string;
   liveLink?: string;
+}
+
+export interface TimelineEvent {
+  time: string;
+  title: string;
+  description: string;
+  icon: SvgIconComponent;
+  bullets: string[];
+  color: "secondary" | "inherit" | "primary" | "success" | "error" | "info" | "warning" | "grey";
+  oppositeContentAlign?: 'left' | 'right';
+}
+
+export interface AltTimelineProps {
+  events: TimelineEvent[];
 }
