@@ -20,7 +20,7 @@ const ImageGrid = ( { images }: { images: ImageProps[]; } ) => {
             <Dialog key={index}>
               {/* Dialog Trigger and Hover Effect */}
               <DialogTrigger asChild>
-                <div className="relative group h-[20rem] w-[20rem]">
+                <div className="relative group h-[19rem] w-[19rem]">
                   {/* Image */}
                   <Image
                     src={image.src}

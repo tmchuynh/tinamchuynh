@@ -1,14 +1,27 @@
-import { NotebookPen, CheckCheck, BookCheck, Presentation, NotebookText, Cat, CodeXml, DatabaseZap, FileTextIcon, GlobeIcon, CalendarIcon, BellIcon, Share2Icon } from "lucide-react";
+import {
+  NotebookPen,
+  CheckCheck,
+  BookCheck,
+  Presentation,
+  NotebookText,
+  Cat,
+  CodeXml,
+  DatabaseZap,
+  FileTextIcon,
+  GlobeIcon,
+  CalendarIcon,
+  BellIcon,
+  Share2Icon,
+} from "lucide-react";
 import { PortfolioProject, WritingPlatform } from "./types";
 import { FaWindows } from "react-icons/fa6";
-import { TimelineEvent } from '@/data/types';
+import { TimelineEvent } from "@/data/types";
 import { AnimatedBeamMultipleOutput } from "@/components/AnimatedOutput";
 import Marquee from "@/components/ui/marquee";
 import { cn } from "@/lib/utils";
 import { AnimatedList } from "@/components/ui/animated-list";
 import { Calendar } from "@/components/ui/calendar";
 import TypingAnimation from "@/components/ui/typing-animation";
-
 
 export const timelineData: TimelineEvent[] = [
   {
@@ -17,7 +30,7 @@ export const timelineData: TimelineEvent[] = [
     description: "International Activities Club",
     bullets: [
       "Built interactive web apps for educational programs, improving engagement and usability.",
-      "Collaborated with educators to streamline administrative tasks through custom software."
+      "Collaborated with educators to streamline administrative tasks through custom software.",
     ],
     icon: DatabaseZap,
   },
@@ -28,7 +41,7 @@ export const timelineData: TimelineEvent[] = [
     bullets: [
       "Improved workflows by 20% through streamlined processes and metrics monitoring.",
       "Led teams and trained staff, boosting efficiency and reducing issues by 25%.",
-      "Implemented initiatives that increased growth by 15% and aligned organizational goals."
+      "Implemented initiatives that increased growth by 15% and aligned organizational goals.",
     ],
     icon: Presentation,
   },
@@ -39,7 +52,7 @@ export const timelineData: TimelineEvent[] = [
     bullets: [
       "Taught HTML, CSS, JavaScript, and Python, boosting student skills and participation.",
       "Designed curricula that increased engagement and project completion rates.",
-      "Mentored instructors to enhance collaboration with management."
+      "Mentored instructors to enhance collaboration with management.",
     ],
     icon: CodeXml,
   },
@@ -50,7 +63,7 @@ export const timelineData: TimelineEvent[] = [
     bullets: [
       "Created STEM-focused curricula, increasing engagement and outcomes by 35%.",
       "Designed lesson plans that improved student performance by 30%.",
-      "Collaborated with stakeholders to enhance curriculum effectiveness."
+      "Collaborated with stakeholders to enhance curriculum effectiveness.",
     ],
     icon: NotebookText,
   },
@@ -60,7 +73,7 @@ export const timelineData: TimelineEvent[] = [
     description: "Code to the Future",
     bullets: [
       "Taught Scratch, improving student proficiency by 40%.",
-      "Customized lessons to boost engagement and completion rates."
+      "Customized lessons to boost engagement and completion rates.",
     ],
     icon: Cat,
   },
@@ -95,49 +108,56 @@ export const shortcuts = [
       <span>
         <FaWindows className="inline-block mr-1" /> + M
       </span>
-    ), description: "Open/Close Spotlight Search"
+    ),
+    description: "Open/Close Spotlight Search",
   },
   {
     shortcut: (
       <span>
         Ctrl + <FaWindows className="inline-block mr-1" /> + D
       </span>
-    ), description: "Toggle Dark/Light Mode"
+    ),
+    description: "Toggle Dark/Light Mode",
   },
   {
     shortcut: (
       <span>
         <FaWindows className="inline-block mr-1" /> + /
       </span>
-    ), description: "Cut selected text"
+    ),
+    description: "Cut selected text",
   },
   {
     shortcut: (
       <span>
         <FaWindows className="inline-block mr-1" /> + /
       </span>
-    ), description: "Undo last action"
+    ),
+    description: "Undo last action",
   },
   {
     shortcut: (
       <span>
         <FaWindows className="inline-block mr-1" /> + /
       </span>
-    ), description: "Redo last action"
+    ),
+    description: "Redo last action",
   },
   {
     shortcut: (
       <span>
         <FaWindows className="inline-block mr-1" /> + /
       </span>
-    ), description: "Save the current document"
+    ),
+    description: "Save the current document",
   },
   {
     shortcut: (
       <span>
         <FaWindows className="inline-block mr-1" /> + /
       </span>
-    ), description: "Close dialog or cancel"
+    ),
+    description: "Close dialog or cancel",
   },
 ];
 
@@ -155,9 +175,9 @@ export const futureProjects: PortfolioProject[] = [
     ],
     technologies: ["React", "Node.js", "MongoDB", "GraphQL", "TailwindCSS"],
     images: [
-      { src: "/images/inspiration1.jpg", alt: '', description: '' },
-      { src: "/images/inspiration2.jpg", alt: '', description: '' },
-      { src: "/images/inspiration3.jpg", alt: '', description: '' },
+      { src: "/images/inspiration1.jpg", alt: "minim enim", description: "minim enim" },
+      { src: "/images/inspiration2.jpg", alt: "minim enim", description: "minim enim" },
+      { src: "/images/inspiration3.jpg", alt: "minim enim", description: "minim enim" },
     ],
     timeline: [
       "Research and Initial Planning",
@@ -166,9 +186,9 @@ export const futureProjects: PortfolioProject[] = [
       "Testing and Deployment",
     ],
     inspiration: [
-      "/images/inspiration4.jpg",
-      "/images/inspiration5.jpg",
-      "/images/inspiration6.jpg",
+      { src: "/images/inspiration1.jpg", alt: "minim enim", description: "minim enim" },
+      { src: "/images/inspiration2.jpg", alt: "minim enim", description: "minim enim" },
+      { src: "/images/inspiration3.jpg", alt: "minim enim", description: "minim enim" },
     ],
     githubLink: "https://github.com/yourgithub/future-ecommerce",
     liveLink: "https://future-ecommerce.com",
@@ -180,11 +200,28 @@ export const writingPlatforms: WritingPlatform[] = [
     id: "medium",
     title: "Medium",
     description:
-      "I've written numerous articles and blog posts on various topics, including technology, travel, and personal growth. I'm always looking for new content to share.",
+      "I write articles on various topics like technology, travel, and personal growth.",
     focuses: ["technology", "travel", "personal growth"],
+    articles: [
+      {
+        title: "My First Blog Post",
+        link: {
+          url: "https://medium.com/@yourusername/my-first-blog-post",
+          label: "Read Article",
+        },
+        date: "March 15, 2023",
+        display: [
+          { icon: CheckCheck },
+          { icon: Presentation },
+          { icon: BookCheck },
+        ],
+        description: "This is a short description of my first blog post.",
+        tags: ["tech", "beginner"],
+      },
+    ],
     links: [
-      { url: "https://platform1.com", label: "Visit Site" },
-      { url: "https://platform1-docs.com", label: "Read Docs" },
+      { url: "https://platform1.com", label: "Visit Medium" },
+      { url: "https://medium.com/@yourusername", label: "My Profile" },
     ],
   },
   {
@@ -193,6 +230,26 @@ export const writingPlatforms: WritingPlatform[] = [
     description:
       "I'm a freelance developer and I've written numerous articles and blog posts on various topics, including technology, travel, and personal growth. I'm always looking for new content to share.",
     focuses: ["technology", "travel", "personal growth"],
+    articles: [
+      {
+        title: "My First Blog Post",
+        link: {
+          url: "https://medium.com/@yourusername/my-first-blog-post-355531635569",
+          label: "My First Blog Post",
+        },
+        date: "March 15, 2023",
+        display: [
+          { icon: NotebookText },
+          { icon: CodeXml },
+          { icon: CheckCheck },
+          { icon: Presentation },
+          { icon: BookCheck },
+          { icon: NotebookPen },
+        ],
+        description: "In cillum pariatur quis mollit aliquip in cillum nisi ut minim enim.",
+        tags: ["minim enim", "minim enim"],
+      },
+    ],
     links: [
       { url: "https://platform1.com", label: "Visit Site" },
       { url: "https://platform1-docs.com", label: "Read Docs" },
@@ -204,6 +261,24 @@ export const writingPlatforms: WritingPlatform[] = [
     description:
       "I'm a freelance writer and I've written numerous articles and blog posts on various topics, including",
     focuses: ["technology", "travel", "personal growth"],
+    articles: [
+      {
+        title: "My First Blog Post",
+        link: {
+          url: "https://medium.com/@yourusername/my-first-blog-post-355531635569",
+          label: "My First Blog Post",
+        },
+        date: "March 15, 2023",
+        display: [
+          { icon: NotebookText },
+          { icon: CodeXml },
+          { icon: CheckCheck },
+          { icon: Presentation },
+        ],
+        description: "minim enim",
+        tags: ["minim enim", "minim enim"],
+      },
+    ],
     links: [
       { url: "https://platform1.com", label: "Visit Site" },
       { url: "https://platform1-docs.com", label: "Read Docs" },
@@ -220,13 +295,41 @@ export const projects: PortfolioProject[] = [
     technologies: ["Next.js", "TypeScript", "Docker", "Tailwind", "Yup"],
     features: ["React", "TailwindCSS", "Node.js", "Express", "MongoDB"],
     images: [
-      { src: "/images/business/contact_form.png", alt: "contact form", description: '' },
-      { src: "/images/business/elevate_business.png", alt: "elevate_business", description: '' },
-      { src: "/images/business/our_values.png", alt: "our_values", description: '' },
-      { src: "/images/business/payment_plans.png", alt: "payment", description: '' },
-      { src: "/images/business/personalized_web_design.png", alt: "personalized_web_design", description: '' },
-      { src: "/images/business/portfolio_website.png", alt: "portfolio_website", description: '' },
-      { src: "/images/business/professional_website.png", alt: "professional_website", description: '' },
+      {
+        src: "/images/business/contact_form.png",
+        alt: "contact form",
+        description: "minim enim",
+      },
+      {
+        src: "/images/business/elevate_business.png",
+        alt: "elevate_business",
+        description: "minim enim",
+      },
+      {
+        src: "/images/business/our_values.png",
+        alt: "our_values",
+        description: "minim enim",
+      },
+      {
+        src: "/images/business/payment_plans.png",
+        alt: "payment",
+        description: "minim enim",
+      },
+      {
+        src: "/images/business/personalized_web_design.png",
+        alt: "personalized_web_design",
+        description: "minim enim",
+      },
+      {
+        src: "/images/business/portfolio_website.png",
+        alt: "portfolio_website",
+        description: "minim enim",
+      },
+      {
+        src: "/images/business/professional_website.png",
+        alt: "professional_website",
+        description: "minim enim",
+      },
     ],
   },
   {
@@ -234,14 +337,21 @@ export const projects: PortfolioProject[] = [
     title: "International Activites Club Official Website",
     description:
       "An e-commerce platform built with React and Node.js. It supports user authentication, a shopping cart, and a complete checkout system.",
-    technologies: ["Next.js", "TypeScript", "Docker", "Tailwind", "Chart.js", "Yup"],
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Docker",
+      "Tailwind",
+      "Chart.js",
+      "Yup",
+    ],
     features: [],
     images: [
-      { src: "/images/iac/about_classes.png", alt: '', description: '' },
-      { src: "/images/iac/introduction.png", alt: '', description: '' },
-      { src: "/images/iac/main_page.png", alt: '', description: '' },
-      { src: "/images/iac/overview.png", alt: '', description: '' },
-      { src: "/images/iac/staff_page.png", alt: '', description: '' },
+      { src: "/images/iac/about_classes.png", alt: "minim enim", description: "minim enim" },
+      { src: "/images/iac/introduction.png", alt: "minim enim", description: "minim enim" },
+      { src: "/images/iac/main_page.png", alt: "minim enim", description: "minim enim" },
+      { src: "/images/iac/overview.png", alt: "minim enim", description: "minim enim" },
+      { src: "/images/iac/staff_page.png", alt: "minim enim", description: "minim enim" },
     ],
     liveLink: "https://iacafterschools.com/",
   },
@@ -253,13 +363,17 @@ export const projects: PortfolioProject[] = [
     technologies: ["localStorage", "sessionStorage", "JavaScript", "cookies"],
     features: [],
     images: [
-      { src: "/images/quizapp/registration.png", alt: '', description: '' },
-      { src: "/images/quizapp/taking_quiz.png", alt: '', description: '' },
-      { src: "/images/quizapp/quiz_selection.png", alt: '', description: '' },
-      { src: "/images/quizapp/quiz_history.png", alt: '', description: '' },
-      { src: "/images/quizapp/level_selection.png", alt: '', description: '' },
-      { src: "/images/quizapp/leaderboard_selection.png", alt: '', description: '' },
-      { src: "/images/quizapp/leaderboard.png", alt: '', description: '' },
+      { src: "/images/quizapp/registration.png", alt: "minim enim", description: "minim enim" },
+      { src: "/images/quizapp/taking_quiz.png", alt: "minim enim", description: "minim enim" },
+      { src: "/images/quizapp/quiz_selection.png", alt: "minim enim", description: "minim enim" },
+      { src: "/images/quizapp/quiz_history.png", alt: "minim enim", description: "minim enim" },
+      { src: "/images/quizapp/level_selection.png", alt: "minim enim", description: "minim enim" },
+      {
+        src: "/images/quizapp/leaderboard_selection.png",
+        alt: "minim enim",
+        description: "minim enim",
+      },
+      { src: "/images/quizapp/leaderboard.png", alt: "minim enim", description: "minim enim" },
     ],
     githubLink: "https://github.com/tmchuynh/Quiz-App",
   },
@@ -269,9 +383,7 @@ export const projects: PortfolioProject[] = [
     description:
       "An e-commerce platform built with React and Node.js. It supports user authentication, a shopping cart, and a complete checkout system.",
     features: [],
-    images: [
-      { src: "/images/sudoku/game.png", alt: '', description: '' },
-    ],
+    images: [{ src: "/images/sudoku/game.png", alt: "minim enim", description: "minim enim" }],
     githubLink: "https://github.com/tmchuynh/sudoku",
   },
   {
@@ -281,14 +393,22 @@ export const projects: PortfolioProject[] = [
       "An e-commerce platform built with React and Node.js. It supports user authentication, a shopping cart, and a complete checkout system.",
     features: [],
     images: [
-      { src: "/images/frontend/table_of_contents.png", alt: '', description: '' },
-      { src: "/images/frontend/abbr.png", alt: '', description: '' },
-      { src: "/images/frontend/accessibility.png", alt: '', description: '' },
-      { src: "/images/frontend/document_structure.png", alt: '', description: '' },
-      { src: "/images/frontend/css.png", alt: '', description: '' },
-      { src: "/images/frontend/quizapp.png", alt: '', description: '' },
-      { src: "/images/frontend/next.png", alt: '', description: '' },
-      { src: "/images/frontend/framework.png", alt: '', description: '' },
+      {
+        src: "/images/frontend/table_of_contents.png",
+        alt: "minim enim",
+        description: "minim enim",
+      },
+      { src: "/images/frontend/abbr.png", alt: "minim enim", description: "minim enim" },
+      { src: "/images/frontend/accessibility.png", alt: "minim enim", description: "minim enim" },
+      {
+        src: "/images/frontend/document_structure.png",
+        alt: "minim enim",
+        description: "minim enim",
+      },
+      { src: "/images/frontend/css.png", alt: "minim enim", description: "minim enim" },
+      { src: "/images/frontend/quizapp.png", alt: "minim enim", description: "minim enim" },
+      { src: "/images/frontend/next.png", alt: "minim enim", description: "minim enim" },
+      { src: "/images/frontend/framework.png", alt: "minim enim", description: "minim enim" },
     ],
   },
   {
@@ -298,18 +418,22 @@ export const projects: PortfolioProject[] = [
       "An e-commerce platform built with React and Node.js. It supports user authentication, a shopping cart, and a complete checkout system.",
     features: [],
     images: [
-      { src: "/images/backend/github.png", alt: '', description: '' },
-      { src: "/images/backend/principles.png", alt: '', description: '' },
-      { src: "/images/backend/design_principles.png", alt: '', description: '' },
-      { src: "/images/backend/databases.png", alt: '', description: '' },
-      { src: "/images/backend/containers.png", alt: '', description: '' },
-      { src: "/images/backend/web_dev.png", alt: '', description: '' },
-      { src: "/images/backend/base.png", alt: '', description: '' },
+      { src: "/images/backend/github.png", alt: "minim enim", description: "minim enim" },
+      { src: "/images/backend/principles.png", alt: "minim enim", description: "minim enim" },
+      {
+        src: "/images/backend/design_principles.png",
+        alt: "minim enim",
+        description: "minim enim",
+      },
+      { src: "/images/backend/databases.png", alt: "minim enim", description: "minim enim" },
+      { src: "/images/backend/containers.png", alt: "minim enim", description: "minim enim" },
+      { src: "/images/backend/web_dev.png", alt: "minim enim", description: "minim enim" },
+      { src: "/images/backend/base.png", alt: "minim enim", description: "minim enim" },
     ],
   },
 ];
 
-export const data = {
+export const navBar = {
   navMain: [
     {
       title: "Home",
@@ -343,7 +467,8 @@ export const data = {
           url: "/info/experiences&achievements",
         },
       ],
-    }, {
+    },
+    {
       title: "Accessibility Statement",
       icon: NotebookPen,
       url: "/accessibility",
@@ -353,7 +478,6 @@ export const data = {
       url: "/contact",
       icon: NotebookPen,
     },
-
   ],
   works: [
     {
@@ -369,10 +493,18 @@ export const data = {
           url: "/projects/backendbook",
         },
         {
-          title: "Dev.to Blog",
-          url: "",
+          title: "Medium Blog",
+          url: "/writings/medium",
         },
-      ]
+        {
+          title: "Dev.to Blog",
+          url: "/writings/devto",
+        },
+        {
+          title: "Hackernoon Blog",
+          url: "/writings/hackernoon",
+        },
+      ],
     },
     {
       title: "Projects",
@@ -456,7 +588,6 @@ const slider = [
   },
 ];
 
-
 const animatedAlerts = [
   "Complete React Tutorial",
   "Work on Portfolio",
@@ -466,7 +597,6 @@ const animatedAlerts = [
   "Write Blog Post",
   "Take a Break",
 ];
-
 
 export const features = [
   {
@@ -506,7 +636,7 @@ export const features = [
               "relative w-32 cursor-pointer overflow-hidden rounded-xl border p-4",
               "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
               "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]",
-              "transform-gpu blur-[1px] transition-all duration-300 ease-out hover:blur-none",
+              "transform-gpu blur-[1px] transition-all duration-300 ease-out hover:blur-none"
             )}
           >
             <div className="flex flex-row items-center gap-2">
@@ -532,7 +662,10 @@ export const features = [
     background: (
       <AnimatedList className="max-w-md mx-auto [mask-image:linear-gradient(to_top,transparent_30%,#fff_100%)]">
         {animatedAlerts.map( ( item, index ) => (
-          <div key={index} className="bg-primary text-white p-4 -z-0 rounded-lg shadow-lg">
+          <div
+            key={index}
+            className="bg-primary text-white p-4 -z-0 rounded-lg shadow-lg"
+          >
             {item}
           </div>
         ) )}

@@ -10,8 +10,17 @@ export interface ImageProps {
 export interface WritingPlatform {
   id: string;
   title: string;
-  brief?: string;
   description: string;
+  articles: {
+    title: string;
+    link: { url: string; label: string; };
+    date: string;
+    display: {
+      icon: ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>>;
+    }[];
+    description: string;
+    tags: string[];
+  }[];
   focuses: string[];
   links: { url: string; label: string; }[];
 }
@@ -25,7 +34,7 @@ export interface PortfolioProject {
   technologies?: string[];
   images: ImageProps[];
   timeline?: string[];
-  inspiration?: string[];
+  inspiration?: ImageProps[];
   githubLink?: string;
   liveLink?: string;
 }

@@ -4,9 +4,10 @@ import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { WritingPlatform } from "@/data/types";
-import { CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
-import { cn } from "@/lib/utils";
-import { Card, CardHeader, CardContent } from "@mui/material";
+import { CardTitle, CardDescription, CardFooter, Card, CardHeader, CardContent } from "@/components/ui/card";
+import Breadcrumb from "./ui/breadcrumb";
+import { Badge } from "./ui/badge";
+import BlurFade from "./ui/blur-fade";
 
 
 const breadcrumbItems = [
@@ -34,7 +35,7 @@ const breadcrumbItems = [
 const PlatformPage = ( {
   platform,
 }: {
-  platform: WritingPlatform[];
+  platform: WritingPlatform;
 } ) => {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState( false );
@@ -44,37 +45,65 @@ const PlatformPage = ( {
   }, [] );
 
   function handleClick( link: string | undefined ) {
-    window.open( link, "_blank" );
+    if ( link ) {
+      window.open( link, "_blank" );
+    }
   }
 
   return (
-    <div className="max-w-7xl mx-auto p-6 grid grid-cols-2 md:grid-cols-4 gap-3">
-      {/* Only render after mounting */}
-      {mounted &&
-        platform.map( ( platformItem, index ) => (
-          <Card key={index} className="w-[380px] mx-5">
+    <div className="max-w-7xl mx-auto p-6">
+      <Breadcrumb items={breadcrumbItems} />
+
+      <h1 className="text-4xl font-bold text-center mb-4">{platform.title}</h1>
+      <h2 className="text-2xl font-semibold mt-8 mb-4">{platform.description}</h2>
+
+      <div className="flex justify-center pb-8">
+        {platform.focuses.map( ( focus, index ) => (
+          <Badge variant={"secondary"} className="mx-2" key={index}>{focus}</Badge>
+        ) )}
+      </div>
+
+      <BlurFade delay={0.25} inView>
+        {platform.articles.map( ( article, index ) => (
+          <Card key={`${ article.title }_${ index }`} className="w-[380px] mx-5 my-4">
             <CardHeader>
-              <CardTitle>{platformItem.title}</CardTitle>
-              <CardDescription>{platformItem.brief}</CardDescription>
+              <CardTitle>{article.title}</CardTitle>
+              <CardDescription>{article.description}</CardDescription>
             </CardHeader>
             <CardContent className="grid gap-4">
-              {platformItem.description}
+              <div className="flex justify-around">
+                {/* Article Image(s) if any */}
+                {article.display &&
+                  article.display.map( ( icon, imgIndex ) => (
+                    <icon.icon key={imgIndex} className="w-10 h-10 text-primary" />
+                  ) )}
+              </div>
+              {/* Article Description */}
+              <p>{article.description}</p>
             </CardContent>
-            <CardFooter>
-              {platformItem.links.map( ( link, linkIndex ) => {
-                return (
-                  <Button
-                    key={linkIndex}
-                    variant={theme === "dark" ? "outline" : "default"}
-                    onClick={() => handleClick( link.url )}
-                  >
-                    {link.label}
-                  </Button>
-                );
-              } )}
+            <CardFooter className="flex justify-between">
+              <div className="grid-flow-row space-x-3">
+                {/* Tags for the article */}
+                {article.tags.map( ( tag, tagIndex ) => (
+                  <Badge key={tagIndex} variant={"secondary"}>
+                    #{tag}
+                  </Badge>
+                ) )}
+              </div>
+              {/* Visit Button for the article link */}
+              <Button
+                variant={"outline"}
+                size={"sm"}
+                onClick={() => handleClick( article.link.url )}
+                className=""
+              >
+                {article.link.label}
+              </Button>
             </CardFooter>
           </Card>
         ) )}
+      </BlurFade>
+
     </div>
   );
 };

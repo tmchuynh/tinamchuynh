@@ -6,6 +6,7 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import { TimelineEvent } from '@/data/types';
+import BlurFade from './blur-fade';
 
 export default function AltTimeline(
   {
@@ -23,9 +24,9 @@ export default function AltTimeline(
         },
       }}
     >
-      {events.map( ( event, _index ) => (
-        <>
-          <TimelineItem>
+      {events.map( ( event, index ) => (
+        <BlurFade delay={0.25} inView>
+          <TimelineItem key={index}>
             <TimelineSeparator>
               <TimelineDot className='h-10 w-10 justify-center items-center'>
                 <event.icon />
@@ -42,7 +43,7 @@ export default function AltTimeline(
                 </code>
               </div>
               <div className='flex flex-col'>
-                <h3 className="w-3/4 text-lg">{event.description}</h3>
+                <h3 className="w-3/4 text-xl">{event.description}</h3>
                 <ul>
                   {event.bullets &&
                     event.bullets.map( ( bullet, bulletIndex ) => (
@@ -54,7 +55,8 @@ export default function AltTimeline(
               </div>
             </TimelineContent>
           </TimelineItem>
-        </>
+        </BlurFade>
+
       ) )}
     </Timeline>
   );

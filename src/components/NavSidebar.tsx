@@ -12,7 +12,7 @@ import {
   SidebarMenu,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
-import { data } from "@/data/data";
+import { navBar } from "@/data/data";
 
 export function NavSidebar( { ...props }: React.ComponentProps<typeof Sidebar> ) {
   const [openItemKey, setOpenItemKey] = React.useState<string | null>( null );
@@ -32,13 +32,13 @@ export function NavSidebar( { ...props }: React.ComponentProps<typeof Sidebar> )
       <SidebarContent>
         <NavMain
           title="General"
-          items={data.navMain}
+          items={navBar.navMain}
           openItemKey={openItemKey}
           setOpenItemKey={setOpenItemKey}
         />
         <NavMain
           title="Past & Future Work"
-          items={data.works}
+          items={navBar.works}
           openItemKey={openItemKey}
           setOpenItemKey={setOpenItemKey}
         />

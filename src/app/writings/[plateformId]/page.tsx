@@ -1,29 +1,26 @@
 "use client";
 
 import PlatformPage from "@/components/PlatformPage";
-import { projects } from "@/data/data";
-import { PortfolioProject } from "@/data/types";
-import { useParams } from "next/navigation";
+import { writingPlatforms } from "@/data/data";
+import { WritingPlatform } from "@/data/types";
+import { usePathname } from 'next/navigation';
 import { useEffect, useState } from "react";
 
 const WritingPlatformDetailPage = () => {
-  const { projectId } = useParams();
-  const [project, setProject] = useState<PortfolioProject>();
+  const pathname = usePathname();
+  const projectId = pathname.split( "/" )[2];
+  const [project, setProject] = useState<WritingPlatform | null>( null );
 
   useEffect( () => {
-    projects.map( ( project ) => {
-      if ( project.id === projectId ) {
-        setProject( project );
-      }
-    } );
-
+    const foundProject = writingPlatforms.find( ( platform ) => platform.id === projectId );
+    setProject( foundProject || null );
   }, [projectId] );
 
   if ( !project ) {
     return <div>Loading...</div>;
   }
 
-  return <PlatformPage project={project} />;
+  return <PlatformPage platform={project} />;
 };
 
 export default WritingPlatformDetailPage;

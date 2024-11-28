@@ -80,16 +80,16 @@ const PortfolioPage = ( {
       {project.technologies ? (
         <>
           <h2 className="text-2xl font-semibold mb-4">Technologies Used</h2>
-          <BlurFade delay={0.25} inView>
-            <ul className="list-disc pl-6 mb-8 flex flex-col">
-              {project.technologies.map( ( tech, index ) => (
-                <div className="inline-flex" key={tech}>
+          <ul className="list-disc pl-6 mb-8 flex flex-col">
+            {project.technologies.map( ( tech, index ) => (
+              <BlurFade delay={0.25 + index} inView key={tech}>
+                <div className="inline-flex">
                   <Check color={theme === "dark" ? "#4bd579" : "#395798"} className="mr-2" />
                   <li key={index} className="text-lg list-none">{tech}</li>
                 </div>
-              ) )}
-            </ul>
-          </BlurFade>
+              </BlurFade>
+            ) )}
+          </ul>
         </>
       ) : ''}
 
@@ -97,16 +97,16 @@ const PortfolioPage = ( {
         {project.features ? (
           <>
             <h2 className="text-2xl font-semibold mb-4">Project Features</h2>
-            <BlurFade delay={0.25} inView>
-              <div className="text-lg flex flex-col pl-6 mb-8">
-                {project.features.map( ( feature, index ) => (
-                  <div className="inline-flex" key={feature}>
+            <div className="text-lg flex flex-col pl-6 mb-8">
+              {project.features.map( ( feature, index ) => (
+                <BlurFade delay={0.25 + index} inView key={feature}>
+                  <div className="inline-flex" >
                     <StarHalf color={theme === "dark" ? "#4bd579" : "#395798"} />
                     <li key={index} className="text-lg list-none">{feature}</li>
                   </div>
-                ) )}
-              </div>
-            </BlurFade>
+                </BlurFade>
+              ) )}
+            </div>
           </>
         ) : ''}
       </div>
