@@ -38,7 +38,7 @@ export function NavSidebar( { ...props }: React.ComponentProps<typeof Sidebar> )
         />
         <NavMain
           title="Past & Future Work"
-          items={data.information}
+          items={data.works}
           openItemKey={openItemKey}
           setOpenItemKey={setOpenItemKey}
         />

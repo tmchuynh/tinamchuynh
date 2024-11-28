@@ -56,7 +56,7 @@ const MainContent = ( {
           <NavSidebar />
           <SidebarTrigger className='py-10 pl-9' />
         </>}
-      <main className='relative w-11/12 mx-auto py-10'>
+      <main className='relative w-9/12 mx-auto py-10'>
         {children}
         <div className="fixed bottom-8 right-10">
           <CommandMenu />
