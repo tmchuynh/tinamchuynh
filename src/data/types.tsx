@@ -1,4 +1,4 @@
-import { SvgIconComponent } from "@mui/icons-material";
+import { SvgIconComponent } from '@mui/icons-material';
 
 export interface ImageProps {
   src: string;
@@ -26,7 +26,6 @@ export interface TimelineEvent {
   description: string;
   icon: SvgIconComponent;
   bullets: string[];
-  color: "secondary" | "inherit" | "primary" | "success" | "error" | "info" | "warning" | "grey";
   oppositeContentAlign?: 'left' | 'right';
 }
 

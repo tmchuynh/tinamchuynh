@@ -5,7 +5,7 @@ import React from "react";
 const AboutPage = () => {
   return (
     <div className="max-w-5xl text-justify mx-auto p-6">
-      <h1 className="text-3xl font-bold text-center mb-4">About Me</h1>
+      <h1 className="text-4xl font-bold text-center mb-4">About Me</h1>
       <p className="text-lg">
         Hi, I’m <strong>Tina Huynh</strong>, a passionate <strong>Full-Stack Web Developer</strong> with a
         relentless curiosity for all things tech and design. My journey into web development began in 2020 as a

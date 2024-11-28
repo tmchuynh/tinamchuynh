@@ -15,7 +15,6 @@ import {
 import { data } from "@/data/data";
 
 export function NavSidebar( { ...props }: React.ComponentProps<typeof Sidebar> ) {
-  // State to keep track of the currently open menu item's key across all NavMain components
   const [openItemKey, setOpenItemKey] = React.useState<string | null>( null );
 
   return (

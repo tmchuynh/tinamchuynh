@@ -1,6 +1,63 @@
-import { NotebookPen, CheckCheck, BookCheck } from "lucide-react";
+import { NotebookPen, CheckCheck, BookCheck, Presentation, NotebookText, Cat, CodeXml, DatabaseZap } from "lucide-react";
 import { PortfolioProject } from "./types";
 import { FaWindows } from "react-icons/fa6";
+import { TimelineEvent } from '@/data/types';
+
+export const timelineData: TimelineEvent[] = [
+  {
+    time: "August 2023 – PRESENT",
+    title: "Software Engineer",
+    description: "International Activities Club",
+    bullets: [
+      "Built interactive web apps for educational programs, improving engagement and usability.",
+      "Collaborated with educators to streamline administrative tasks through custom software."
+    ],
+    icon: DatabaseZap,
+  },
+  {
+    time: "August 2023 – PRESENT",
+    title: "Lead Administration",
+    description: "International Activities Club",
+    bullets: [
+      "Improved workflows by 20% through streamlined processes and metrics monitoring.",
+      "Led teams and trained staff, boosting efficiency and reducing issues by 25%.",
+      "Implemented initiatives that increased growth by 15% and aligned organizational goals."
+    ],
+    icon: Presentation,
+  },
+  {
+    time: "July 2023 – October 2023",
+    title: "Code Coach",
+    description: "TheCoderSchool",
+    bullets: [
+      "Taught HTML, CSS, JavaScript, and Python, boosting student skills and participation.",
+      "Designed curricula that increased engagement and project completion rates.",
+      "Mentored instructors to enhance collaboration with management."
+    ],
+    icon: CodeXml,
+  },
+  {
+    time: "June 2019 – March 2020",
+    title: "Curriculum Developer",
+    description: "Brainstorm ",
+    bullets: [
+      "Created STEM-focused curricula, increasing engagement and outcomes by 35%.",
+      "Designed lesson plans that improved student performance by 30%.",
+      "Collaborated with stakeholders to enhance curriculum effectiveness."
+    ],
+    icon: NotebookText,
+  },
+  {
+    time: "November 2017 – January 2019",
+    title: "Coding Instructor",
+    description: "Code to the Future",
+    bullets: [
+      "Taught Scratch, improving student proficiency by 40%.",
+      "Customized lessons to boost engagement and completion rates."
+    ],
+    icon: Cat,
+  },
+];
 
 export const listItems = [
   {
