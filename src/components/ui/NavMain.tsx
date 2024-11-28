@@ -51,7 +51,7 @@ export function NavMenuItem( {
           >
             <div className="flex items-center justify-between w-full">
               <div className="flex items-center gap-2">
-                <item.icon />
+                <span className="text-highlight"><item.icon /></span>
                 <span>{item.title}</span>
               </div>
               {item.items?.length ? (
@@ -107,7 +107,7 @@ export function NavMain( {
 } ) {
   return (
     <SidebarGroup>
-      <SidebarGroupLabel>{title}</SidebarGroupLabel>
+      <SidebarGroupLabel className="text-sidebar-accent font-bold">{title}</SidebarGroupLabel>
       <SidebarMenu>
         {items.map( ( item, index ) => {
           const itemKey = `${ title }_${ item.title }__${ index }`;

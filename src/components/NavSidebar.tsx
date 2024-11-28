@@ -10,7 +10,6 @@ import {
   SidebarFooter,
   SidebarHeader,
   SidebarMenu,
-  SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
 import { data } from "@/data/data";
@@ -24,12 +23,10 @@ export function NavSidebar( { ...props }: React.ComponentProps<typeof Sidebar> )
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
-            <SidebarMenuButton size="lg" asChild>
-              <div className="grid flex-1 text-left text-sm leading-tight">
-                <span className="truncate font-semibold">Tina Huynh</span>
-                <span className="truncate text-xs">Full Stack Web Developer</span>
-              </div>
-            </SidebarMenuButton>
+            <div className="grid flex-1 text-left text-sm leading-tight p-3">
+              <span className="truncate font-semibold">Tina Huynh</span>
+              <span className="truncate text-xs">Full Stack Web Developer</span>
+            </div>
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarHeader>

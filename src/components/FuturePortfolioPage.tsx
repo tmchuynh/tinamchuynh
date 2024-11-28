@@ -62,14 +62,18 @@ const FutureProjectPage = (
       ) : ''}
 
       {/* Technologies Used */}
-      <div className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Technologies Used</h2>
-        <ul className="list-disc pl-6">
-          {futureProjects.technologies.map( ( tech, index ) => (
-            <li key={index} className="text-lg">{tech}</li>
-          ) )}
-        </ul>
-      </div>
+      {futureProjects.technologies ? (
+        <>
+          <div className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">Technologies Used</h2>
+            <ul className="list-disc pl-6">
+              {futureProjects.technologies.map( ( tech, index ) => (
+                <li key={index} className="text-lg">{tech}</li>
+              ) )}
+            </ul>
+          </div>
+        </>
+      ) : ''}
 
       {/* Timeline */}
       <div className="mb-8">
