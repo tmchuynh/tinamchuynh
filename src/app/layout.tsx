@@ -58,7 +58,7 @@ const MainContent = ( {
         </>}
       <main className='relative w-9/12 mx-auto py-10'>
         {children}
-        <div className="fixed bottom-8 right-10">
+        <div className="fixed bottom-8 right-10 backdrop-blur-sm rounded-lg">
           <CommandMenu />
           <ShortcutDialog />
         </div>

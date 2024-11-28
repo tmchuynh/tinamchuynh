@@ -12,6 +12,14 @@ import {
   CalendarIcon,
   BellIcon,
   Share2Icon,
+  House,
+  CircleUserRound,
+  Info,
+  Accessibility,
+  Send,
+  Pen,
+  MessageSquareCode,
+  BookMarked,
 } from "lucide-react";
 import { PortfolioProject, WritingPlatform } from "./types";
 import { FaWindows } from "react-icons/fa6";
@@ -21,7 +29,6 @@ import Marquee from "@/components/ui/marquee";
 import { cn } from "@/lib/utils";
 import { AnimatedList } from "@/components/ui/animated-list";
 import { Calendar } from "@/components/ui/calendar";
-import TypingAnimation from "@/components/ui/typing-animation";
 
 export const timelineData: TimelineEvent[] = [
   {
@@ -232,6 +239,258 @@ export const writingPlatforms: WritingPlatform[] = [
     focuses: ["technology", "travel", "personal growth"],
     articles: [
       {
+        title: "VSCode Extensions I'm in LOVE With",
+        link: {
+          url: "https://dev.to/tmchuynh/vscode-extensions-im-in-love-with-oab",
+          label: "Take a Look",
+        },
+        date: "Jun 6, 2023",
+        display: [
+          { icon: NotebookText },
+          { icon: CodeXml },
+          { icon: CheckCheck },
+          { icon: Presentation },
+          { icon: BookCheck },
+          { icon: NotebookPen },
+        ],
+        description: "In cillum pariatur quis mollit aliquip in cillum nisi ut minim enim.",
+        tags: ["formatting", "live server", "documentation", "auto"],
+      },
+      {
+        title: "Books to Read as a Developer",
+        link: {
+          url: "https://dev.to/tmchuynh/books-to-read-as-a-developer-33eh",
+          label: "Start Reading Today",
+        },
+        date: "Mar 23, 2022",
+        display: [
+          { icon: NotebookText },
+          { icon: CodeXml },
+          { icon: CheckCheck },
+          { icon: Presentation },
+          { icon: BookCheck },
+          { icon: NotebookPen },
+        ],
+        description: "Choosing a career in tech. is choosing an endless life learning. But, then again, which career isn't like that? Improvement is critical after all.",
+        tags: ["software design", "design patterns", "clean code"],
+      },
+      {
+        title: "Intermediate & Advanced Python Projects",
+        link: {
+          url: "https://dev.to/tmchuynh/intermediate-advanced-python-projects-4hb8",
+          label: "Start Creating",
+        },
+        date: "Mar 31, 2022",
+        display: [
+          { icon: NotebookText },
+          { icon: CodeXml },
+          { icon: CheckCheck },
+          { icon: Presentation },
+          { icon: BookCheck },
+          { icon: NotebookPen },
+        ],
+        description: "The web, desktop, and command-line are three major platforms you'll want to consider building for. Where will you build?",
+        tags: ["chatbot", "web crwlers", "audiobooks"],
+      },
+      {
+        title: "My First Blog Post",
+        link: {
+          url: "https://medium.com/@yourusername/my-first-blog-post-355531635569",
+          label: "My First Blog Post",
+        },
+        date: "March 15, 2023",
+        display: [
+          { icon: NotebookText },
+          { icon: CodeXml },
+          { icon: CheckCheck },
+          { icon: Presentation },
+          { icon: BookCheck },
+          { icon: NotebookPen },
+        ],
+        description: "In cillum pariatur quis mollit aliquip in cillum nisi ut minim enim.",
+        tags: ["minim enim", "minim enim"],
+      },
+      {
+        title: "My First Blog Post",
+        link: {
+          url: "https://medium.com/@yourusername/my-first-blog-post-355531635569",
+          label: "My First Blog Post",
+        },
+        date: "March 15, 2023",
+        display: [
+          { icon: NotebookText },
+          { icon: CodeXml },
+          { icon: CheckCheck },
+          { icon: Presentation },
+          { icon: BookCheck },
+          { icon: NotebookPen },
+        ],
+        description: "In cillum pariatur quis mollit aliquip in cillum nisi ut minim enim.",
+        tags: ["minim enim", "minim enim"],
+      },
+      {
+        title: "My First Blog Post",
+        link: {
+          url: "https://medium.com/@yourusername/my-first-blog-post-355531635569",
+          label: "My First Blog Post",
+        },
+        date: "March 15, 2023",
+        display: [
+          { icon: NotebookText },
+          { icon: CodeXml },
+          { icon: CheckCheck },
+          { icon: Presentation },
+          { icon: BookCheck },
+          { icon: NotebookPen },
+        ],
+        description: "In cillum pariatur quis mollit aliquip in cillum nisi ut minim enim.",
+        tags: ["minim enim", "minim enim"],
+      },
+      {
+        title: "My First Blog Post",
+        link: {
+          url: "https://medium.com/@yourusername/my-first-blog-post-355531635569",
+          label: "My First Blog Post",
+        },
+        date: "March 15, 2023",
+        display: [
+          { icon: NotebookText },
+          { icon: CodeXml },
+          { icon: CheckCheck },
+          { icon: Presentation },
+          { icon: BookCheck },
+          { icon: NotebookPen },
+        ],
+        description: "In cillum pariatur quis mollit aliquip in cillum nisi ut minim enim.",
+        tags: ["minim enim", "minim enim"],
+      },
+      {
+        title: "My First Blog Post",
+        link: {
+          url: "https://medium.com/@yourusername/my-first-blog-post-355531635569",
+          label: "My First Blog Post",
+        },
+        date: "March 15, 2023",
+        display: [
+          { icon: NotebookText },
+          { icon: CodeXml },
+          { icon: CheckCheck },
+          { icon: Presentation },
+          { icon: BookCheck },
+          { icon: NotebookPen },
+        ],
+        description: "In cillum pariatur quis mollit aliquip in cillum nisi ut minim enim.",
+        tags: ["minim enim", "minim enim"],
+      },
+      {
+        title: "My First Blog Post",
+        link: {
+          url: "https://medium.com/@yourusername/my-first-blog-post-355531635569",
+          label: "My First Blog Post",
+        },
+        date: "March 15, 2023",
+        display: [
+          { icon: NotebookText },
+          { icon: CodeXml },
+          { icon: CheckCheck },
+          { icon: Presentation },
+          { icon: BookCheck },
+          { icon: NotebookPen },
+        ],
+        description: "In cillum pariatur quis mollit aliquip in cillum nisi ut minim enim.",
+        tags: ["minim enim", "minim enim"],
+      },
+      {
+        title: "My First Blog Post",
+        link: {
+          url: "https://medium.com/@yourusername/my-first-blog-post-355531635569",
+          label: "My First Blog Post",
+        },
+        date: "March 15, 2023",
+        display: [
+          { icon: NotebookText },
+          { icon: CodeXml },
+          { icon: CheckCheck },
+          { icon: Presentation },
+          { icon: BookCheck },
+          { icon: NotebookPen },
+        ],
+        description: "In cillum pariatur quis mollit aliquip in cillum nisi ut minim enim.",
+        tags: ["minim enim", "minim enim"],
+      },
+      {
+        title: "My First Blog Post",
+        link: {
+          url: "https://medium.com/@yourusername/my-first-blog-post-355531635569",
+          label: "My First Blog Post",
+        },
+        date: "March 15, 2023",
+        display: [
+          { icon: NotebookText },
+          { icon: CodeXml },
+          { icon: CheckCheck },
+          { icon: Presentation },
+          { icon: BookCheck },
+          { icon: NotebookPen },
+        ],
+        description: "In cillum pariatur quis mollit aliquip in cillum nisi ut minim enim.",
+        tags: ["minim enim", "minim enim"],
+      },
+      {
+        title: "My First Blog Post",
+        link: {
+          url: "https://medium.com/@yourusername/my-first-blog-post-355531635569",
+          label: "My First Blog Post",
+        },
+        date: "March 15, 2023",
+        display: [
+          { icon: NotebookText },
+          { icon: CodeXml },
+          { icon: CheckCheck },
+          { icon: Presentation },
+          { icon: BookCheck },
+          { icon: NotebookPen },
+        ],
+        description: "In cillum pariatur quis mollit aliquip in cillum nisi ut minim enim.",
+        tags: ["minim enim", "minim enim"],
+      },
+      {
+        title: "My First Blog Post",
+        link: {
+          url: "https://medium.com/@yourusername/my-first-blog-post-355531635569",
+          label: "My First Blog Post",
+        },
+        date: "March 15, 2023",
+        display: [
+          { icon: NotebookText },
+          { icon: CodeXml },
+          { icon: CheckCheck },
+          { icon: Presentation },
+          { icon: BookCheck },
+          { icon: NotebookPen },
+        ],
+        description: "In cillum pariatur quis mollit aliquip in cillum nisi ut minim enim.",
+        tags: ["minim enim", "minim enim"],
+      },
+      {
+        title: "My First Blog Post",
+        link: {
+          url: "https://medium.com/@yourusername/my-first-blog-post-355531635569",
+          label: "My First Blog Post",
+        },
+        date: "March 15, 2023",
+        display: [
+          { icon: NotebookText },
+          { icon: CodeXml },
+          { icon: CheckCheck },
+          { icon: Presentation },
+          { icon: BookCheck },
+          { icon: NotebookPen },
+        ],
+        description: "In cillum pariatur quis mollit aliquip in cillum nisi ut minim enim.",
+        tags: ["minim enim", "minim enim"],
+      },
+      {
         title: "My First Blog Post",
         link: {
           url: "https://medium.com/@yourusername/my-first-blog-post-355531635569",
@@ -438,17 +697,16 @@ export const navBar = {
     {
       title: "Home",
       url: "/",
-      icon: NotebookPen,
+      icon: House,
     },
     {
       title: "About Me",
       url: "/about",
-      icon: NotebookPen,
+      icon: CircleUserRound,
     },
     {
       title: "Information",
-      url: "/info",
-      icon: CheckCheck,
+      icon: Info,
       items: [
         {
           title: "Resume",
@@ -470,19 +728,19 @@ export const navBar = {
     },
     {
       title: "Accessibility Statement",
-      icon: NotebookPen,
+      icon: Accessibility,
       url: "/accessibility",
     },
     {
       title: "Contact",
       url: "/contact",
-      icon: NotebookPen,
+      icon: Send,
     },
   ],
   works: [
     {
       title: "Writings",
-      icon: BookCheck,
+      icon: Pen,
       items: [
         {
           title: "Front-End Development Book",
@@ -508,7 +766,7 @@ export const navBar = {
     },
     {
       title: "Projects",
-      icon: BookCheck,
+      icon: MessageSquareCode,
       items: [
         {
           title: "My Business",
@@ -530,7 +788,7 @@ export const navBar = {
     },
     {
       title: "Future Projects",
-      icon: NotebookPen,
+      icon: BookMarked,
       items: [
         {
           title: "Full-Stack Web Development",
@@ -592,6 +850,14 @@ const animatedAlerts = [
   "Complete React Tutorial",
   "Work on Portfolio",
   "Finish API Project",
+  "Finish API Project",
+  "Finish API Project",
+  "Finish API Project",
+  "Finish API Project",
+  "Finish API Project",
+  "Finish API Project",
+  "Finish API Project",
+  "Finish API Project",
   "Read Web Dev Book",
   "Attend Team Meeting",
   "Write Blog Post",
@@ -600,26 +866,48 @@ const animatedAlerts = [
 
 export const features = [
   {
+    Icon: BellIcon,
+    name: "Projects",
+    description: "Get notified when something happens.",
+    href: "#",
+    cta: "Learn more",
+    className: "col-span-3 lg:col-span-2",
+    background: (
+      <AnimatedList className="max-w-md mx-auto">
+        {animatedAlerts.map( ( item, index ) => (
+          <div
+            key={index}
+            className="bg-secondary text-secondary-foreground w-10/12 mx-auto opacity-60 p-4 -z-0 rounded-lg shadow-lg"
+          >
+            {item}
+          </div>
+        ) )}
+      </AnimatedList>
+    ),
+  },
+  {
     Icon: DatabaseZap,
     name: "Full text search",
     description: "Search through all your files in one place.",
     href: "/",
     cta: "Learn more",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "col-span-1 lg:row-span-2",
+    className: "col-span-4 lg:col-span-2",
   },
   {
-    Icon: GlobeIcon,
-    name: "Multilingual",
-    description: "Supports 100+ languages and counting.",
-    href: "/",
+    Icon: Share2Icon,
+    name: "Technology Stacks",
+    description: "Supports 100+ integrations and counting.",
+    href: "#",
     cta: "Learn more",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "col-span-1",
+    className: "col-span-4 lg:col-span-2",
+    background: (
+      <AnimatedBeamMultipleOutput className="absolute h-[300px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
+    ),
   },
   {
     Icon: FileTextIcon,
-    name: "Save your files",
+    name: "Experiences",
     description: "We automatically save your files as you type.",
     href: "#",
     cta: "Learn more",
@@ -653,36 +941,15 @@ export const features = [
     ),
   },
   {
-    Icon: BellIcon,
-    name: "Notifications",
-    description: "Get notified when something happens.",
-    href: "#",
+    Icon: GlobeIcon,
+    name: "Statements",
+    description: "Supports 100+ languages and counting.",
+    href: "/",
     cta: "Learn more",
-    className: "col-span-3 lg:col-span-2 z-10",
-    background: (
-      <AnimatedList className="max-w-md mx-auto [mask-image:linear-gradient(to_top,transparent_30%,#fff_100%)]">
-        {animatedAlerts.map( ( item, index ) => (
-          <div
-            key={index}
-            className="bg-primary text-white p-4 -z-0 rounded-lg shadow-lg"
-          >
-            {item}
-          </div>
-        ) )}
-      </AnimatedList>
-    ),
+    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    className: "col-span-3 lg:col-span-1",
   },
-  {
-    Icon: Share2Icon,
-    name: "Integrations",
-    description: "Supports 100+ integrations and counting.",
-    href: "#",
-    cta: "Learn more",
-    className: "col-span-3 lg:col-span-2",
-    background: (
-      <AnimatedBeamMultipleOutput className="absolute h-[300px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
-    ),
-  },
+
   {
     Icon: CalendarIcon,
     name: "Calendar",
@@ -694,7 +961,7 @@ export const features = [
       <Calendar
         mode="single"
         selected={new Date( 2022, 4, 11, 0, 0, 0 )}
-        className="absolute right-0 top-10 origin-top rounded-md border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:scale-105"
+        className="absolute right-10 bottom-12 origin-top rounded-md border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:scale-105"
       />
     ),
   },

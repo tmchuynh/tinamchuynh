@@ -63,12 +63,14 @@ const PlatformPage = ( {
         ) )}
       </div>
 
-      <BlurFade delay={0.25} inView>
+      <BlurFade delay={0.25} inView className="flex flex-wrap justify-around">
         {platform.articles.map( ( article, index ) => (
-          <Card key={`${ article.title }_${ index }`} className="w-[380px] mx-5 my-4">
+          <Card key={`${ article.title }_${ index }`} className="w-[22rem] my-4 relative">
             <CardHeader>
               <CardTitle>{article.title}</CardTitle>
-              <CardDescription>{article.description}</CardDescription>
+              <span className="text-gray-500 text-xs">
+                Published: {article.date}
+              </span>
             </CardHeader>
             <CardContent className="grid gap-4">
               <div className="flex justify-around">
@@ -82,7 +84,7 @@ const PlatformPage = ( {
               <p>{article.description}</p>
             </CardContent>
             <CardFooter className="flex justify-between">
-              <div className="grid-flow-row space-x-3">
+              <div className="grid gap-2 items-end justify-end">
                 {/* Tags for the article */}
                 {article.tags.map( ( tag, tagIndex ) => (
                   <Badge key={tagIndex} variant={"secondary"}>
@@ -95,7 +97,7 @@ const PlatformPage = ( {
                 variant={"outline"}
                 size={"sm"}
                 onClick={() => handleClick( article.link.url )}
-                className=""
+                className="absolute bottom-5 right-5"
               >
                 {article.link.label}
               </Button>
@@ -103,7 +105,6 @@ const PlatformPage = ( {
           </Card>
         ) )}
       </BlurFade>
-
     </div>
   );
 };
