@@ -2,6 +2,25 @@ import { PortfolioProject } from "@/data/types";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import Breadcrumb from "./ui/breadcrumb";
+
+const breadcrumbItems = [
+  {
+    label: "Home",
+    href: "/",
+  },
+  {
+    label: "Projects",
+    dropdownItems: [
+      { label: "Project A", href: "/futureProjects/a" },
+      { label: "Project B", href: "/futureProjects/b" },
+      { label: "Project C", href: "/futureProjects/c" },
+    ],
+  },
+  {
+    label: "Details",
+  },
+];
 
 const FutureProjectPage = (
   {
@@ -23,6 +42,7 @@ const FutureProjectPage = (
 
   return (
     <div className="max-w-7xl mx-auto p-6">
+      <Breadcrumb items={breadcrumbItems} />
       {/* Project Title */}
       <h1 className="text-4xl font-bold text-center mb-4">{futureProjects.title}</h1>
 
@@ -100,7 +120,7 @@ const FutureProjectPage = (
             variant={theme === "dark" ? "default" : "secondary"}
             onClick={() => ( handleClick( futureProjects.liveLink ) )}
             rel="noopener noreferrer"
-            className="px-6 py-2transition duration-300"
+            className="px-6 py-2 transition duration-300"
           >
             View Project
           </Button>
@@ -110,7 +130,7 @@ const FutureProjectPage = (
             variant={theme === "dark" ? "outline" : "default"}
             onClick={() => ( handleClick( futureProjects.liveLink ) )}
             rel="noopener noreferrer"
-            className="px-6 py-2transition duration-300"
+            className="px-6 py-2 transition duration-300"
           >
             View on GitHub
           </Button>

@@ -20,7 +20,7 @@ export function NavSidebar( { ...props }: React.ComponentProps<typeof Sidebar> )
   const [openItemKey, setOpenItemKey] = React.useState<string | null>( null );
 
   return (
-    <Sidebar variant="inset" {...props} className="rounded-e-3xl shadow-md border hover:shadow-md">
+    <Sidebar variant="floating" {...props}>
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
