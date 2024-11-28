@@ -24,7 +24,7 @@ const Breadcrumb: React.FC<{ items: BreadcrumbItem[]; }> = ( { items } ) => {
 
 
   return (
-    <nav className="flex justify-between" aria-label="Breadcrumb">
+    <nav className="flex justify-between pb-10" aria-label="Breadcrumb">
       <ol className="inline-flex items-center">
         {items.map( ( item, index ) => (
           <li key={index} className="flex items-center">
