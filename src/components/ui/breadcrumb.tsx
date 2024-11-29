@@ -64,7 +64,7 @@ const Breadcrumb: React.FC<{ items: BreadcrumbItem[]; }> = ( { items } ) => {
                   </Button>
                 ) : (
                   <Button
-                    variant={theme === "dark" ? "outline" : "secondary"}
+                    variant="outline"
                   >
                     {item.label}
                   </Button>
