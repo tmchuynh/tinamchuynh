@@ -8,6 +8,19 @@ export interface ImageProps {
   description: string;
 }
 
+export interface Achievement {
+  title: string;
+  subtitle: string;
+  date: string;
+  description: string;
+}
+
+export interface AchievementsSectionProps {
+  title: string;
+  items: Achievement[];
+}
+
+
 export interface WritingPlatform {
   id: string;
   title: string;
@@ -51,4 +64,16 @@ export interface TimelineEvent {
 
 export interface AltTimelineProps {
   events: TimelineEvent[];
+}
+
+export interface DevToArticle {
+  id: number;
+  title: string;
+  canonical_url: string;
+  description: string;
+  published_at: string;
+  reading_time_minutes: number;
+  collection_id?: number;
+  cover_image: string;
+  tag_list: string[];
 }

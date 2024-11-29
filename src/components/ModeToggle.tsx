@@ -23,7 +23,6 @@ export function ModeToggle() {
 
   useEffect( () => {
     const handleKeydown = ( e: KeyboardEvent ) => {
-      console.log( e.key );
       if ( e.ctrlKey && e.metaKey && e.key === "d" ) {
         setTheme( theme === "dark" ? "light" : "dark" );
       }
@@ -66,7 +65,6 @@ export function ModeToggle() {
           onClick={() => {
             setTheme( "light" );
             handleThemeToggle();
-            console.log( theme );
           }}
         >
           Light

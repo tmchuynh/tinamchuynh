@@ -28,22 +28,22 @@ export default function AltTimeline(
         <BlurFade delay={0.25} inView>
           <TimelineItem key={index}>
             <TimelineSeparator>
-              <TimelineDot className='h-10 w-10 justify-center items-center'>
+              <TimelineDot className='h-12 w-12 justify-center items-center'>
                 <event.icon />
               </TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: '12px', px: 2 }}>
               <div className='inline-flex items-center w-full justify-between'>
-                <h6 className='text-xl font-bold'>
+                <h6 className='text-xl font-bold text-primary'>
                   {event.title}
                 </h6>
-                <code>
+                <code className='text-highlight'>
                   {event.time}
                 </code>
               </div>
               <div className='flex flex-col'>
-                <h3 className="w-3/4 text-xl">{event.description}</h3>
+                <h3 className="w-3/4 text-md text-highlight dark:text-tertiary">{event.description}</h3>
                 <ul>
                   {event.bullets &&
                     event.bullets.map( ( bullet, bulletIndex ) => (

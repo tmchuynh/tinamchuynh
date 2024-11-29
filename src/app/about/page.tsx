@@ -7,11 +7,13 @@ const AboutPage = () => {
   return (
     <div className="max-w-5xl text-justify mx-auto p-6">
 
-      <BlurFade delay={0.25} inView>
+      {/* About Me Title */}
+      <BlurFade delay={0.25}>
         <h1 className="text-4xl font-bold text-center mb-4">About Me</h1>
       </BlurFade>
 
-      <BlurFade delay={0.45} inView>
+      {/* About Me Paragraph */}
+      <BlurFade delay={0.45}>
         <p className="text-lg">
           Hi, I’m <strong>Tina Huynh</strong>, a passionate <strong>Full-Stack Web Developer</strong> with a
           relentless curiosity for all things tech and design. My journey into web development began in 2020 as a
@@ -21,12 +23,15 @@ const AboutPage = () => {
         </p>
       </BlurFade>
 
+      <hr className="my-8" />
 
-      <BlurFade delay={0.55} inView>
+      {/* What I Bring to the Table Title */}
+      <BlurFade delay={0.55}>
         <h2 className="text-2xl font-semibold mt-8 mb-4">What I Bring to the Table</h2>
       </BlurFade>
 
-      <BlurFade delay={0.55} inView>
+      {/* What I Bring to the Table Description */}
+      <BlurFade delay={0.55}>
         <p className="text-lg">
           I thrive at the intersection of <strong>functionality and creativity</strong>, blending technical proficiency with
           innovative design to build websites that are as effective as they are elegant. Whether it’s crafting seamless user
@@ -42,10 +47,15 @@ const AboutPage = () => {
         </ul>
       </BlurFade>
 
-      <BlurFade delay={0.65} inView>
+      <hr className="my-8" />
+
+      {/* My Vision Title */}
+      <BlurFade delay={0.65}>
         <h2 className="text-2xl font-semibold mt-8 mb-4">My Vision</h2>
       </BlurFade>
-      <BlurFade delay={0.65} inView>
+
+      {/* My Vision Description */}
+      <BlurFade delay={0.65}>
         <p className="text-lg">
           The web is a powerful platform that connects people, ideas, and solutions. I aim to contribute by building digital
           experiences that are:
@@ -57,12 +67,15 @@ const AboutPage = () => {
         </ul>
       </BlurFade>
 
+      <hr className="my-8" />
 
-      <BlurFade delay={0.75} inView>
+      {/* A Lifelong Learner Title */}
+      <BlurFade delay={0.75}>
         <h2 className="text-2xl font-semibold mt-8 mb-4">A Lifelong Learner</h2>
       </BlurFade>
 
-      <BlurFade delay={0.75} inView>
+      {/* A Lifelong Learner Description */}
+      <BlurFade delay={0.75}>
         <p className="text-lg">
           I’ve always been someone who picks up skills quickly and eagerly dives into new challenges. Beyond my expertise
           in full-stack development, I’m actively expanding my knowledge in areas like:
@@ -73,11 +86,16 @@ const AboutPage = () => {
           <li><strong>Emerging Tech Trends</strong>: Staying updated on cutting-edge tools and frameworks to deliver the best solutions.</li>
         </ul>
       </BlurFade>
-      <BlurFade delay={0.85} inView>
 
+      <hr className="my-8" />
+
+      {/* Let’s Build Something Amazing Title */}
+      <BlurFade delay={0.85}>
         <h2 className="text-2xl font-semibold mt-8 mb-4">Let’s Build Something Amazing</h2>
       </BlurFade>
-      <BlurFade delay={0.85} inView>
+
+      {/* Let’s Build Something Amazing Description */}
+      <BlurFade delay={0.85}>
         <p className="text-lg">
           I’m looking to connect with <strong>forward-thinking employers and collaborators</strong> who share my passion for
           innovation and excellence in web development. If you’re seeking someone who’s not only technical but also highly

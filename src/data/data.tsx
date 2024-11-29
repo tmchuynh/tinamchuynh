@@ -794,15 +794,11 @@ export const navBar = {
           url: "/info/resume",
         },
         {
-          title: "Education",
-          url: "/info/education",
-        },
-        {
           title: "Tech Stacks",
           url: "/info/techStack",
         },
         {
-          title: "Relevant Achievements",
+          title: "Achievements",
           url: "/info/experiences&achievements",
         },
       ],
