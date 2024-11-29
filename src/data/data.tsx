@@ -94,6 +94,7 @@ import Marquee from "@/components/ui/marquee";
 import { cn } from "@/lib/utils";
 import { AnimatedList } from "@/components/ui/animated-list";
 import { Calendar } from "@/components/ui/calendar";
+import clsx from "clsx";
 
 export const timelineData: TimelineEvent[] = [
   {
@@ -897,6 +898,26 @@ export const navBar = {
 
 const slider = [
   {
+    name: "firstinrow.pdf",
+    body: "Bitcoin is a cryptocurrency invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto.",
+  },
+  {
+    name: "bitcoin.pdf",
+    body: "Bitcoin is a cryptocurrency invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto.",
+  },
+  {
+    name: "bitcoin.pdf",
+    body: "Bitcoin is a cryptocurrency invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto.",
+  },
+  {
+    name: "bitcoin.pdf",
+    body: "Bitcoin is a cryptocurrency invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto.",
+  },
+  {
+    name: "bitcoin.pdf",
+    body: "Bitcoin is a cryptocurrency invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto.",
+  },
+  {
     name: "bitcoin.pdf",
     body: "Bitcoin is a cryptocurrency invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto.",
   },
@@ -913,7 +934,7 @@ const slider = [
     body: "GPG keys are used to encrypt and decrypt email, files, directories, and whole disk partitions and to authenticate messages.",
   },
   {
-    name: "seed.txt",
+    name: "lastinrow.txt",
     body: "A seed phrase, seed recovery phrase or backup seed phrase is a list of words which store all the information needed to recover Bitcoin funds on-chain.",
   },
 ];
@@ -938,33 +959,30 @@ const animatedAlerts = [
 
 export const features = [
   {
-    Icon: BellIcon,
-    name: "Projects",
-    description: "Get notified when something happens.",
-    href: "#",
-    cta: "Learn more",
-    className: "col-span-3 lg:col-span-2",
-    background: (
-      <AnimatedList className="max-w-md mx-auto">
-        {animatedAlerts.map( ( item, index ) => (
-          <div
-            key={index}
-            className="bg-secondary text-secondary-foreground w-10/12 mx-auto opacity-60 p-4 -z-0 rounded-lg shadow-lg"
-          >
-            {item}
-          </div>
-        ) )}
-      </AnimatedList>
-    ),
-  },
-  {
     Icon: DatabaseZap,
     name: "Full text search",
     description: "Search through all your files in one place.",
     href: "/",
     cta: "Learn more",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "col-span-4 lg:col-span-2",
+    background: <img className="-top-20 -right-20 absolute opacity-60" />,
+    className: "col-span-4",
+  },
+  {
+    Icon: CalendarIcon,
+    name: "Calendar",
+    description: "Use the calendar to filter your files by date.",
+    className: "flex items-end col-span-4",
+    href: "#",
+    cta: "Learn more",
+    background: (
+      <div className="px-8 py-10">
+        <Calendar
+          mode="single"
+          selected={new Date( 2022, 4, 11, 0, 0, 0 )}
+          className="group-hover:scale-105 [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] border rounded-md w-fit origin-top transition-all duration-300 ease-out"
+        />
+      </div>
+    ),
   },
   {
     Icon: Share2Icon,
@@ -972,9 +990,9 @@ export const features = [
     description: "Supports 100+ integrations and counting.",
     href: "#",
     cta: "Learn more",
-    className: "col-span-4 lg:col-span-2",
+    className: "col-span-9 relative transform scale-25",
     background: (
-      <AnimatedBeamMultipleOutput className="absolute h-[300px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
+      <AnimatedBeamMultipleOutput className="group-hover:scale-105 [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] absolute border-none h-[9.5rem] transition-all duration-300 ease-out" />
     ),
   },
   {
@@ -983,25 +1001,24 @@ export const features = [
     description: "We automatically save your files as you type.",
     href: "#",
     cta: "Learn more",
-    className: "col-span-3 lg:col-span-1",
+    className: "col-span-3",
     background: (
       <Marquee
         pauseOnHover
-        className="absolute top-10 [--duration:20s] [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] "
+        repeat={5}
+        vertical
+        className="[mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] flex mx-2 min-w-7xl"
       >
         {slider.map( ( f, idx ) => (
           <figure
             key={idx}
-            className={cn(
-              "relative w-32 cursor-pointer overflow-hidden rounded-xl border p-4",
-              "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
-              "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]",
-              "transform-gpu blur-[1px] transition-all duration-300 ease-out hover:blur-none"
+            className={clsx(
+              "relative border-secondary p-4 border rounded-xl cursor-pointer overflow-hidden",
             )}
           >
-            <div className="flex flex-row items-center gap-2">
-              <div className="flex flex-col">
-                <figcaption className="text-sm font-medium dark:text-white ">
+            <div className="flex items-center gap-2 w-16">
+              <div className="flex">
+                <figcaption className="font-medium text-sm dark:text-white">
                   {f.name}
                 </figcaption>
               </div>
@@ -1018,23 +1035,27 @@ export const features = [
     description: "Supports 100+ languages and counting.",
     href: "/",
     cta: "Learn more",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "col-span-3 lg:col-span-1",
+    className: "col-span-3",
+    background: <img className="-top-20 -right-20 absolute opacity-60" />,
   },
-
   {
-    Icon: CalendarIcon,
-    name: "Calendar",
-    description: "Use the calendar to filter your files by date.",
-    className: "col-span-3 lg:col-span-1",
+    Icon: BellIcon,
+    name: "Projects",
+    description: "Get notified when something happens.",
     href: "#",
     cta: "Learn more",
+    className: "col-span-3",
     background: (
-      <Calendar
-        mode="single"
-        selected={new Date( 2022, 4, 11, 0, 0, 0 )}
-        className="absolute right-10 bottom-12 origin-top rounded-md border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:scale-105"
-      />
+      <AnimatedList className="mx-auto max-w-md">
+        {animatedAlerts.map( ( item, index ) => (
+          <div
+            key={index}
+            className="-z-0 border-highlight bg-accent opacity-50 shadow-lg mx-auto p-4 border rounded-lg w-10/12 text-accent-foreground"
+          >
+            {item}
+          </div>
+        ) )}
+      </AnimatedList>
     ),
   },
 ];

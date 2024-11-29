@@ -52,8 +52,8 @@ body {
   .dark {
     --primary: #99582a;
     --primary-foreground: #f4f4f4;
-    --secondary: #ddb892;
-    --secondary-foreground: #1a1a1a;
+    --secondary: #254441;
+    --secondary-foreground: #f4f4f4;
     --tertiary: #fff870;
     --tertiary-foreground: #1a1a1a;
     --highlight: #f4af55;

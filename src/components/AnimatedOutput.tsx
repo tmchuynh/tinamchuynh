@@ -53,7 +53,7 @@ export function AnimatedBeamMultipleOutput( {
           </Circle>
         </div>
         <div className="flex flex-col justify-center">
-          <Circle ref={div6Ref} className="size-16">
+          <Circle ref={div6Ref} className="size-12">
             <Icons.openai />
           </Circle>
         </div>

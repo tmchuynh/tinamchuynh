@@ -14,7 +14,7 @@ const BentoGrid = ( {
   return (
     <div
       className={cn(
-        "grid w-full auto-rows-[10rem] lg:auto-rows-[28rem] grid-cols-7 gap-4",
+        "grid w-full grid-cols-9 auto-rows-min overflow-hidden gap-3",
         className,
       )}
     >
@@ -36,14 +36,14 @@ const BentoCard = ( {
   className: string;
   background: ReactNode;
   Icon: any;
-  description: string;
+  description?: string;
   href: string;
   cta: string;
 } ) => (
   <div
     key={name}
     className={cn(
-      "group relative col-span-3 flex flex-col justify-between overflow-hidden rounded-xl bg-background",
+      "group relative col-span-9 h-[20rem] flex flex-col justify-between overflow-hidden rounded-xl bg-background",
       // light styles
       "shadow-md",
       // dark styles
@@ -52,27 +52,27 @@ const BentoCard = ( {
     )}
   >
     <div>{background}</div>
-    <div className="pointer-events-none z-10 flex transform-gpu flex-col gap-1 p-6 transition-all duration-300 group-hover:-translate-y-10 absolute bottom-3 bg-background w-full h-56 -mb-14">
-      <Icon className="h-12 w-12 origin-left transform-gpu text-tertiary transition-all duration-300 ease-in-out group-hover:scale-75" />
-      <h3 className="text-xl font-semibold text-highlight">
+    <div className="bottom-3 z-10 absolute flex flex-col gap-1 bg-gradient-to-t from-10% from-background via-60% via-background to-transparent -mb-14 p-6 w-full h-56 transform-gpu transition-all group-hover:-translate-y-10 duration-300 pointer-events-none">
+      <Icon className="group-hover:scale-75 w-12 h-12 text-tertiary transform-gpu origin-left transition-all duration-300 ease-in-out" />
+      <h3 className="font-semibold text-highlight text-xl">
         {name}
       </h3>
-      <p className="max-w-lg text-foreground">{description}</p>
+      <p className="max-w-lg text-xs text-foreground">{description}</p>
       <div
         className={cn(
-          "pointer-events-none absolute bottom-0 flex w-full translate-y-16 transform-gpu flex-row items-center p-4 opacity-0 transition-all duration-300 group-hover:-translate-y-6 group-hover:opacity-100",
+          "pointer-events-none absolute bottom-0 flex w-full translate-y-16 transform-gpu flex-row items-center py-4 opacity-0 transition-all duration-300 group-hover:-translate-y-6 group-hover:opacity-100",
         )}
       >
-        <Button variant="outline" asChild size="sm" className="pointer-events-auto">
+        <Button variant="highlight" asChild size="sm" className="pointer-events-auto m-0">
           <a href={href}>
             {cta}
-            <ArrowRightIcon className="ml-2 h-4 w-4" />
+            <ArrowRightIcon className="ml-2 w-4 h-4" />
           </a>
         </Button>
       </div>
     </div>
 
-    <div className="pointer-events-none absolute inset-0 transform-gpu transition-all duration-300 group-hover:bg-black/[.03] group-hover:dark:bg-neutral-800/10" />
+    <div className="group-hover:bg-gray/[.03] group-hover:dark:bg-neutral-800/10 absolute inset-0 transform-gpu transition-all duration-300 pointer-events-none" />
   </div>
 );
 
