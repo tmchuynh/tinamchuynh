@@ -4,21 +4,33 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 
 const badgeVariants = cva(
-  "inline-flex items-center rounded-md border border-secondary px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
+  "inline-flex items-center rounded-md border border-secondary px-2.5 py-0.5 mx-2 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
   {
     variants: {
       variant: {
         default:
-          "border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80",
+          "border-transparent bg-primary text-primary-foreground shadow hover:bg-secondary",
         secondary:
-          "border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80",
+          "border-transparent bg-secondary text-secondary-foreground hover:bg-primary",
+        tertiary:
+          "border-transparent bg-tertiary text-tertiary-foreground hover:bg-accent",
+        highlight:
+          "border-transparent bg-highlight text-highlight-foreground hover:bg-secondary",
+        accent:
+          "border-transparent bg-accent text-accent-foreground hover:bg-secondary",
         destructive:
-          "border-transparent bg-destructive text-destructive-foreground shadow hover:bg-destructive/80",
+          "border-transparent bg-destructive text-destructive-foreground shadow hover:bg-highlight",
         outline: "text-foreground",
+      },
+      size: {
+        default: "h-5 px-4 py-2",
+        sm: "h-4 px-3 text-xs",
+        lg: "h-6 rounded-lg px-8",
       },
     },
     defaultVariants: {
       variant: "default",
+      size: "default",
     },
   }
 );
@@ -27,9 +39,9 @@ export interface BadgeProps
   extends React.HTMLAttributes<HTMLDivElement>,
   VariantProps<typeof badgeVariants> { }
 
-function Badge( { className, variant, ...props }: BadgeProps ) {
+function Badge( { className, size, variant, ...props }: BadgeProps ) {
   return (
-    <div className={cn( badgeVariants( { variant } ), className )} {...props} />
+    <div className={cn( badgeVariants( { variant, size } ), className )} {...props} />
   );
 }
 

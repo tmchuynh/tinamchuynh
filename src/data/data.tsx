@@ -293,35 +293,6 @@ export const futureProjects: PortfolioProject[] = [
 
 export const writingPlatforms: WritingPlatform[] = [
   {
-    id: "medium",
-    title: "Medium",
-    description:
-      "I write articles on various topics like technology, travel, and personal growth.",
-    focuses: ["technology", "travel", "personal growth"],
-    articles: [
-      {
-        title: "My First Blog Post",
-        link: {
-          url: "https://medium.com/@yourusername/my-first-blog-post",
-          label: "Read Article",
-        },
-        date: "March 15, 2023",
-        display: [
-          { icon: CheckCheck },
-          { icon: IoLogoCodepen },
-          { icon: Presentation },
-          { icon: BookCheck },
-        ],
-        description: "This is a short description of my first blog post.",
-        tags: ["tech", "beginner"],
-      },
-    ],
-    links: [
-      { url: "https://platform1.com", label: "Visit Medium" },
-      { url: "https://medium.com/@yourusername", label: "My Profile" },
-    ],
-  },
-  {
     id: "devto",
     title: "Dev.to",
     description:
@@ -547,35 +518,6 @@ export const writingPlatforms: WritingPlatform[] = [
         description:
           "Master the basics of web development with these 9 essential tips for learning HTML and CSS effectively and confidently.",
         tags: ["Web Development Basics", "HTML and CSS Essentials"],
-      },
-    ],
-    links: [
-      { url: "https://platform1.com", label: "Visit Site" },
-      { url: "https://platform1-docs.com", label: "Read Docs" },
-    ],
-  },
-  {
-    id: "hackernoon",
-    title: "Hackernoon",
-    description:
-      "I'm a freelance writer and I've written numerous articles and blog posts on various topics, including",
-    focuses: ["technology", "travel", "personal growth"],
-    articles: [
-      {
-        title: "My First Blog Post",
-        link: {
-          url: "https://medium.com/@yourusername/my-first-blog-post-355531635569",
-          label: "My First Blog Post",
-        },
-        date: "March 15, 2023",
-        display: [
-          { icon: NotebookText },
-          { icon: CodeXml },
-          { icon: CheckCheck },
-          { icon: Presentation },
-        ],
-        description: "minim enim",
-        tags: ["minim enim", "minim enim"],
       },
     ],
     links: [
@@ -889,16 +831,8 @@ export const navBar = {
           url: "/projects/backendbook",
         },
         {
-          title: "Medium Blog",
-          url: "/writings/medium",
-        },
-        {
           title: "Dev.to Blog",
           url: "/writings/devto",
-        },
-        {
-          title: "Hackernoon Blog",
-          url: "/writings/hackernoon",
         },
       ],
     },

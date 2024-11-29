@@ -59,7 +59,18 @@ const PlatformPage = ( {
 
       <div className="flex justify-center pb-8">
         {platform.focuses.map( ( focus, index ) => (
-          <Badge variant={"secondary"} className="mx-2" key={index}>{focus}</Badge>
+          <Badge variant={"default"} size={"default"} key={index}>{focus}</Badge>
+        ) )}
+      </div>
+
+      <div className="flex justify-center gap-3">
+        {platform.links.map( ( link, index ) => (
+          <Button
+            variant={"tertiary"}
+            key={index}
+          >
+            {link.label}
+          </Button>
         ) )}
       </div>
 
@@ -91,9 +102,9 @@ const PlatformPage = ( {
               </Button>
             </CardActions>
             <CardFooter className="flex py-7 h-fit">
-              <div className="flex gap-3 flex-wrap">
+              <div className="flex flex-wrap">
                 {article.tags.map( ( tag, tagIndex ) => (
-                  <Badge key={tagIndex} variant={"outline"}>
+                  <Badge key={tagIndex} variant={"highlight"} className="mb-1">
                     #{tag}
                   </Badge>
                 ) )}
