@@ -2,12 +2,14 @@
 
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
+import { useTheme } from "next-themes";
 import { DevToArticle, WritingPlatform } from "@/data/types";
 import { CardTitle, CardDescription, CardFooter, Card, CardHeader, CardContent, CardActions } from "@/components/ui/card";
 import Breadcrumb from "./ui/breadcrumb";
 import { Badge } from "./ui/badge";
 import BlurFade from "./ui/blur-fade";
 import { formatDate } from "@/lib/utils";
+
 
 const breadcrumbItems = [
   {

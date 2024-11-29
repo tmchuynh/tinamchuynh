@@ -25,18 +25,15 @@ export interface WritingPlatform {
   id: string;
   title: string;
   description: string;
-  articles: {
-    title: string;
-    link: { url: string; label: string; };
-    date: string;
-    display: {
-      icon: ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>> | IconType;
-    }[];
-    description: string;
-    tags: string[];
-  }[];
   focuses: string[];
   links: { url: string; label: string; }[];
+}
+
+export interface AchievementItem {
+  title: string;
+  subtitle: string;
+  date: string;
+  description: string;
 }
 
 export interface PortfolioProject {
