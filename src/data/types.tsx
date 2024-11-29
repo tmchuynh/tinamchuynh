@@ -1,5 +1,6 @@
 import { LucideProps } from 'lucide-react';
 import { ForwardRefExoticComponent, RefAttributes } from 'react';
+import { IconType } from 'react-icons/lib';
 
 export interface ImageProps {
   src: string;
@@ -16,7 +17,7 @@ export interface WritingPlatform {
     link: { url: string; label: string; };
     date: string;
     display: {
-      icon: ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>>;
+      icon: ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>> | IconType;
     }[];
     description: string;
     tags: string[];

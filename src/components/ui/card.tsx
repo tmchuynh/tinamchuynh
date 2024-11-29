@@ -9,7 +9,7 @@ const Card = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "rounded-xl border bg-card text-card-foreground shadow-md",
+      "rounded-xl border bg-card text-card-foreground shadow-md h-auto flex flex-col justify-between",
       className
     )}
     {...props}
@@ -35,7 +35,10 @@ const CardTitle = React.forwardRef<
 >( ( { className, ...props }, ref ) => (
   <div
     ref={ref}
-    className={cn( "font-semibold text-lg leading-none tracking-widest text-card-foreground", className )}
+    className={cn(
+      "font-semibold text-lg leading-none tracking-widest text-card-foreground",
+      className
+    )}
     {...props}
   />
 ) );
@@ -47,7 +50,10 @@ const CardDescription = React.forwardRef<
 >( ( { className, ...props }, ref ) => (
   <div
     ref={ref}
-    className={cn( "text-sm text-accent dark:text-muted font-mono font-bold", className )}
+    className={cn(
+      "text-sm text-muted font-bold",
+      className
+    )}
     {...props}
   />
 ) );
@@ -61,16 +67,41 @@ const CardContent = React.forwardRef<
 ) );
 CardContent.displayName = "CardContent";
 
+const CardBody = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>( ( { className, ...props }, ref ) => (
+  <div ref={ref} className={cn( "p-6 pt-0", className )} {...props} />
+) );
+CardBody.displayName = "CardBody";
+
+const CardActions = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>( ( { className, ...props }, ref ) => (
+  <div ref={ref} className={cn( "px-6 pt-0 flex space-x-4", className )} {...props} />
+) );
+CardActions.displayName = "CardActions";
+
 const CardFooter = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >( ( { className, ...props }, ref ) => (
   <div
     ref={ref}
-    className={cn( "flex items-center p-6 pt-0 text-sm", className )}
+    className={cn( "flex items-center p-6 pt-0 text-xs font-mono", className )}
     {...props}
   />
 ) );
 CardFooter.displayName = "CardFooter";
 
-export { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle };
+export {
+  Card,
+  CardContent,
+  CardBody,
+  CardDescription,
+  CardActions,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+};

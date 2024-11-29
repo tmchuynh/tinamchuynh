@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { WritingPlatform } from "@/data/types";
-import { CardTitle, CardDescription, CardFooter, Card, CardHeader, CardContent } from "@/components/ui/card";
+import { CardTitle, CardDescription, CardFooter, Card, CardHeader, CardContent, CardActions } from "@/components/ui/card";
 import Breadcrumb from "./ui/breadcrumb";
 import { Badge } from "./ui/badge";
 import BlurFade from "./ui/blur-fade";
@@ -74,33 +74,30 @@ const PlatformPage = ( {
             </CardHeader>
             <CardContent className="grid gap-4">
               <div className="flex justify-around">
-                {/* Article Image(s) if any */}
                 {article.display &&
                   article.display.map( ( icon, imgIndex ) => (
                     <icon.icon key={imgIndex} className="w-10 h-10 text-primary" />
                   ) )}
               </div>
-              {/* Article Description */}
-              <p>{article.description}</p>
+              <CardDescription>{article.description}</CardDescription>
             </CardContent>
-            <CardFooter className="flex justify-between">
-              <div className="grid gap-2 items-end justify-end">
-                {/* Tags for the article */}
-                {article.tags.map( ( tag, tagIndex ) => (
-                  <Badge key={tagIndex} variant={"secondary"}>
-                    #{tag}
-                  </Badge>
-                ) )}
-              </div>
-              {/* Visit Button for the article link */}
+            <CardActions>
               <Button
                 variant={"outline"}
                 size={"sm"}
                 onClick={() => handleClick( article.link.url )}
-                className="absolute bottom-5 right-5"
               >
                 {article.link.label}
               </Button>
+            </CardActions>
+            <CardFooter className="flex py-7 h-fit">
+              <div className="flex gap-3 flex-wrap">
+                {article.tags.map( ( tag, tagIndex ) => (
+                  <Badge key={tagIndex} variant={"outline"}>
+                    #{tag}
+                  </Badge>
+                ) )}
+              </div>
             </CardFooter>
           </Card>
         ) )}
