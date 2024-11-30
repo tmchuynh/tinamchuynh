@@ -1,13 +1,4 @@
 "use client";
-
-import {
-  Calculator,
-  Calendar,
-  CreditCard,
-  Settings,
-  Smile,
-  User,
-} from "lucide-react";
 import * as React from "react";
 
 import {
@@ -23,6 +14,7 @@ import {
 import { Command } from "cmdk";
 import { useEffect, useState } from "react";
 import { FaWindows } from "react-icons/fa6";
+import { commands } from "@/data/data";
 
 
 export function CommandMenu() {
@@ -51,43 +43,35 @@ export function CommandMenu() {
         </kbd>
         <span className="sr-only">Show the command menu</span>
       </p>
+
       <CommandDialog open={open} onOpenChange={setOpen}>
-        <CommandInput value={search} onValueChange={setSearch} placeholder="Type a command or search..." />
+        <CommandInput
+          value={search}
+          onValueChange={setSearch}
+          placeholder="Type a command or search..."
+        />
         <CommandList>
           {loading && <Command.Loading>Hang on…</Command.Loading>}
           <CommandEmpty>No results found.</CommandEmpty>
-          <CommandGroup heading="Suggestions">
-            <CommandItem onSelect={( value ) => console.log( 'Selected', value )}>
-              <Calendar />
-              <span>Calendar</span>
-            </CommandItem>
-            <CommandItem onSelect={( value ) => console.log( 'Selected', value )}>
-              <Smile />
-              <span>Search Emoji</span>
-            </CommandItem>
-            <CommandItem onSelect={( value ) => console.log( 'Selected', value )}>
-              <Calculator />
-              <span>Calculator</span>
-            </CommandItem>
-          </CommandGroup>
+
+          {commands.map( ( group, groupIndex ) => (
+            <CommandGroup key={groupIndex} heading={group.groupName}>
+              {group.items.map( ( command, itemIndex ) => (
+                <CommandItem
+                  key={itemIndex}
+                  onSelect={() => window.location.href = command.onSelect}
+                >
+                  <command.icon className="mr-2" />
+                  <span>{command.title}</span>
+                  {command.shortcut && (
+                    <CommandShortcut>{command.shortcut}</CommandShortcut>
+                  )}
+                </CommandItem>
+              ) )}
+            </CommandGroup>
+          ) )}
+
           <CommandSeparator />
-          <CommandGroup heading="Settings">
-            <CommandItem onSelect={( value ) => console.log( 'Selected', value )}>
-              <User />
-              <span>Profile</span>
-              <CommandShortcut>⌘P</CommandShortcut>
-            </CommandItem>
-            <CommandItem onSelect={( value ) => console.log( 'Selected', value )}>
-              <CreditCard />
-              <span>Billing</span>
-              <CommandShortcut>⌘B</CommandShortcut>
-            </CommandItem>
-            <CommandItem onSelect={( value ) => console.log( 'Selected', value )}>
-              <Settings />
-              <span>Settings</span>
-              <CommandShortcut>⌘S</CommandShortcut>
-            </CommandItem>
-          </CommandGroup>
         </CommandList>
       </CommandDialog>
     </>

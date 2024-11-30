@@ -17,16 +17,22 @@ import {
   Pen,
   MessageSquareCode,
   BookMarked,
+  Smile,
+  Calculator,
+  CreditCard,
+  Settings,
+  User,
+  Calendar,
 } from "lucide-react";
-import { PortfolioProject, WritingPlatform } from "./types";
+import { CommandShortcuts, PortfolioProject, WritingPlatform } from "./types";
 import {
   FaWindows,
 } from "react-icons/fa6";
 import { TimelineEvent } from "@/data/types";
 import { AnimatedBeamMultipleOutput } from "@/components/AnimatedOutput";
 import Marquee from "@/components/ui/marquee";
+import { FaCalendarAlt, FaUniversalAccess } from "react-icons/fa";
 import { AnimatedList } from "@/components/ui/animated-list";
-import { Calendar } from "@/components/ui/calendar";
 import clsx from "clsx";
 
 export const timelineData: TimelineEvent[] = [
@@ -231,10 +237,9 @@ export const writingPlatforms: WritingPlatform[] = [
     title: "Dev.to",
     description:
       "I'm a freelance developer and I've written numerous articles and blog posts on various topics, including technology, travel, and personal growth. I'm always looking for new content to share.",
-    focuses: ["technology", "travel", "personal growth"],
+    focuses: ["Joined on Feb 23, 2022", "190+ posts published", "230+ comments written"],
     links: [
-      { url: "https://platform1.com", label: "Visit Site" },
-      { url: "https://platform1-docs.com", label: "Read Docs" },
+      { url: "https://dev.to/tmchuynh", label: "Visit Site" },
     ],
   },
 ];
@@ -545,6 +550,52 @@ export const milestones = [
   },
 ];
 
+export const commands: CommandShortcuts[] = [
+  {
+    groupName: "Suggestions",
+    items: [
+      {
+        icon: FaCalendarAlt,
+        title: "Calendar",
+        onSelect: "/calendar",
+      },
+      {
+        icon: Smile,
+        title: "Search Emoji",
+        onSelect: "/emoji",
+      },
+      {
+        icon: Calculator,
+        title: "Calculator",
+        onSelect: "/calculator",
+      },
+    ],
+  },
+  {
+    groupName: "Settings",
+    items: [
+      {
+        icon: User,
+        title: "Profile",
+        onSelect: "/profile",
+        shortcut: "⌘P",
+      },
+      {
+        icon: CreditCard,
+        title: "Billing",
+        onSelect: "/billing",
+        shortcut: "⌘B",
+      },
+      {
+        icon: Settings,
+        title: "Settings",
+        onSelect: "/settings",
+        shortcut: "⌘S",
+      },
+    ],
+  },
+];
+
 
 export const navBar = {
   navMain: [
@@ -555,13 +606,18 @@ export const navBar = {
     },
     {
       title: "About Me",
-      url: "/about",
-      icon: CircleUserRound,
-    },
-    {
-      title: "Information",
       icon: Info,
       items: [
+        {
+          title: "Who I Am",
+          url: "/about",
+          icon: CircleUserRound,
+        },
+        {
+          title: "Accessibility Statement",
+          icon: Accessibility,
+          url: "/accessibility",
+        },
         {
           title: "Resume",
           url: "/info/resume",
@@ -575,11 +631,6 @@ export const navBar = {
           url: "/info/experiences&achievements",
         },
       ],
-    },
-    {
-      title: "Accessibility Statement",
-      icon: Accessibility,
-      url: "/accessibility",
     },
     {
       title: "Contact",
@@ -728,47 +779,19 @@ const animatedAlerts = [
 
 export const features = [
   {
-    Icon: DatabaseZap,
-    name: "Full text search",
+    Icon: FaUniversalAccess,
+    name: "Accessibility Declaration",
     description: "Search through all your files in one place.",
-    href: "/",
+    href: "/accessibility",
     cta: "Learn more",
     background: <img className="-top-20 -right-20 absolute opacity-60" />,
     className: "col-span-4",
   },
   {
-    Icon: CalendarIcon,
-    name: "Calendar",
-    description: "Use the calendar to filter your files by date.",
-    className: "flex items-end col-span-4",
-    href: "#",
-    cta: "Learn more",
-    background: (
-      <div className="px-8 py-10">
-        <Calendar
-          mode="single"
-          selected={new Date( 2022, 4, 11, 0, 0, 0 )}
-          className="group-hover:scale-105 [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] border rounded-md w-fit origin-top transition-all duration-300 ease-out"
-        />
-      </div>
-    ),
-  },
-  {
-    Icon: Share2Icon,
-    name: "Technology Stacks",
-    description: "Supports 100+ integrations and counting.",
-    href: "#",
-    cta: "Learn more",
-    className: "col-span-9 relative transform scale-25",
-    background: (
-      <AnimatedBeamMultipleOutput className="group-hover:scale-105 [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] absolute border-none h-[9.5rem] transition-all duration-300 ease-out" />
-    ),
-  },
-  {
     Icon: FileTextIcon,
     name: "Experiences",
     description: "We automatically save your files as you type.",
-    href: "#",
+    href: "/info/experiences&achievements",
     cta: "Learn more",
     className: "col-span-3",
     background: (
@@ -799,21 +822,12 @@ export const features = [
     ),
   },
   {
-    Icon: GlobeIcon,
-    name: "Statements",
-    description: "Supports 100+ languages and counting.",
-    href: "/",
-    cta: "Learn more",
-    className: "col-span-3",
-    background: <img className="-top-20 -right-20 absolute opacity-60" />,
-  },
-  {
     Icon: BellIcon,
     name: "Projects",
     description: "Get notified when something happens.",
-    href: "#",
+    href: "/projects/iacwebsite",
     cta: "Learn more",
-    className: "col-span-3",
+    className: "col-span-4 p-0",
     background: (
       <AnimatedList className="mx-auto max-w-md">
         {animatedAlerts.map( ( item, index ) => (
@@ -826,5 +840,51 @@ export const features = [
         ) )}
       </AnimatedList>
     ),
+  },
+  {
+    Icon: Share2Icon,
+    name: "Technology Stacks",
+    description: "Supports 100+ integrations and counting.",
+    href: "/info/techStack",
+    cta: "Learn more",
+    className: "relative transform scale-25",
+    background: (
+      <AnimatedBeamMultipleOutput className="group-hover:scale-105 [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] absolute border-none h-[9.5rem] transition-all duration-300 ease-out" />
+    ),
+  },
+  {
+    Icon: GlobeIcon,
+    name: "My Voice",
+    description: "Supports 100+ languages and counting.",
+    href: "/writings/devto",
+    cta: "Learn more",
+    className: "col-span-3",
+    background: <img className="-top-20 -right-20 absolute opacity-60" />,
+  },
+  {
+    Icon: CalendarIcon,
+    name: "Resume",
+    description: "Use the calendar to filter your files by date.",
+    className: "flex items-end col-span-4",
+    href: "/info/resume",
+    cta: "Learn more",
+    background: (
+      <div className="px-8 py-10">
+        <Calendar
+          mode="single"
+          selected={new Date( 2022, 4, 11, 0, 0, 0 )}
+          className="group-hover:scale-105 [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] border rounded-md w-fit origin-top transition-all duration-300 ease-out"
+        />
+      </div>
+    ),
+  },
+  {
+    Icon: GlobeIcon,
+    name: "Contact",
+    description: "Supports 100+ languages and counting.",
+    href: "/writings/devto",
+    cta: "Learn more",
+    className: "col-span-4",
+    background: <img className="-top-20 -right-20 absolute opacity-60" />,
   },
 ];

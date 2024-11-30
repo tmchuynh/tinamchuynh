@@ -2,6 +2,16 @@ import { LucideProps } from 'lucide-react';
 import { ForwardRefExoticComponent, RefAttributes } from 'react';
 import { IconType } from 'react-icons/lib';
 
+export interface CommandShortcuts {
+  groupName: string;
+  items: {
+    icon: ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>> | IconType;
+    title: string;
+    onSelect: string;
+    shortcut?: string;
+  }[];
+}
+
 export interface ImageProps {
   src: string;
   alt: string;
