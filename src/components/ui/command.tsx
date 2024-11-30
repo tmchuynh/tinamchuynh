@@ -1,9 +1,5 @@
 "use client";
 
-
-
-
-
 import { DialogDescription, DialogTitle, type DialogProps } from "@radix-ui/react-dialog";
 import { Command as CommandPrimitive } from "cmdk";
 import { Search } from "lucide-react";
@@ -19,7 +15,7 @@ const Command = React.forwardRef<
   <CommandPrimitive
     ref={ref}
     className={cn(
-      "flex h-full w-full flex-col overflow-hidden rounded-md bg-background text-primary",
+      "flex h-full w-full flex-col overflow-hidden rounded-md bg-background text-foreground",
       className
     )}
     {...props}
@@ -68,7 +64,7 @@ const CommandList = React.forwardRef<
 >( ( { className, ...props }, ref ) => (
   <CommandPrimitive.List
     ref={ref}
-    className={cn( "max-h-[30rem] overflow-y-auto overflow-x-hidden", className )}
+    className={cn( "max-h-[20rem] overflow-y-auto overflow-x-hidden", className )}
     {...props}
   />
 ) );

@@ -44,10 +44,14 @@ const Breadcrumb: React.FC<{ items: BreadcrumbItem[]; }> = ( { items } ) => {
                   {/* Dropdown Menu Content */}
                   <DropdownMenuContent>
                     {item.dropdownItems?.map( ( dropdownItem, subIndex ) => (
-                      <DropdownMenuItem key={subIndex}>
-                        <a href={dropdownItem.href}>
+                      <DropdownMenuItem key={subIndex} asChild>
+                        <Button
+                          variant={"ghost"}
+                          onClick={() => router.push( dropdownItem.href! )}
+                          className="w-full justify-start"
+                        >
                           {dropdownItem.label}
-                        </a>
+                        </Button>
                       </DropdownMenuItem>
                     ) )}
                   </DropdownMenuContent>

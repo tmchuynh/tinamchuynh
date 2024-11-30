@@ -7,7 +7,7 @@ const AccessibilityPage = () => {
   return (
     <div className="max-w-7xl mx-auto p-6">
       <BlurFade delay={0.25}>
-        <h1 className="text-4xl font-bold text-center mb-6">Accessibility Statement</h1>
+        <h1 className="text-4xl font-bold text-center mb-6">Accessibility Declaration</h1>
       </BlurFade>
 
       <BlurFade delay={0.35}>

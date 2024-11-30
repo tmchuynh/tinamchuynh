@@ -22,7 +22,7 @@ export function ModeToggle() {
 
   useEffect( () => {
     const handleKeydown = ( e: KeyboardEvent ) => {
-      if ( e.ctrlKey && e.metaKey && e.key === "d" ) {
+      if ( e.ctrlKey && e.altKey && e.key === "l" ) {
         setTheme( theme === "dark" ? "light" : "dark" );
       }
     };

@@ -17,23 +17,24 @@ import {
   Pen,
   MessageSquareCode,
   BookMarked,
-  Smile,
-  Calculator,
-  CreditCard,
-  Settings,
-  User,
-  Calendar,
 } from "lucide-react";
 import { CommandShortcuts, PortfolioProject, WritingPlatform } from "./types";
 import {
+  FaChess,
+  FaDatabase,
   FaWindows,
 } from "react-icons/fa6";
 import { TimelineEvent } from "@/data/types";
 import { AnimatedBeamMultipleOutput } from "@/components/AnimatedOutput";
 import Marquee from "@/components/ui/marquee";
-import { FaCalendarAlt, FaUniversalAccess } from "react-icons/fa";
+import { FaUniversalAccess } from "react-icons/fa";
+import { GrAchievement } from "react-icons/gr";
+import { IoBusiness } from "react-icons/io5";
+import { SiStylelint } from "react-icons/si";
+import { MdOutlineStackedBarChart } from "react-icons/md";
 import { AnimatedList } from "@/components/ui/animated-list";
 import clsx from "clsx";
+import { Calendar } from "@/components/ui/calendar";
 
 export const timelineData: TimelineEvent[] = [
   {
@@ -110,23 +111,7 @@ export const shortcuts = [
   {
     shortcut: (
       <span>
-        <FaWindows className="inline-block mr-1" /> + B
-      </span>
-    ),
-    description: "Open/Close Side Menu",
-  },
-  {
-    shortcut: (
-      <span>
-        <FaWindows className="inline-block mr-1" /> + M
-      </span>
-    ),
-    description: "Open/Close Spotlight Search",
-  },
-  {
-    shortcut: (
-      <span>
-        Ctrl + <FaWindows className="inline-block mr-1" /> + D
+        Ctrl + Alt + L
       </span>
     ),
     description: "Toggle Dark/Light Mode",
@@ -134,7 +119,23 @@ export const shortcuts = [
   {
     shortcut: (
       <span>
-        <FaWindows className="inline-block mr-1" /> + /
+        <FaWindows className="inline-flex mr-1" /> + B
+      </span>
+    ),
+    description: "Open/Close Side Menu",
+  },
+  {
+    shortcut: (
+      <span>
+        Ctrl + Shift + F
+      </span>
+    ),
+    description: "Open/Close Spotlight Search",
+  },
+  {
+    shortcut: (
+      <span>
+        <FaWindows className="inline-flex mr-1" /> + /
       </span>
     ),
     description: "Cut selected text",
@@ -142,7 +143,7 @@ export const shortcuts = [
   {
     shortcut: (
       <span>
-        <FaWindows className="inline-block mr-1" /> + /
+        <FaWindows className="inline-flex mr-1" /> + /
       </span>
     ),
     description: "Undo last action",
@@ -150,7 +151,7 @@ export const shortcuts = [
   {
     shortcut: (
       <span>
-        <FaWindows className="inline-block mr-1" /> + /
+        <FaWindows className="inline-flex mr-1" /> + /
       </span>
     ),
     description: "Redo last action",
@@ -158,7 +159,7 @@ export const shortcuts = [
   {
     shortcut: (
       <span>
-        <FaWindows className="inline-block mr-1" /> + /
+        <FaWindows className="inline-flex mr-1" /> + /
       </span>
     ),
     description: "Save the current document",
@@ -166,7 +167,7 @@ export const shortcuts = [
   {
     shortcut: (
       <span>
-        <FaWindows className="inline-block mr-1" /> + /
+        <FaWindows className="inline-flex mr-1" /> + /
       </span>
     ),
     description: "Close dialog or cancel",
@@ -555,42 +556,44 @@ export const commands: CommandShortcuts[] = [
     groupName: "Suggestions",
     items: [
       {
-        icon: FaCalendarAlt,
-        title: "Calendar",
-        onSelect: "/calendar",
+        icon: MdOutlineStackedBarChart,
+        title: "Tech Stack",
+        onSelect: "/info/techStack",
       },
       {
-        icon: Smile,
-        title: "Search Emoji",
-        onSelect: "/emoji",
+        icon: FaUniversalAccess,
+        title: "Accessibility Declaration",
+        onSelect: "/accessibility",
       },
       {
-        icon: Calculator,
-        title: "Calculator",
-        onSelect: "/calculator",
+        icon: GrAchievement,
+        title: "Achievements and Certifications",
+        onSelect: "/info/experiences&achievements",
       },
     ],
   },
   {
-    groupName: "Settings",
+    groupName: "Projects",
     items: [
       {
-        icon: User,
-        title: "Profile",
+        icon: FaChess,
+        title: "International Activities Club Website",
+        onSelect: "/projects/iacwebsite",
+      },
+      {
+        icon: SiStylelint,
+        title: "A Front-end Development Book for Beginners",
+        onSelect: "/projects/frontendbook",
+      },
+      {
+        icon: FaDatabase,
+        title: "A Back-end Development Book for Beginners",
+        onSelect: "/projects/backendbook",
+      },
+      {
+        icon: IoBusiness,
+        title: "Business",
         onSelect: "/profile",
-        shortcut: "⌘P",
-      },
-      {
-        icon: CreditCard,
-        title: "Billing",
-        onSelect: "/billing",
-        shortcut: "⌘B",
-      },
-      {
-        icon: Settings,
-        title: "Settings",
-        onSelect: "/settings",
-        shortcut: "⌘S",
       },
     ],
   },
@@ -614,7 +617,7 @@ export const navBar = {
           icon: CircleUserRound,
         },
         {
-          title: "Accessibility Statement",
+          title: "Accessibility Declaration",
           icon: Accessibility,
           url: "/accessibility",
         },

@@ -55,23 +55,25 @@ export function CommandMenu() {
           <CommandEmpty>No results found.</CommandEmpty>
 
           {commands.map( ( group, groupIndex ) => (
-            <CommandGroup key={groupIndex} heading={group.groupName}>
-              {group.items.map( ( command, itemIndex ) => (
-                <CommandItem
-                  key={itemIndex}
-                  onSelect={() => window.location.href = command.onSelect}
-                >
-                  <command.icon className="mr-2" />
-                  <span>{command.title}</span>
-                  {command.shortcut && (
-                    <CommandShortcut>{command.shortcut}</CommandShortcut>
-                  )}
-                </CommandItem>
-              ) )}
-            </CommandGroup>
+            <React.Fragment key={groupIndex}>
+              <CommandGroup heading={group.groupName}>
+                {group.items.map( ( command, itemIndex ) => (
+                  <CommandItem
+                    key={itemIndex}
+                    onSelect={() => ( window.location.href = command.onSelect )}
+                  >
+                    <command.icon className="mr-2" />
+                    <span>{command.title}</span>
+                    {command.shortcut && (
+                      <CommandShortcut>{command.shortcut}</CommandShortcut>
+                    )}
+                  </CommandItem>
+                ) )}
+              </CommandGroup>
+              {groupIndex < commands.length - 1 && <CommandSeparator />}
+            </React.Fragment>
           ) )}
 
-          <CommandSeparator />
         </CommandList>
       </CommandDialog>
     </>
