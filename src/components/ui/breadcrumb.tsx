@@ -32,7 +32,7 @@ const Breadcrumb: React.FC<{ items: BreadcrumbItem[]; }> = ( { items } ) => {
               <div className="relative">
                 {/* Dropdown Trigger */}
                 <DropdownMenu>
-                  <DropdownMenuTrigger asChild>
+                  <DropdownMenuTrigger className="px-4" asChild>
                     <Button
                       variant="default"
                     >

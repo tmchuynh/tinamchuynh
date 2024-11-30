@@ -14,16 +14,16 @@ const buttonVariants = cva(
         secondary:
           "bg-secondary text-secondary-foreground shadow hover:bg-primary hover:text-primary-foreground",
         tertiary:
-          "bg-tertiary text-tertiary-foreground shadow hover:bg-accent hover:text-accent-foreground",
+          "bg-tertiary text-tertiary-foreground shadow hover:bg-highlight hover:text-highlight-foreground",
         highlight:
-          "bg-highlight text-highlight-foreground shadow hover:bg-secondary hover:text-secondary-foreground",
+          "bg-highlight text-highlight-foreground shadow hover:bg-tertiary hover:text-tertiary-foreground",
         accent:
-          "bg-accent text-accent-foreground border border-2 border-transparent shadow hover:bg-transparent hover:text-accent-foreground hover:border-accent",
+          "bg-accent text-accent-foreground hover:text-highlight-foreground hover:bg-highlight",
         destructive:
           "bg-destructive text-destructive-foreground shadow-sm hover:bg-highlight hover:text-highlight-foreground",
         outline:
-          "border border-accent border-2 shadow-md hover:bg-accent hover:text-accent-foreground",
-        ghost: "hover:bg-highlight-foreground hover:text-accent-foreground text-highlight",
+          "border border-accent border-2 text-highlight border-highlight font-bold shadow-md hover:bg-secondary hover:text-secondary-foreground hover:border-secondary",
+        ghost: "hover:bg-muted hover:text-foreground text-tertiary",
         link: "text-tertiary underline-offset-4 hover:underline",
       },
       size: {

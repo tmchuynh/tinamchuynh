@@ -7,9 +7,9 @@ import React from "react";
 
 const AchievementsSection: React.FC<AchievementsSectionProps> = ( { title, items } ) => {
   return (
-    <div className="mb-12">
+    <div className="mb-6">
       <BlurFade delay={0.25}>
-        <h2 className="text-2xl font-semibold mb-4">{title}</h2>
+        <h2 className="text-2xl font-semibold">{title}</h2>
       </BlurFade>
 
       <ul className="list-disc pl-6">
@@ -58,11 +58,11 @@ const AchievementsPage = ( {
       <BlurFade delay={0.8}>
         <p className="text-lg">
           These achievements are just a glimpse into my learning path.{" "}
-          <a href="#" className="text-secondary hover:underline">
+          <a href="#" className="text-tertiary hover:underline">
             Contact me here
           </a>{" "}
           or{" "}
-          <a href="#" className="text-secondary hover:underline">
+          <a href="#" className="text-tertiary hover:underline">
             view my resume
           </a>{" "}
           for a deeper dive into my professional growth.

@@ -65,6 +65,8 @@ export default {
 					'primary-foreground': 'var(--sidebar-primary-foreground)',
 					accent: 'var(--sidebar-accent)',
 					'accent-foreground': 'var(--sidebar-accent-foreground)',
+					tertiary: 'var(--sidebar-tertiary)',
+					'tertiary-foreground': 'var(--sidebar-tertiary-foreground)',
 					highlight: 'var(--sidebar-highlight)',
 					'highlight-foreground': 'var(--sidebar-highlight-foreground)',
 					border: 'var(--sidebar-border)',
