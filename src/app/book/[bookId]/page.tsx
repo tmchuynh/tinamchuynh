@@ -1,28 +1,26 @@
 "use client";
 
-import PortfolioPage from "@/components/PortfolioPage";
+import BookPage from "@/components/BookPage";
 import Breadcrumb from "@/components/ui/breadcrumb";
-import { projects } from "@/data/data";
-import { BreadcrumbInfo, PortfolioProject } from "@/data/types";
+import { bookProjects } from "@/data/data";
+import { BookProject, BreadcrumbInfo } from "@/data/types";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
-const ProjectDetailPage = () => {
-  const { projectId } = useParams();
-  const [project, setProject] = useState<PortfolioProject | null>( null );
+const BookProjectPage = () => {
+  const { bookId } = useParams();
+  const [project, setProject] = useState<BookProject | null>( null );
   const [breadcrumbItems, setBreadcrumbItems] = useState<BreadcrumbInfo[]>( [
     { label: "Home", href: "/" },
     { label: "Projects" },
   ] );
 
-  console.log( projectId );
+  console.log( bookId );
 
   useEffect( () => {
-    const selectedProject = projects.find( ( proj ) => proj.id === projectId );
-
+    const selectedProject = bookProjects.find( ( proj ) => proj.id === bookId );
     if ( selectedProject ) {
       setProject( selectedProject );
-
 
       setBreadcrumbItems( ( prev ) => [
         ...prev,
@@ -32,36 +30,39 @@ const ProjectDetailPage = () => {
       ] );
     }
 
-    const dropdownItems = projects
-      .filter( ( proj ) => proj.id !== projectId )
+    const dropdownItems = bookProjects
+      .filter( ( proj ) => proj.id !== bookId )
       .map( ( proj ) => ( {
         label: proj.title,
-        href: `/projects/${ proj.id }`,
-      } ) );
+        href: `/book/${ proj.id }`,
+      } ) )
+      .concat(
+        { label: "Dev.to", href: "/writings/devto" },
+      );
 
 
     if ( dropdownItems.length > 0 ) {
       setBreadcrumbItems( ( prev ) => [
         ...prev.slice( 0, 1 ),
         {
-          label: "Projects",
+          label: "Writing",
           dropdownItems,
         },
         prev[2],
       ] );
     }
-  }, [projectId] );
+  }, [bookId] );
 
   if ( !project ) {
-    return <div>Loading...</div>;
+    return <div>Project not found or loading...</div>;
   }
 
   return (
     <div className="max-w-7xl mx-auto p-6">
       <Breadcrumb items={breadcrumbItems} />
-      <PortfolioPage project={project} />
+      <BookPage book={project} />
     </div>
   );
 };
 
-export default ProjectDetailPage;
+export default BookProjectPage;

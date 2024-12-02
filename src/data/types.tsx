@@ -40,7 +40,7 @@ export interface Achievement {
   title: string;
   subtitle: string;
   date: string;
-  description: string;
+  formattedDate?: string;
 }
 
 export interface AchievementsSectionProps {
@@ -57,11 +57,18 @@ export interface WritingPlatform {
   links: { url: string; label: string; }[];
 }
 
+export interface BookProject {
+  id: string;
+  title: string;
+  description: string;
+  focuses: string[];
+  images: ImageProps[];
+}
+
 export interface AchievementItem {
   title: string;
   subtitle: string;
   date: string;
-  description: string;
 }
 
 export interface PortfolioProject {

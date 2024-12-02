@@ -3,6 +3,8 @@
 import BlurFade from "@/components/ui/blur-fade";
 import { AchievementItem, AchievementsSectionProps } from "@/data/types";
 import React from "react";
+import ImageGrid from "./ui/image-grid";
+import { certificationImages } from "@/data/data";
 
 
 const AchievementsSection: React.FC<AchievementsSectionProps> = ( { title, items } ) => {
@@ -14,12 +16,11 @@ const AchievementsSection: React.FC<AchievementsSectionProps> = ( { title, items
 
       <ul className="list-disc pl-6">
         {items.map( ( item, index ) => (
-          <BlurFade key={index} delay={0.35 + index * 0.05}>
+          <BlurFade key={`${ index }_${ item.title }`} delay={0.35 + index * 0.05}>
             <li>
               <strong>{item.title}</strong> – <em>{item.subtitle}</em>
               <br />
               <span className="italic">{item.date}</span>
-              <p>{item.description}</p>
             </li>
           </BlurFade>
         ) )}
@@ -30,14 +31,10 @@ const AchievementsSection: React.FC<AchievementsSectionProps> = ( { title, items
 
 const AchievementsPage = ( {
   certifications,
-  awards,
-  skillBadges,
-  milestones,
+  credientials,
 }: {
   certifications: AchievementItem[];
-  awards: AchievementItem[];
-  skillBadges: AchievementItem[];
-  milestones: AchievementItem[];
+  credientials: AchievementItem[];
 } ) => {
   return (
     <div className="max-w-7xl mx-auto p-6">
@@ -50,10 +47,10 @@ const AchievementsPage = ( {
 
       <hr className="my-8" />
 
-      <AchievementsSection title="Professional Certifications" items={certifications} />
-      <AchievementsSection title="Awards and Recognition" items={awards} />
-      <AchievementsSection title="Skill Badges" items={skillBadges} />
-      <AchievementsSection title="Notable Learning Milestones" items={milestones} />
+      <AchievementsSection title="Credentials" items={credientials} />
+      <ImageGrid images={certificationImages} title="" />
+
+      <AchievementsSection title="Certifications" items={certifications} />
 
       <BlurFade delay={0.8}>
         <p className="text-lg">
@@ -68,6 +65,7 @@ const AchievementsPage = ( {
           for a deeper dive into my professional growth.
         </p>
       </BlurFade>
+
     </div>
   );
 };

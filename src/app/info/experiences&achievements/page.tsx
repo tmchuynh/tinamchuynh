@@ -1,6 +1,6 @@
 import AchievementsPage from '@/components/AchievementsPage';
 import Breadcrumb from '@/components/ui/breadcrumb';
-import { awards, certifications, milestones, skillBadges } from '@/data/data';
+import { certifications, credientials } from '@/data/data';
 import React from 'react';
 
 const breadcrumbItems = [
@@ -23,12 +23,21 @@ const breadcrumbItems = [
   },
 ];
 
+const sort = ( list: any[] ) => {
+  return list
+    .map( ( cert ) => ( {
+      ...cert,
+    } ) )
+    .sort( ( a, b ) => b.date - a.date );
+};
+
+
 const Page = () => {
   return (
     <div>
       <Breadcrumb items={breadcrumbItems} />
 
-      <AchievementsPage awards={awards} skillBadges={skillBadges} milestones={milestones} certifications={certifications} />
+      <AchievementsPage credientials={credientials} certifications={sort( certifications )} />
     </div >
   );
 };

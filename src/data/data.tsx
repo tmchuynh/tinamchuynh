@@ -18,7 +18,7 @@ import {
   MessageSquareCode,
   BookMarked,
 } from "lucide-react";
-import { CommandShortcuts, PortfolioProject, WritingPlatform } from "./types";
+import { BookProject, CommandShortcuts, PortfolioProject, WritingPlatform } from "./types";
 import {
   FaChess,
   FaDatabase,
@@ -38,76 +38,124 @@ import { IconClouds } from "@/components/IconCircles";
 import Globe from "@/components/ui/globe";
 import ClientTweetCard from "@/components/ClientTweetCard";
 
-export const timelineData: TimelineEvent[] = [
-  {
-    time: "August 2023 – PRESENT",
-    title: "Software Engineer",
-    description: "International Activities Club",
-    bullets: [
-      "Built interactive web apps for educational programs, improving engagement and usability.",
-      "Collaborated with educators to streamline administrative tasks through custom software.",
-    ],
-    icon: DatabaseZap,
-  },
-  {
-    time: "August 2023 – PRESENT",
-    title: "Lead Administration",
-    description: "International Activities Club",
-    bullets: [
-      "Improved workflows by 20% through streamlined processes and metrics monitoring.",
-      "Led teams and trained staff, boosting efficiency and reducing issues by 25%.",
-      "Implemented initiatives that increased growth by 15% and aligned organizational goals.",
-    ],
-    icon: Presentation,
-  },
-  {
-    time: "July 2023 – October 2023",
-    title: "Code Coach",
-    description: "TheCoderSchool",
-    bullets: [
-      "Taught HTML, CSS, JavaScript, and Python, boosting student skills and participation.",
-      "Designed curricula that increased engagement and project completion rates.",
-      "Mentored instructors to enhance collaboration with management.",
-    ],
-    icon: CodeXml,
-  },
-  {
-    time: "June 2019 – March 2020",
-    title: "Curriculum Developer",
-    description: "Brainstorm ",
-    bullets: [
-      "Created STEM-focused curricula, increasing engagement and outcomes by 35%.",
-      "Designed lesson plans that improved student performance by 30%.",
-      "Collaborated with stakeholders to enhance curriculum effectiveness.",
-    ],
-    icon: NotebookText,
-  },
-  {
-    time: "November 2017 – January 2019",
-    title: "Coding Instructor",
-    description: "Code to the Future",
-    bullets: [
-      "Taught Scratch, improving student proficiency by 40%.",
-      "Customized lessons to boost engagement and completion rates.",
-    ],
-    icon: Cat,
-  },
-];
-
-export const listItems = [
-  {
-    title: "Your call has been confirmed.",
-    description: "1 hour ago",
-  },
-  {
-    title: "You have a new message!",
-    description: "1 hour ago",
-  },
-  {
-    title: "Your subscription is expiring soon!",
-    description: "2 hours ago",
-  },
-];
+export const navBar = {
+  navMain: [
+    {
+      title: "Home",
+      url: "/",
+      icon: House,
+    },
+    {
+      title: "About Me",
+      icon: Info,
+      items: [
+        {
+          title: "Who I Am",
+          url: "/about",
+          icon: CircleUserRound,
+        },
+        {
+          title: "Accessibility Declaration",
+          icon: Accessibility,
+          url: "/info/accessibility",
+        },
+        {
+          title: "Resume",
+          url: "/info/resume",
+        },
+        {
+          title: "Tech Stacks",
+          url: "/info/techStack",
+        },
+        {
+          title: "Achievements",
+          url: "/info/experiences&achievements",
+        },
+      ],
+    },
+    {
+      title: "Contact",
+      url: "/contact",
+      icon: Send,
+    },
+  ],
+  works: [
+    {
+      title: "Writings",
+      icon: Pen,
+      items: [
+        {
+          title: "Front-End Development Book",
+          url: "/book/frontendbook",
+        },
+        {
+          title: "Back-End Development Book",
+          url: "/book/backendbook",
+        },
+        {
+          title: "Dev.to Blog",
+          url: "/writings/devto",
+        },
+      ],
+    },
+    {
+      title: "Projects",
+      icon: MessageSquareCode,
+      items: [
+        {
+          title: "My Business",
+          url: "/projects/mybussiness",
+        },
+        {
+          title: "IAC Website",
+          url: "/projects/iacwebsite",
+        },
+        {
+          title: "Quiz Application",
+          url: "/projects/quizapplication",
+        },
+        {
+          title: "Sudoku",
+          url: "/projects/sudoku",
+        },
+      ],
+    },
+    {
+      title: "Future Projects",
+      icon: BookMarked,
+      items: [
+        {
+          title: "Full-Stack Web Development",
+          url: "/futureProjects/futureProject1",
+        },
+        {
+          title: "Front-end Development",
+          url: "/futureProjects/futureProject1",
+        },
+        {
+          title: "Back-end Development",
+          url: "/futureProjects/futureProject1",
+        },
+        {
+          title: "Pre Medical",
+          url: "/futureProjects/futureProject1",
+        },
+        {
+          title: "Business",
+          url: "/futureProjects/futureProject1",
+        },
+        {
+          title: "Law",
+          url: "/futureProjects/futureProject1",
+        },
+        {
+          title: "Entrepreneurship",
+          url: "/roadmaps/entrepreneurship",
+        },
+      ],
+    },
+  ],
+};
 
 export const shortcuts = [
   {
@@ -173,6 +221,110 @@ export const shortcuts = [
       </span>
     ),
     description: "Close dialog or cancel",
+  },
+];
+
+export const commands: CommandShortcuts[] = [
+  {
+    groupName: "Suggestions",
+    items: [
+      {
+        icon: MdOutlineStackedBarChart,
+        title: "Tech Stack",
+        onSelect: "/info/techStack",
+      },
+      {
+        icon: FaUniversalAccess,
+        title: "Accessibility Declaration",
+        onSelect: "/accessibility",
+      },
+      {
+        icon: GrAchievement,
+        title: "Achievements and Certifications",
+        onSelect: "/info/experiences&achievements",
+      },
+    ],
+  },
+  {
+    groupName: "Projects",
+    items: [
+      {
+        icon: FaChess,
+        title: "International Activities Club Website",
+        onSelect: "/projects/iacwebsite",
+      },
+      {
+        icon: SiStylelint,
+        title: "A Front-end Development Book for Beginners",
+        onSelect: "/writings/book/frontendbook",
+      },
+      {
+        icon: FaDatabase,
+        title: "A Back-end Development Book for Beginners",
+        onSelect: "/writings/book/backendbook",
+      },
+      {
+        icon: IoBusiness,
+        title: "Business",
+        onSelect: "/profile",
+      },
+    ],
+  },
+];
+
+export const timelineData: TimelineEvent[] = [
+  {
+    time: "August 2023 – PRESENT",
+    title: "Software Engineer",
+    description: "International Activities Club",
+    bullets: [
+      "Built interactive web apps for educational programs, improving engagement and usability.",
+      "Collaborated with educators to streamline administrative tasks through custom software.",
+    ],
+    icon: DatabaseZap,
+  },
+  {
+    time: "August 2023 – PRESENT",
+    title: "Lead Administration",
+    description: "International Activities Club",
+    bullets: [
+      "Improved workflows by 20% through streamlined processes and metrics monitoring.",
+      "Led teams and trained staff, boosting efficiency and reducing issues by 25%.",
+      "Implemented initiatives that increased growth by 15% and aligned organizational goals.",
+    ],
+    icon: Presentation,
+  },
+  {
+    time: "July 2023 – October 2023",
+    title: "Code Coach",
+    description: "TheCoderSchool",
+    bullets: [
+      "Taught HTML, CSS, JavaScript, and Python, boosting student skills and participation.",
+      "Designed curricula that increased engagement and project completion rates.",
+      "Mentored instructors to enhance collaboration with management.",
+    ],
+    icon: CodeXml,
+  },
+  {
+    time: "June 2019 – March 2020",
+    title: "Curriculum Developer",
+    description: "Brainstorm ",
+    bullets: [
+      "Created STEM-focused curricula, increasing engagement and outcomes by 35%.",
+      "Designed lesson plans that improved student performance by 30%.",
+      "Collaborated with stakeholders to enhance curriculum effectiveness.",
+    ],
+    icon: NotebookText,
+  },
+  {
+    time: "November 2017 – January 2019",
+    title: "Coding Instructor",
+    description: "Code to the Future",
+    bullets: [
+      "Taught Scratch, improving student proficiency by 40%.",
+      "Customized lessons to boost engagement and completion rates.",
+    ],
+    icon: Cat,
   },
 ];
 
@@ -298,6 +450,102 @@ export const writingPlatforms: WritingPlatform[] = [
     focuses: ["Joined on Feb 23, 2022", "190+ posts published", "230+ comments written"],
     links: [
       { url: "https://dev.to/tmchuynh", label: "Visit Site" },
+    ],
+  },
+];
+
+export const bookProjects: BookProject[] = [
+  {
+    id: "frontendbook",
+    title: "A Front-end Development Book for Beginners",
+    description:
+      "An e-commerce platform built with React and Node.js. It supports user authentication, a shopping cart, and a complete checkout system.",
+    focuses: [],
+    images: [
+      {
+        src: "/images/frontend/table_of_contents.png",
+        alt: "minim enim",
+        description: "minim enim",
+      },
+      {
+        src: "/images/frontend/abbr.png",
+        alt: "minim enim",
+        description: "minim enim",
+      },
+      {
+        src: "/images/frontend/accessibility.png",
+        alt: "minim enim",
+        description: "minim enim",
+      },
+      {
+        src: "/images/frontend/document_structure.png",
+        alt: "minim enim",
+        description: "minim enim",
+      },
+      {
+        src: "/images/frontend/css.png",
+        alt: "minim enim",
+        description: "minim enim",
+      },
+      {
+        src: "/images/frontend/quizapp.png",
+        alt: "minim enim",
+        description: "minim enim",
+      },
+      {
+        src: "/images/frontend/next.png",
+        alt: "minim enim",
+        description: "minim enim",
+      },
+      {
+        src: "/images/frontend/framework.png",
+        alt: "minim enim",
+        description: "minim enim",
+      },
+    ],
+  },
+  {
+    id: "backendbook",
+    title: "A Back-end Development Book for Beginners",
+    description:
+      "An e-commerce platform built with React and Node.js. It supports user authentication, a shopping cart, and a complete checkout system.",
+    focuses: [],
+    images: [
+      {
+        src: "/images/backend/github.png",
+        alt: "minim enim",
+        description: "minim enim",
+      },
+      {
+        src: "/images/backend/principles.png",
+        alt: "minim enim",
+        description: "minim enim",
+      },
+      {
+        src: "/images/backend/design_principles.png",
+        alt: "minim enim",
+        description: "minim enim",
+      },
+      {
+        src: "/images/backend/databases.png",
+        alt: "minim enim",
+        description: "minim enim",
+      },
+      {
+        src: "/images/backend/containers.png",
+        alt: "minim enim",
+        description: "minim enim",
+      },
+      {
+        src: "/images/backend/web_dev.png",
+        alt: "minim enim",
+        description: "minim enim",
+      },
+      {
+        src: "/images/backend/base.png",
+        alt: "minim enim",
+        description: "minim enim",
+      },
     ],
   },
 ];
@@ -452,329 +700,7 @@ export const projects: PortfolioProject[] = [
     ],
     githubLink: "https://github.com/tmchuynh/sudoku",
   },
-  {
-    id: "frontendbook",
-    title: "A Front-end Development Book for Beginners",
-    description:
-      "An e-commerce platform built with React and Node.js. It supports user authentication, a shopping cart, and a complete checkout system.",
-    features: [],
-    images: [
-      {
-        src: "/images/frontend/table_of_contents.png",
-        alt: "minim enim",
-        description: "minim enim",
-      },
-      {
-        src: "/images/frontend/abbr.png",
-        alt: "minim enim",
-        description: "minim enim",
-      },
-      {
-        src: "/images/frontend/accessibility.png",
-        alt: "minim enim",
-        description: "minim enim",
-      },
-      {
-        src: "/images/frontend/document_structure.png",
-        alt: "minim enim",
-        description: "minim enim",
-      },
-      {
-        src: "/images/frontend/css.png",
-        alt: "minim enim",
-        description: "minim enim",
-      },
-      {
-        src: "/images/frontend/quizapp.png",
-        alt: "minim enim",
-        description: "minim enim",
-      },
-      {
-        src: "/images/frontend/next.png",
-        alt: "minim enim",
-        description: "minim enim",
-      },
-      {
-        src: "/images/frontend/framework.png",
-        alt: "minim enim",
-        description: "minim enim",
-      },
-    ],
-  },
-  {
-    id: "backendbook",
-    title: "A Back-end Development Book for Beginners",
-    description:
-      "An e-commerce platform built with React and Node.js. It supports user authentication, a shopping cart, and a complete checkout system.",
-    features: [],
-    images: [
-      {
-        src: "/images/backend/github.png",
-        alt: "minim enim",
-        description: "minim enim",
-      },
-      {
-        src: "/images/backend/principles.png",
-        alt: "minim enim",
-        description: "minim enim",
-      },
-      {
-        src: "/images/backend/design_principles.png",
-        alt: "minim enim",
-        description: "minim enim",
-      },
-      {
-        src: "/images/backend/databases.png",
-        alt: "minim enim",
-        description: "minim enim",
-      },
-      {
-        src: "/images/backend/containers.png",
-        alt: "minim enim",
-        description: "minim enim",
-      },
-      {
-        src: "/images/backend/web_dev.png",
-        alt: "minim enim",
-        description: "minim enim",
-      },
-      {
-        src: "/images/backend/base.png",
-        alt: "minim enim",
-        description: "minim enim",
-      },
-    ],
-  },
 ];
-
-export const certifications = [
-  {
-    title: "Full-Stack Web Development",
-    subtitle: "FreeCodeCamp",
-    date: "March 2023",
-    description: "Covering React, Node.js, and MongoDB. A comprehensive certification for building full-stack applications.",
-  },
-  {
-    title: "Advanced Python Programming",
-    subtitle: "Udemy",
-    date: "January 2023",
-    description: "Focused on algorithms, data structures, and application development in Python.",
-  },
-];
-
-
-export const awards = [
-  {
-    title: "Top Performer",
-    subtitle: "Coding Bootcamp Project Showcase",
-    date: "December 2022",
-    description: "Awarded for creating an accessible e-commerce app as part of the final project.",
-  },
-  {
-    title: "Best Frontend Developer",
-    subtitle: "Hackathon 2022",
-    date: "July 2022",
-    description: "Won for innovative design and frontend functionality in a team project.",
-  },
-];
-
-export const skillBadges = [
-  {
-    title: "React Development",
-    subtitle: "LinkedIn Skill Badge",
-    date: "February 2023",
-    description: "Endorsed by peers for expertise in building responsive React applications.",
-  },
-  {
-    title: "JavaScript Proficiency",
-    subtitle: "LinkedIn Skill Badge",
-    date: "February 2023",
-    description: "Earned for demonstrating advanced JavaScript knowledge in web development.",
-  },
-];
-
-export const milestones = [
-  {
-    title: "Advanced JavaScript",
-    subtitle: "Udemy",
-    date: "May 2022",
-    description: "Completed a hands-on course in ES6, asynchronous programming, and functional design.",
-  },
-  {
-    title: "Full-Stack Web Development Bootcamp",
-    subtitle: "Tech Institute",
-    date: "August 2022",
-    description: "Graduated with skills in React, Node.js, and RESTful APIs.",
-  },
-];
-
-export const commands: CommandShortcuts[] = [
-  {
-    groupName: "Suggestions",
-    items: [
-      {
-        icon: MdOutlineStackedBarChart,
-        title: "Tech Stack",
-        onSelect: "/info/techStack",
-      },
-      {
-        icon: FaUniversalAccess,
-        title: "Accessibility Declaration",
-        onSelect: "/accessibility",
-      },
-      {
-        icon: GrAchievement,
-        title: "Achievements and Certifications",
-        onSelect: "/info/experiences&achievements",
-      },
-    ],
-  },
-  {
-    groupName: "Projects",
-    items: [
-      {
-        icon: FaChess,
-        title: "International Activities Club Website",
-        onSelect: "/projects/iacwebsite",
-      },
-      {
-        icon: SiStylelint,
-        title: "A Front-end Development Book for Beginners",
-        onSelect: "/projects/frontendbook",
-      },
-      {
-        icon: FaDatabase,
-        title: "A Back-end Development Book for Beginners",
-        onSelect: "/projects/backendbook",
-      },
-      {
-        icon: IoBusiness,
-        title: "Business",
-        onSelect: "/profile",
-      },
-    ],
-  },
-];
-
-
-export const navBar = {
-  navMain: [
-    {
-      title: "Home",
-      url: "/",
-      icon: House,
-    },
-    {
-      title: "About Me",
-      icon: Info,
-      items: [
-        {
-          title: "Who I Am",
-          url: "/about",
-          icon: CircleUserRound,
-        },
-        {
-          title: "Accessibility Declaration",
-          icon: Accessibility,
-          url: "/info/accessibility",
-        },
-        {
-          title: "Resume",
-          url: "/info/resume",
-        },
-        {
-          title: "Tech Stacks",
-          url: "/info/techStack",
-        },
-        {
-          title: "Achievements",
-          url: "/info/experiences&achievements",
-        },
-      ],
-    },
-    {
-      title: "Contact",
-      url: "/contact",
-      icon: Send,
-    },
-  ],
-  works: [
-    {
-      title: "Writings",
-      icon: Pen,
-      items: [
-        {
-          title: "Front-End Development Book",
-          url: "/projects/frontendbook",
-        },
-        {
-          title: "Back-End Development Book",
-          url: "/projects/backendbook",
-        },
-        {
-          title: "Dev.to Blog",
-          url: "/writings/devto",
-        },
-      ],
-    },
-    {
-      title: "Projects",
-      icon: MessageSquareCode,
-      items: [
-        {
-          title: "My Business",
-          url: "/projects/mybussiness",
-        },
-        {
-          title: "IAC Website",
-          url: "/projects/iacwebsite",
-        },
-        {
-          title: "Quiz Application",
-          url: "/projects/quizapplication",
-        },
-        {
-          title: "Sudoku",
-          url: "/projects/sudoku",
-        },
-      ],
-    },
-    {
-      title: "Future Projects",
-      icon: BookMarked,
-      items: [
-        {
-          title: "Full-Stack Web Development",
-          url: "/futureProjects/futureProject1",
-        },
-        {
-          title: "Front-end Development",
-          url: "/futureProjects/futureProject1",
-        },
-        {
-          title: "Back-end Development",
-          url: "/futureProjects/futureProject1",
-        },
-        {
-          title: "Pre Medical",
-          url: "/futureProjects/futureProject1",
-        },
-        {
-          title: "Business",
-          url: "/futureProjects/futureProject1",
-        },
-        {
-          title: "Law",
-          url: "/futureProjects/futureProject1",
-        },
-        {
-          title: "Entrepreneurship",
-          url: "/roadmaps/entrepreneurship",
-        },
-      ],
-    },
-  ],
-};
 
 const marqueeDetails = [
   {
@@ -952,5 +878,157 @@ export const features = [
     background: (
       <Globe className="max-w-4xl absolute left-1/2" />
     ),
+  },
+];
+
+
+// --------------------------------------------------------------------
+
+export const certifications = [
+  {
+    title: "Legacy Data Visualization Certification",
+    subtitle: "FreeCodeCamp",
+    date: "June 7, 2023",
+  },
+  {
+    title: "Data Visualization Certification",
+    subtitle: "FreeCodeCamp",
+    date: "June 7, 2023",
+  },
+  {
+    title: "Legacy Front End Certification",
+    subtitle: "FreeCodeCamp",
+    date: "June 7, 2023",
+  },
+  {
+    title: "Front End Development Libraries Certification",
+    subtitle: "FreeCodeCamp",
+    date: "June 7, 2023",
+  },
+  {
+    title: "Responsive Web Design Certification",
+    subtitle: "FreeCodeCamp",
+    date: "March 10, 2022",
+  },
+  {
+    title: "Agile Development Practices",
+    subtitle: "LinkedIn Learning",
+    date: "June 8, 2023",
+  },
+  {
+    title: "Designing for Developers",
+    subtitle: "LinkedIn Learning",
+    date: "June 8, 2023",
+  },
+  {
+    title: "Level Up: SQL",
+    subtitle: "LinkedIn Learning",
+    date: "June 8, 2023",
+  },
+  {
+    title: "Mapping for User Experience Projects",
+    subtitle: "LinkedIn Learning",
+    date: "June 8, 2023",
+  },
+  {
+    title: "Spring Boot and React: Build Scalable and Dynamic Web Apps",
+    subtitle: "LinkedIn Learning",
+    date: "June 8, 2023",
+  },
+  {
+    title: "UX Foundations: Generational Design",
+    subtitle: "LinkedIn Learning",
+    date: "June 8, 2023",
+  },
+  {
+    title: "UX Foundations: Interaction Design",
+    subtitle: "LinkedIn Learning",
+    date: "June 8, 2023",
+  },
+  {
+    title: "UX Research: Journey Mapping",
+    subtitle: "LinkedIn Learning",
+    date: "June 8, 2023",
+  },
+  {
+    title: "Using MongoDB with Java",
+    subtitle: "LinkedIn Learning",
+    date: "June 8, 2023",
+  },
+  {
+    title: "Using MongoDB with Node.js",
+    subtitle: "LinkedIn Learning",
+    date: "June 8, 2023",
+  },
+  {
+    title: "Strategic Thinking (2017)",
+    subtitle: "LinkedIn Learning",
+    date: "June 20, 2022",
+  },
+  {
+    title: "Using MongoDB with Python",
+    subtitle: "LinkedIn Learning",
+    date: "June 8, 2023",
+  },
+  {
+    title: "How to Train Your Brain for Maximum Growth",
+    subtitle: "LinkedIn Learning",
+    date: "June 20, 2022",
+  },
+  {
+    title: "Data Analytics for Students",
+    subtitle: "LinkedIn Learning",
+    date: "April 12, 2022",
+  },
+  {
+    title: "Critical Thinking for Better Judgment and Decision-Making",
+    subtitle: "LinkedIn Learning",
+    date: "June 20, 2022",
+  },
+  {
+    title: "Python for Data Science Essential Training Part 1",
+    subtitle: "LinkedIn Learning",
+    date: "April 12, 2022",
+  },
+  {
+    title: "Learning React.js",
+    subtitle: "LinkedIn Learning",
+    date: "April 12, 2022",
+  },
+  {
+    title: "Learning Data Analytics: 1 Foundations",
+    subtitle: "LinkedIn Learning",
+    date: "March 31, 2022",
+  },
+  {
+    title: "Web Development Foundations: Full-Stack vs Front-End",
+    subtitle: "LinkedIn Learning",
+    date: "March 31, 2022",
+  },
+  {
+    title: "Using Python for Automation (2019)",
+    subtitle: "LinkedIn Learning",
+    date: "March 31, 2022",
+  },
+  {
+    title: "Succeeding in Web Development: Full Stack and Front End",
+    subtitle: "LinkedIn Learning",
+    date: "March 31, 2022",
+  },
+];
+
+export const certificationImages = [
+  {
+    src: "/images/certifications/tina-huynh-codingdojocert.png",
+    alt: "Coding Dojo Certification",
+    description: "Coding Dojo Certification",
+  },
+];
+
+export const credientials = [
+  {
+    title: "Full-Stack Web Development",
+    subtitle: "Software Development Online MERN",
+    date: "May 2023",
   },
 ];

@@ -16,15 +16,14 @@ const breadcrumbItems = [
     href: "/",
   },
   {
-    label: "Writing Pieces",
+    label: "Writing",
     dropdownItems: [
-      { label: "Front-End Development Book", href: "/projects/frontendbook" },
-      { label: "Back-End Development Book", href: "/projects/backendbook" },
-      { label: "Dev.to Blog", href: "/writings/devto" },
+      { label: "Front-End Development Book", href: "/book/frontendbook" },
+      { label: "Back-End Development Book", href: "/book/backendbook" },
     ],
   },
   {
-    label: "Details",
+    label: "Dev.to",
   },
 ];
 

@@ -11,6 +11,7 @@ const slugs = [
   "css3",
   "mysql",
   "express",
+  "flask",
   "mongodb",
   "springboot",
   "linux",
