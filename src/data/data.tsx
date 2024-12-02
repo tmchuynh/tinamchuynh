@@ -51,11 +51,9 @@ export const navBar = {
         {
           title: "Who I Am",
           url: "/about",
-          icon: CircleUserRound,
         },
         {
           title: "Accessibility Declaration",
-          icon: Accessibility,
           url: "/info/accessibility",
         },
         {

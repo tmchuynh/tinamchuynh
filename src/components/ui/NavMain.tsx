@@ -15,7 +15,8 @@ import {
   SidebarMenuSubButton,
   SidebarMenuSubItem,
 } from "@/components/ui/sidebar";
-import { ChevronRight, type LucideIcon } from "lucide-react";
+import { navItem, navSubItem } from "@/data/types";
+import { ChevronRight } from "lucide-react";
 import { useRouter } from "next/navigation";
 import React from "react";
 
@@ -25,7 +26,7 @@ export function NavMenuItem( {
   isOpen,
   onOpenChange,
 }: {
-  item: any;
+  item: navItem;
   itemKey: string;
   isOpen: boolean;
   onOpenChange: ( open: boolean ) => void;
@@ -46,7 +47,7 @@ export function NavMenuItem( {
         <CollapsibleTrigger asChild>
           <SidebarMenuButton
             tooltip={item.title}
-            onClick={() => handleClick( item.url )}
+            onClick={() => handleClick( item.url ? item.url : '' )}
             className="flex w-full items-center gap-2 p-2"
           >
             <div className="flex items-center justify-between w-full">
@@ -67,7 +68,7 @@ export function NavMenuItem( {
         {item.items?.length ? (
           <CollapsibleContent>
             <SidebarMenuSub>
-              {item.items.map( ( subItem: any, subIndex: number ) => (
+              {item.items.map( ( subItem: navSubItem, subIndex: number ) => (
                 <SidebarMenuSubItem key={`${ itemKey }_sub_${ subIndex }`}>
                   <SidebarMenuSubButton asChild>
                     <a href={subItem.url}>
@@ -92,16 +93,7 @@ export function NavMain( {
   setOpenItemKey,
 }: {
   title: string;
-  items: {
-    title: string;
-    url?: string;
-    icon: LucideIcon;
-    isActive?: boolean;
-    items?: {
-      title: string;
-      url: string;
-    }[];
-  }[];
+  items: navItem[];
   openItemKey: string | null;
   setOpenItemKey: React.Dispatch<React.SetStateAction<string | null>>;
 } ) {

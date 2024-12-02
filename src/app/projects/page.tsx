@@ -39,8 +39,8 @@ const GitHubRepoInfo = () => {
         } ) );
 
         setRepoData( reposWithLanguages );
-      } catch ( err: any ) {
-        setError( err.message );
+      } catch ( err ) {
+        setError( err as string );
       } finally {
         setLoading( false );
       }

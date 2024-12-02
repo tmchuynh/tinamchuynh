@@ -61,7 +61,7 @@ const PlatformPage = ( {
         console.log( formattedArticles );
         setArticles( formattedArticles );
       } catch ( error ) {
-        setError( "Error fetching articles" );
+        setError( error as string );
       } finally {
         setLoading( false );
       }

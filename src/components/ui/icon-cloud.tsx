@@ -80,7 +80,8 @@ export default function IconCloud( { iconSlugs }: DynamicCloudProps ) {
   }, [data, theme] );
 
   return (
-    // @ts-ignore
+    // @ts-expect-error
+    // This JSX tag's 'children' prop expects type 'ReactFragment' which requires multiple children, but only a single child was provided
     <Cloud {...cloudProps} >
       <>{renderedIcons}</>
     </Cloud>
