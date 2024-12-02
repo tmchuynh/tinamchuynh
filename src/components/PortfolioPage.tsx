@@ -88,7 +88,9 @@ const PortfolioPage = ( {
         ) : ''}
       </div>
 
-      <ImageGrid images={project.images} title="Images" />
+      {project.images ? (
+        <ImageGrid images={project.images} title="Images" />
+      ) : ''}
 
     </div>
   );
