@@ -77,7 +77,7 @@ export interface PortfolioProject {
   features?: string[];
   focuses?: string[];
   technologies?: string[];
-  images: ImageProps[];
+  images?: ImageProps[];
   timeline?: string[];
   inspiration?: ImageProps[];
   githubLink?: string;

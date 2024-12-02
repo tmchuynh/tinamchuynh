@@ -117,6 +117,10 @@ export const navBar = {
           title: "Sudoku",
           url: "/projects/sudoku",
         },
+        {
+          title: "More on GitHub",
+          url: "https://github.com/tmchuynh?tab=repositories",
+        },
       ],
     },
     {
@@ -124,34 +128,50 @@ export const navBar = {
       icon: BookMarked,
       items: [
         {
-          title: "Full-Stack Web Development",
-          url: "/futureProjects/futureProject1",
+          title: "Book Collection",
+          url: "/futureProjects/bookCollection",
         },
         {
-          title: "Front-end Development",
-          url: "/futureProjects/futureProject1",
+          title: "Event Planner",
+          url: "/futureProjects/eventPlanner",
         },
         {
-          title: "Back-end Development",
-          url: "/futureProjects/futureProject1",
+          title: "Habit Tracker",
+          url: "/futureProjects/habitTracker",
         },
         {
-          title: "Pre Medical",
-          url: "/futureProjects/futureProject1",
+          title: "Health and Wellness Tracker",
+          url: "/futureProjects/health&wellness",
         },
         {
-          title: "Business",
-          url: "/futureProjects/futureProject1",
+          title: "Job Market Data App",
+          url: "/futureProjects/jobMarketData",
         },
         {
-          title: "Law",
-          url: "/futureProjects/futureProject1",
+          title: "Life Management Platform",
+          url: "/futureProjects/lifeManagementPlatform",
         },
         {
-          title: "Entrepreneurship",
-          url: "/roadmaps/entrepreneurship",
+          title: "Online Learning Platform",
+          url: "/futureProjects/onlineLearning",
         },
-      ],
+        {
+          title: "Personal Finance",
+          url: "/futureProjects/personalFinance",
+        },
+        {
+          title: "Pet Adoption Service",
+          url: "/futureProjects/petAdoptionService",
+        },
+        {
+          title: "Storytelling Platform",
+          url: "/futureProjects/storytellingPlatform",
+        },
+        {
+          title: "Automatic Travel Itinerary Planner",
+          url: "/futureProjects/automaticTravelItinerary",
+        },
+      ]
     },
   ],
 };
@@ -329,114 +349,308 @@ export const timelineData: TimelineEvent[] = [
 
 export const futureProjects: PortfolioProject[] = [
   {
-    id: "futureProject1",
-    title: "Future E-commerce Platform",
+    id: "lifeManagementPlatform",
+    title: "Life Management Platform",
     description:
-      "This project involves building a scalable and robust e-commerce platform that can handle high traffic, provide excellent user experience, and integrate with various payment systems.",
+      "An all-in-one platform that combines calendar management, habit tracking, journaling, reminders, and mood tracking to help users organize their lives and improve personal well-being. This app is designed to foster productivity, mindfulness, and self-awareness.",
     focuses: [
-      "Performance Optimization",
-      "User Experience",
-      "Scalability and Load Balancing",
-      "Security and Payment Integration",
+      "Integrated Calendar and Reminder System: Provide users with a seamless calendar to plan events, set reminders, and manage daily schedules.",
+      "Habit Tracker with Analytics: Allow users to set goals, track habits, and visualize their progress with detailed analytics and streaks.",
+      "Personalized Journaling Features: Offer guided prompts, customizable entries, and a secure space for users to document their thoughts and experiences.",
+      "Mood Tracking and Insights: Enable users to log their mood daily, identify patterns, and connect mood trends with habits and journal entries.",
+      "Cross-Device Synchronization: Ensure that data is synced across devices so users can access their information anytime, anywhere.",
     ],
-    technologies: ["React", "Node.js", "MongoDB", "GraphQL", "TailwindCSS"],
-    images: [
-      {
-        src: "/images/inspiration1.jpg",
-        alt: "minim enim",
-        description: "minim enim",
-      },
-      {
-        src: "/images/inspiration2.jpg",
-        alt: "minim enim",
-        description: "minim enim",
-      },
-      {
-        src: "/images/inspiration3.jpg",
-        alt: "minim enim",
-        description: "minim enim",
-      },
+    technologies: [
+      "React Native",
+      "Node.js",
+      "MongoDB",
+      "Chart.js",
+      "TailwindCSS",
+      "Google Calendar API",
     ],
     timeline: [
-      "Research and Initial Planning",
-      "Prototype and Design",
-      "Development (Frontend and Backend)",
-      "Testing and Deployment",
+      "Feature Planning and Wireframing: Define core functionalities, create wireframes for calendar, habit tracking, journaling, and mood tracking features.",
+      "Backend Development: Implement authentication, data storage, and integration with third-party APIs such as Google Calendar.",
+      "Frontend Development: Build user-facing components for each feature, ensuring smooth navigation and responsiveness.",
+      "Testing and Integration: Test cross-platform functionality, refine data synchronization, and ensure smooth API communication.",
+      "Deployment and User Feedback: Deploy the app to app stores, gather user feedback, and iterate on features for future updates.",
     ],
-    inspiration: [
-      {
-        src: "/images/inspiration1.jpg",
-        alt: "minim enim",
-        description: "minim enim",
-      },
-      {
-        src: "/images/inspiration2.jpg",
-        alt: "minim enim",
-        description: "minim enim",
-      },
-      {
-        src: "/images/inspiration3.jpg",
-        alt: "minim enim",
-        description: "minim enim",
-      },
+  }
+  ,
+  {
+    id: "personalFinance",
+    title: "Personal Finance",
+    description:
+      "A web application to help users manage their personal finances, track spending, and set budget goals.",
+    focuses: [
+      "Data Visualization with Interactive Charts: Provide users with dynamic and visually appealing charts to analyze spending habits, budget trends, and financial performance over time.",
+      "Secure User Authentication and Role Management: Implement robust user authentication and authorization to protect sensitive financial data and allow role-based access.",
+      "Access to Educational Financial Resources: Offer users curated resources, articles, and tutorials to improve financial literacy and empower informed decision-making.",
+      "Integration with Financial APIs for Real-Time Data: Enable users to connect bank accounts or third-party services for real-time financial updates and automated data tracking.",
+      "Mobile-First Responsive Design for Accessibility: Ensure the platform is fully functional and visually optimized for mobile, tablet, and desktop users.",
     ],
-    githubLink: "https://github.com/yourgithub/future-ecommerce",
-    liveLink: "https://future-ecommerce.com",
+    technologies: ["Next.js", "Node.js", "MongoDB", "D3.js", "Bootstrap"],
+    timeline: [
+      "Conduct Research on Financial Analysis Trends and Tools: Explore market trends, user needs, and gaps in existing financial solutions.",
+      "Compare Existing Financial Solutions and Resources Available: Analyze popular tools to identify must-have features and additional value propositions.",
+      "Design Wireframes and Prototypes for User-Friendly Interfaces: Develop visual blueprints and prototypes focusing on intuitive navigation and design.",
+      "Develop Frontend and Backend with Integration of Financial APIs: Build the platform's frontend and backend components, integrating real-time financial data APIs for live updates.",
+      "Implement Robust Testing and Optimize for Deployment: Conduct comprehensive testing for security, performance, and usability, followed by optimization for deployment.",
+    ],
   },
   {
-    id: "futureProject10",
-    title: "Future E-commerce Website",
+    id: "health&wellness",
+    title: "Health and Wellness Tracker",
     description:
-      "This project involves building a scalable and robust e-commerce platform that can handle high traffic, provide excellent user experience, and integrate with various payment systems.",
+      "A web-based tracker that allows users to log workouts, track nutrition, and monitor mental health progress.",
     focuses: [
-      "Performance Optimization",
-      "User Experience",
-      "Scalability and Load Balancing",
-      "Security and Payment Integration",
+      "Comprehensive Workout and Nutrition Logging: Allow users to track exercises, meal plans, and caloric intake with an intuitive interface.",
+      "Integration with Wearable Device APIs: Sync data from popular wearable devices (e.g., Fitbit, Garmin, Apple Watch) to enhance tracking accuracy.",
+      "Goal Setting and Progress Tracking: Enable users to set personalized fitness goals and monitor their achievements over time.",
+      "User Analytics and Insights: Provide detailed analytics on user performance, trends, and recommendations for improved health outcomes.",
     ],
-    technologies: ["React", "Node.js", "MongoDB", "GraphQL", "TailwindCSS"],
-    images: [
-      {
-        src: "/images/inspiration1.jpg",
-        alt: "minim enim",
-        description: "minim enim",
-      },
-      {
-        src: "/images/inspiration2.jpg",
-        alt: "minim enim",
-        description: "minim enim",
-      },
-      {
-        src: "/images/inspiration3.jpg",
-        alt: "minim enim",
-        description: "minim enim",
-      },
-    ],
+    technologies: ["Vue.js", "Express", "Firebase", "Chart.js", "Vuetify"],
     timeline: [
-      "Research and Initial Planning",
-      "Prototype and Design",
-      "Development (Frontend and Backend)",
-      "Testing and Deployment",
+      "Market Research and Planning: Analyze competitors, identify key features, and outline project scope and target audience.",
+      "UI/UX Design: Create wireframes and interactive prototypes to ensure an engaging and user-friendly experience.",
+      "Frontend and Backend Implementation: Develop core features, integrate APIs, and establish real-time syncing between frontend and backend.",
+      "Testing with User Feedback: Conduct usability testing, gather feedback, and refine features to improve the app's performance and user satisfaction.",
+    ],
+  },
+  {
+    id: "onlineLearning",
+    title: "Online Learning Platform",
+    description:
+      "A platform where users can enroll in courses, complete interactive lessons, and earn certifications.",
+    focuses: [
+      "User Progress Tracking: Allow students to monitor their learning progress, completion rates, and achievements through intuitive dashboards and analytics.",
+      "Interactive Lesson Features: Create engaging lessons with interactive content, quizzes, and multimedia elements to enhance learning experiences.",
+      "Secure Payment Integration: Enable users to pay for courses safely and seamlessly using trusted payment gateways and secure transactions.",
+      "Admin and Instructor Dashboards: Provide administrators and instructors with tools to manage courses, monitor student performance, and track revenue or enrollment metrics.",
+    ],
+    technologies: ["React", "Django", "PostgreSQL", "GraphQL", "Material-UI"],
+    timeline: [
+      "Curriculum Planning: Define course structures, lesson content, and assessment criteria to form the foundation of the platform.",
+      "Frontend Prototyping: Design and develop wireframes and prototypes for user-facing interfaces, focusing on usability and visual appeal.",
+      "Backend Development: Implement APIs, database models, and backend functionality to manage users, courses, and payments effectively.",
+      "Integration and Certification Features: Add features for issuing certificates upon course completion and integrating third-party tools like analytics or video hosting platforms.",
+    ],
+  },
+  {
+    id: "automaticTravelItinerary",
+    title: "Automatic Travel Itinerary Planner",
+    description:
+      "A platform that automatically generates personalized travel itineraries for users based on preferences, budgets, and real-time data, including flights, accommodations, and activities.",
+    focuses: [
+      "AI-Powered Itinerary Generation: Automatically generate detailed travel plans based on user preferences, such as interests, budget, and travel dates.",
+      "Interactive Map Features: Provide users with an interactive map to visualize destinations, routes, and nearby attractions.",
+      "Integration with Travel APIs: Fetch real-time data on flights, hotels, and local activities from APIs like Skyscanner, Amadeus, and Yelp.",
+      "Budget Management and Recommendations: Offer cost-effective recommendations for travel options and provide a breakdown of estimated expenses.",
+      "Social Sharing and Collaboration: Allow users to share itineraries with travel companions and collaborate on trip planning in real-time.",
+    ],
+    technologies: ["Next.js", "Node.js", "MongoDB", "OpenAI API", "Mapbox", "TailwindCSS"],
+    timeline: [
+      "Research and API Selection: Analyze travel APIs to identify suitable integrations for flights, accommodations, and activities.",
+      "AI Model Integration: Use AI models to analyze user preferences and generate optimized travel plans.",
+      "UI/UX Design: Develop wireframes and prototypes focusing on simplicity and intuitive user interaction.",
+      "Frontend and Backend Development: Build components for AI-powered itinerary creation, interactive maps, and budget tracking.",
+      "Integration and Testing: Ensure smooth integration of APIs and test functionality across devices for a seamless user experience.",
     ],
     inspiration: [
       {
-        src: "/images/inspiration1.jpg",
-        alt: "minim enim",
-        description: "minim enim",
+        src: "/images/automaticTravelItinerary/auto-fill.png",
+        alt: "Auto-fill itinerary example",
+        description: "An example of how the platform automatically generates an itinerary based on user preferences.",
       },
       {
-        src: "/images/inspiration2.jpg",
-        alt: "minim enim",
-        description: "minim enim",
+        src: "/images/automaticTravelItinerary/locations.png",
+        alt: "Location selection interface",
+        description: "A screenshot showing the location selection feature, allowing users to pick destinations for their travel plan.",
       },
       {
-        src: "/images/inspiration3.jpg",
-        alt: "minim enim",
-        description: "minim enim",
+        src: "/images/automaticTravelItinerary/map-photos.png",
+        alt: "Interactive map with photos",
+        description: "A map interface displaying destination points and corresponding photos to help users visualize their trip.",
+      },
+      {
+        src: "/images/automaticTravelItinerary/auto-fill.png",
+        alt: "Auto-generated itinerary",
+        description: "A detailed view of an itinerary automatically created by the platform, including activities and schedules.",
+      },
+      {
+        src: "/images/automaticTravelItinerary/multiple-destinations.png",
+        alt: "Multiple destinations planning",
+        description: "An example showcasing the ability to plan trips with multiple destinations and optimized travel routes.",
+      },
+      {
+        src: "/images/automaticTravelItinerary/travel-checklist.png",
+        alt: "Travel checklist feature",
+        description: "A feature that provides users with a customizable travel checklist to ensure a well-prepared journey.",
+      },
+      {
+        src: "/images/automaticTravelItinerary/suggestions.png",
+        alt: "Personalized travel suggestions",
+        description: "An example of personalized suggestions for activities, restaurants, and attractions based on user preferences.",
+      },
+      {
+        src: "/images/automaticTravelItinerary/budget.png",
+        alt: "Budget management interface",
+        description: "A feature displaying a budget breakdown and cost estimates for planned trips, helping users stay within budget.",
+      },
+      {
+        src: "/images/automaticTravelItinerary/Itinerary-Timeline.png",
+        alt: "Itinerary timeline view",
+        description: "A visual timeline of the itinerary, including scheduled activities and travel times for better organization.",
+      },
+    ]
+  },
+  {
+    id: "jobMarketData",
+    title: "Job Market Data App",
+    description:
+      "A data-driven web application that provides insights into job market trends, including salary analysis, in-demand skills, and regional job availability.",
+    focuses: [
+      "Data Visualization: Present job market trends, salary distributions, and in-demand skills through clear, interactive graphs and charts.",
+      "API Integration with Job Boards: Connect to job board APIs (e.g., Indeed, LinkedIn) to fetch real-time job listings, salaries, and industry data.",
+      "Interactive Filtering and Sorting: Allow users to filter and sort data by location, job type, industry, or salary range for a personalized experience.",
+      "Responsive Design: Ensure a seamless experience across devices, optimizing the UI for both mobile and desktop users.",
+    ],
+    technologies: ["React", "D3.js", "Node.js", "MongoDB", "Chart.js"],
+    timeline: [
+      "Data Source Research: Identify reliable APIs and data sources for job listings, salaries, and skills trends, ensuring comprehensive coverage.",
+      "Frontend and Backend Setup: Establish the core application framework, build backend routes for API communication, and set up the database schema.",
+      "Visualization Implementation: Develop interactive graphs and dashboards for users to explore job market data visually.",
+      "Deployment and User Testing: Deploy the application to a hosting platform and gather feedback from users to improve functionality and usability.",
+    ],
+    inspiration: [
+      {
+        src: "/images/jobMarketData/earnings-by-education.png",
+        alt: "Chart showing earnings by education level",
+        description: "A data visualization comparing average earnings based on different levels of education to highlight trends in salary growth.",
+      },
+      {
+        src: "/images/jobMarketData/growing_occupations.png",
+        alt: "Bar chart of fastest-growing occupations",
+        description: "A bar chart showcasing the occupations with the highest projected growth rates over the next decade.",
+      },
+      {
+        src: "/images/jobMarketData/projected-annual-rate-of-change.png",
+        alt: "Projected annual rate of change in occupations",
+        description: "A graph illustrating the projected annual rate of change for various industries and job roles, providing insights into emerging trends.",
       },
     ],
-    githubLink: "https://github.com/yourgithub/future-ecommerce",
-    liveLink: "https://future-ecommerce.com",
+  },
+  {
+    id: "petAdoptionService",
+    title: "Pet Adoption Service",
+    description:
+      "A platform connecting potential pet owners with local shelters, featuring detailed pet profiles and adoption processes.",
+    focuses: [
+      "User Profiles and Pet Matching: Create personalized user profiles to match potential adopters with pets based on preferences like breed, size, and lifestyle.",
+      "Integration with Shelter APIs: Connect with shelter APIs to provide real-time updates on available pets, adoption status, and shelter information.",
+      "Application Tracking: Enable users to submit and track their adoption applications, including updates on the review process and next steps.",
+      "Donation and Volunteer Features: Allow users to make secure donations and sign up for volunteer opportunities directly through the platform.",
+    ],
+    technologies: ["Vue.js", "Firebase", "Node.js", "TailwindCSS", "Stripe"],
+    timeline: [
+      "API Integration Research: Identify and analyze APIs from shelters and pet databases to fetch real-time pet data and adoption statuses.",
+      "Frontend Prototyping: Design wireframes and interactive prototypes focusing on user experience and functionality.",
+      "Backend Development: Build robust server-side logic for user authentication, data management, and API integration.",
+      "Testing and Deployment: Conduct usability testing, ensure cross-browser compatibility, and deploy the platform to a cloud hosting service.",
+    ],
+  },
+  {
+    id: "eventPlanner",
+    title: "Event Planner Platform",
+    description:
+      "A web application that helps users plan, organize, and manage events, complete with RSVP tracking and vendor recommendations.",
+    focuses: [
+      "Dynamic Event Scheduling: Provide users with tools to create, modify, and organize event schedules with real-time updates and reminders.",
+      "User and Vendor Dashboards: Develop separate dashboards for event organizers and vendors, offering features like task management, event progress tracking, and service listings.",
+      "Integration with Calendar APIs: Sync events seamlessly with external calendar services (e.g., Google Calendar, Outlook) for better coordination and accessibility.",
+      "Payment and Budget Tracking: Enable secure payment processing for event services and offer tools to manage budgets, track expenses, and generate financial summaries.",
+    ],
+    technologies: ["Next.js", "Node.js", "PostgreSQL", "Material-UI", "Stripe"],
+    timeline: [
+      "Feature Planning: Identify and outline key features like event scheduling, dashboards, and payment tracking, ensuring alignment with user needs.",
+      "UI/UX Design: Develop wireframes and high-fidelity mockups focusing on user-friendly navigation and modern aesthetics.",
+      "Backend and API Integration: Build the backend to support user and vendor functionalities, integrate calendar APIs, and implement payment gateways.",
+      "Testing and Launch: Conduct rigorous testing for usability, performance, and security before deploying the platform to production.",
+    ],
+  },
+  {
+    id: "storytellingPlatform",
+    title: "Storytelling Platform",
+    description:
+      "A platform for writers to create, share, and publish stories, featuring collaborative writing and reader feedback systems.",
+    focuses: [
+      "Collaborative Writing Tools: Enable multiple users to collaborate on stories in real-time, with features like version control, comments, and suggestions.",
+      "Rich Text Editing and Formatting: Incorporate a robust text editor for formatting text, adding multimedia, and customizing the appearance of stories.",
+      "Reader Feedback and Analytics: Provide tools for readers to leave comments, rate stories, and analyze readership trends with detailed metrics.",
+      "Story Sharing and Social Features: Allow users to share stories on social media, follow favorite authors, and participate in community discussions.",
+    ],
+    technologies: ["React", "Django", "SQLite", "Quill.js", "TailwindCSS"],
+    timeline: [
+      "Content Strategy and Planning: Define the core features of the platform, including writing tools, social interaction, and analytics, while researching user needs.",
+      "Rich Text Editor Integration: Implement a robust text editor (Quill.js) with formatting options, multimedia embedding, and real-time collaboration capabilities.",
+      "Frontend and Backend Development: Build user-friendly interfaces for writing, sharing, and reading stories while implementing robust backend logic for authentication, data management, and analytics.",
+      "Community Testing and Deployment: Test the platform with a small user base to gather feedback, refine features, and ensure a seamless launch.",
+    ],
+  },
+  {
+    id: "habitTracker",
+    title: "Habit Tracker",
+    description:
+      "A habit tracking app to help users build and maintain habits through goal-setting, reminders, and progress tracking.",
+    focuses: [
+      "Goal Tracking and Streaks: Allow users to set personalized goals, monitor their daily habits, and maintain streaks to encourage consistency.",
+      "User-Friendly Notifications: Provide customizable reminders and motivational alerts to help users stay on track with their habits.",
+      "Data Visualization for Progress: Display user progress with interactive charts and graphs to show achievements, trends, and areas for improvement.",
+      "Cross-Device Syncing: Ensure seamless syncing of data across multiple devices, allowing users to access their progress anytime, anywhere.",
+    ],
+    technologies: ["Angular", "Firebase", "Chart.js", "Bootstrap", "Node.js"],
+    timeline: [
+      "Feature Planning and Prototyping: Identify core features like habit tracking, notifications, and data visualization, and create wireframes and prototypes.",
+      "Frontend Development: Develop intuitive user interfaces for habit management, progress tracking, and reminders using Angular and Bootstrap.",
+      "Progress Tracking Integration: Implement backend logic to handle data storage and integrate Chart.js for visualizing progress and trends.",
+      "Testing and User Feedback: Conduct usability testing, gather feedback from users, refine features, and prepare for deployment.",
+    ],
+    inspiration: [
+      {
+        src: "/images/habitTracker/charts.png",
+        alt: "Habit tracking progress charts",
+        description: "Data visualization showing progress charts for tracked habits, including streaks and completion rates.",
+      },
+      {
+        src: "/images/habitTracker/week-view.png",
+        alt: "Weekly habit overview",
+        description: "A week-view layout displaying daily habit completion status for a quick glance at progress and consistency.",
+      },
+      {
+        src: "/images/habitTracker/widgets.png",
+        alt: "Habit tracker widgets",
+        description: "Interactive widgets for tracking habits, setting goals, and viewing real-time progress directly on the dashboard.",
+      },
+    ],
+  },
+  {
+    id: "bookCollection",
+    title: "Book Collection",
+    description:
+      "A platform where users can catalog their book collections, write reviews, and share recommendations with a community.",
+    focuses: [
+      "Book Cataloging and Search: Allow users to organize their book collections with advanced search and filtering options for easy navigation.",
+      "Review and Rating System: Enable users to rate and review books, providing detailed feedback for other readers.",
+      "Community Interaction and Recommendations: Foster a community where users can share book recommendations, create reading lists, and follow favorite reviewers.",
+      "Mobile-Friendly Design: Ensure the platform is fully optimized for mobile devices, providing a seamless experience on any screen size.",
+    ],
+    technologies: ["React", "Express", "MongoDB", "Material-UI", "TailwindCSS"],
+    timeline: [
+      "Feature Planning and Wireframing: Identify core features like cataloging, reviews, and recommendations. Create wireframes and mockups for key screens.",
+      "Backend and Database Development: Develop API endpoints for managing book data, user accounts, reviews, and recommendations. Design a robust database schema to store information securely.",
+      "Frontend Design and Integration: Build an intuitive frontend interface using React, integrating Material-UI components and backend APIs for seamless functionality.",
+      "Testing and Community Launch: Test all features rigorously for usability and performance. Gather feedback from initial users and refine the platform before launching to a broader audience.",
+    ],
   },
 ];
 
@@ -462,14 +676,19 @@ export const bookProjects: BookProject[] = [
     focuses: [],
     images: [
       {
-        src: "/images/frontend/table_of_contents.png",
+        src: "/images/frontend/abbr.png",
+        alt: "Abbreviations and glossary page",
+        description: "A glossary of common abbreviations and terms used in frontend development, providing quick references for learners.",
+      },
+      {
+        src: "/images/frontend/table_of_contents-1.png",
         alt: "Table of Contents for frontend topics",
         description: "An organized table of contents outlining key frontend development topics and sections.",
       },
       {
-        src: "/images/frontend/abbr.png",
-        alt: "Abbreviations and glossary page",
-        description: "A glossary of common abbreviations and terms used in frontend development, providing quick references for learners.",
+        src: "/images/frontend/table_of_contents.png",
+        alt: "Table of Contents for frontend topics",
+        description: "An organized table of contents outlining key frontend development topics and sections.",
       },
       {
         src: "/images/frontend/accessibility.png",
@@ -492,14 +711,14 @@ export const bookProjects: BookProject[] = [
         description: "A practical project for building a quiz application using frontend technologies like HTML, CSS, and JavaScript.",
       },
       {
-        src: "/images/frontend/next.png",
-        alt: "Learning Next.js for frontend development",
-        description: "An introduction to Next.js, a popular React-based framework for building fast and scalable web applications.",
-      },
-      {
         src: "/images/frontend/framework.png",
         alt: "Understanding frameworks and libraries in frontend development",
         description: "An exploration of frameworks and libraries such as React, Angular, and Vue.js, with comparisons and use cases.",
+      },
+      {
+        src: "/images/frontend/next.png",
+        alt: "Learning Next.js for frontend development",
+        description: "An introduction to Next.js, a popular React-based framework for building fast and scalable web applications.",
       },
     ],
   },
@@ -511,14 +730,14 @@ export const bookProjects: BookProject[] = [
     focuses: [],
     images: [
       {
+        src: "/images/backend/web_dev.png",
+        alt: "Introduction to backend web development",
+        description: "An introduction to backend web development, covering essential tools and technologies for server-side programming.",
+      },
+      {
         src: "/images/backend/github.png",
         alt: "GitHub basics for version control",
         description: "A guide to understanding GitHub basics, including repositories, commits, and collaborative version control.",
-      },
-      {
-        src: "/images/backend/principles.png",
-        alt: "Database principles overview",
-        description: "An overview of fundamental database principles, such as data organization, normalization, and indexing.",
       },
       {
         src: "/images/backend/design_principles.png",
@@ -531,19 +750,19 @@ export const bookProjects: BookProject[] = [
         description: "An introduction to databases, including relational and non-relational systems and their use cases.",
       },
       {
-        src: "/images/backend/containers.png",
-        alt: "Containers and Docker basics",
-        description: "Basics of containers and Docker, highlighting their role in creating scalable and portable development environments.",
-      },
-      {
-        src: "/images/backend/web_dev.png",
-        alt: "Introduction to backend web development",
-        description: "An introduction to backend web development, covering essential tools and technologies for server-side programming.",
+        src: "/images/backend/principles.png",
+        alt: "Database principles overview",
+        description: "An overview of fundamental database principles, such as data organization, normalization, and indexing.",
       },
       {
         src: "/images/backend/base.png",
         alt: "BASE vs ACID principles in databases",
         description: "A comparison of BASE and ACID principles in database management, explaining their differences and applications.",
+      },
+      {
+        src: "/images/backend/containers.png",
+        alt: "Containers and Docker basics",
+        description: "Basics of containers and Docker, highlighting their role in creating scalable and portable development environments.",
       },
     ],
   },

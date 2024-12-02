@@ -36,7 +36,6 @@ const FutureProjectDetailPage = () => {
         href: `/futureProjects/${ proj.id }`,
       } ) );
 
-
     if ( dropdownItems.length > 0 ) {
       setBreadcrumbItems( ( prev ) => [
         ...prev.slice( 0, 1 ),
@@ -50,7 +49,7 @@ const FutureProjectDetailPage = () => {
   }, [projectId] );
 
   if ( !project ) {
-    return <div>Project not found or loading...</div>; // If no project is found
+    return <div>Project loading...</div>;
   }
 
   return (
