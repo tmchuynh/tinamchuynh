@@ -110,7 +110,7 @@ const FutureProjectPage = (
       {/* Inspiration */}
       {futureProjects.inspiration ?
         (
-          <ImageGrid images={futureProjects.inspiration} />
+          <ImageGrid images={futureProjects.inspiration} title="Inspiration" />
         ) : ""}
 
       {/* Project Links */}
