@@ -8,12 +8,12 @@ import { Dialog, DialogTitle, DialogClose } from "./dialog";
 import { Button } from "./button";
 import { useTheme } from "next-themes";
 
-const ImageGrid = ( { images }: { images: ImageProps[]; } ) => {
+const ImageGrid = ( { images, title }: { images: ImageProps[]; title: string; } ) => {
   const { theme } = useTheme();
 
   return (
     <div className="max-w-7xl mx-auto p-6">
-      <h1 className="text-4xl font-bold text-center mb-8">Project Images</h1>
+      <h1 className="text-4xl font-bold text-center mb-8">{title}</h1>
       <div>
         <BlurFade delay={0.25} inView className="flex flex-wrap gap-5">
           {images.map( ( image, index ) => (

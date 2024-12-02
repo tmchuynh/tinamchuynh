@@ -1,11 +1,33 @@
 "use client";
 
 import BlurFade from "@/components/ui/blur-fade";
+import Breadcrumb from "@/components/ui/breadcrumb";
 import React from "react";
+
+const breadcrumbItems = [
+  {
+    label: "Home",
+    href: "/",
+  },
+  {
+    label: "About Me",
+    dropdownItems: [
+      { label: "Who I Am", href: "/about" },
+      { label: "Accessibility Declaration", href: "/info/accessibility" },
+      { label: "Resume", href: "/info/resume" },
+      { label: "Tech Stack", href: "/info/techStack" },
+      { label: "Achievements", href: "/info/experiences&achievements" },
+    ],
+  },
+  {
+    label: "Details",
+  },
+];
 
 const AboutPage = () => {
   return (
     <div className="max-w-5xl text-justify mx-auto p-6">
+      <Breadcrumb items={breadcrumbItems} />
 
       {/* About Me Title */}
       <BlurFade delay={0.25}>

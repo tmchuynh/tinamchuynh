@@ -1,12 +1,12 @@
 "use client";
 
+import BlurFade from "@/components/ui/blur-fade";
+import { Button } from "@/components/ui/button";
+import ImageGrid from "@/components/ui/image-grid";
 import { PortfolioProject } from "@/data/types";
 import { Check, StarHalf } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
-import ImageGrid from "@/components/ui/image-grid";
-import BlurFade from "@/components/ui/blur-fade";
 import Breadcrumb from "./ui/breadcrumb";
 
 const breadcrumbItems = [
@@ -21,8 +21,6 @@ const breadcrumbItems = [
       { label: "IAC Website", href: "/projects/iacwebsite" },
       { label: "Quiz Application", href: "/projects/quizapplication" },
       { label: "Sudoku", href: "/projects/sudoku" },
-      { label: "Front-End Development Book", href: "/projects/frontendbook" },
-      { label: "Back-End Development Book", href: "/projects/backendbook" },
     ],
   },
   {
@@ -96,7 +94,7 @@ const PortfolioPage = ( {
       <div>
         {project.features ? (
           <>
-            <h2 className="text-2xl font-semibold mb-4">Project Features</h2>
+            <h2 className="text-2xl font-semibold mb-4">Features</h2>
             <div className="text-lg flex flex-col pl-6 mb-8">
               {project.features.map( ( feature, index ) => (
                 <BlurFade delay={0.25 + index} inView key={feature}>
@@ -111,7 +109,7 @@ const PortfolioPage = ( {
         ) : ''}
       </div>
 
-      <ImageGrid images={project.images} />
+      <ImageGrid images={project.images} title="Images" />
 
     </div>
   );

@@ -25,7 +25,6 @@ import {
   FaWindows,
 } from "react-icons/fa6";
 import { TimelineEvent } from "@/data/types";
-import { AnimatedBeamMultipleOutput } from "@/components/AnimatedOutput";
 import Marquee from "@/components/ui/marquee";
 import { FaUniversalAccess } from "react-icons/fa";
 import { GrAchievement } from "react-icons/gr";
@@ -35,6 +34,9 @@ import { MdOutlineStackedBarChart } from "react-icons/md";
 import { AnimatedList } from "@/components/ui/animated-list";
 import clsx from "clsx";
 import { Calendar } from "@/components/ui/calendar";
+import { IconClouds } from "@/components/IconCircles";
+import Globe from "@/components/ui/globe";
+import ClientTweetCard from "@/components/ClientTweetCard";
 
 export const timelineData: TimelineEvent[] = [
   {
@@ -619,7 +621,7 @@ export const navBar = {
         {
           title: "Accessibility Declaration",
           icon: Accessibility,
-          url: "/accessibility",
+          url: "/info/accessibility",
         },
         {
           title: "Resume",
@@ -787,7 +789,11 @@ export const features = [
     description: "Search through all your files in one place.",
     href: "/accessibility",
     cta: "Learn more",
-    background: <img className="-top-20 -right-20 absolute opacity-60" />,
+    background: (
+      <div className="pt-4">
+        <ClientTweetCard id="1839807144016634063" className="w-10/12 mx-auto shadow-lg opacity-50 border" />
+      </div>
+    ),
     className: "col-span-4",
   },
   {
@@ -802,7 +808,7 @@ export const features = [
         pauseOnHover
         repeat={5}
         vertical
-        className="[mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] flex mx-2 min-w-7xl"
+        className="[mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] flex mx-2 min-w-7xl opacity-50"
       >
         {slider.map( ( f, idx ) => (
           <figure
@@ -836,7 +842,7 @@ export const features = [
         {animatedAlerts.map( ( item, index ) => (
           <div
             key={index}
-            className="-z-0 border-highlight bg-accent opacity-50 shadow-lg mx-auto p-4 border rounded-lg w-10/12 text-accent-foreground"
+            className="-z-0 bg-secondary text-secondary-foreground opacity-50 shadow-lg mx-auto p-4 border rounded-lg w-10/12"
           >
             {item}
           </div>
@@ -852,7 +858,7 @@ export const features = [
     cta: "Learn more",
     className: "relative transform scale-25",
     background: (
-      <AnimatedBeamMultipleOutput className="group-hover:scale-105 [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] absolute border-none h-[9.5rem] transition-all duration-300 ease-out" />
+      <IconClouds />
     ),
   },
   {
@@ -876,7 +882,7 @@ export const features = [
         <Calendar
           mode="single"
           selected={new Date( 2022, 4, 11, 0, 0, 0 )}
-          className="group-hover:scale-105 [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] border rounded-md w-fit origin-top transition-all duration-300 ease-out"
+          className="group-hover:scale-105 [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] border rounded-md w-fit origin-top transition-all duration-300 ease-out opacity-50"
         />
       </div>
     ),
@@ -888,6 +894,8 @@ export const features = [
     href: "/writings/devto",
     cta: "Learn more",
     className: "col-span-4",
-    background: <img className="-top-20 -right-20 absolute opacity-60" />,
+    background: (
+      <Globe className="max-w-4xl absolute left-1/2" />
+    ),
   },
 ];

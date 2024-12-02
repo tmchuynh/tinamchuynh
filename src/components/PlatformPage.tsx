@@ -2,7 +2,6 @@
 
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
-import { useTheme } from "next-themes";
 import { DevToArticle, WritingPlatform } from "@/data/types";
 import { CardTitle, CardDescription, CardFooter, Card, CardHeader, CardContent, CardActions } from "@/components/ui/card";
 import Breadcrumb from "./ui/breadcrumb";
@@ -17,14 +16,11 @@ const breadcrumbItems = [
     href: "/",
   },
   {
-    label: "Projects",
+    label: "Writing Pieces",
     dropdownItems: [
-      { label: "My Business", href: "/projects/mybussiness" },
-      { label: "IAC Website", href: "/projects/iacwebsite" },
-      { label: "Quiz Application", href: "/projects/quizapplication" },
-      { label: "Sudoku", href: "/projects/sudoku" },
       { label: "Front-End Development Book", href: "/projects/frontendbook" },
       { label: "Back-End Development Book", href: "/projects/backendbook" },
+      { label: "Dev.to Blog", href: "/writings/devto" },
     ],
   },
   {
