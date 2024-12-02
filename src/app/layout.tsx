@@ -1,14 +1,14 @@
 "use client";
 
+import { CommandMenu } from "@/components/CommandMenu";
+import { NavSidebar } from "@/components/NavSidebar";
+import { ShortcutDialog } from "@/components/ShortcutDialog";
+import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar';
 import Head from "next/head";
 import React from "react";
-import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar';
-import './globals.css';
 import { NotFoundProvider, useNotFound } from "./context/NotFoundContext";
-import { NavSidebar } from "@/components/NavSidebar";
+import './globals.css';
 import { Providers } from "./providers";
-import { CommandMenu } from "@/components/CommandMenu";
-import { ShortcutDialog } from "@/components/ShortcutDialog";
 
 export default function RootLayout( {
   children,

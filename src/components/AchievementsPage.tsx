@@ -1,10 +1,10 @@
 "use client";
 
 import BlurFade from "@/components/ui/blur-fade";
+import { certificationImages } from "@/data/data";
 import { AchievementItem, AchievementsSectionProps } from "@/data/types";
 import React from "react";
 import ImageGrid from "./ui/image-grid";
-import { certificationImages } from "@/data/data";
 
 
 const AchievementsSection: React.FC<AchievementsSectionProps> = ( { title, items } ) => {

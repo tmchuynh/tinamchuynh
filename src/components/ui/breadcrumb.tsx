@@ -1,11 +1,9 @@
 "use client";
 
+import { ChevronDown } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { Button } from "./button";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "./dropdown-menu";
-import { ChevronDown } from "lucide-react";
-import { useTheme } from "next-themes";
-import { useState, useEffect } from "react";
 
 interface BreadcrumbItem {
   label: string;
@@ -15,13 +13,6 @@ interface BreadcrumbItem {
 
 const Breadcrumb: React.FC<{ items: BreadcrumbItem[]; }> = ( { items } ) => {
   const router = useRouter();
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState( false );
-
-  useEffect( () => {
-    setMounted( true );
-  }, [] );
-
 
   return (
     <nav className="flex justify-between pb-10" aria-label="Breadcrumb">

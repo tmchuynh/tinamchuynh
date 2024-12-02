@@ -13,7 +13,6 @@ import { Badge } from "./ui/badge";
 import { RepoData } from "@/data/types";
 import { formatDate, formatTitle } from "@/lib/utils";
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
 
 export function ProjectCard( {
 	repo,
@@ -26,12 +25,7 @@ export function ProjectCard( {
 	const topics = repo.topics || [];
 	const languages = repo.languages || {};
 
-	const { theme, setTheme } = useTheme();
-	const [mounted, setMounted] = useState( false );
-
-	useEffect( () => {
-		setMounted( true );
-	}, [] );
+	const { theme } = useTheme();
 
 	return (
 		<Card className="w-[350px]">
@@ -58,7 +52,7 @@ export function ProjectCard( {
 						<strong>Languages:</strong>
 						<div>
 							{Object.keys( languages ).length > 0 ? (
-								Object.entries( languages ).map( ( [language, count], index ) => (
+								Object.entries( languages ).map( ( [language], index ) => (
 									<Badge variant={theme === "dark" ? "tertiary" : "highlight"} key={index}>{language}</Badge>
 								) )
 							) : (

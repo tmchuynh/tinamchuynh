@@ -1,10 +1,8 @@
 import { PortfolioProject } from "@/data/types";
-import BlurFade from "./ui/blur-fade";
-import ImageGrid from "./ui/image-grid";
 import { Bookmark, Check } from "lucide-react";
 import { useTheme } from "next-themes";
-import { useState, useEffect } from "react";
-
+import BlurFade from "./ui/blur-fade";
+import ImageGrid from "./ui/image-grid";
 
 const FutureProjectPage = (
   {
@@ -13,12 +11,7 @@ const FutureProjectPage = (
     futureProjects: PortfolioProject;
   }
 ) => {
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState( false );
-
-  useEffect( () => {
-    setMounted( true );
-  }, [] );
+  const { theme } = useTheme();
 
   return (
     <div>

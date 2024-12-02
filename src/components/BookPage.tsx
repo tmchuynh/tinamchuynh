@@ -2,7 +2,6 @@ import BlurFade from "@/components/ui/blur-fade";
 import { BookProject } from "@/data/types";
 import { Bookmark } from "lucide-react";
 import { useTheme } from "next-themes";
-import { useState, useEffect } from "react";
 import { ImageCarousel } from "./ImageCarousel";
 
 
@@ -13,12 +12,7 @@ const BookPage = (
     book: BookProject;
   }
 ) => {
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState( false );
-
-  useEffect( () => {
-    setMounted( true );
-  }, [] );
+  const { theme } = useTheme();
 
   return (
     <div>

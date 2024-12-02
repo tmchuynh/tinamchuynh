@@ -1,13 +1,13 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { useEffect, useState } from "react";
+import { Card, CardActions, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { DevToArticle, WritingPlatform } from "@/data/types";
-import { CardTitle, CardDescription, CardFooter, Card, CardHeader, CardContent, CardActions } from "@/components/ui/card";
-import Breadcrumb from "./ui/breadcrumb";
+import { formatDate } from "@/lib/utils";
+import { useEffect, useState } from "react";
 import { Badge } from "./ui/badge";
 import BlurFade from "./ui/blur-fade";
-import { formatDate } from "@/lib/utils";
+import Breadcrumb from "./ui/breadcrumb";
 
 
 const breadcrumbItems = [

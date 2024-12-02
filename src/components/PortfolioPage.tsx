@@ -6,19 +6,13 @@ import ImageGrid from "@/components/ui/image-grid";
 import { PortfolioProject } from "@/data/types";
 import { Check, StarHalf } from "lucide-react";
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
 
 const PortfolioPage = ( {
   project,
 }: {
   project: PortfolioProject;
 } ) => {
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState( false );
-
-  useEffect( () => {
-    setMounted( true );
-  }, [] );
+  const { theme } = useTheme();
 
   function handleClick( link: string | undefined ) {
     window.open( link, "_blank" );

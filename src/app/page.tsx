@@ -1,4 +1,4 @@
-import { BentoGrid, BentoCard } from "@/components/ui/bento-grid";
+import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 import BlurFade from "@/components/ui/blur-fade";
 import { features } from "@/data/data";
 

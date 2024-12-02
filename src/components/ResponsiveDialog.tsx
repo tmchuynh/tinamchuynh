@@ -28,12 +28,7 @@ import { useTheme } from "next-themes";
 export function DrawerDialogDemo() {
   const [open, setOpen] = React.useState( false );
   const isDesktop = useMediaQuery( "(min-width: 768px)" );
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = React.useState( false );
-
-  React.useEffect( () => {
-    setMounted( true );
-  }, [] );
+  const { theme } = useTheme();
 
   if ( isDesktop ) {
     return (
