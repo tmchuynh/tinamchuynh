@@ -53,9 +53,9 @@ const GitHubRepoInfo = () => {
   if ( error ) return <p>Error: {error}</p>;
 
   return (
-    <div>
-      <h1>Repository Info</h1>
-      <div className='grid grid-cols-2 md:grid-cols-4 gap-3'>
+    <div className="max-w-7xl mx-auto p-6">
+      <h1 className="text-4xl font-bold text-center mb-8">Repository Info</h1>
+      <div className='grid grid-cols-2 md:grid-cols-3 gap-3'>
         {repoData && repoData.length > 0 ? (
           repoData.map( ( repo, index ) => (
             !repo.fork ? (

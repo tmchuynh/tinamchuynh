@@ -15,8 +15,6 @@ const ProjectDetailPage = () => {
     { label: "Projects" },
   ] );
 
-  console.log( projectId );
-
   useEffect( () => {
     const selectedProject = projects.find( ( proj ) => proj.id === projectId );
 

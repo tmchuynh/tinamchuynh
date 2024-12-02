@@ -23,7 +23,6 @@ export interface RepoData {
   fork: boolean;
   created_at: string;
   url: string;
-  license: string;
   topics: string[];
   languages: string[];
   languages_url: string;

@@ -11,3 +11,9 @@ export function formatDate( dateString: string ): string {
 
   return new Intl.DateTimeFormat( 'en-US' ).format( date );
 }
+
+export function formatTitle( title: string ): string {
+  const words = title.split( "-" ).map( word => word.charAt( 0 ).toUpperCase() + word.slice( 1 ) ).join( " " );;
+  const formattedTitle = words.split( "_" ).map( word => word.charAt( 0 ).toUpperCase() + word.slice( 1 ) ).join( " " );
+  return formattedTitle;
+}

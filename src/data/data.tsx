@@ -32,7 +32,6 @@ import { IoBusiness } from "react-icons/io5";
 import { SiStylelint } from "react-icons/si";
 import { MdOutlineStackedBarChart } from "react-icons/md";
 import { AnimatedList } from "@/components/ui/animated-list";
-import clsx from "clsx";
 import { Calendar } from "@/components/ui/calendar";
 import { IconClouds } from "@/components/IconCircles";
 import Globe from "@/components/ui/globe";
@@ -464,42 +463,42 @@ export const bookProjects: BookProject[] = [
     images: [
       {
         src: "/images/frontend/table_of_contents.png",
-        alt: "minim enim",
+        alt: "table_of_contents",
         description: "minim enim",
       },
       {
         src: "/images/frontend/abbr.png",
-        alt: "minim enim",
+        alt: "abbreviations page",
         description: "minim enim",
       },
       {
         src: "/images/frontend/accessibility.png",
-        alt: "minim enim",
+        alt: "accessibility information",
         description: "minim enim",
       },
       {
         src: "/images/frontend/document_structure.png",
-        alt: "minim enim",
+        alt: "document_structure",
         description: "minim enim",
       },
       {
         src: "/images/frontend/css.png",
-        alt: "minim enim",
+        alt: "CSS",
         description: "minim enim",
       },
       {
         src: "/images/frontend/quizapp.png",
-        alt: "minim enim",
+        alt: "building a quiz application",
         description: "minim enim",
       },
       {
         src: "/images/frontend/next.png",
-        alt: "minim enim",
+        alt: "learning about next.js",
         description: "minim enim",
       },
       {
         src: "/images/frontend/framework.png",
-        alt: "minim enim",
+        alt: "learning about frameworks and libraries",
         description: "minim enim",
       },
     ],
@@ -513,37 +512,37 @@ export const bookProjects: BookProject[] = [
     images: [
       {
         src: "/images/backend/github.png",
-        alt: "minim enim",
+        alt: "GitHub basics",
         description: "minim enim",
       },
       {
         src: "/images/backend/principles.png",
-        alt: "minim enim",
+        alt: "Database Principles",
         description: "minim enim",
       },
       {
         src: "/images/backend/design_principles.png",
-        alt: "minim enim",
+        alt: "Database Design Principles",
         description: "minim enim",
       },
       {
         src: "/images/backend/databases.png",
-        alt: "minim enim",
+        alt: "Database Basics",
         description: "minim enim",
       },
       {
         src: "/images/backend/containers.png",
-        alt: "minim enim",
+        alt: "containers basics",
         description: "minim enim",
       },
       {
         src: "/images/backend/web_dev.png",
-        alt: "minim enim",
+        alt: "introduction to web development",
         description: "minim enim",
       },
       {
         src: "/images/backend/base.png",
-        alt: "minim enim",
+        alt: "BASE vs ACID",
         description: "minim enim",
       },
     ],
@@ -552,12 +551,23 @@ export const bookProjects: BookProject[] = [
 
 export const projects: PortfolioProject[] = [
   {
-    id: "mybussiness",
+    id: "mybusiness",
     title: "My Website Business Project",
     description:
-      "This is a personal photography portfolio showcasing my journey through various landscapes and cityscapes. The project features a dynamic gallery, an interactive gallery layout, and optimized images for different screen sizes.",
-    technologies: ["Next.js", "TypeScript", "Docker", "Tailwind", "Yup"],
-    features: ["React", "TailwindCSS", "Node.js", "Express", "MongoDB"],
+      "A platform designed to sell high-quality, custom websites to businesses and individuals. The project combines modern technologies to deliver responsive, visually stunning, and SEO-optimized websites, tailored to meet client needs and drive online success.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Docker",
+      "TailwindCSS",
+      "Yup",
+    ],
+    features: [
+      "Custom Website Packages: Offers tiered packages to meet diverse client needs, from small businesses to enterprises.",
+      "Responsive Design: Guarantees all websites are mobile-friendly and fully optimized for different screen sizes.",
+      "Containerized Deployment: Uses Docker to ensure scalable and consistent website hosting.",
+      "Form Validation: Incorporates Yup to ensure secure and accurate client data collection during website setup.",
+    ],
     images: [
       {
         src: "/images/business/contact_form.png",
@@ -598,18 +608,24 @@ export const projects: PortfolioProject[] = [
   },
   {
     id: "iacwebsite",
-    title: "International Activites Club Official Website",
+    title: "International Activities Club Official Website",
     description:
-      "An e-commerce platform built with React and Node.js. It supports user authentication, a shopping cart, and a complete checkout system.",
+      "The official website for the International Activities Club, an after-school program in Irvine, CA, offering diverse activities such as sports (soccer, volleyball, basketball), performing arts, creative writing, and chess. The website serves as a hub for program information, schedules, and registration.",
     technologies: [
-      "Next.js",
-      "TypeScript",
-      "Docker",
-      "Tailwind",
+      "JavaScript",
+      "Bootstrap",
       "Chart.js",
-      "Yup",
+      "HTML",
+      "CSS",
     ],
-    features: [],
+    features: [
+      "Program Information: Provides detailed descriptions of all activities and programs offered by the club.",
+      "Dynamic Schedule Display: Displays up-to-date schedules for activities using dynamic tables and interactive components.",
+      "Registration System: Includes a user-friendly interface for parents to register their children for programs.",
+      "Data Visualization: Uses Chart.js to present program participation statistics and trends visually.",
+      "Responsive Design: Ensures the website functions seamlessly across devices, including desktops, tablets, and smartphones.",
+      "Interactive Navigation: Intuitive menus and search functionality make it easy to find program details and schedules.",
+    ],
     images: [
       {
         src: "/images/iac/about_classes.png",
@@ -643,9 +659,23 @@ export const projects: PortfolioProject[] = [
     id: "quizapplication",
     title: "A Full-Stack Quiz Application",
     description:
-      "An e-commerce platform built with React and Node.js. It supports user authentication, a shopping cart, and a complete checkout system.",
-    technologies: ["localStorage", "sessionStorage", "JavaScript", "cookies"],
-    features: [],
+      "A dynamic web-based quiz application that enables users to register, log in, take quizzes on various topics, and track their past quiz scores. Built with a focus on functionality and persistence, the application uses localStorage and sessionStorage to manage user data and quiz progress effectively.",
+    technologies: [
+      "JavaScript",
+      "localStorage",
+      "sessionStorage",
+      "Cookies",
+      "HTML",
+      "CSS",
+    ],
+    features: [
+      "User Registration & Login: Allows users to create an account by providing their first name, last name, email, and username. Registered users can securely log in to access their quizzes.",
+      "Quiz Functionality: Users can select from a variety of quiz topics and take interactive quizzes designed to test their knowledge and skills.",
+      "Score Tracking: Displays quiz scores upon completion, with a detailed history of past scores stored and sortable by percentage or date.",
+      "Session Persistence: Utilizes sessionStorage to maintain quiz progress and localStorage to save user data and quiz history across sessions.",
+      "Responsive Design: Ensures a seamless experience across devices, from desktops to smartphones.",
+      "Secure Data Handling: Implements cookies for enhanced session management and data protection.",
+    ],
     images: [
       {
         src: "/images/quizapp/registration.png",
@@ -689,8 +719,14 @@ export const projects: PortfolioProject[] = [
     id: "sudoku",
     title: "A Sudoku Application for CodeNinjas",
     description:
-      "An e-commerce platform built with React and Node.js. It supports user authentication, a shopping cart, and a complete checkout system.",
-    features: [],
+      "An interactive Sudoku application designed for students at CodeNinjas. The application includes customizable difficulty levels, real-time validation, and user-friendly controls to enhance the learning experience and improve problem-solving skills.",
+    features: [
+      "Customizable difficulty levels: Easy, Medium, and Hard for all skill ranges.",
+      "Real-time validation to alert users of incorrect entries.",
+      "Interactive, user-friendly interface for seamless gameplay.",
+      "Responsive design for use across devices, including desktops and tablets.",
+      "Dynamic generation of Sudoku puzzles to ensure variety in gameplay.",
+    ],
     images: [
       {
         src: "/images/sudoku/game.png",
@@ -704,70 +740,98 @@ export const projects: PortfolioProject[] = [
 
 const marqueeDetails = [
   {
-    name: "firstinrow.pdf",
-    body: "Bitcoin is a cryptocurrency invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto.",
+    name: "portfolio.pdf",
+    body: "A portfolio is a collection of projects, achievements, and skills that demonstrate an individual's expertise and accomplishments.",
   },
   {
-    name: "bitcoin.pdf",
-    body: "Bitcoin is a cryptocurrency invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto.",
+    name: "design-guide.pdf",
+    body: "A design guide ensures consistency across projects by providing guidelines for visual elements, user interfaces, and brand identity.",
   },
   {
-    name: "bitcoin.pdf",
-    body: "Bitcoin is a cryptocurrency invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto.",
+    name: "user-research.xlsx",
+    body: "User research involves collecting insights about users' needs and behaviors to improve product design and usability.",
   },
   {
-    name: "bitcoin.pdf",
-    body: "Bitcoin is a cryptocurrency invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto.",
+    name: "wireframes.svg",
+    body: "Wireframes are visual guides that represent the skeletal framework of a website or application, focusing on layout and functionality.",
   },
   {
-    name: "bitcoin.pdf",
-    body: "Bitcoin is a cryptocurrency invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto.",
+    name: "api-documentation.pdf",
+    body: "API documentation provides instructions and examples for developers to integrate and use an API effectively in their applications.",
   },
   {
-    name: "bitcoin.pdf",
-    body: "Bitcoin is a cryptocurrency invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto.",
+    name: "financial-report.xlsx",
+    body: "Financial reports summarize the financial performance and position of an organization over a specific period.",
   },
   {
-    name: "finances.xlsx",
-    body: "A spreadsheet or worksheet is a file made of rows and columns that help sort data, arrange data easily, and calculate numerical data.",
+    name: "branding-logo.svg",
+    body: "A branding logo is a visual symbol that represents a company's identity and values, used to establish brand recognition.",
   },
   {
-    name: "logo.svg",
-    body: "Scalable Vector Graphics is an Extensible Markup Language-based vector image format for two-dimensional graphics with support for interactivity and animation.",
+    name: "encrypted-keys.gpg",
+    body: "Encrypted keys provide secure methods for protecting sensitive data and authenticating access to digital resources.",
   },
   {
-    name: "keys.gpg",
-    body: "GPG keys are used to encrypt and decrypt email, files, directories, and whole disk partitions and to authenticate messages.",
+    name: "project-plan.txt",
+    body: "A project plan outlines the objectives, timeline, and tasks required to successfully complete a project.",
   },
   {
-    name: "lastinrow.txt",
-    body: "A seed phrase, seed recovery phrase or backup seed phrase is a list of words which store all the information needed to recover Bitcoin funds on-chain.",
+    name: "presentation-slides.pptx",
+    body: "Presentation slides communicate ideas visually and are used for sharing information, proposals, or achievements.",
   },
 ];
+
 
 const animatedAlerts = [
   "Complete React Tutorial",
   "Work on Portfolio",
   "Finish API Project",
-  "Finish API Project",
-  "Finish API Project",
-  "Finish API Project",
-  "Finish API Project",
-  "Finish API Project",
-  "Finish API Project",
-  "Finish API Project",
-  "Finish API Project",
-  "Read Web Dev Book",
-  "Attend Team Meeting",
-  "Write Blog Post",
+  "Design a Responsive Layout",
+  "Debug Frontend Issues",
+  "Optimize Site Performance",
+  "Integrate Third-Party APIs",
+  "Polish Accessibility Features",
+  "Prepare Presentation for Project",
+  "Add New Blog Section",
+  "Deploy Website Updates",
+  "Refactor JavaScript Codebase",
+  "Write Documentation for Features",
+  "Research UI Trends",
+  "Plan Next Web Development Project",
   "Take a Break",
+  "Submit Client Proposal",
+  "Update Resume with New Projects",
+  "Collaborate on Open Source Project",
+  "Test Mobile Responsiveness",
+  "Fix Styling Bugs in Footer",
+  "Validate Forms for Accessibility",
 ];
 
 export const features = [
   {
+    Icon: BellIcon,
+    name: "Projects",
+    description: "Browse through my portfolio of completed projects, showcasing my skills in web development, design, and problem-solving.",
+    href: "/projects",
+    cta: "Learn more",
+    className: "col-span-5",
+    background: (
+      <AnimatedList className="mx-auto max-w-md">
+        {animatedAlerts.map( ( item, index ) => (
+          <div
+            key={index}
+            className="-z-0 bg-secondary text-secondary-foreground opacity-50 shadow-lg mx-auto p-4 border rounded-lg w-10/12"
+          >
+            {item}
+          </div>
+        ) )}
+      </AnimatedList>
+    ),
+  },
+  {
     Icon: FaUniversalAccess,
     name: "Accessibility Declaration",
-    description: "Search through all your files in one place.",
+    description: "Learn about my commitment to creating an inclusive and accessible web experience for everyone, regardless of ability or background.",
     href: "/accessibility",
     cta: "Learn more",
     background: (
@@ -780,10 +844,10 @@ export const features = [
   {
     Icon: FileTextIcon,
     name: "Experiences",
-    description: "We automatically save your files as you type.",
+    description: "Explore my professional journey, including achievements, past roles, and key contributions to projects and teams.",
     href: "/info/experiences&achievements",
     cta: "Learn more",
-    className: "col-span-3",
+    className: "col-span-4",
     background: (
       <Marquee
         pauseOnHover
@@ -794,9 +858,7 @@ export const features = [
         {marqueeDetails.map( ( f, idx ) => (
           <figure
             key={idx}
-            className={clsx(
-              "relative border-secondary p-4 border rounded-xl cursor-pointer overflow-hidden",
-            )}
+            className="relative border-secondary p-4 border rounded-xl cursor-pointer overflow-hidden"
           >
             <div className="flex items-center gap-2 w-16">
               <div className="flex">
@@ -812,52 +874,21 @@ export const features = [
     ),
   },
   {
-    Icon: BellIcon,
-    name: "Projects",
-    description: "Get notified when something happens.",
-    href: "/projects",
-    cta: "Learn more",
-    className: "col-span-4 p-0",
-    background: (
-      <AnimatedList className="mx-auto max-w-md">
-        {animatedAlerts.map( ( item, index ) => (
-          <div
-            key={index}
-            className="-z-0 bg-secondary text-secondary-foreground opacity-50 shadow-lg mx-auto p-4 border rounded-lg w-10/12"
-          >
-            {item}
-          </div>
-        ) )}
-      </AnimatedList>
-    ),
-  },
-  {
     Icon: Share2Icon,
     name: "Technology Stacks",
-    description: "Supports 100+ integrations and counting.",
+    description: "Discover the tools, frameworks, and technologies I use to build modern, scalable, and efficient applications.",
     href: "/info/techStack",
     cta: "Learn more",
-    className: "relative transform scale-25",
-    background: (
-      <IconClouds />
-    ),
-  },
-  {
-    Icon: GlobeIcon,
-    name: "My Voice",
-    description: "Supports 100+ languages and counting.",
-    href: "/writings/devto",
-    cta: "Learn more",
-    className: "col-span-3",
-    background: <img className="-top-20 -right-20 absolute opacity-60" />,
+    className: "relative transform scale-25 col-span-5",
+    background: <IconClouds />,
   },
   {
     Icon: CalendarIcon,
     name: "Resume",
-    description: "Use the calendar to filter your files by date.",
-    className: "flex items-end col-span-4",
+    description: "Access my resume to get an in-depth overview of my professional experience, education, and technical skills.",
     href: "/info/resume",
     cta: "Learn more",
+    className: "flex items-end col-span-5",
     background: (
       <div className="px-8 py-10">
         <Calendar
@@ -871,8 +902,8 @@ export const features = [
   {
     Icon: GlobeIcon,
     name: "Contact",
-    description: "Supports 100+ languages and counting.",
-    href: "/writings/devto",
+    description: "Get in touch with me for collaborations, job opportunities, or to learn more about my work.",
+    href: "/contact",
     cta: "Learn more",
     className: "col-span-4",
     background: (
@@ -880,6 +911,7 @@ export const features = [
     ),
   },
 ];
+
 
 
 // --------------------------------------------------------------------
