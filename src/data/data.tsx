@@ -232,6 +232,61 @@ export const futureProjects: PortfolioProject[] = [
     githubLink: "https://github.com/yourgithub/future-ecommerce",
     liveLink: "https://future-ecommerce.com",
   },
+  {
+    id: "futureProject10",
+    title: "Future E-commerce Website",
+    description:
+      "This project involves building a scalable and robust e-commerce platform that can handle high traffic, provide excellent user experience, and integrate with various payment systems.",
+    focuses: [
+      "Performance Optimization",
+      "User Experience",
+      "Scalability and Load Balancing",
+      "Security and Payment Integration",
+    ],
+    technologies: ["React", "Node.js", "MongoDB", "GraphQL", "TailwindCSS"],
+    images: [
+      {
+        src: "/images/inspiration1.jpg",
+        alt: "minim enim",
+        description: "minim enim",
+      },
+      {
+        src: "/images/inspiration2.jpg",
+        alt: "minim enim",
+        description: "minim enim",
+      },
+      {
+        src: "/images/inspiration3.jpg",
+        alt: "minim enim",
+        description: "minim enim",
+      },
+    ],
+    timeline: [
+      "Research and Initial Planning",
+      "Prototype and Design",
+      "Development (Frontend and Backend)",
+      "Testing and Deployment",
+    ],
+    inspiration: [
+      {
+        src: "/images/inspiration1.jpg",
+        alt: "minim enim",
+        description: "minim enim",
+      },
+      {
+        src: "/images/inspiration2.jpg",
+        alt: "minim enim",
+        description: "minim enim",
+      },
+      {
+        src: "/images/inspiration3.jpg",
+        alt: "minim enim",
+        description: "minim enim",
+      },
+    ],
+    githubLink: "https://github.com/yourgithub/future-ecommerce",
+    liveLink: "https://future-ecommerce.com",
+  },
 ];
 
 export const writingPlatforms: WritingPlatform[] = [
@@ -721,7 +776,7 @@ export const navBar = {
   ],
 };
 
-const slider = [
+const marqueeDetails = [
   {
     name: "firstinrow.pdf",
     body: "Bitcoin is a cryptocurrency invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto.",
@@ -810,7 +865,7 @@ export const features = [
         vertical
         className="[mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] flex mx-2 min-w-7xl opacity-50"
       >
-        {slider.map( ( f, idx ) => (
+        {marqueeDetails.map( ( f, idx ) => (
           <figure
             key={idx}
             className={clsx(

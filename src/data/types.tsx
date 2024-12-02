@@ -12,6 +12,11 @@ export interface CommandShortcuts {
   }[];
 }
 
+export interface BreadcrumbInfo {
+  label: string;
+  href?: string;
+}
+
 export interface RepoData {
   name: string;
   description: string;
