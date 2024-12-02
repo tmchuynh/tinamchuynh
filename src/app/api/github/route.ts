@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-const GITHUB_API_URL = 'https:';
+const GITHUB_API_URL = 'https://api.github.com/users/';
 
 export async function GET( req: Request ) {
   const { searchParams } = new URL( req.url );
@@ -11,7 +11,6 @@ export async function GET( req: Request ) {
   }
 
   try {
-
     const res = await fetch( `${ GITHUB_API_URL }${ owner }/repos` );
     if ( !res.ok ) {
       throw new Error( 'Error fetching repositories' );

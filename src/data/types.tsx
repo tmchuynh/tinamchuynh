@@ -12,6 +12,19 @@ export interface CommandShortcuts {
   }[];
 }
 
+export interface RepoData {
+  name: string;
+  description: string;
+  fork: boolean;
+  created_at: string;
+  url: string;
+  license: string;
+  topics: string[];
+  languages: string[];
+  languages_url: string;
+};
+
+
 export interface ImageProps {
   src: string;
   alt: string;

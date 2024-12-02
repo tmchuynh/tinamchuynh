@@ -834,7 +834,7 @@ export const features = [
     Icon: BellIcon,
     name: "Projects",
     description: "Get notified when something happens.",
-    href: "/projects/iacwebsite",
+    href: "/projects",
     cta: "Learn more",
     className: "col-span-4 p-0",
     background: (
