@@ -15,6 +15,12 @@ export interface navSubItem {
   url: string;
 }
 
+export interface BreadcrumbItem {
+  label: string;
+  href?: string;
+  dropdownItems?: { label: string; href: string; }[];
+}
+
 export interface CommandShortcuts {
   groupName: string;
   items: {

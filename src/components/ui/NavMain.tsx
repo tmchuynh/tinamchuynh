@@ -42,23 +42,31 @@ export function NavMenuItem( {
   };
 
   return (
-    <Collapsible open={isOpen} onOpenChange={onOpenChange}>
-      <SidebarMenuItem>
+    <SidebarMenuItem>
+      <Collapsible open={isOpen} onOpenChange={onOpenChange}>
         <CollapsibleTrigger asChild>
           <SidebarMenuButton
             tooltip={item.title}
             onClick={() => handleClick( item.url ? item.url : '' )}
             className="flex w-full items-center gap-2 p-2"
+            aria-controls="..."
+            aria-label={item.title}
           >
             <div className="flex items-center justify-between w-full">
               <div className="flex items-center gap-2">
-                <span className="text-sidebar-tertiary"><item.icon /></span>
+                <span className="text-sidebar-tertiary">
+                  <item.icon
+                    aria-hidden="true"
+                    aria-label={String( item.icon )}
+                  />
+                </span>
                 <span>{item.title}</span>
               </div>
               {item.items?.length ? (
                 <ChevronRight
-                  className={`transition-transform duration-200 ease-in-out transform ${ isOpen ? "rotate-90" : ""
-                    }`}
+                  aria-hidden="true"
+                  aria-label="expand menu"
+                  className={`transition-transform duration-200 ease-in-out transform ${ isOpen ? "rotate-90" : "" }`}
                 />
               ) : null}
             </div>
@@ -80,11 +88,10 @@ export function NavMenuItem( {
             </SidebarMenuSub>
           </CollapsibleContent>
         ) : null}
-      </SidebarMenuItem>
-    </Collapsible>
+      </Collapsible>
+    </SidebarMenuItem>
   );
 }
-
 
 export function NavMain( {
   items,

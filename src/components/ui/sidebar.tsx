@@ -279,7 +279,7 @@ const SidebarTrigger = React.forwardRef<
       }}
       {...props}
     >
-      <Menu />
+      <Menu aria-hidden="true" />
       <span className="sr-only">Toggle Sidebar</span>
     </Button>
   );
@@ -551,6 +551,7 @@ const SidebarMenuButton = React.forwardRef<
       size = "default",
       tooltip,
       className,
+      id = '',
       onClick,
       ...props
     },

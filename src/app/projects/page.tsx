@@ -1,8 +1,19 @@
 "use client";
 
 import { ProjectCard } from '@/components/ProjectCard';
+import Breadcrumb from '@/components/ui/breadcrumb';
 import { RepoData } from '@/data/types';
 import { useEffect, useState } from 'react';
+
+const breadcrumbItems = [
+  {
+    label: "Home",
+    href: "/",
+  },
+  {
+    label: "Projects",
+  },
+];
 
 const GitHubRepoInfo = () => {
   const [repoData, setRepoData] = useState<RepoData[] | null>( null );
@@ -54,6 +65,7 @@ const GitHubRepoInfo = () => {
 
   return (
     <div className="max-w-7xl mx-auto p-6">
+      <Breadcrumb items={breadcrumbItems} />
       <h1 className="text-4xl font-bold text-center mb-8">Repository Info</h1>
       <div className='grid grid-cols-2 md:grid-cols-3 gap-3'>
         {repoData && repoData.length > 0 ? (

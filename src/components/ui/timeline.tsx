@@ -29,7 +29,7 @@ export default function AltTimeline(
           <TimelineItem>
             <TimelineSeparator>
               <TimelineDot className='h-12 w-12 justify-center items-center'>
-                <event.icon />
+                <event.icon aria-hidden="true" aria-label={event.title || "Timeline Event Icon"} />
               </TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
@@ -56,7 +56,6 @@ export default function AltTimeline(
             </TimelineContent>
           </TimelineItem>
         </BlurFade>
-
       ) )}
     </Timeline>
   );

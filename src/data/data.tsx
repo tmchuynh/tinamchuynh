@@ -46,7 +46,7 @@ export const navBar = {
       items: [
         {
           title: "Who I Am",
-          url: "/about",
+          url: "/info/about",
         },
         {
           title: "Accessibility Declaration",
@@ -182,7 +182,7 @@ export const shortcuts = [
   {
     shortcut: (
       <span>
-        <FaWindows className="inline-flex mr-1" /> + B
+        <FaWindows className="inline-flex mr-1" role="img" /> + B
       </span>
     ),
     description: "Open/Close Side Menu",
@@ -190,7 +190,7 @@ export const shortcuts = [
   {
     shortcut: (
       <span>
-        <FaWindows className="inline-flex mr-1" /> + M
+        <FaWindows className="inline-flex mr-1" role="img" /> + M
       </span>
     ),
     description: "Open/Close Spotlight Search",
@@ -198,7 +198,7 @@ export const shortcuts = [
   {
     shortcut: (
       <span>
-        <FaWindows className="inline-flex mr-1" /> + /
+        <FaWindows className="inline-flex mr-1" role="img" /> + /
       </span>
     ),
     description: "Open Keyboard Shortcuts Menu",
@@ -634,8 +634,17 @@ export const bookProjects: BookProject[] = [
     id: "frontendbook",
     title: "A Front-end Development Book for Beginners",
     description:
-      "An e-commerce platform built with React and Node.js. It supports user authentication, a shopping cart, and a complete checkout system.",
-    focuses: [],
+      "A comprehensive guide to front-end development for beginners, covering fundamental concepts, hands-on projects, and best practices to build modern, responsive web applications.",
+    focuses: [
+      "HTML & CSS Fundamentals: Understanding the structure and styling of web pages through hands-on examples.",
+      "Responsive Web Design: Techniques for creating layouts that adapt seamlessly to various screen sizes.",
+      "JavaScript Basics: Learning core concepts like variables, loops, functions, and events to add interactivity to web pages.",
+      "Introduction to React: Exploring the basics of React, including components, props, and state management.",
+      "Debugging and Browser Tools: Using developer tools to identify and fix common errors in web applications.",
+      "Version Control with Git: An introduction to Git for managing code changes and collaborating with others.",
+      "Accessibility and SEO: Best practices for creating inclusive web content and optimizing for search engines.",
+      "Hands-On Projects: Building real-world projects like a portfolio website and interactive to-do list to apply concepts learned.",
+    ],
     images: [
       {
         src: "/images/frontend/abbr.png",
@@ -688,8 +697,17 @@ export const bookProjects: BookProject[] = [
     id: "backendbook",
     title: "A Back-end Development Book for Beginners",
     description:
-      "An e-commerce platform built with React and Node.js. It supports user authentication, a shopping cart, and a complete checkout system.",
-    focuses: [],
+      "A complete guide to back-end development for beginners, covering server-side programming, database management, and APIs to build robust and scalable web applications.",
+    focuses: [
+      "Understanding Server-Side Programming: Introduction to server-side concepts, HTTP, and the role of back-end development.",
+      "Node.js Basics: Learning the fundamentals of Node.js to build and manage server-side applications.",
+      "Building RESTful APIs: Step-by-step guide to creating and managing APIs for client-server communication.",
+      "Database Fundamentals: Introduction to relational and non-relational databases, including SQL and MongoDB basics.",
+      "Authentication and Authorization: Implementing secure user authentication and role-based access control.",
+      "Error Handling and Logging: Best practices for managing errors and monitoring application performance.",
+      "Introduction to DevOps: Overview of CI/CD pipelines, deployment strategies, and server management.",
+      "Real-World Projects: Hands-on examples such as building a blog API, task manager, and a basic e-commerce back-end.",
+    ],
     images: [
       {
         src: "/images/backend/web_dev.png",
@@ -1038,7 +1056,7 @@ export const features = [
     Icon: FaUniversalAccess,
     name: "Accessibility Declaration",
     description: "Learn about my commitment to creating an inclusive and accessible web experience for everyone, regardless of ability or background.",
-    href: "/accessibility",
+    href: "/info/accessibility",
     cta: "Learn more",
     background: (
       <div className="pt-4">
@@ -1114,132 +1132,132 @@ export const certifications = [
   {
     title: "Legacy Data Visualization Certification",
     subtitle: "FreeCodeCamp",
-    date: "June 7, 2023",
+    date: "June 2023",
   },
   {
     title: "Data Visualization Certification",
     subtitle: "FreeCodeCamp",
-    date: "June 7, 2023",
+    date: "June 2023",
   },
   {
     title: "Legacy Front End Certification",
     subtitle: "FreeCodeCamp",
-    date: "June 7, 2023",
+    date: "June 2023",
   },
   {
     title: "Front End Development Libraries Certification",
     subtitle: "FreeCodeCamp",
-    date: "June 7, 2023",
+    date: "June 2023",
   },
   {
     title: "Responsive Web Design Certification",
     subtitle: "FreeCodeCamp",
-    date: "March 10, 2022",
+    date: "March 2022",
   },
   {
     title: "Agile Development Practices",
     subtitle: "LinkedIn Learning",
-    date: "June 8, 2023",
+    date: "June 2023",
   },
   {
     title: "Designing for Developers",
     subtitle: "LinkedIn Learning",
-    date: "June 8, 2023",
+    date: "June 2023",
   },
   {
     title: "Level Up: SQL",
     subtitle: "LinkedIn Learning",
-    date: "June 8, 2023",
+    date: "June 2023",
   },
   {
     title: "Mapping for User Experience Projects",
     subtitle: "LinkedIn Learning",
-    date: "June 8, 2023",
+    date: "June 2023",
   },
   {
     title: "Spring Boot and React: Build Scalable and Dynamic Web Apps",
     subtitle: "LinkedIn Learning",
-    date: "June 8, 2023",
+    date: "June 2023",
   },
   {
     title: "UX Foundations: Generational Design",
     subtitle: "LinkedIn Learning",
-    date: "June 8, 2023",
+    date: "June 2023",
   },
   {
     title: "UX Foundations: Interaction Design",
     subtitle: "LinkedIn Learning",
-    date: "June 8, 2023",
+    date: "June 2023",
   },
   {
     title: "UX Research: Journey Mapping",
     subtitle: "LinkedIn Learning",
-    date: "June 8, 2023",
+    date: "June 2023",
   },
   {
     title: "Using MongoDB with Java",
     subtitle: "LinkedIn Learning",
-    date: "June 8, 2023",
+    date: "June 2023",
   },
   {
     title: "Using MongoDB with Node.js",
     subtitle: "LinkedIn Learning",
-    date: "June 8, 2023",
-  },
-  {
-    title: "Strategic Thinking (2017)",
-    subtitle: "LinkedIn Learning",
-    date: "June 20, 2022",
+    date: "June 2023",
   },
   {
     title: "Using MongoDB with Python",
     subtitle: "LinkedIn Learning",
-    date: "June 8, 2023",
+    date: "June 2023",
+  },
+  {
+    title: "Strategic Thinking (2017)",
+    subtitle: "LinkedIn Learning",
+    date: "June 2022",
   },
   {
     title: "How to Train Your Brain for Maximum Growth",
     subtitle: "LinkedIn Learning",
-    date: "June 20, 2022",
-  },
-  {
-    title: "Data Analytics for Students",
-    subtitle: "LinkedIn Learning",
-    date: "April 12, 2022",
+    date: "June 2022",
   },
   {
     title: "Critical Thinking for Better Judgment and Decision-Making",
     subtitle: "LinkedIn Learning",
-    date: "June 20, 2022",
+    date: "June 2022",
+  },
+  {
+    title: "Data Analytics for Students",
+    subtitle: "LinkedIn Learning",
+    date: "April 2022",
   },
   {
     title: "Python for Data Science Essential Training Part 1",
     subtitle: "LinkedIn Learning",
-    date: "April 12, 2022",
+    date: "April 2022",
   },
   {
     title: "Learning React.js",
     subtitle: "LinkedIn Learning",
-    date: "April 12, 2022",
+    date: "April 2022",
   },
   {
     title: "Learning Data Analytics: 1 Foundations",
     subtitle: "LinkedIn Learning",
-    date: "March 31, 2022",
+    date: "March 2022",
   },
   {
     title: "Web Development Foundations: Full-Stack vs Front-End",
     subtitle: "LinkedIn Learning",
-    date: "March 31, 2022",
+    date: "March 2022",
   },
   {
     title: "Using Python for Automation (2019)",
     subtitle: "LinkedIn Learning",
-    date: "March 31, 2022",
+    date: "March 2022",
   },
   {
     title: "Succeeding in Web Development: Full Stack and Front End",
     subtitle: "LinkedIn Learning",
-    date: "March 31, 2022",
+    date: "March 2022",
   },
 ];
 

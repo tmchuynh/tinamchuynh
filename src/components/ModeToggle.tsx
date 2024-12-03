@@ -37,8 +37,8 @@ export function ModeToggle() {
   if ( !mounted ) {
     return null;
   }
-  const handleThemeToggle = () => {
 
+  const handleThemeToggle = () => {
     setTheme( theme === "dark" ? "light" : "dark" );
   };
 
@@ -52,9 +52,9 @@ export function ModeToggle() {
           className="min-h-12 min-w-12"
         >
           {theme === "dark" ? (
-            <Sun className="transition-all rotate-0 scale-100" />
+            <Sun className="transition-all rotate-0 scale-100" role="img" aria-label="toggle light mode" />
           ) : (
-            <Moon className="transition-all rotate-12 scale-100" />
+            <Moon className="transition-all rotate-12 scale-100" role="img" aria-label="toggle dark mode" />
           )}
           <span className="sr-only">Toggle theme</span>
         </Button>

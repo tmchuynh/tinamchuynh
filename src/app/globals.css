@@ -12,11 +12,11 @@ body {
     --primary-foreground: #fcfcfc;
     --secondary: #d1b68c;
     --secondary-foreground: #0f0f0f;
-    --tertiary: #0c4998;
+    --tertiary: #5db798;
     --tertiary-foreground: #0f0f0f;
     --highlight: #25523c;
     --highlight-foreground: #fcfcfc;
-    --accent: #19a844;
+    --accent: #ae3325;
     --accent-foreground: #fcfcfc;
     --background: #fcfcfc;
     --foreground: #0f0f0f;
@@ -24,8 +24,8 @@ body {
     --card-foreground: #0f0f0f;
     --popover: #fcfcfc;
     --popover-foreground: #0f0f0f;
-    --muted: #bababa;
-    --muted-foreground: #0f0f0f;
+    --muted: #7b7b7b;
+    --muted-foreground: #fcfcfc;
     --destructive: #b6050b;
     --destructive-foreground: #fcfcfc;
     --border: #d1d1d1;
@@ -37,17 +37,17 @@ body {
     --chart-4: #9e9e9e;
     --chart-5: #9ecca1;
     --radius: 0.5rem;
-    --sidebar-background: #ffffff;
+    --sidebar-background: #fcfcfc;
     --sidebar-foreground: #0f0f0f;
-    --sidebar-primary: #006e6d;
+    --sidebar-primary: #0d69a6;
     --sidebar-primary-foreground: #0f0f0f;
-    --sidebar-accent: #eadac1;
+    --sidebar-accent: #f3e9d8;
     --sidebar-accent-foreground: #0f0f0f;
-    --sidebar-tertiary: #2e8b57;
+    --sidebar-tertiary: #3fb572;
     --sidebar-tertiary-foreground: #0f0f0f;
-    --sidebar-highlight: #9ecca1;
+    --sidebar-highlight: #e7f0e7;
     --sidebar-highlight-foreground: #0f0f0f;
-    --sidebar-border: #d1d1d1;
+    --sidebar-border: #c4c4c4;
     --sidebar-ring: #2e8b57;
   }
 
@@ -56,7 +56,7 @@ body {
     --primary-foreground: #fcfcfc;
     --secondary: #d1b68c;
     --secondary-foreground: #0f0f0f;
-    --tertiary: #2a9dce;
+    --tertiary: #2e8b57;
     --tertiary-foreground: #fcfcfc;
     --highlight: #bfd3c1;
     --highlight-foreground: #0f0f0f;
@@ -68,7 +68,7 @@ body {
     --card-foreground: #fcfcfc;
     --popover: #0f0f0f;
     --popover-foreground: #fcfcfc;
-    --muted: #444444;
+    --muted: #9a9a9a;
     --muted-foreground: #fcfcfc;
     --destructive: #b6050b;
     --destructive-foreground: #fcfcfc;
@@ -83,7 +83,7 @@ body {
     --radius: 0.5rem;
     --sidebar-background: #0f0f0f;
     --sidebar-foreground: #fcfcfc;
-    --sidebar-primary: #006e6d;
+    --sidebar-primary: #85e0ff;
     --sidebar-primary-foreground: #fcfcfc;
     --sidebar-accent: #d1b68c;
     --sidebar-accent-foreground: #0f0f0f;

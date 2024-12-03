@@ -15,7 +15,7 @@ export function ShortcutDialog() {
 
   useEffect( () => {
     const handleKeydown = ( e: KeyboardEvent ) => {
-      if ( ( e.metaKey ) && e.key === "/" ) {
+      if ( e.metaKey && e.key === "/" ) {
         setOpen( true );
       }
     };
@@ -30,15 +30,15 @@ export function ShortcutDialog() {
       <p className="font-mono flex items-center gap-2 px-7 justify-end text-foreground my-2">
         Keyboard Shortcuts:
         <kbd className="pointer-events-none inline-flex h-full select-none items-center gap-1 rounded bg-highlight px-1.5 py-1 font-mono text-[14px] font-medium text-highlight-foreground opacity-100 align-text-bottom">
-          <span><FaWindows /></span>/
+          <span><FaWindows aria-hidden="true" /></span>/
         </kbd>
         <span className="sr-only">Show keyboard shortcuts</span>
       </p>
 
-      <Dialog open={open} onOpenChange={setOpen}>
+      <Dialog open={open} onOpenChange={setOpen} aria-labelledby="dialog-title" aria-describedby="dialog-description">
         <DialogContent>
-          <DialogTitle>Keyboard Shortcuts</DialogTitle>
-          <DialogDescription>
+          <DialogTitle id="dialog-title">Keyboard Shortcuts</DialogTitle>
+          <DialogDescription id="dialog-description">
             Use the following keyboard shortcuts for quick actions:
           </DialogDescription>
           <div className="flex flex-col gap-2 mt-4">
@@ -50,7 +50,7 @@ export function ShortcutDialog() {
             ) )}
           </div>
           <DialogClose asChild>
-            <Button variant={isDarkMode ? "secondary" : "default"} className="mt-4 w-full shadow-lg">
+            <Button variant={isDarkMode ? "secondary" : "default"} className="mt-4 w-full shadow-lg" aria-label="Close keyboard shortcuts dialog">
               Close
             </Button>
           </DialogClose>

@@ -9,17 +9,16 @@ const breadcrumbItems = [
     href: "/",
   },
   {
-    label: "About Me",
+    label: "Info",
     dropdownItems: [
-      { label: "Who I Am", href: "/about" },
+      { label: "Who I Am", href: "/info/about" },
       { label: "Accessibility Declaration", href: "/info/accessibility" },
       { label: "Resume", href: "/info/resume" },
       { label: "Tech Stack", href: "/info/techStack" },
-      { label: "Achievements", href: "/info/experiences&achievements" },
     ],
   },
   {
-    label: "Details",
+    label: "Achievements",
   },
 ];
 
@@ -34,9 +33,8 @@ const sort = ( list: any[] ) => {
 
 const Page = () => {
   return (
-    <div>
+    <div className="max-w-7xl mx-auto p-6">
       <Breadcrumb items={breadcrumbItems} />
-
       <AchievementsPage credientials={credientials} certifications={sort( certifications )} />
     </div >
   );

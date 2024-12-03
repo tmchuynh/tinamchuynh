@@ -2,10 +2,10 @@
 
 import BlurFade from "@/components/ui/blur-fade";
 import { Button } from "@/components/ui/button";
-import ImageGrid from "@/components/ui/image-grid";
 import { PortfolioProject } from "@/data/types";
 import { Check, StarHalf } from "lucide-react";
 import { useTheme } from "next-themes";
+import { ImageCarousel } from "./ImageCarousel";
 
 const PortfolioPage = ( {
   project,
@@ -33,7 +33,7 @@ const PortfolioPage = ( {
             rel="noopener noreferrer"
             className="px-6 py-2 transition duration-300"
           >
-            View Project
+            Visit Site
           </Button>
         ) : ( '' )}
         {project.githubLink ? (
@@ -48,42 +48,45 @@ const PortfolioPage = ( {
         ) : ( '' )}
       </div>
 
-      {project.technologies ? (
-        <>
-          <h2 className="text-2xl font-semibold mb-4">Technologies Used</h2>
-          <div className="mb-8 flex flex-col">
-            {project.technologies.map( ( tech, index ) => (
-              <BlurFade delay={0.25 + index} inView key={tech}>
-                <ul className="inline-flex">
-                  <Check color={theme === "dark" ? "#4bd579" : "#395798"} className="mr-2" />
-                  <li key={index} className="text-lg list-none">{tech}</li>
-                </ul>
-              </BlurFade>
-            ) )}
-          </div>
-        </>
-      ) : ''}
-
-      <div>
+      <div className="grid md:grid-cols-2 gap-8">
         {project.features ? (
-          <>
+          <div>
             <h2 className="text-2xl font-semibold mb-4">Features</h2>
             <div className="text-lg flex flex-col mb-8">
               {project.features.map( ( feature, index ) => (
                 <BlurFade delay={0.25 + index} inView key={feature}>
                   <ul className="inline-flex" >
-                    <StarHalf color={theme === "dark" ? "#4bd579" : "#395798"} />
-                    <li key={index} className="text-lg list-none">{feature}</li>
+                    <StarHalf aria-hidden="true" className="h-6 w-6 text-tertiary mt-3" />
+                    <li key={index} className="text-lg list-none mb-2">
+                      <p><strong>{feature.split( ":" )[0]}</strong></p>
+                      <p className="text-sm">{feature.split( ":" )[1]}</p>
+                    </li>
                   </ul>
                 </BlurFade>
               ) )}
             </div>
-          </>
+          </div>
+        ) : ''}
+
+        {project.technologies ? (
+          <div>
+            <h2 className="text-2xl font-semibold mb-4">Technologies Used</h2>
+            <div className="mb-8 flex flex-col">
+              {project.technologies.map( ( tech, index ) => (
+                <BlurFade delay={0.25 + index} inView key={tech}>
+                  <ul className="inline-flex">
+                    <Check className="mr-2 h-6 w-6 text-tertiary" aria-hidden="true" />
+                    <li key={index} className="text-lg list-none">{tech}</li>
+                  </ul>
+                </BlurFade>
+              ) )}
+            </div>
+          </div>
         ) : ''}
       </div>
 
       {project.images ? (
-        <ImageGrid images={project.images} title="Images" />
+        <ImageCarousel images={project.images} />
       ) : ''}
 
     </div>

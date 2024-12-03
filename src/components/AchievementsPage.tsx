@@ -3,26 +3,55 @@
 import BlurFade from "@/components/ui/blur-fade";
 import { certificationImages } from "@/data/data";
 import { AchievementItem, AchievementsSectionProps } from "@/data/types";
-import React from "react";
-import ImageGrid from "./ui/image-grid";
-
+import React, { useEffect, useState } from "react";
+import { ImageCarousel } from "./ImageCarousel";
+import { FaFreeCodeCamp, FaLinkedinIn } from "react-icons/fa6";
+import { useTheme } from "next-themes";
 
 const AchievementsSection: React.FC<AchievementsSectionProps> = ( { title, items } ) => {
+
+  const { theme } = useTheme();
+  const [mounted, setMounted] = useState( false );
+
+  useEffect( () => {
+    setMounted( true );
+  }, [] );
+
+  if ( !mounted ) {
+    return null;
+  }
+
   return (
     <div className="mb-6">
       <BlurFade delay={0.25}>
         <h2 className="text-2xl font-semibold">{title}</h2>
       </BlurFade>
 
-      <ul className="list-disc pl-6">
+      <ul className="list-none flex flex-col">
         {items.map( ( item, index ) => (
-          <BlurFade key={`${ index }_${ item.title }`} delay={0.35 + index * 0.05}>
-            <li>
-              <strong>{item.title}</strong> – <em>{item.subtitle}</em>
-              <br />
-              <span className="italic">{item.date}</span>
-            </li>
-          </BlurFade>
+          <li key={index} className="inline-flex mb-1 items-center">
+            {item.subtitle === "FreeCodeCamp" ? (
+              <FaFreeCodeCamp
+                className="mr-2 h-6 w-6 text-tertiary"
+                aria-hidden="true"
+              />
+            ) : item.subtitle === "Software Development Online MERN" ? (
+              ''
+            ) : (
+              <FaLinkedinIn
+                className="mr-2 h-6 w-6 text-tertiary"
+                aria-hidden="true"
+              />
+            )}
+            <BlurFade key={`${ index }_${ item.title }`} delay={0.35 + index * 0.05} className="flex justify-between w-full self-center pt-3">
+              <p><strong>{item.title}</strong>
+                {item.subtitle === "Software Development Online MERN" ? (
+                  <span className="block">{item.subtitle}</span>
+                ) : ''}
+              </p>
+              <p className="italic pl-4">{item.date}</p>
+            </BlurFade>
+          </li>
         ) )}
       </ul>
     </div>
@@ -37,7 +66,7 @@ const AchievementsPage = ( {
   credientials: AchievementItem[];
 } ) => {
   return (
-    <div className="max-w-7xl mx-auto p-6">
+    <>
       <h1 className="text-4xl font-bold text-center mb-6">Achievements and Certifications</h1>
 
       <p className="text-lg mb-8">
@@ -48,7 +77,7 @@ const AchievementsPage = ( {
       <hr className="my-8" />
 
       <AchievementsSection title="Credentials" items={credientials} />
-      <ImageGrid images={certificationImages} title="" />
+      <ImageCarousel images={certificationImages} className="w-1/2 mx-auto" />
 
       <AchievementsSection title="Certifications" items={certifications} />
 
@@ -66,7 +95,7 @@ const AchievementsPage = ( {
         </p>
       </BlurFade>
 
-    </div>
+    </>
   );
 };
 

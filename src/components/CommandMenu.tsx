@@ -1,6 +1,6 @@
 "use client";
-import * as React from "react";
 
+import * as React from "react";
 import {
   CommandDialog,
   CommandEmpty,
@@ -14,8 +14,7 @@ import {
 import { commands } from "@/data/data";
 import { Command } from "cmdk";
 import { useEffect, useState } from "react";
-import { FaWindows } from "react-icons/fa6";
-
+import { FaWindows } from "react-icons/fa";
 
 export function CommandMenu() {
   const [open, setOpen] = useState( false );
@@ -24,7 +23,7 @@ export function CommandMenu() {
 
   useEffect( () => {
     const down = ( e: KeyboardEvent ) => {
-      if ( ( e.metaKey ) && e.key === "m" ) {
+      if ( e.metaKey && e.key === "m" ) {
         e.preventDefault();
         setOpen( ( open ) => !open );
       }
@@ -39,7 +38,7 @@ export function CommandMenu() {
       <p className="font-mono flex items-center gap-2 px-7 justify-end text-foreground my-2">
         Command Menu:
         <kbd className="pointer-events-none inline-flex h-full select-none items-center gap-1 rounded bg-highlight px-1.5 py-1 font-mono text-[14px] font-medium text-highlight-foreground opacity-100 align-text-bottom">
-          <span><FaWindows /></span>M
+          <span><FaWindows aria-hidden="true" /></span>M
         </kbd>
         <span className="sr-only">Show the command menu</span>
       </p>
@@ -49,6 +48,7 @@ export function CommandMenu() {
           value={search}
           onValueChange={setSearch}
           placeholder="Type a command or search..."
+          aria-label="Search commands"
         />
         <CommandList>
           {loading && <Command.Loading>Hang on…</Command.Loading>}
@@ -61,8 +61,12 @@ export function CommandMenu() {
                   <CommandItem
                     key={itemIndex}
                     onSelect={() => ( window.location.href = command.onSelect )}
+                    role="menuitem"
+                    aria-label={command.title}
                   >
-                    <command.icon className="mr-2 text-primary" />
+                    <span className="mr-2">
+                      <command.icon aria-hidden="true" />
+                    </span>
                     <span>{command.title}</span>
                     {command.shortcut && (
                       <CommandShortcut>{command.shortcut}</CommandShortcut>
@@ -73,7 +77,6 @@ export function CommandMenu() {
               {groupIndex < commands.length - 1 && <CommandSeparator />}
             </React.Fragment>
           ) )}
-
         </CommandList>
       </CommandDialog>
     </>

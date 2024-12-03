@@ -24,11 +24,9 @@ const Breadcrumb: React.FC<{ items: BreadcrumbItem[]; }> = ( { items } ) => {
                 {/* Dropdown Trigger */}
                 <DropdownMenu>
                   <DropdownMenuTrigger className="px-4" asChild>
-                    <Button
-                      variant="default"
-                    >
+                    <Button variant="default" aria-haspopup="true">
                       {item.label}
-                      <ChevronDown />
+                      <ChevronDown aria-hidden="true" />
                     </Button>
                   </DropdownMenuTrigger>
 
@@ -53,6 +51,7 @@ const Breadcrumb: React.FC<{ items: BreadcrumbItem[]; }> = ( { items } ) => {
                 {item.href ? (
                   <Button
                     variant="default"
+                    aria-label={item.label}
                     onClick={() => router.push( item.href! )}
                   >
                     {item.label}
@@ -60,6 +59,7 @@ const Breadcrumb: React.FC<{ items: BreadcrumbItem[]; }> = ( { items } ) => {
                 ) : (
                   <Button
                     variant="outline"
+                    aria-label={item.label}
                   >
                     {item.label}
                   </Button>
@@ -67,7 +67,7 @@ const Breadcrumb: React.FC<{ items: BreadcrumbItem[]; }> = ( { items } ) => {
               </div>
             )}
             {index < items.length - 1 && (
-              <span className="mx-2 text-gray-400">/</span>
+              <span className="mx-2">/</span>
             )}
           </li>
         ) )}

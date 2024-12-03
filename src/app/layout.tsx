@@ -12,8 +12,12 @@ import { Providers } from "./providers";
 
 export default function RootLayout( {
   children,
+  title = "Home",
+  description = "Tina Huynh Portfolio",
 }: {
   children: React.ReactNode;
+  title?: string;
+  description?: string;
 } ) {
   return (
     <html lang="en" suppressHydrationWarning>
@@ -25,9 +29,10 @@ export default function RootLayout( {
           rel="stylesheet"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="A knowledge-based quiz game" />
-        <meta title="Knowledge Knockout" />
-        <title>Knowledge Knockout</title>
+        <meta property="og:title" content="Tina Huynh Portfolio" />
+        <meta name="description" content={description} />
+        <meta title={title} />
+        <title>{title}</title>
       </Head>
       <body>
         <NotFoundProvider>

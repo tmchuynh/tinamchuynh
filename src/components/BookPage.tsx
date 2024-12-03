@@ -1,7 +1,6 @@
 import BlurFade from "@/components/ui/blur-fade";
 import { BookProject } from "@/data/types";
-import { Bookmark } from "lucide-react";
-import { useTheme } from "next-themes";
+import { RiFocus2Line } from "react-icons/ri";
 import { ImageCarousel } from "./ImageCarousel";
 
 
@@ -12,7 +11,6 @@ const BookPage = (
     book: BookProject;
   }
 ) => {
-  const { theme } = useTheme();
 
   return (
     <div>
@@ -36,8 +34,11 @@ const BookPage = (
                 {book.focuses.map( ( focus, index ) => (
                   <BlurFade delay={0.55 + index} key={index} >
                     <ul className="inline-flex">
-                      <Bookmark color={theme === "dark" ? "#4bd579" : "#395798"} className="mr-2" />
-                      <li key={index} className="text-lg list-none">{focus}</li>
+                      <RiFocus2Line className="mr-2 h-6 w-6 text-tertiary" aria-hidden="true" />
+                      <li key={index} className="text-lg list-none">
+                        <p><strong>{focus.split( ":" )[0]}</strong></p>
+                        <p className="text-sm">{focus.split( ":" )[1]}</p>
+                      </li>
                     </ul>
                   </BlurFade>
                 ) )}

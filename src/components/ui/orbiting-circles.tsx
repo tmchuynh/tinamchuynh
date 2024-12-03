@@ -24,6 +24,7 @@ export default function OrbitingCircles( {
       {path && (
         <svg
           xmlns="http://www.w3.org/2000/svg"
+          aria-label=""
           version="1.1"
           className="pointer-events-none absolute inset-0 size-full"
         >

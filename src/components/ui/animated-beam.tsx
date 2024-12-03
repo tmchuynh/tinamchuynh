@@ -127,6 +127,7 @@ export const AnimatedBeam: React.FC<AnimatedBeamProps> = ( {
       width={svgDimensions.width}
       height={svgDimensions.height}
       xmlns="http://www.w3.org/2000/svg"
+      aria-label=""
       className={cn(
         "pointer-events-none absolute left-0 top-0 transform-gpu stroke-2",
         className,

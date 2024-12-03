@@ -20,8 +20,6 @@ const ProjectDetailPage = () => {
 
     if ( selectedProject ) {
       setProject( selectedProject );
-
-
       setBreadcrumbItems( ( prev ) => [
         ...prev,
         {
@@ -36,6 +34,9 @@ const ProjectDetailPage = () => {
         label: proj.title,
         href: `/projects/${ proj.id }`,
       } ) );
+
+    console.log( "dropdownItems", dropdownItems );
+
 
 
     if ( dropdownItems.length > 0 ) {
