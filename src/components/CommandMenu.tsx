@@ -11,10 +11,10 @@ import {
   CommandSeparator,
   CommandShortcut,
 } from "@/components/ui/command";
+import { commands } from "@/data/data";
 import { Command } from "cmdk";
 import { useEffect, useState } from "react";
 import { FaWindows } from "react-icons/fa6";
-import { commands } from "@/data/data";
 
 
 export function CommandMenu() {
@@ -38,7 +38,7 @@ export function CommandMenu() {
     <>
       <p className="font-mono flex items-center gap-2 px-7 justify-end text-foreground my-2">
         Command Menu:
-        <kbd className="pointer-events-none inline-flex h-full select-none items-center gap-1 rounded bg-accent px-1.5 py-1 font-mono text-[14px] font-medium text-accent-foreground opacity-100 align-text-bottom">
+        <kbd className="pointer-events-none inline-flex h-full select-none items-center gap-1 rounded bg-highlight px-1.5 py-1 font-mono text-[14px] font-medium text-highlight-foreground opacity-100 align-text-bottom">
           <span><FaWindows /></span>M
         </kbd>
         <span className="sr-only">Show the command menu</span>
@@ -62,7 +62,7 @@ export function CommandMenu() {
                     key={itemIndex}
                     onSelect={() => ( window.location.href = command.onSelect )}
                   >
-                    <command.icon className="mr-2" />
+                    <command.icon className="mr-2 text-primary" />
                     <span>{command.title}</span>
                     {command.shortcut && (
                       <CommandShortcut>{command.shortcut}</CommandShortcut>

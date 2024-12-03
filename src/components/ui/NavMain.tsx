@@ -99,7 +99,7 @@ export function NavMain( {
 } ) {
   return (
     <SidebarGroup>
-      <SidebarGroupLabel className="text-sidebar-accent font-bold">{title}</SidebarGroupLabel>
+      <SidebarGroupLabel>{title}</SidebarGroupLabel>
       <SidebarMenu>
         {items.map( ( item, index ) => {
           const itemKey = `${ title }_${ item.title }__${ index }`;

@@ -3,8 +3,6 @@
 import { TweetProps, useTweet } from "react-tweet";
 import { MagicTweet, TweetNotFound, TweetSkeleton } from "./ui/TweetCard";
 
-
-
 const ClientTweetCard = ( {
   id,
   apiUrl,

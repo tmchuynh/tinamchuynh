@@ -5,14 +5,11 @@ import {
   CodeXml,
   DatabaseZap,
   FileTextIcon,
-  GlobeIcon,
   CalendarIcon,
   BellIcon,
   Share2Icon,
   House,
-  CircleUserRound,
   Info,
-  Accessibility,
   Send,
   Pen,
   MessageSquareCode,
@@ -34,7 +31,6 @@ import { MdOutlineStackedBarChart } from "react-icons/md";
 import { AnimatedList } from "@/components/ui/animated-list";
 import { Calendar } from "@/components/ui/calendar";
 import { IconClouds } from "@/components/IconCircles";
-import Globe from "@/components/ui/globe";
 import ClientTweetCard from "@/components/ClientTweetCard";
 
 export const navBar = {
@@ -101,7 +97,7 @@ export const navBar = {
       items: [
         {
           title: "My Business",
-          url: "/projects/mybussiness",
+          url: "/projects/mybusiness",
         },
         {
           title: "IAC Website",
@@ -194,7 +190,7 @@ export const shortcuts = [
   {
     shortcut: (
       <span>
-        Ctrl + Shift + F
+        <FaWindows className="inline-flex mr-1" /> + M
       </span>
     ),
     description: "Open/Close Spotlight Search",
@@ -205,39 +201,7 @@ export const shortcuts = [
         <FaWindows className="inline-flex mr-1" /> + /
       </span>
     ),
-    description: "Cut selected text",
-  },
-  {
-    shortcut: (
-      <span>
-        <FaWindows className="inline-flex mr-1" /> + /
-      </span>
-    ),
-    description: "Undo last action",
-  },
-  {
-    shortcut: (
-      <span>
-        <FaWindows className="inline-flex mr-1" /> + /
-      </span>
-    ),
-    description: "Redo last action",
-  },
-  {
-    shortcut: (
-      <span>
-        <FaWindows className="inline-flex mr-1" /> + /
-      </span>
-    ),
-    description: "Save the current document",
-  },
-  {
-    shortcut: (
-      <span>
-        <FaWindows className="inline-flex mr-1" /> + /
-      </span>
-    ),
-    description: "Close dialog or cancel",
+    description: "Open Keyboard Shortcuts Menu",
   },
 ];
 
@@ -1002,15 +966,14 @@ const marqueeDetails = [
 const animatedAlerts = [
   "Complete React Tutorial",
   "Work on Portfolio",
-  "Finish API Project",
+  "Build an Interactive Dashboard for Client",
   "Design a Responsive Layout",
-  "Debug Frontend Issues",
   "Optimize Site Performance",
   "Integrate Third-Party APIs",
   "Polish Accessibility Features",
   "Prepare Presentation for Project",
-  "Add New Blog Section",
-  "Deploy Website Updates",
+  "Add New Blogs",
+  "Improve Lighthouse Performance Scores for Client",
   "Refactor JavaScript Codebase",
   "Write Documentation for Features",
   "Research UI Trends",
@@ -1019,21 +982,47 @@ const animatedAlerts = [
   "Submit Client Proposal",
   "Update Resume with New Projects",
   "Collaborate on Open Source Project",
+  "Plan a New Feature Rollout for Client",
   "Test Mobile Responsiveness",
-  "Fix Styling Bugs in Footer",
+  "Learn Advanced TypeScript",
+  "Create Unit Tests",
+  "Analyze Website Analytics for Performance Insights",
+  "Review Pull Requests for Team Project",
+  "Host a Code Review Session for Mentee Project",
+  "Experiment with New Design Frameworks",
+  "Read a Web Development Book",
+  "Implement Dark Mode Toggle Feature",
+  "Set Up a DevOps Workflow",
+  "Optimize Images for Faster Loading",
+  "Set Up Continuous Integration Pipeline",
+  "Study Emerging JavaScript Trends",
+  "Write a Case Study for a Completed Project",
+  "Develop Custom Hooks in React",
+  "Redesign Portfolio Homepage",
+  "Experiment with AI Tools for Development",
+  "Prepare for Tech Interview",
+  "Sketch Wireframes for Client",
+  "Host a Knowledge Sharing Session",
+  "Review and Merge Pending Pull Requests",
+  "Debug Frontend Issues",
+  "Update Website SEO Strategies for Client",
   "Validate Forms for Accessibility",
+  "Learn More Backend Optimization Techniques",
+  "Finish API Project",
+  "Attend a Web Development Webinar",
+  "Deploy Website Updates for Client",
+  "Start Learning a New Framework",
 ];
 
 export const features = [
   {
     Icon: BellIcon,
     name: "Projects",
-    description: "Browse through my portfolio of completed projects, showcasing my skills in web development, design, and problem-solving.",
+    description: "Explore my portfolio to see my web development, design, and problem-solving skills in action.",
     href: "/projects",
     cta: "Learn more",
-    className: "col-span-5",
     background: (
-      <AnimatedList className="mx-auto max-w-md">
+      <AnimatedList className="mx-auto">
         {animatedAlerts.map( ( item, index ) => (
           <div
             key={index}
@@ -1056,7 +1045,6 @@ export const features = [
         <ClientTweetCard id="1839807144016634063" className="w-10/12 mx-auto shadow-lg opacity-50 border" />
       </div>
     ),
-    className: "col-span-4",
   },
   {
     Icon: FileTextIcon,
@@ -1064,13 +1052,11 @@ export const features = [
     description: "Explore my professional journey, including achievements, past roles, and key contributions to projects and teams.",
     href: "/info/experiences&achievements",
     cta: "Learn more",
-    className: "col-span-4",
     background: (
       <Marquee
-        pauseOnHover
         repeat={5}
         vertical
-        className="[mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] flex mx-2 min-w-7xl opacity-50"
+        className="[mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] flex mx-2 min-w-6xl opacity-50"
       >
         {marqueeDetails.map( ( f, idx ) => (
           <figure
@@ -1096,16 +1082,18 @@ export const features = [
     description: "Discover the tools, frameworks, and technologies I use to build modern, scalable, and efficient applications.",
     href: "/info/techStack",
     cta: "Learn more",
-    className: "relative transform scale-25 col-span-5",
-    background: <IconClouds />,
+    background: (
+      <div>
+        <IconClouds />
+      </div>
+    ),
   },
   {
     Icon: CalendarIcon,
     name: "Resume",
-    description: "Access my resume to get an in-depth overview of my professional experience, education, and technical skills.",
+    description: "View my resume for a detailed summary of my experience, education, and technical skills.",
     href: "/info/resume",
     cta: "Learn more",
-    className: "flex items-end col-span-5",
     background: (
       <div className="px-8 py-10">
         <Calendar
@@ -1114,17 +1102,6 @@ export const features = [
           className="group-hover:scale-105 [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] border rounded-md w-fit origin-top transition-all duration-300 ease-out opacity-50"
         />
       </div>
-    ),
-  },
-  {
-    Icon: GlobeIcon,
-    name: "Contact",
-    description: "Get in touch with me for collaborations, job opportunities, or to learn more about my work.",
-    href: "/contact",
-    cta: "Learn more",
-    className: "col-span-4",
-    background: (
-      <Globe className="max-w-4xl absolute left-1/2" />
     ),
   },
 ];
