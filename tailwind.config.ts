@@ -128,7 +128,8 @@ export default {
 				orbit: 'orbit calc(var(--duration)*1s) linear infinite'
 			},
 			clipPath: {
-				content: 'inset(0 0 0 0 round 1px)'
+				content: 'inset(0 0 0 0 round 1px)',
+				'circle-30': 'circle(30%)',
 			}
 		}
 	},

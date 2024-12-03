@@ -12,10 +12,10 @@ body {
     --primary-foreground: #fcfcfc;
     --secondary: #d1b68c;
     --secondary-foreground: #0f0f0f;
-    --tertiary: #5db798;
-    --tertiary-foreground: #0f0f0f;
-    --highlight: #25523c;
-    --highlight-foreground: #fcfcfc;
+    --tertiary: #25523c;
+    --tertiary-foreground: #fcfcfc;
+    --highlight: #8fcab5;
+    --highlight-foreground: #0f0f0f;
     --accent: #ae3325;
     --accent-foreground: #fcfcfc;
     --background: #fcfcfc;
@@ -54,7 +54,7 @@ body {
   .dark {
     --primary: #006e6d;
     --primary-foreground: #fcfcfc;
-    --secondary: #d1b68c;
+    --secondary: #8abcde;
     --secondary-foreground: #0f0f0f;
     --tertiary: #2e8b57;
     --tertiary-foreground: #fcfcfc;

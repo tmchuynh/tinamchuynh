@@ -74,37 +74,89 @@ const AboutPage = () => {
             ensuring that:
           </p>
           <ul className="list-none mt-4">
-            <li>
+            <li className="mb-2">
               <BlurFade delay={0.6} className="inline-flex">
                 <FaBook
                   className="mr-2 h-6 w-6 text-tertiary"
                   aria-hidden="true"
                 />
-                <p><strong>Clean, User-Centered Design</strong>: Websites should not just look good but also feel intuitive to navigate.</p>
+                <div>
+                  <p><strong>Clean, User-Centered Design</strong></p>
+                  <p>
+                    Websites should not just look good but also feel intuitive to navigate. I prioritize creating
+                    designs that guide users effortlessly, using clear layouts, structured information, and a balance
+                    of form and function.
+                  </p>
+                </div>
               </BlurFade>
             </li>
-            <li>
+            <li className="mb-2">
               <BlurFade delay={0.65} className="inline-flex">
                 <FaBook
                   className="mr-2 h-6 w-6 text-tertiary"
                   aria-hidden="true"
                 />
-                <p><strong>Accessibility for All</strong>: I’m deeply committed to making the web a more inclusive space, particularly
-                  for neurodivergent users and those with disabilities.</p>
+                <div>
+                  <p><strong>Accessibility for All</strong></p>
+                  <p>
+                    I’m deeply committed to making the web a more inclusive space, particularly
+                    for neurodivergent users and those with disabilities. My focus includes implementing WCAG standards,
+                    improving keyboard navigation, and enhancing readability for all users.
+                  </p>
+                </div>
               </BlurFade>
             </li>
-            <li>
+            <li className="mb-2">
               <BlurFade delay={0.7} className="inline-flex">
                 <FaBook
                   className="mr-2 h-6 w-6 text-tertiary"
                   aria-hidden="true"
                 />
-                <p> <strong>Continuous Learning</strong>: Web development is an ever-evolving field, and I’m eager to stay ahead of
-                  the curve by exploring emerging technologies and best practices.</p>
+                <div>
+                  <p><strong>Continuous Learning</strong></p>
+                  <p>
+                    Web development is an ever-evolving field, and I’m eager to stay ahead of
+                    the curve by exploring emerging technologies, frameworks, and best practices. My
+                    passion for learning ensures I bring modern, innovative solutions to every project.
+                  </p>
+                </div>
+              </BlurFade>
+            </li>
+            <li className="mb-2">
+              <BlurFade delay={0.75} className="inline-flex">
+                <FaBook
+                  className="mr-2 h-6 w-6 text-tertiary"
+                  aria-hidden="true"
+                />
+                <div>
+                  <p><strong>Performance Optimization</strong></p>
+                  <p>
+                    A fast-loading website is key to a great user experience. I focus on optimizing
+                    performance by reducing load times, improving server responses, and following best practices for
+                    efficient coding and asset management.
+                  </p>
+                </div>
+              </BlurFade>
+            </li>
+            <li className="mb-2">
+              <BlurFade delay={0.8} className="inline-flex">
+                <FaBook
+                  className="mr-2 h-6 w-6 text-tertiary"
+                  aria-hidden="true"
+                />
+                <div>
+                  <p><strong>Collaborative Problem-Solving</strong></p>
+                  <p>
+                    I value collaboration and thrive in team settings, working alongside
+                    designers, developers, and stakeholders to tackle complex challenges and create cohesive
+                    solutions that align with the project's vision.
+                  </p>
+                </div>
               </BlurFade>
             </li>
           </ul>
         </BlurFade>
+
 
         <hr className="my-8" />
 
@@ -116,35 +168,87 @@ const AboutPage = () => {
         {/* My Vision Description */}
         <BlurFade delay={0.65}>
           <p className="text-lg">
-            The web is a powerful platform that connects people, ideas, and solutions. I aim to contribute by building digital
-            experiences that are:
+            The web is a transformative platform that bridges gaps between people, ideas, and solutions. My vision is to contribute by crafting digital experiences that are:
           </p>
           <ul className="list-none mt-4">
-            <li>
+            <li className="mb-2">
               <BlurFade delay={0.7} className="inline-flex">
                 <FaRegLightbulb
                   className="mr-2 h-6 w-6 text-tertiary"
                   aria-hidden="true"
                 />
-                <p> <strong>Visually Stunning</strong>: Balancing simplicity and creativity to make designs memorable.</p>
+                <div>
+                  <p>
+                    <strong>Visually Stunning</strong>
+                  </p>
+                  <p>
+                    Creating designs that captivate and inspire, balancing simplicity with creativity to leave a lasting impression. I strive to use colors, typography, and layouts effectively to create a cohesive and engaging visual language.
+                  </p>
+                </div>
               </BlurFade>
             </li>
-            <li>
+            <li className="mb-2">
               <BlurFade delay={0.75} className="inline-flex">
                 <FaRegLightbulb
                   className="mr-2 h-6 w-6 text-tertiary"
                   aria-hidden="true"
                 />
-                <p> <strong>Effortlessly Navigable</strong>: Prioritizing usability and accessibility for all users, regardless of ability or neurodiversity.</p>
+                <div>
+                  <p>
+                    <strong>Effortlessly Navigable</strong>
+                  </p>
+                  <p>
+                    Designing interfaces that are intuitive and accessible, ensuring users can interact seamlessly regardless of ability or neurodiversity. By focusing on user experience and inclusive practices, I aim to make the web a space for everyone.
+                  </p>
+                </div>
               </BlurFade>
             </li>
-            <li>
+            <li className="mb-2">
               <BlurFade delay={0.8} className="inline-flex">
                 <FaRegLightbulb
                   className="mr-2 h-6 w-6 text-tertiary"
                   aria-hidden="true"
                 />
-                <p> <strong>Technically Sound</strong>: Ensuring scalable, efficient, and maintainable code across the stack.</p>
+                <div>
+                  <p>
+                    <strong>Technically Sound</strong>
+                  </p>
+                  <p>
+                    Building with scalability, efficiency, and maintainability in mind, ensuring robust functionality on both the front-end and back-end. My goal is to write clean, modular code that evolves alongside technological advancements.
+                  </p>
+                </div>
+              </BlurFade>
+            </li>
+            <li className="mb-2">
+              <BlurFade delay={0.85} className="inline-flex">
+                <FaRegLightbulb
+                  className="mr-2 h-6 w-6 text-tertiary"
+                  aria-hidden="true"
+                />
+                <div>
+                  <p>
+                    <strong>Future-Ready</strong>
+                  </p>
+                  <p>
+                    Leveraging cutting-edge tools and frameworks to stay ahead of industry trends, ensuring that the solutions I build remain relevant and competitive in a rapidly evolving digital landscape.
+                  </p>
+                </div>
+              </BlurFade>
+            </li>
+            <li className="mb-2">
+              <BlurFade delay={0.9} className="inline-flex">
+                <FaRegLightbulb
+                  className="mr-2 h-6 w-6 text-tertiary"
+                  aria-hidden="true"
+                />
+                <div>
+                  <p>
+                    <strong>Ethically Responsible</strong>
+                  </p>
+                  <p>
+                    Committing to ethical development practices by prioritizing user privacy, security, and creating solutions that positively impact communities and society.
+                  </p>
+                </div>
               </BlurFade>
             </li>
           </ul>
@@ -164,35 +268,84 @@ const AboutPage = () => {
             in full-stack development, I’m actively expanding my knowledge in areas like:
           </p>
           <ul className="list-none mt-4">
-            <li>
+            <li className="mb-2">
               <BlurFade delay={0.8} className="inline-flex">
                 <FaCheck
                   className="mr-2 h-6 w-6 text-tertiary"
                   aria-hidden="true"
                 />
-                <p> <strong>Web Design & UX/UI</strong>: Enhancing the aesthetics and functionality of digital experiences.</p>
+                <div>
+                  <p><strong>Web Design & UX/UI</strong></p>
+                  <p>
+                    Enhancing the aesthetics and functionality of digital experiences by focusing on intuitive layouts,
+                    user-friendly navigation, and visually engaging elements that improve usability.
+                  </p>
+                </div>
               </BlurFade>
             </li>
-            <li>
+            <li className="mb-2">
               <BlurFade delay={0.85} className="inline-flex">
                 <FaCheck
                   className="mr-2 h-6 w-6 text-tertiary"
                   aria-hidden="true"
                 />
-                <p> <strong>Web Accessibility</strong>: Advocating for a more inclusive web that caters to all users.</p>
+                <div>
+                  <p><strong>Web Accessibility</strong></p>
+                  <p>
+                    Advocating for a more inclusive web by implementing accessible design principles, such as keyboard
+                    navigation, screen reader support, and high-contrast visuals, to ensure equal access for all users.
+                  </p>
+                </div>
               </BlurFade>
             </li>
-            <li>
+            <li className="mb-2">
               <BlurFade delay={0.9} className="inline-flex">
                 <FaCheck
                   className="mr-2 h-6 w-6 text-tertiary"
                   aria-hidden="true"
                 />
-                <p><strong>Emerging Tech Trends</strong>: Staying updated on cutting-edge tools and frameworks to deliver the best solutions.</p>
+                <div>
+                  <p><strong>Emerging Tech Trends</strong></p>
+                  <p>
+                    Staying updated on cutting-edge tools, frameworks, and methodologies, such as AI-driven development
+                    and progressive web apps, to deliver innovative and future-ready solutions.
+                  </p>
+                </div>
+              </BlurFade>
+            </li>
+            <li className="mb-2">
+              <BlurFade delay={0.95} className="inline-flex">
+                <FaCheck
+                  className="mr-2 h-6 w-6 text-tertiary"
+                  aria-hidden="true"
+                />
+                <div>
+                  <p><strong>Cloud Technologies</strong></p>
+                  <p>
+                    Learning the intricacies of cloud platforms like AWS, Azure, and Google Cloud to create scalable,
+                    reliable, and cost-effective applications for businesses of all sizes.
+                  </p>
+                </div>
+              </BlurFade>
+            </li>
+            <li className="mb-2">
+              <BlurFade delay={1.0} className="inline-flex">
+                <FaCheck
+                  className="mr-2 h-6 w-6 text-tertiary"
+                  aria-hidden="true"
+                />
+                <div>
+                  <p><strong>Performance Optimization</strong></p>
+                  <p>
+                    Exploring techniques for improving website and application performance, such as lazy loading,
+                    caching, and optimizing database queries, to deliver faster and more efficient user experiences.
+                  </p>
+                </div>
               </BlurFade>
             </li>
           </ul>
         </BlurFade>
+
 
         <hr className="my-8" />
 
@@ -205,10 +358,21 @@ const AboutPage = () => {
         <BlurFade delay={0.85}>
           <p className="text-lg">
             I’m looking to connect with <strong>forward-thinking employers and collaborators</strong> who share my passion for
-            innovation and excellence in web development. If you’re seeking someone who’s not only technical but also highly
-            adaptable, creative, and driven by a desire to learn, I’d love to hear from you!
+            innovation and excellence in web development. I believe in the power of technology to solve complex problems,
+            bring ideas to life, and create meaningful user experiences that leave a lasting impact.
+          </p>
+          <p className="text-lg mt-4">
+            Whether you’re launching a new project, optimizing an existing platform, or seeking a fresh perspective
+            for your team, I bring a combination of technical expertise, creative problem-solving, and a deep commitment
+            to delivering exceptional results. My adaptability, drive to learn, and collaborative approach make me a
+            valuable partner in tackling challenges and building groundbreaking solutions.
+          </p>
+          <p className="text-lg mt-4">
+            If you’re seeking someone who’s not only technical but also highly adaptable, creative, and motivated to go
+            above and beyond, I’d love to hear from you. Let’s create something extraordinary together!
           </p>
         </BlurFade>
+
 
       </div>
     </RootLayout>

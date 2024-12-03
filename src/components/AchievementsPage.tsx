@@ -6,11 +6,8 @@ import { AchievementItem, AchievementsSectionProps } from "@/data/types";
 import React, { useEffect, useState } from "react";
 import { ImageCarousel } from "./ImageCarousel";
 import { FaFreeCodeCamp, FaLinkedinIn } from "react-icons/fa6";
-import { useTheme } from "next-themes";
 
 const AchievementsSection: React.FC<AchievementsSectionProps> = ( { title, items } ) => {
-
-  const { theme } = useTheme();
   const [mounted, setMounted] = useState( false );
 
   useEffect( () => {

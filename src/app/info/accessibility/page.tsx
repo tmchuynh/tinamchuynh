@@ -3,12 +3,10 @@
 import BlurFade from "@/components/ui/blur-fade";
 import Breadcrumb from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
-import { Bookmark } from "lucide-react";
 import React, { useEffect, useState } from "react";
-import { FaCheckDouble, FaUniversalAccess, FaVolumeHigh } from "react-icons/fa6";
+import { FaCheckDouble, FaMicrophone, FaPalette, FaUniversalAccess, FaVolumeHigh } from "react-icons/fa6";
 import { IoNavigateCircleSharp } from "react-icons/io5";
-import { VscColorMode } from "react-icons/vsc";
-import { BsChatTextFill } from "react-icons/bs";
+import { FaCheckCircle } from "react-icons/fa";
 
 const breadcrumbItems = [
   {
@@ -303,10 +301,258 @@ const AccessibilityPage = () => {
         </p>
       </BlurFade>
 
-      <ul className="list-none">
+      <ul className="list-none grid md:grid-cols-2">
+        <li className="mb-3">
+          <BlurFade delay={2.66}>
+            <strong>General Accessibility</strong>:
+            These tools help identify potential accessibility issues and ensure compliance with accessibility standards like WCAG.
+            <ul className="list-none pt-2 flex flex-col">
+              <li className="inline-flex mb-1 items-center">
+                <FaCheckCircle
+                  className="h-6 w-6 text-tertiary"
+                  aria-hidden="true"
+                />
+                <Button
+                  variant="link"
+                  onClick={() => window.open( "https://wave.webaim.org/", "_blank" )}
+                  className="text-muted hover:text-foreground"
+                >
+                  WAVE Accessibility Checker
+                </Button>
+              </li>
+              <li className="inline-flex mb-1 items-center">
+                <FaCheckCircle
+                  className="h-6 w-6 text-tertiary"
+                  aria-hidden="true"
+                />
+                <Button
+                  variant="link"
+                  onClick={() => window.open( "https://www.qualibooth.com/", "_blank" )}
+                  className="text-muted hover:text-foreground"
+                >
+                  QualiBooth
+                </Button>
+              </li>
+              <li className="inline-flex mb-1 items-center">
+                <FaCheckCircle
+                  className="h-6 w-6 text-tertiary"
+                  aria-hidden="true"
+                />
+                <Button
+                  variant="link"
+                  onClick={() => window.open( "https://achecks.org/", "_blank" )}
+                  className="text-muted hover:text-foreground"
+                >
+                  AChecker
+                </Button>
+              </li>
+              <li className="inline-flex mb-1 items-center">
+                <FaCheckCircle
+                  className="h-6 w-6 text-tertiary"
+                  aria-hidden="true"
+                />
+                <Button
+                  variant="link"
+                  onClick={() => window.open( "https://www.accessibilitychecker.org/", "_blank" )}
+                  className="text-muted hover:text-foreground"
+                >
+                  Accessibility Checker
+                </Button>
+              </li>
+              <li className="inline-flex mb-1 items-center">
+                <FaCheckCircle
+                  className="h-6 w-6 text-tertiary"
+                  aria-hidden="true"
+                />
+                <Button
+                  variant="link"
+                  onClick={() => window.open( "https://webaim.org/resources/contrastchecker/", "_blank" )}
+                  className="text-muted hover:text-foreground"
+                >
+                  WebAIM Contrast Checker
+                </Button>
+              </li>
+              <li className="inline-flex mb-1 items-center">
+                <FaCheckCircle
+                  className="h-6 w-6 text-tertiary"
+                  aria-hidden="true"
+                />
+                <Button
+                  variant="link"
+                  onClick={() => window.open( "https://accessibility.huit.harvard.edu/testing", "_blank" )}
+                  className="text-muted hover:text-foreground"
+                >
+                  Harvard Accessibility Testing
+                </Button>
+              </li>
+              <li className="inline-flex mb-1 items-center">
+                <FaCheckCircle
+                  className="h-6 w-6 text-tertiary"
+                  aria-hidden="true"
+                />
+                <Button
+                  variant="link"
+                  onClick={() => window.open( "https://www.deque.com/axe/devtools/", "_blank" )}
+                  className="text-muted hover:text-foreground"
+                >
+                  Axe DevTools
+                </Button>
+              </li>
+              <li className="inline-flex mb-1 items-center">
+                <FaCheckCircle
+                  className="h-6 w-6 text-tertiary"
+                  aria-hidden="true"
+                />
+                <Button
+                  variant="link"
+                  onClick={() => window.open( "https://wave.webaim.org/", "_blank" )}
+                  className="text-muted hover:text-foreground"
+                >
+                  WAVE Accessibility Tool
+                </Button>
+              </li>
+              <li className="inline-flex mb-1 items-center">
+                <FaCheckCircle
+                  className="h-6 w-6 text-tertiary"
+                  aria-hidden="true"
+                />
+                <Button
+                  variant="link"
+                  onClick={() => window.open( "https://www.paciellogroup.com/tools/arc-toolkit/", "_blank" )}
+                  className="text-muted hover:text-foreground"
+                >
+                  ARC Toolkit
+                </Button>
+              </li>
+            </ul>
+          </BlurFade>
+        </li>
+
+        <li className="mb-3">
+          <BlurFade delay={2.88}>
+            <strong>Color Contrast</strong>:
+            Ensuring sufficient contrast between text and background is crucial for readability, especially for users with visual impairments such as color blindness.
+            <ul className="list-none pt-2 flex flex-col">
+              <li className="inline-flex mb-1 items-center">
+                <FaPalette
+                  className="h-6 w-6 text-tertiary"
+                  aria-hidden="true"
+                />
+                <Button
+                  variant="link"
+                  onClick={() => window.open( "https://webaim.org/resources/contrastchecker/", "_blank" )}
+                  className="text-muted hover:text-foreground"
+                >
+                  WebAIM Contrast Checker
+                </Button>
+              </li>
+              <li className="inline-flex mb-1 items-center">
+                <FaPalette
+                  className="h-6 w-6 text-tertiary"
+                  aria-hidden="true"
+                />
+                <Button
+                  variant="link"
+                  onClick={() => window.open( "https://coolors.co/contrast-checker", "_blank" )}
+                  className="text-muted hover:text-foreground"
+                >
+                  Coolors Contrast Checker
+                </Button>
+              </li>
+              <li className="inline-flex mb-1 items-center">
+                <FaPalette
+                  className="h-6 w-6 text-tertiary"
+                  aria-hidden="true"
+                />
+                <Button
+                  variant="link"
+                  onClick={() => window.open( "https://www.accessibilitychecker.org/color-contrast-checker/", "_blank" )}
+                  className="text-muted hover:text-foreground"
+                >
+                  AccessibilityChecker Color Contrast
+                </Button>
+              </li>
+              <li className="inline-flex mb-1 items-center">
+                <FaPalette
+                  className="h-6 w-6 text-tertiary"
+                  aria-hidden="true"
+                />
+                <Button
+                  variant="link"
+                  onClick={() => window.open( "https://contrast-ratio.com/", "_blank" )}
+                  className="text-muted hover:text-foreground"
+                >
+                  Contrast Ratio Tool
+                </Button>
+              </li>
+              <li className="inline-flex mb-1 items-center">
+                <FaPalette
+                  className="h-6 w-6 text-tertiary"
+                  aria-hidden="true"
+                />
+                <Button
+                  variant="link"
+                  onClick={() => window.open( "https://accessibility.huit.harvard.edu/color", "_blank" )}
+                  className="text-muted hover:text-foreground"
+                >
+                  Harvard Color Contrast Testing
+                </Button>
+              </li>
+            </ul>
+          </BlurFade>
+        </li>
+
+        <li className="mb-3">
+          <BlurFade delay={2.77}>
+            <strong>Keyboard Navigation</strong>:
+            Keyboard navigation is essential for users with motor disabilities. These tools simulate keyboard-only navigation to ensure that all interactive elements can be accessed through keyboard input.
+            <ul className="list-none pt-2 flex flex-col">
+              <li className="inline-flex mb-1 items-center">
+                <IoNavigateCircleSharp
+                  className="h-6 w-6 text-tertiary"
+                  aria-hidden="true"
+                />
+                <Button
+                  variant="link"
+                  onClick={() => window.open( "https://www.w3.org/WAI/WCAG21/Techniques/general/G158.html", "_blank" )}
+                  className="text-muted hover:text-foreground"
+                >
+                  W3C WCAG Keyboard Testing Guide
+                </Button>
+              </li>
+              <li className="inline-flex mb-1 items-center">
+                <IoNavigateCircleSharp
+                  className="h-6 w-6 text-tertiary"
+                  aria-hidden="true"
+                />
+                <Button
+                  variant="link"
+                  onClick={() => window.open( "https://webaim.org/articles/keyboard/", "_blank" )}
+                  className="text-muted hover:text-foreground"
+                >
+                  WebAIM Keyboard Navigation Checklist
+                </Button>
+              </li>
+              <li className="inline-flex mb-1 items-center">
+                <IoNavigateCircleSharp
+                  className="h-6 w-6 text-tertiary"
+                  aria-hidden="true"
+                />
+                <Button
+                  variant="link"
+                  onClick={() => window.open( "https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets", "_blank" )}
+                  className="text-muted hover:text-foreground"
+                >
+                  Mozilla Keyboard Navigation Resources
+                </Button>
+              </li>
+            </ul>
+          </BlurFade>
+        </li>
+
         <li className="mb-3">
           <BlurFade delay={2.55}>
-            <strong>Screen Reader Simulations</strong>:
+            <strong>Screen Readers</strong>:
             These tools simulate how screen readers interact with content, helping to ensure the site is fully accessible to visually impaired users.
             <ul className="list-none pt-2 flex flex-col">
               <li className="inline-flex mb-1 items-center">
@@ -320,6 +566,19 @@ const AccessibilityPage = () => {
                   className="text-muted hover:text-foreground"
                 >
                   NVDA (NonVisual Desktop Access)
+                </Button>
+              </li>
+              <li className="inline-flex mb-1 items-center">
+                <FaVolumeHigh
+                  className="h-6 w-6 text-tertiary"
+                  aria-hidden="true"
+                />
+                <Button
+                  variant="link"
+                  onClick={() => window.open( "https://chrome.google.com/webstore/detail/screen-reader/njacgdhfojhldggakfbkbfcnmfaaaaon", "_blank" )}
+                  className="text-muted hover:text-foreground"
+                >
+                  ChromeVox (Chrome Extension)
                 </Button>
               </li>
               <li className="inline-flex mb-1 items-center">
@@ -365,122 +624,39 @@ const AccessibilityPage = () => {
           </BlurFade>
         </li>
 
-        <li className="mb-3">
-          <BlurFade delay={2.65}>
-            <strong>Keyboard Navigation Simulations</strong>:
-            Keyboard navigation is essential for users with motor disabilities. These tools simulate keyboard-only navigation to ensure that all interactive elements can be accessed through keyboard input.
-            <ul className="list-none pt-2 flex flex-col">
-              <li className="inline-flex mb-1 items-center">
-                <IoNavigateCircleSharp
-                  className="h-6 w-6 text-tertiary"
-                  aria-hidden="true"
-                />
-                <Button
-                  variant="link"
-                  onClick={() => window.open( "https://www.deque.com/axe/keyboard-navigation/", "_blank" )}
-                  className="text-muted hover:text-foreground"
-                >
-                  Axe Keyboard Navigation Tool
-                </Button>
-              </li>
-              <li className="inline-flex mb-1 items-center">
-                <IoNavigateCircleSharp
-                  className="h-6 w-6 text-tertiary"
-                  aria-hidden="true"
-                />
-                <Button
-                  variant="link"
-                  onClick={() => window.open( "https://www.w3.org/WAI/WCAG21/Techniques/general/G158.html", "_blank" )}
-                  className="text-muted hover:text-foreground"
-                >
-                  W3C WCAG Keyboard Testing Guide
-                </Button>
-              </li>
-              <li className="inline-flex mb-1 items-center">
-                <IoNavigateCircleSharp
-                  className="h-6 w-6 text-tertiary"
-                  aria-hidden="true"
-                />
-                <Button
-                  variant="link"
-                  onClick={() => window.open( "https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets", "_blank" )}
-                  className="text-muted hover:text-foreground"
-                >
-                  Mozilla Keyboard Navigation Resources
-                </Button>
-              </li>
-            </ul>
-          </BlurFade>
-        </li>
-
-        <li className="mb-3">
-          <BlurFade delay={2.75}>
-            <strong>Color Contrast Simulations</strong>:
-            Ensuring sufficient contrast between text and background is crucial for readability, especially for users with visual impairments such as color blindness.
-            <ul className="list-none pt-2 flex flex-col">
-              <li className="inline-flex mb-1 items-center">
-                <VscColorMode
-                  className="h-6 w-6 text-tertiary"
-                  aria-hidden="true"
-                />
-                <Button
-                  variant="link"
-                  onClick={() => window.open( "https://webaim.org/resources/contrastchecker/", "_blank" )}
-                  className="text-muted hover:text-foreground"
-                >
-                  WebAIM Contrast Checker
-                </Button>
-              </li>
-              <li className="inline-flex mb-1 items-center">
-                <VscColorMode
-                  className="h-6 w-6 text-tertiary"
-                  aria-hidden="true"
-                />
-                <Button
-                  variant="link"
-                  onClick={() => window.open( "https://color.oracle.com/na/en/ux", "_blank" )}
-                  className="text-muted hover:text-foreground"
-                >
-                  Oracle Color Accessibility Testing Tool
-                </Button>
-              </li>
-              <li className="inline-flex mb-1 items-center">
-                <VscColorMode
-                  className="h-6 w-6 text-tertiary"
-                  aria-hidden="true"
-                />
-                <Button
-                  variant="link"
-                  onClick={() => window.open( "https://accessibilityinsights.io/", "_blank" )}
-                  className="text-muted hover:text-foreground"
-                >
-                  Accessibility Insights for Web
-                </Button>
-              </li>
-            </ul>
-          </BlurFade>
-        </li>
-
         <li>
-          <BlurFade delay={2.85}>
-            <strong>Speech Recognition Simulations</strong>:
-            These tools allow users with motor impairments to interact with websites using voice commands instead of traditional input methods.
+          <BlurFade delay={2.99}>
+            <strong>Speech Recognition</strong>:
+            These tools and resources help ensure that your website or application is compatible with voice commands and accessible for users relying on speech recognition technology.
             <ul className="list-none pt-2 flex flex-col">
               <li className="inline-flex mb-1 items-center">
-                <BsChatTextFill
+                <FaMicrophone
                   className="h-6 w-6 text-tertiary"
                   aria-hidden="true"
                 />
                 <Button
                   variant="link"
-                  onClick={() => window.open( "https://dictation.io/", "_blank" )}
+                  onClick={() => window.open( "https://www.nuance.com/dragon.html", "_blank" )}
                   className="text-muted hover:text-foreground"
                 >
-                  Dictation.io (Speech to Text)
+                  Dragon NaturallySpeaking
                 </Button>
               </li>
               <li className="inline-flex mb-1 items-center">
-                <BsChatTextFill
+                <FaMicrophone
+                  className="h-6 w-6 text-tertiary"
+                  aria-hidden="true"
+                />
+                <Button
+                  variant="link"
+                  onClick={() => window.open( "https://webspeechapi.github.io/", "_blank" )}
+                  className="text-muted hover:text-foreground"
+                >
+                  Web Speech API (Browser Support)
+                </Button>
+              </li>
+              <li className="inline-flex mb-1 items-center">
+                <FaMicrophone
                   className="h-6 w-6 text-tertiary"
                   aria-hidden="true"
                 />
@@ -493,7 +669,7 @@ const AccessibilityPage = () => {
                 </Button>
               </li>
               <li className="inline-flex mb-1 items-center">
-                <BsChatTextFill
+                <FaMicrophone
                   className="h-6 w-6 text-tertiary"
                   aria-hidden="true"
                 />

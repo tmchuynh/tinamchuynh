@@ -41,11 +41,11 @@ export const navBar = {
       icon: House,
     },
     {
-      title: "About Me",
+      title: "Info",
       icon: Info,
       items: [
         {
-          title: "Who I Am",
+          title: "About Me",
           url: "/info/about",
         },
         {
