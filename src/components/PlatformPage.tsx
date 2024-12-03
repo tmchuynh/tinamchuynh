@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { Badge } from "./ui/badge";
 import BlurFade from "./ui/blur-fade";
 import Breadcrumb from "./ui/breadcrumb";
+import HyperText from "./ui/hyper-text";
 
 
 const breadcrumbItems = [
@@ -83,67 +84,83 @@ const PlatformPage = ( {
     <div className="max-w-7xl mx-auto p-6">
       <Breadcrumb items={breadcrumbItems} />
 
-      <h1 className="text-4xl font-bold text-center mb-4">{platform.title}</h1>
-      <h2 className="text-2xl font-semibold mt-8 mb-4">{platform.description}</h2>
+      <BlurFade delay={0.25}  >
+        <HyperText
+          className="text-4xl font-bold text-center mb-4"
+          text={`${ platform.title }`}
+        />
+      </BlurFade>
 
-      <div className="flex justify-center pb-8">
-        {platform.focuses.map( ( focus, index ) => (
-          <Badge variant={"default"} size={"default"} key={index}>{focus}</Badge>
-        ) )}
-      </div>
+      <BlurFade delay={0.35}  >
+        <p className="text-lg mb-8">{platform.description}</p>
+      </BlurFade>
 
-      <div className="flex justify-center gap-3">
-        {platform.links.map( ( link, index ) => (
-          <Button
-            variant={"tertiary"}
-            key={index}
-          >
-            {link.label}
-          </Button>
-        ) )}
-      </div>
-
-      {articles.length === 0 ? (
-        <p>No articles found.</p>
-      ) :
-        ( <BlurFade delay={0.25} inView className="flex flex-wrap justify-around">
-          {articles.map( ( article, index ) => (
-            <Card key={`${ article.id }_${ index }`} className="w-[22rem] my-4 relative">
-              <CardHeader>
-                <CardTitle>{article.title}</CardTitle>
-                <div className="flex justify-between">
-                  <span className="text-highlight text-xs">
-                    Published: {article.published_at}
-                  </span>
-                  <span className="text-highlight text-xs">
-                    Reading Time: {article.reading_time_minutes} Minutes
-                  </span>
-                </div>
-              </CardHeader>
-              <CardContent className="grid gap-4">
-                <CardDescription>{article.description}</CardDescription>
-              </CardContent>
-              <CardActions>
-                <Button
-                  variant={"outline"}
-                  size={"sm"}
-                  onClick={() => handleClick( article.canonical_url )}
-                >
-                  Read More
-                </Button>
-              </CardActions>
-              <CardFooter className="flex py-7 h-fit">
-                <div className="flex flex-wrap">
-                  {article.tag_list.slice( 0, 2 ).map( ( tag, tagIndex ) => (
-                    <Badge key={tagIndex} variant={"highlight"} className="mb-1 ml-0">
-                      #{tag}
-                    </Badge>
-                  ) )}
-                </div>
-              </CardFooter>
-            </Card>
+      <BlurFade delay={0.45} >
+        <div className="flex justify-center pb-8">
+          {platform.focuses.map( ( focus, index ) => (
+            <Badge variant={"default"} size={"default"} key={index}>{focus}</Badge>
           ) )}
-        </BlurFade> )}
+        </div>
+      </BlurFade>
+
+      <BlurFade delay={0.5}  >
+        <div className="flex justify-center gap-3">
+          {platform.links.map( ( link, index ) => (
+            <Button
+              variant={"tertiary"}
+              key={index}
+            >
+              {link.label}
+            </Button>
+          ) )}
+        </div>
+      </BlurFade>
+
+      <BlurFade delay={0.6}  >
+        {articles.length === 0 ? (
+          <p>No articles found.</p>
+        ) :
+          ( <div className="flex flex-wrap justify-around gap-3">
+            {articles.map( ( article, index ) => (
+              <BlurFade delay={0.2 + index * 0.2}  >
+                <Card key={`${ article.id }_${ index }`} className="w-[22rem] my-4 relative h-full">
+                  <CardHeader>
+                    <CardTitle>{article.title}</CardTitle>
+                    <div className="flex justify-between">
+                      <span className="text-highlight text-xs">
+                        Published: {article.published_at}
+                      </span>
+                      <span className="text-highlight text-xs">
+                        Reading Time: {article.reading_time_minutes} Minutes
+                      </span>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="grid gap-4">
+                    <CardDescription>{article.description}</CardDescription>
+                  </CardContent>
+                  <CardActions>
+                    <Button
+                      variant={"outline"}
+                      size={"sm"}
+                      onClick={() => handleClick( article.canonical_url )}
+                    >
+                      Read More
+                    </Button>
+                  </CardActions>
+                  <CardFooter className="flex py-7 h-fit">
+                    <div className="flex flex-wrap">
+                      {article.tag_list.slice( 0, 2 ).map( ( tag, tagIndex ) => (
+                        <Badge key={tagIndex} variant={"highlight"} className="mb-1 ml-0">
+                          #{tag}
+                        </Badge>
+                      ) )}
+                    </div>
+                  </CardFooter>
+                </Card>
+              </BlurFade>
+            ) )}
+          </div> )}
+      </BlurFade>
     </div>
   );
 };

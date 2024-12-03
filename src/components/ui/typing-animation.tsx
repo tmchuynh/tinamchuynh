@@ -12,7 +12,7 @@ interface TypingAnimationProps {
 
 export default function TypingAnimation( {
   text,
-  duration = 200,
+  duration = 50,
   className,
 }: TypingAnimationProps ) {
   const [displayedText, setDisplayedText] = useState<string>( "" );
@@ -36,7 +36,7 @@ export default function TypingAnimation( {
   return (
     <h1
       className={cn(
-        "font-mono text-sm font-bold tracking-[-0.02em] drop-shadow-sm",
+        "text-sm font-bold tracking-[-0.02em] drop-shadow-sm",
         className,
       )}
     >

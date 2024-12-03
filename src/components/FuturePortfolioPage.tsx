@@ -3,6 +3,7 @@ import { Check } from "lucide-react";
 import BlurFade from "./ui/blur-fade";
 import { RiFocus2Line } from "react-icons/ri";
 import { ImageCarousel } from "./ImageCarousel";
+import HyperText from "./ui/hyper-text";
 
 const FutureProjectPage = (
   {
@@ -15,45 +16,54 @@ const FutureProjectPage = (
   return (
     <div>
       {/* Project Title */}
-      <h1 className="text-4xl font-bold text-center mb-4">{futureProjects.title}</h1>
+      <BlurFade delay={0.25}  >
+        <HyperText
+          className="text-4xl font-bold text-center mb-4"
+          text={`${ futureProjects.title }`}
+        />
+      </BlurFade>
 
       {/* Project Description */}
-      <p className="text-lg mb-8">{futureProjects.description}</p>
+      <BlurFade delay={0.35}  >
+        <p className="text-lg mb-8">{futureProjects.description}</p>
+      </BlurFade>
 
-      <div className="grid md:grid-cols-2 gap-8">
-        {/* Focuses of the Project */}
-        {futureProjects.focuses ? (
-          <div className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">Project Focuses</h2>
-            {futureProjects.focuses.map( ( focus, index ) => (
-              <BlurFade delay={0.25 + index} inView key={index} >
-                <ul className="inline-flex list-none">
-                  <RiFocus2Line className="mr-2 h-8 w-8 text-tertiary" aria-hidden="true" />
-                  <li key={index} className="text-lg mb-3">
-                    <p><strong>{focus.split( ":" )[0]}</strong></p>
-                    <p className="text-sm">{focus.split( ":" )[1]}</p>
-                  </li>
-                </ul>
-              </BlurFade>
-            ) )}
-          </div>
-        ) : ''}
+      {futureProjects.features || futureProjects.technologies ? (
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Focuses of the Project */}
+          {futureProjects.focuses ? (
+            <div className="mb-8">
+              <h2 className="text-2xl font-semibold mb-4">Project Focuses</h2>
+              {futureProjects.focuses.map( ( focus, index ) => (
+                <BlurFade delay={0.25 + index} inView key={index} >
+                  <ul className="inline-flex list-none">
+                    <RiFocus2Line className="mr-2 h-8 w-8 text-tertiary" aria-hidden="true" />
+                    <li key={index} className="text-lg mb-3">
+                      <p><strong>{focus.split( ":" )[0]}</strong></p>
+                      <p className="text-sm">{focus.split( ":" )[1]}</p>
+                    </li>
+                  </ul>
+                </BlurFade>
+              ) )}
+            </div>
+          ) : ''}
 
-        {/* Technologies Used */}
-        {futureProjects.technologies ? (
-          <div className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">Technologies</h2>
-            {futureProjects.technologies.map( ( tech, index ) => (
-              <BlurFade delay={0.25 + index} inView key={index} >
-                <div className="inline-flex">
-                  <Check className="mr-2 h-6 w-6 text-tertiary" aria-hidden="true" />
-                  <li key={index} className="text-lg list-none">{tech}</li>
-                </div>
-              </BlurFade>
-            ) )}
-          </div>
-        ) : ''}
-      </div>
+          {/* Technologies Used */}
+          {futureProjects.technologies ? (
+            <div className="mb-8">
+              <h2 className="text-2xl font-semibold mb-4">Technologies</h2>
+              {futureProjects.technologies.map( ( tech, index ) => (
+                <BlurFade delay={0.25 + index} inView key={index} >
+                  <div className="inline-flex">
+                    <Check className="mr-2 h-6 w-6 text-tertiary" aria-hidden="true" />
+                    <li key={index} className="text-lg list-none">{tech}</li>
+                  </div>
+                </BlurFade>
+              ) )}
+            </div>
+          ) : ''}
+        </div>
+      ) : ''}
 
       {/* Timeline */}
       {futureProjects.timeline ? (
@@ -82,10 +92,12 @@ const FutureProjectPage = (
 
       {/* Inspiration */}
       <BlurFade delay={4} inView >
-        {futureProjects.inspiration ?
-          (
+        {futureProjects.inspiration ? (
+          <>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">Project Inspiration</h2>
             <ImageCarousel images={futureProjects.inspiration} />
-          ) : ""}
+          </>
+        ) : ""}
       </BlurFade>
 
     </div>

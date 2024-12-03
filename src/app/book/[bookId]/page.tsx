@@ -54,7 +54,7 @@ const BookProjectPage = () => {
   }, [bookId] );
 
   if ( !project ) {
-    return <div>Project not found or loading...</div>;
+    return <div>Book information loading...</div>;
   }
 
   return (
