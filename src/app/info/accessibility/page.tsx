@@ -453,6 +453,19 @@ const AccessibilityPage = () => {
                 />
                 <Button
                   variant="link"
+                  onClick={() => window.open( "https://color-contrast-checker.deque.com/", "_blank" )}
+                  className="text-muted hover:text-foreground"
+                >
+                  Color Palette Contrast Checker
+                </Button>
+              </li>
+              <li className="inline-flex mb-1 items-center">
+                <FaPalette
+                  className="h-6 w-6 text-tertiary"
+                  aria-hidden="true"
+                />
+                <Button
+                  variant="link"
                   onClick={() => window.open( "https://coolors.co/contrast-checker", "_blank" )}
                   className="text-muted hover:text-foreground"
                 >

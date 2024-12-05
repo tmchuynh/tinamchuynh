@@ -54,7 +54,7 @@ export function NavMenuItem( {
           >
             <div className="flex items-center justify-between w-full">
               <div className="flex items-center gap-2">
-                <span className="text-sidebar-tertiary">
+                <span>
                   <item.icon
                     aria-hidden="true"
                     aria-label={String( item.icon )}

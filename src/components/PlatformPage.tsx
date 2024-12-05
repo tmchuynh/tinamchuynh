@@ -10,7 +10,6 @@ import BlurFade from "./ui/blur-fade";
 import Breadcrumb from "./ui/breadcrumb";
 import HyperText from "./ui/hyper-text";
 
-
 const breadcrumbItems = [
   {
     label: "Home",
@@ -48,6 +47,8 @@ const PlatformPage = ( {
       try {
         const res = await fetch( "/api/devto" );
 
+        console.log( res );
+
         if ( !res.ok ) {
           throw new Error( "Failed to fetch articles" );
         }
@@ -79,58 +80,56 @@ const PlatformPage = ( {
     return <p>{error}</p>;
   }
 
-
   return (
     <div className="max-w-7xl mx-auto p-6">
       <Breadcrumb items={breadcrumbItems} />
 
-      <BlurFade delay={0.25}  >
+      <BlurFade delay={0.25}>
         <HyperText
           className="text-4xl font-bold text-center mb-4"
           text={`${ platform.title }`}
         />
       </BlurFade>
 
-      <BlurFade delay={0.35}  >
+      <BlurFade delay={0.35}>
         <p className="text-lg mb-8">{platform.description}</p>
       </BlurFade>
 
-      <BlurFade delay={0.45} >
+      <BlurFade delay={0.45}>
         <div className="flex justify-center pb-8">
           {platform.focuses.map( ( focus, index ) => (
-            <Badge variant={"default"} size={"default"} key={index}>{focus}</Badge>
+            <Badge variant={"default"} size={"default"} key={index}>
+              {focus}
+            </Badge>
           ) )}
         </div>
       </BlurFade>
 
-      <BlurFade delay={0.5}  >
+      <BlurFade delay={0.5}>
         <div className="flex justify-center gap-3">
           {platform.links.map( ( link, index ) => (
-            <Button
-              variant={"tertiary"}
-              key={index}
-            >
+            <Button variant={"tertiary"} key={index}>
               {link.label}
             </Button>
           ) )}
         </div>
       </BlurFade>
 
-      <BlurFade delay={0.6}  >
+      <BlurFade delay={0.6} className="flex flex-wrap gap-3 justify-around">
         {articles.length === 0 ? (
           <p>No articles found.</p>
-        ) :
-          ( <div className="flex flex-wrap justify-around gap-3">
-            {articles.map( ( article, index ) => (
-              <BlurFade delay={0.2 + index * 0.2}  >
-                <Card key={`${ article.id }_${ index }`} className="w-[22rem] my-4 relative h-full">
+        ) : (
+          articles.map( ( article, index ) => (
+            <div className="flex flex-wrap justify-around gap-3" key={article.id}>
+              <BlurFade delay={0.2 + index * 0.2}>
+                <Card className="w-[22rem] my-4 relative h-full">
                   <CardHeader>
                     <CardTitle>{article.title}</CardTitle>
                     <div className="flex justify-between">
-                      <span className="text-highlight text-xs">
+                      <span className="text-primary text-xs">
                         Published: {article.published_at}
                       </span>
-                      <span className="text-highlight text-xs">
+                      <span className="text-primary text-xs">
                         Reading Time: {article.reading_time_minutes} Minutes
                       </span>
                     </div>
@@ -158,8 +157,9 @@ const PlatformPage = ( {
                   </CardFooter>
                 </Card>
               </BlurFade>
-            ) )}
-          </div> )}
+            </div>
+          ) )
+        )}
       </BlurFade>
     </div>
   );
