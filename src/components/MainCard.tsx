@@ -25,7 +25,7 @@ const MainCard = ( {
   <section
     className={cn(
       'group relative h-[20rem] flex flex-col justify-between overflow-hidden rounded-xl bg-background',
-      'shadow-md dark:border dark:shadow-sm dark:shadow-muted',
+      'shadow-md dark:border dark:shadow-sm dark:shadow-border',
       className
     )}
   >

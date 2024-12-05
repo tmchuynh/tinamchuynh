@@ -50,7 +50,7 @@ export function ShortcutDialog() {
             ) )}
           </div>
           <DialogClose asChild>
-            <Button variant={isDarkMode ? "secondary" : "default"} className="mt-4 w-full shadow-lg" aria-label="Close keyboard shortcuts dialog">
+            <Button variant={isDarkMode ? "secondary" : "default"} className="mt-4 w-full shadow-lg dark:shadow-border" aria-label="Close keyboard shortcuts dialog">
               Close
             </Button>
           </DialogClose>

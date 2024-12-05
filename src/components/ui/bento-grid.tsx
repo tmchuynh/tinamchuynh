@@ -47,7 +47,7 @@ const BentoCard = ( {
       // light styles
       "shadow-md",
       // dark styles
-      "transform-gpu dark:border dark:shadow-sm dark:shadow-muted",
+      "transform-gpu dark:border dark:shadow-sm dark:shadow-border",
       className,
     )}
   >

@@ -1044,7 +1044,7 @@ export const features = [
         {animatedAlerts.map( ( item, index ) => (
           <div
             key={index}
-            className="-z-0 bg-secondary text-secondary-foreground opacity-50 shadow-lg mx-auto p-4 border rounded-lg w-10/12"
+            className="-z-0 bg-secondary text-secondary-foreground opacity-50 shadow-lg dark:shadow-border mx-auto p-4 border rounded-lg w-10/12"
           >
             {item}
           </div>
@@ -1060,7 +1060,7 @@ export const features = [
     cta: "Learn more",
     background: (
       <div className="pt-4">
-        <ClientTweetCard id="1839807144016634063" className="w-10/12 mx-auto shadow-lg opacity-50 border" />
+        <ClientTweetCard id="1839807144016634063" className="w-10/12 mx-auto shadow-lg dark:shadow-border opacity-50 border" />
       </div>
     ),
   },

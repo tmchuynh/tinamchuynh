@@ -5,26 +5,26 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex justify-center items-center gap-2 disabled:opacity-50 rounded-lg font-medium text-sm whitespace-nowrap transition-colors disabled:pointer-events-none [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex justify-center items-center gap-2 disabled:opacity-50 rounded-lg font-medium text-sm whitespace-nowrap transition-colors disabled:pointer-events-none [&_svg]:pointer-events-none shadow-md dark:shadow-border [&_svg]:size-4 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
         default:
-          "bg-primary text-primary-foreground shadow hover:bg-accent hover:text-accent-foreground",
+          "bg-primary text-primary-foreground hover:bg-accent hover:text-accent-foreground",
         secondary:
-          "bg-secondary text-secondary-foreground shadow hover:bg-primary hover:text-primary-foreground",
+          "bg-secondary text-secondary-foreground hover:bg-primary hover:text-primary-foreground",
         tertiary:
-          "bg-tertiary text-tertiary-foreground shadow hover:bg-accent hover:text-accent-foreground",
+          "bg-tertiary text-tertiary-foreground hover:bg-accent hover:text-accent-foreground",
         highlight:
-          "bg-highlight text-highlight-foreground shadow hover:bg-tertiary hover:text-tertiary-foreground",
+          "bg-highlight text-highlight-foreground hover:bg-tertiary hover:text-tertiary-foreground",
         accent:
           "bg-accent text-accent-foreground hover:text-highlight-foreground hover:bg-highlight",
         destructive:
-          "bg-destructive text-destructive-foreground shadow-sm hover:bg-highlight hover:text-highlight-foreground",
+          "bg-destructive text-destructive-foreground hover:bg-highlight hover:text-highlight-foreground",
         outline:
-          "border border-accent border-2 text-primary border-primary font-bold shadow-md hover:bg-secondary hover:text-secondary-foreground hover:border-secondary",
-        ghost: "hover:bg-muted hover:text-foreground text-tertiary",
-        link: "text-highlight underline-offset-4 hover:underline",
+          "border border-accent border-2 text-primary border-primary font-bold hover:bg-secondary hover:text-secondary-foreground hover:border-secondary",
+        ghost: "hover:bg-muted hover:text-foreground text-tertiary shadow-none",
+        link: "text-highlight underline-offset-4 underline hover:no-underline shadow-none",
       },
       size: {
         default: "h-9 px-4 py-2",

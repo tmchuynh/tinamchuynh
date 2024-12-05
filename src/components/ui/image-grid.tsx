@@ -27,7 +27,7 @@ const ImageGrid = ( { images, title }: { images: ImageProps[]; title: string; } 
                     alt={image.alt}
                     width={1000}
                     height={1000}
-                    className="h-full w-full object-cover text-foreground rounded-lg shadow-lg"
+                    className="h-full w-full object-cover text-foreground rounded-lg shadow-lg dark:shadow-border"
                   />
 
                   {/* Overlay and Button */}
@@ -53,7 +53,7 @@ const ImageGrid = ( { images, title }: { images: ImageProps[]; title: string; } 
                       alt={image.alt}
                       width={3000}
                       height={3000}
-                      className="h-full w-full object-contain text-foreground rounded-lg shadow-lg"
+                      className="h-full w-full object-contain text-foreground rounded-lg shadow-lg dark:shadow-border"
                     />
                     <h4 className="flex items-center ml-3 -m-2 text-md font-light text-foreground">{image.description}</h4>
                   </div>
